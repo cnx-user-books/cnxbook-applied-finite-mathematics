@@ -1,0 +1,879 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Linear Programing: The Simplex Method</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18904</md:content-id>
+  <md:title>Linear Programing: The Simplex Method</md:title>
+  <md:abstract>This chapter covers principles of the simplex method to Linear Programming. After completing this chapter students should be able to: solve linear programming maximization problems using the simplex method and solve the minimization problems using the simplex method.</md:abstract>
+  <md:uuid>736704d1-e652-42e2-882d-27bcd88142b2</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1168313108917">
+      <title>Chapter Overview</title>
+      <para id="id1168310470055">In this chapter, you will learn to:</para>
+      <list id="id1168313332413" list-type="enumerated" number-style="arabic">
+        <item>Solve linear programming maximization problems using the simplex method.</item>
+        <item>Solve the minimization problems using the simplex method.</item>
+      </list>
+    </section>
+    <section id="id1168310050661"><title>Maximization By The Simplex Method</title><para id="id1168310367241">In the last chapter, we used the geometrical method to solve linear programming problems, but the geometrical approach will not work for problems that have more than two variables. In real life situations, linear programming problems consist of literally thousands of variables and are solved by computers. We can solve these problems algebraically, but that will not be very efficient. Suppose we were given a problem with, say, 5 variables and 10 constraints. By choosing all combinations of five equations with five unknowns, we could find all the corner points, test them for feasibility, and come up with the solution, if it exists. But the trouble is that even for a problem with so few variables, we will get more than 250 corner points, and testing each point will be very tedious. So we need a method that has a systematic algorithm and can be programmed for a computer. The method has to be efficient enough so we wouldn't have to evaluate the objective function at each corner point. We have just such a method, and it is called the <emphasis effect="bold">simplex method</emphasis>.</para>
+      <para id="id1168311847013">The simplex method was developed during the Second World War by Dr. George Dantzig. His linear programming models helped the Allied forces with transportation and scheduling problems. In 1979, a Soviet scientist named Leonid Khachian developed a method called the ellipsoid algorithm which was supposed to be revolutionary, but as it turned out it is not any better than the simplex method. In 1984, Narendra Karmarkar, a research scientist at AT&amp;T Bell Laboratories developed Karmarkar's algorithm which has been proven to be four times faster than the simplex method for certain problems. But the simplex method still works the best for most problems.</para>
+      <para id="id1168316440308">The simplex method uses an approach that is very efficient. It does not compute the value of the objective function at every point, instead, it begins with a corner point of the feasibility region where all the main variables are zero and then systematically moves from corner point to corner point, while improving the value of the objective function at each stage. The process continues until the optimal solution is found. </para>
+      <para id="id1168314322399">To learn the simplex method, we try a rather unconventional approach. We first list the algorithm, and then work a problem. We justify the reasoning behind each step during the process. A thorough justification is beyond the scope of this course.</para>
+      <para id="id1168315121853">We start out with an example we solved in the last chapter by the graphical method. This will provide us with some insight into the simplex method and at the same time give us the chance to compare a few of the feasible solutions we obtained previously by the graphical method.</para>
+      <para id="id7113618">But first, we list the algorithm for the simplex method.</para>
+      <example id="eip-id1169111306664"><label/><title>THE SIMPLEX METHOD</title>
+      
+      <list id="id1168318018473" list-type="enumerated" number-style="arabic"><item><emphasis effect="bold">Set up the problem.</emphasis>
+      
+      <para id="id1168315759248">That is, write the objective function and the constraints.</para></item>
+      
+        <item>  <emphasis effect="bold">Convert the inequalities into equations. </emphasis> 
+      <para id="id1168310334773">This is done by adding one slack variable for each inequality.</para>
+</item>
+ <item><emphasis effect="bold">Construct the initial simplex tableau.</emphasis>
+      <para id="id1168314781102">Write the objective function as the bottom row.</para></item>
+        <item><emphasis effect="bold">The most negative entry in the bottom row identifies a column.</emphasis>
+</item>
+        <item><emphasis effect="bold">Calculate the quotients. The smallest quotient identifies a row. The element in the intersection of the column identified in step 4 and the row identified in this step is identified as the pivot element.</emphasis>
+
+      <para id="id1168316429443">The quotients are computed by dividing the far right column by the identified column in step 4. A quotient that is a zero, or a negative number, or that has a zero in the denominator, is ignored.</para>
+</item>
+<item><emphasis effect="bold">Perform pivoting to make all other entries in this column zero.</emphasis>
+      <para id="id1168308664944">This is done the same way as we did with the Gauss-Jordan method.</para></item>
+     
+        <item><emphasis effect="bold">When there are no more negative entries in the bottom row, we are finished; otherwise, we start again from step 4.</emphasis></item>
+
+        <item><emphasis effect="bold">Read off your answers.</emphasis>
+      <para id="id1168313572521">Get the variables using the columns with 1 and 0s. All other variables are zero. The maximum value you are looking for appears in the bottom right hand corner.</para></item>
+</list>
+</example>
+      <para id="id1168308590156">And now, <link document="m18903" target-id="eip-id1169863895890"/> we solved in <link document="m18903" target-id="id1171099106544"/>. </para>
+
+      <example id="eip-id1166117024040"><exercise id="id1166612233312">
+        <problem id="oo-id1166596009341">
+          <para id="id1166602985418">Niki holds two part-time jobs, Job I and Job II. She never wants to work more than a total of 12 hours a week. She has determined that for every hour she works at Job I, she needs 2 hours of preparation time, and for every hour she works at Job II, she needs one hour of preparation time, and she cannot spend more than 16 hours for preparation. If she makes $40 an hour at Job I, and $30 an hour at Job II, how many hours should she work per week at each job to maximize her income?</para>
+        </problem>
+        <solution id="oo-id1166582190227">
+          <para id="id1166607991590">In solving this problem, we will follow the algorithm listed above.</para>
+<list id="eip-id1165227892463" list-type="enumerated" number-style="arabic"><item><emphasis effect="bold">Set up the problem.</emphasis> That is, write the objective function and the constraints.
+          <para id="eip-id1167826560919">Since the simplex method is used for problems that consist of many variables, it is not practical to use the variables 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>z</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z} {}</m:annotation></m:semantics></m:math> etc. We use the symbols 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{3} } } {}</m:annotation></m:semantics></m:math>, and so on. </para>
+          <para id="eip-id1167826542702">  Let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>The number of hours per week Niki will work at Job I</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } ="The number of hours per week Niki will work at Job I"} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="eip-id1167833427429">  and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>The number of hours per week Niki will work at Job II</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } ="The number of hours per week Niki will work at Job II"} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="id1166606374889">It is customary to choose the variable that is to be maximized as 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>Z</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z} {}</m:annotation></m:semantics></m:math>. </para>
+          <para id="id7886027">The problem is formulated the same way as we did in the <link document="m18903"/>.</para>
+          <para id="id1166614658888">
+            <emphasis effect="bold">Maximize</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>Z</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>40</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mtext>30</m:mtext>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{Z="40"x rSub { size 8{1} } +"30"x rSub { size 8{2} } } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id1166585051071"><emphasis effect="bold">Subject to:</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo stretchy="false">≤</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +x rSub { size 8{2} }  &lt;≤ "12"} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <equation id="eip-id1165227892496"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mn>2x</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x rSub { size 8{1} } +x rSub { size 8{2} }  &lt;≤ "16"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1165247847637"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false"> ≥</m:mo><m:mn>0 </m:mn></m:mrow><m:mi>;  </m:mi><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false"> ≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} }  &gt; ≥ 0;x rSub { size 8{2} }  &gt; ≥ 0} {}</m:annotation></m:semantics></m:math></equation>
+</item>
+<item><emphasis effect="bold">Convert the inequalities into equations.</emphasis> This is done by adding one slack variable for each inequality.
+          <para id="eip-id1167826555502">For example to convert the inequality 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +x rSub { size 8{2} }  &lt;≤ "12"} {}</m:annotation></m:semantics></m:math> into an equation, we add a non-negative variable 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>, and we get</para>
+          <equation id="eip-id1165238867022">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">+</m:mo><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +x rSub { size 8{2} } +y rSub { size 8{1} } ="12"} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1166601339478">Here the variable 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> picks up the slack, and it represents the amount by which 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +x rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> falls short of 12. In this problem, if Niki works fewer that 12 hours, say 10, then 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> is 2. Later when we read off the final solution from the simplex table, the values of the slack variables will identify the unused amounts.</para>
+          <para id="id1166600952817">We can even rewrite the objective function 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>Z</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>40</m:mtext></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mtext>30</m:mtext></m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z="40"x rSub { size 8{1} }  + "30"x rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> as 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">-</m:mo><m:mtext>40</m:mtext></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">-</m:mo><m:mtext>30</m:mtext></m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>Z</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - "40"x rSub { size 8{1} }  - "30"x rSub { size 8{2} } +Z=0} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="id1166614271634">After adding the slack variables, our problem reads</para>
+          <para id="id1166583102796">   Objective function:  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">-</m:mo><m:mtext>40</m:mtext></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">-</m:mo><m:mtext>30</m:mtext></m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>Z</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - "40"x rSub { size 8{1} }  - "30"x rSub { size 8{2} } +Z=0} {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1166612291446">  Subject to constraints: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">+</m:mo><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +x rSub { size 8{2} } +y rSub { size 8{1} } ="12"} {}</m:annotation></m:semantics></m:math></para>
+          <equation id="eip-id1165237988612">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mn>2x</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">+</m:mo><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x rSub { size 8{1} } +x rSub { size 8{2} } +y rSub { size 8{2} } ="16"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1165227899233"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false"> ≥</m:mo><m:mn>0 </m:mn></m:mrow><m:mi>;  </m:mi><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false"> ≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} }  &gt; ≥ 0;x rSub { size 8{2} }  &gt; ≥ 0} {}</m:annotation></m:semantics></m:math></equation>
+</item>
+<item><emphasis effect="bold">Construct the initial simplex tableau.</emphasis> Write the objective function as the bottom row.
+          <para id="eip-id1167826528499">Now that the inequalities are converted into equations, we can represent the problem into an augmented matrix called the initial simplex tableau as follows.</para>
+         
+<figure id="eip-id1171352593401"><media id="eip-id1171364641424" alt="An augmented matrix set up to display the equations in an initial simplex tableau.">
+            <image mime-type="image/png" height="150px" src="../../media/replace4_1.png" print-width="2.5in"/>
+          </media>
+</figure>
+
+          <para id="id1166613499205">Here the vertical line separates the left hand side of the equations from the right side. The horizontal line separates the constraints from the objective function. The right side of the equation is represented by the column 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math>. </para>
+          <para id="id1166592942657">The reader needs to observe that the last four columns of this matrix look like the final matrix for the solution of a system of equations. If we arbitrarily choose 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } =0} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } =0} {}</m:annotation></m:semantics></m:math>, we get </para>
+          <equation id="eip-id1165250226411">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>Z</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">|</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>C</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">|</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>12</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">|</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>16</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">|</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+y rSub { size 8{1} }  {} # y rSub { size 8{2} }  {} # Z {} #  \lline  {} # C {} ##
+1 {} # 0 {} # 0 {} #  \lline  {} # "12" {} ##
+0 {} # 1 {} # 0 {} #  \lline  {} # "16" {} ##
+0 {} # 0 {} # 1 {} #  \lline  {} # 0{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1166609842121">Which reads</para>
+          <equation id="eip-id1165247862900"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } ="12"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1165227524871">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{2} } ="16"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1165240125137">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>Z</m:mi><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z=0} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1166607439489">The solution obtained by arbitrarily assigning values to some variables and then solving for the remaining variables is called the <emphasis effect="bold">basic solution</emphasis> associated with the tableau. So the above solution is the basic solution associated with the initial simplex tableau. We can label the basic solution variable in the right of the last column as shown in the table below.</para>
+          <figure id="eip-id1169464360800"><media id="eip-id1169470655445" alt="An augmented matrix set up to display the equations in an initial simplex tableau, with the basic solution variable labeled.">
+            <image mime-type="image/png" height="125px" src="../../media/replace4_2.png" print-width="2.5in"/>
+          </media>
+</figure>
+</item>
+<item><emphasis effect="bold">The most negative entry in the bottom row identifies a column.</emphasis>
+<para id="eip-id1167826573751">The most negative entry in the bottom row is –40, therefore the column 1 is identified.</para>
+
+<figure id="eip-id1170652760585"><media id="eip-id1170654707164" alt="An augmented matrix set up to display the equations in an initial simplex tableau, with the most negative entry shown in column 1.">
+            <image mime-type="image/png" height="150px" print-width="2.5in" src="../../media/replace4_3.png"/>
+          </media>
+</figure>
+
+      <exercise id="eip-id1165776998484"><problem id="eip-id1165752721114">
+      <para id="id1168308790319">Why do we choose the most negative entry in the bottom row?</para>
+</problem>
+      <solution id="eip-id1165757826542">
+      <para id="id1168308590810">The most negative entry in the bottom row represents the largest coefficient in the objective function – the coefficient whose entry will increase the value of the objective function the quickest. </para>
+      <para id="id1168313338251">The simplex method begins at a corner point where all the main variables, the variables that have symbols such as 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{3} } } {}</m:annotation></m:semantics></m:math> etc., are zero. It then moves from a corner point to the adjacent corner point always increasing the value of the objective function. In the case of the objective function 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>Z</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>40</m:mtext></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mtext>30</m:mtext></m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z="40"x rSub { size 8{1} } +"30"x rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>, it will make more sense to increase the value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> rather than 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>. The variable 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> represents the number of hours per week Niki works at Job I. Since Job I pays $40 per hour as opposed to Job II which pays only $30, the variable 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> will increase the objective function by $40 for a unit of increase in the variable 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>. </para>
+      </solution></exercise>
+</item>
+<item><emphasis effect="bold">Calculate the quotients. The smallest quotient identifies a row. The element in the intersection of the column identified in step 4 and the row identified in this step is identified as the pivot element.</emphasis>
+      <para id="eip-id1167826598706">As mentioned in the algorithm, in order to calculate the quotient, we divide the entries in the far right column by the entries in column 1, excluding the entry in the bottom row.</para>
+      <figure id="eip-id1166388509952"><media id="eip-id1166399772343" alt="The same augmented matrix with division in the rows displayed to the side.">
+            <image mime-type="image/png" src="../../media/replace4_4.png" print-width="3.5in"/>
+          </media>
+</figure>
+      <para id="id1168316674596">The smallest of the two quotients, 12 and 8, is 8. Therefore row 2 is identified. The intersection of column 1 and row 2 is the entry 2, which has been highlighted. This is our pivot element.</para>
+
+      <exercise id="eip-id1165758718845"><problem id="eip-id1165764007393"><para id="eip-id1165760704980"> Why do we find quotients, and why does the smallest quotient identify a row? </para></problem>
+      <solution id="eip-id3588913">
+      <para id="id1168308736876">When we choose the most negative entry in the bottom row, we are trying to increase the value of the objective function by bringing in the variable 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>. But we cannot choose any value for 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>. Can we let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>100</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } ="100"} {}</m:annotation></m:semantics></m:math>? Definitely not! That is because Niki never wants to work for more than 12 hours at both jobs combined. In other words, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +x rSub { size 8{2} }  &lt;= "12"} {}</m:annotation></m:semantics></m:math>. Now can we let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } ="12"} {}</m:annotation></m:semantics></m:math>? Again, the answer is no because the preparation time for Job I is two times the time spent on the job. Since Niki never wants to spend more than 16 hours for preparation, the maximum time she can work is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mtext>16</m:mtext><m:mo stretchy="false">÷</m:mo><m:mn>2</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"16" div 2=8} {}</m:annotation></m:semantics></m:math>. Now you see the purpose of computing the quotients.</para></solution></exercise>
+
+      <exercise id="eip-id1165753192777"><problem id="eip-id1165759042051">
+      <para id="id1168313564114">Why do we identify the pivot element? </para>
+</problem>
+      <solution id="eip-id1165756725732">
+      <para id="id1168314275023">As we have mentioned earlier, the simplex method begins with a corner point and then moves to the next corner point always improving the value of the objective function. The value of the objective function is improved by changing the number of units of the variables. We may add the number of units of one variable, while throwing away the units of another. Pivoting allows us to do just that.</para>
+      <para id="id1168310913948">The variable whose units are being added is called the <emphasis effect="bold">entering variable</emphasis>, and the variable whose units are being replaced is called the <emphasis effect="bold">departing variable</emphasis>. The entering variable in the above table is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>, and it was identified by the most negative entry in the bottom row. The departing variable 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> was identified by the lowest of all quotients. </para>
+      </solution></exercise>
+</item>
+<item><emphasis effect="bold">Perform pivoting to make all other entries in this column zero.</emphasis>
+      <para id="eip-id1167826663101">In <link document="m18902"/>, we used pivoting to obtain the row echelon form of an augmented matrix. Pivoting is a process of obtaining a 1 in the location of the pivot element, and then making all other entries zeros in that column. So now our job is to make our pivot element a 1 by dividing the entire second row by 2. The result follows.</para>
+     
+<figure id="eip-id1167823029971"><media id="eip-id1167839395291" alt="The result of the division of an augmented matrix.">
+            <image mime-type="image/png" src="../../media/replace4_5.png" print-width="2.5in"/>
+          </media>
+ </figure>
+
+      <para id="id1168310631558">To obtain a zero in the entry first above the pivot element, we multiply the second row by –1 and add it to row 1. We get</para>
+      
+<figure id="eip-id1171743506652"><media id="eip-id1171742858880" alt="An augmented matrix with multiplications shown.">
+            <image mime-type="image/png" src="../../media/replace4_6.png" print-width="2.5in"/>
+          </media>
+</figure>
+
+      <para id="id1168311176402">To obtain a zero in the element below the pivot, we multiply the second row by 40 and add it to the last row.</para>
+      
+<figure id="eip-id1168763949330"><media id="eip-id1168762371410" alt="The agumented matrix with more multiplications and additions shown.">
+            <image mime-type="image/png" src="../../media/replace4_7.png" print-width="2.5in"/>
+          </media>
+</figure>
+
+      <para id="id1168315070547">We now determine the basic solution associated with this tableau. By arbitrarily choosing 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } =0} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{2} } =0} {}</m:annotation></m:semantics></m:math>, we obtain 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } =8} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } =4} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>320</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z="320"} {}</m:annotation></m:semantics></m:math>. If we write the augmented matrix, whose left side is a matrix with columns that have one 1 and all other entries zeros, we get the following matrix stating the same thing.</para>
+      <equation id="eip-id1165769894664">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>Z</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">∣</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>C</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">∣</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">∣</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>8</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">∣</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>320</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+x rSub { size 8{1} }  {} # y rSub { size 8{1} }  {} # Z {} #  \lline  {} # C {} ##
+0 {} # 1 {} # 0 {} #  \lline  {} # 4 {} ##
+1 {} # 0 {} # 0 {} #  \lline  {} # 8 {} ##
+0 {} # 0 {} # 1 {} #  \lline  {} # "320"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+      <para id="id1168311879900">We can restate the solution associated with this matrix as 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } =8} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } =0} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } =4} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{2} } =0} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>320</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z="320"} {}</m:annotation></m:semantics></m:math>. At this stage of the game, it reads that if Niki works 8 hours at Job I, and no hours at Job II, her profit 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>Z</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z} {}</m:annotation></m:semantics></m:math> will be $320. Recall from <link document="m18903" target-id="eip-id1169863895890"/> in <link document="m18903" target-id="id1171099106544"/> that (8, 0) was one of our corner points. Here 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } =4} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{2} } =0} {}</m:annotation></m:semantics></m:math> mean that she will be left with 4 hours of working time and no preparation time.</para></item>
+
+
+
+<item><emphasis>When there are no more negative entries in the bottom row, we are finished; otherwise, we start again from step 4.</emphasis> <para id="eip-id4914303">Since there is still a negative entry, –10 , in the bottom row, we need to begin, again, from step 4. This time we will not repeat the details of every step, instead, we will identify the column and row that give us the pivot element, and highlight the pivot element. The result is as follows.</para>
+ 
+<figure id="eip-id1169661839386"><media id="eip-id1169660392644" alt="The augmented matrix with more changes made.">
+            <image mime-type="image/png" src="../../media/replace4_8.png" print-width="3.5in"/>
+          </media>
+</figure>
+
+    <para id="id1167016969234">We make the pivot element 1 by multiplying row 1 by 2, and we get</para>
+
+   <figure id="eip-id1168372946050"><media id="eip-id1168374969231" alt="The augmented matrix with more multiplications.">
+            <image mime-type="image/png" src="../../media/replace4_9.png" print-width="2.5in"/>
+          </media>
+</figure>
+
+    <para id="id1167014388171">Now to make all other entries as zeros in this column, we first multiply row 1 by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - 1/2} {}</m:annotation></m:semantics></m:math> and add it to row 2, and then multiply row 1 by 10 and add it to the bottom row.</para>
+    
+<figure id="eip-id1170650462981"><media id="eip-id1170652694490" alt="The augmented matrix with more changes.">
+            <image mime-type="image/png" src="../../media/replace4_10.png" print-width="2.5in"/>
+          </media>
+</figure>
+
+    <para id="id1167017613936">We no longer have negative entries in the bottom row, therefore we are finished. </para>
+    <exercise id="eip-id1167830430293"><problem id="eip-id7491379">
+    <para id="id1167042870953">Why are we finished when there are no negative entries in the bottom row?</para></problem>
+    <solution id="eip-id1167831366250">
+    <para id="id1167014705302">The answer lies in the bottom row. The bottom row corresponds to the following equation.</para>
+    <equation id="eip-id1167836113041"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mn>0x</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mn>0x</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">+</m:mo><m:mtext>20</m:mtext></m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mtext>10</m:mtext></m:mrow><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>Z</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>400</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{0x rSub { size 8{1} } +0x rSub { size 8{2} } +"20"y rSub { size 8{1} } +"10"y rSub { size 8{2} } +Z="400"} {}</m:annotation></m:semantics><m:mtext>    or</m:mtext></m:math></equation>
+    <equation id="eip-id1167848839414">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>Z</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mtext>400</m:mtext><m:mo stretchy="false">−</m:mo><m:mtext>20</m:mtext></m:mrow></m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z="400" - "20"y rSub { size 8{1} }  - "10"y rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1167017960423">Since all variables are non-negative, the highest value 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>Z</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z} {}</m:annotation></m:semantics></m:math> can ever achieve is 400, and that will happen only when 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> are zero.</para></solution></exercise>
+</item>
+
+
+
+<item><emphasis>Read off your answers. </emphasis>
+<para id="id1167013315232">We now read off our answers, that is, we determine the basic solution associated with the final simplex tableau. Again, we look at the columns that have a 1 and all other entries zeros. Since the columns labeled 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> are not such columns, we arbitrarily choose 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } =0} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{2} } =0} {}</m:annotation></m:semantics></m:math>, and we get </para>
+    <equation id="eip-id1167928382847">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>Z</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">∣</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>C</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">∣</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>8</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">∣</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mo stretchy="false">∣</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>400</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+x rSub { size 8{1} }  {} # x rSub { size 8{2} }  {} # Z {} #  \lline  {} # C {} ##
+0 {} # 1 {} # 0 {} #  \lline  {} # 8 {} ##
+1 {} # 0 {} # 0 {} #  \lline  {} # 4 {} ##
+0 {} # 0 {} # 1 {} #  \lline  {} # "400"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1167010210534">The matrix reads 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } =4} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } =8} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>z</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>400</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{z="400"} {}</m:annotation></m:semantics></m:math>. </para>
+    <para id="id1167020185950">The final solution says that if Niki works 4 hours at Job I and 8 hours at Job II, she will maximize her income to $400. Since both slack variables are zero, it means that she would have used up all the working time, as well as the preparation time, and none will be left.</para>
+</item></list>
+</solution></exercise>
+      
+      
+</example>
+    </section>
+    <section id="id1168309769620"><title>Minimization By The Simplex Method </title><para id="id1168308334884">In this section, we will solve the standard linear programming minimization problems using the simplex method. Once again, we remind the reader that in the standard minimization problems all constraints are of the form 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ax</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>by</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">≥</m:mo><m:mi>c</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ax"+ ital "by" &gt;= c} {}</m:annotation></m:semantics></m:math>. The procedure to solve these problems was developed by Dr. John Von Neuman. It involves solving an associated problem called the <emphasis effect="bold">dual problem</emphasis>. To every minimization problem there corresponds a dual problem. The solution of the dual problem is used to find the solution of the original problem. The dual problem is really a maximization problem which we already learned to solve in the <link target-id="id1168310050661"/>. We will first solve the dual problem by the simplex method and then, from the final simplex tableau, we will extract the solution to the original minimization problem.</para>
+      <para id="id1168310255060">Before we go any further, however, we first learn to convert a minimization problem into its corresponding maximization problem called its dual. </para>
+      <example id="fs-id1164997288029">
+      <exercise id="id1168310366778"><problem id="oo-id1168312837836">
+          <para id="id1168317089176">Convert the following minimization problem into its dual.</para>
+        
+          <para id="id1168314038618">
+            <emphasis effect="bold">Minimize</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>Z</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>12</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mtext>16</m:mtext>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{Z="12"x rSub { size 8{1} } +"16"x rSub { size 8{2} } } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+        
+          <para id="id8157796">
+            <emphasis effect="bold">Subject to:</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mn>2x</m:mn>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo stretchy="false">≥</m:mo>
+                        <m:mtext>40</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +2x rSub { size 8{2} }  &gt;= "40"} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+      
+          <equation id="fs-id1164997459019">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≥</m:mo><m:mtext>30</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +x rSub { size 8{2} }  &gt;= "30"} {}</m:annotation></m:semantics></m:math></equation>
+       
+          <equation id="fs-id1164998466163">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} }  &gt;= 0;x rSub { size 8{2} }  &gt;= 0} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1168310939160">
+          <para id="id1168314448887">To achieve our goal, we first express our problem as the following matrix. </para>
+          
+<figure id="eip-id1168760615714"><media id="eip-id1168758197814" alt="A matrix that represents the problem.">
+            <image mime-type="image/png" src="../../media/replace4_11.png" print-width="1.5in"/>
+          </media>
+</figure>
+
+          <para id="id1168308352563">  Observe that this table looks like an initial simplex tableau without the slack variables. Next, we write a matrix whose columns are the rows of this matrix, and the rows are the columns. Such a matrix is called a <emphasis effect="bold">transpose</emphasis> of the original matrix. We get </para>
+
+<figure id="eip-id1169453799671"><media id="eip-id1169421088306" alt="A transposition of the original matrix.">
+            <image mime-type="image/png" src="../../media/replace4_12.png" print-width="1.5in"/>
+          </media>
+</figure>          
+
+          <para id="id1168312489374">The following maximization problem associated with the above matrix is called its dual.</para>
+          <para id="id1168316438564">
+            <emphasis effect="bold">Maximize</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>Z</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>40</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mtext>30</m:mtext>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{Z="40"y rSub { size 8{1} } +"30"y rSub { size 8{2} } } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id4897630">
+            <emphasis effect="bold">Subject to:</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo stretchy="false">≤</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } +y rSub { size 8{2} }  &lt;= "12"} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <equation id="fs-id1165001096497">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mn>2y</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2y rSub { size 8{1} } +y rSub { size 8{2} }  &lt;= "16"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="fs-id1165001079414">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} }  &gt;= 0;y rSub { size 8{2} }  &gt;= 0} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1168311667284">We have chosen the variables as y's, instead of x's, to distinguish the two problems.</para>
+        </solution>
+      </exercise>
+</example>
+      <example id="fs-id1171958213113"><exercise id="id1168312300322"><problem id="oo-id1168315813556">
+          <para id="id1168317464761">Solve graphically both the minimization problem and its dual, the maximization problem.</para>
+        </problem>
+        <solution id="oo-id1168309245833">
+          <para id="id1168311843174">Our minimization problem is as follows. </para>
+          <para id="id1168315019143"><emphasis>Minimize  </emphasis>
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>Z</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>12</m:mtext></m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mtext>16</m:mtext></m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z="12"x rSub { size 8{1} } +"16"x rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1168314655050"><emphasis>Subject to:</emphasis> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mn>2x</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≥</m:mo><m:mtext>40</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +2x rSub { size 8{2} }  &gt;= "40"} {}</m:annotation></m:semantics></m:math></para>
+          <equation id="fs-id1171951961192"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≥</m:mo><m:mtext>30</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +x rSub { size 8{2} }  &gt;= "30"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="fs-id1171946686897"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} }  &gt;= 0;x rSub { size 8{2} }  &gt;= 0} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1168311341957">We now graph the inequalities.</para>
+        
+      <para id="id1168311234216">
+        <figure id="id1168310155406"><media id="id1168310155406_media" alt="The graph shows that the lines x_1+x_2=30 and x_1+2x_2=40 intersect at the point (20,10). The shaded region represents the area of the graph that meets the required conditions.">
+            <image mime-type="image/png" src="../../media/graphics1-2bca.png" id="id1168310155406__onlineimage" height="200" width="300"/>
+          </media>
+        </figure>
+      </para>
+<para id="eip-id1169916246762">We have plotted the graph, shaded the feasibility region, and labeled the corner points. The corner point (20, 10) gives the lowest value for the objective function and that value is 400.</para>
+<para id="eip-id1169919404246">Now its dual.</para>
+<para id="eip-id1169924742973"><emphasis effect="bold">Maximize</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>Z</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>40</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mtext>30</m:mtext>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{Z="40"y rSub { size 8{1} } +"30"y rSub { size 8{2} } } {}</m:annotation>
+              </m:semantics>
+            </m:math></para>
+<para id="eip-id1171296882483">
+<emphasis effect="bold">Subject to:</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo stretchy="false">≤</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } +y rSub { size 8{2} }  &lt;= "12"} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+<para id="eip-id1165523198325"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mn>2y</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2y rSub { size 8{1} } +y rSub { size 8{2} }  &lt;= "16"} {}</m:annotation></m:semantics></m:math></para>
+
+<para id="eip-id1165539941619">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} }  &gt;= 0;y rSub { size 8{2} }  &gt;= 0} {}</m:annotation></m:semantics></m:math>
+</para>
+<para id="eip-id1167046978888">We graph the inequalities.
+</para>
+      <para id="id1168315027102">
+        <figure id="id1168310423437"><media id="id1168310423437_media" alt=" Two lines intersecting at the point (4,8) on a graph. The shaded region represents the area of the graph that meets the required conditions.">
+            <image mime-type="image/png" src="../../media/graphics2-3482.png" id="id1168310423437__onlineimage" height="200" width="250"/>
+          </media>
+        </figure>
+      </para>
+<para id="eip-id1168587681164">Again, we have plotted the graph, shaded the feasibility region, and labeled the corner points. The corner point (4, 8) gives the highest value for the objective function, with a value of 400.</para>
+<para id="eip-id1168588919374">The reader may recognize that this problem is the same as <link document="m18903" target-id="eip-id1169863895890"/>, in <link document="m18903" target-id="id1171099106544"/>. This is also the same problem as <link target-id="id1168310050661"/> in <link target-id="eip-id1166117024040"/>, where we solved it by the simplex method.</para>
+<para id="eip-id1168594159374">We observe that the minimum value of the minimization problem is the same as the maximum value of the maximization problem; they are both 400. This is not a coincident. We state the duality principle.</para>
+      <definition id="id1168310293673">
+        <term>The Duality Principle:</term>
+        <meaning id="oo-id1168316081528">The objective function of the minimization problem reaches its minimum if and only if the objective function of its dual reaches its maximum. And when they do, they are equal. 
+      </meaning>
+      </definition>
+      <para id="id1168313199621">Our next goal is to extract the solution for our minimization problem from the corresponding dual. To do this, we solve the dual by the simplex method.</para>
+</solution>
+      </exercise>
+</example>
+
+      <example id="fs-id1171911891758"><exercise id="id1168309000281"><problem id="oo-id1168308599055"><para id="eip-id1169434719284">Find the solution to the minimization problem in <link target-id="fs-id1164997288029"/> by solving its dual using the simplex method. We rewrite our problem.</para>
+        
+          <para id="id1168314998374">
+            <emphasis effect="bold">Minimize</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>Z</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>12</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mtext>16</m:mtext>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{Z="12"x rSub { size 8{1} } +"16"x rSub { size 8{2} } } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id1168310626612"><emphasis effect="bold">Subject to:</emphasis> 
+       <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:mn>2</m:mn><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>≥</m:mo><m:mn>40</m:mn></m:mrow></m:math>
+      </para>
+       
+          <equation id="fs-id1171918781461"> <m:math><m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub><m:mo>+</m:mo><m:msub><m:mi>x</m:mi><m:mn>2</m:mn></m:msub><m:mo>≥</m:mo><m:mn>30</m:mn></m:mrow></m:math>
+      </equation>
+        
+          <equation id="fs-id1171918452378"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} }  &gt;= 0;x rSub { size 8{2} }  &gt;= 0} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1168310463365">
+          <para id="id1168312498586">The dual is as follows:</para>
+          <para id="id1168316706869">
+            <emphasis effect="bold">Maximize </emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>Z</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>40</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mtext>30</m:mtext>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>y</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{Z="40"y rSub { size 8{1} } +"30"y rSub { size 8{2} } } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id1168315705008">
+            <emphasis effect="bold">Subject to:</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>1</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>y</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mo stretchy="false">≤</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } +y rSub { size 8{2} }  &lt;= "12"} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <equation id="fs-id1171912636027">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mn>2y</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2y rSub { size 8{1} } +y rSub { size 8{2} }  &lt;= "16"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="fs-id1171917349538">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} }  &gt;= 0;y rSub { size 8{2} }  &gt;= 0} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1168317388804">Once again, we remind the reader that we solved the above problem by the simplex method in <link target-id="id1168310050661"/>, in <link target-id="eip-id1166117024040"/>. Therefore, we will only show the initial and final simplex tableau.</para>
+          <para id="id1168310692269">The initial simplex tableau is</para>
+          
+<figure id="eip-id1170651173516"><media id="eip-id1170654049886" alt="The initial simplex tableau for the example.">
+            <image mime-type="image/png" src="../../media/replace4_13.png" print-width="2.5in"/>
+          </media>
+</figure>
+
+          <para id="id1168311762646">Observe an important change. Here our main variables are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> and the slack variables are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>. </para>
+          <para id="id1168310928482">The final simplex tableau reads as follows:</para>
+          
+<figure id="eip-id1167814018068"><media id="eip-id1167787231574" alt="The final simplex tableau for the example.">
+            <image mime-type="image/png" src="../../media/replace4_14.png" print-width="2.5in"/>
+          </media>
+</figure>
+
+          <para id="id1168309776952">A closer look at this table reveals that the 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> values along with the minimum value for the minimization problem can be obtained from the last row of the final tableau. We have highlighted these values by the arrows. </para>
+          <para id="id1168316327949">We restate the solution as follows:</para>
+          <para id="id1168314257960">The minimization problem has a minimum value of 400 at the corner point (20, 10). </para>
+        </solution>
+      </exercise>
+</example>
+      <para id="id1168310830351">We now summarize our discussion so far.</para>
+    <example id="eip-id1165515563907"><label/><title>MINIMIZATION BY THE SIMPLEX METHOD</title> 
+      <list id="id1168311708572" list-type="enumerated" number-style="arabic"><item>Set up the problem.</item>
+        <item>Write a matrix whose rows represent each constraint with the objective function as its bottom row.</item>
+        <item>Write the transpose of this matrix by interchanging the rows and columns.</item>
+        <item>Now write the dual problem associated with the transpose.</item>
+        <item>Solve the dual problem by the simplex method learned in <link target-id="eip-id1166117024040"/>.</item>
+        <item>The optimal solution is found in the bottom row of the final matrix in the columns corresponding to the slack variables, and the minimum value of the objective function is the same as the maximum value of the dual.</item>
+      </list>
+</example>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,1089 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Mathematics of Finance: Homework</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38651</md:content-id>
+  <md:title>Mathematics of Finance: Homework</md:title>
+  <md:abstract>This chapter covers principles of finance. After completing this chapter students should be able to: solve financial problems that involve simple interest; solve problems involving compound interest; find the future value of an annuity; find the amount of payments to a sinking fund; find the present value of an annuity; and find an installment payment on a loan.</md:abstract>
+  <md:uuid>b763b05d-214d-4326-8719-7c51594a6d46</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="HWChapter5.doc" strength="3">Download Chapter 5 Homework</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1164285391615">
+      <title>SIMPLE INTEREST AND DISCOUNT</title>
+      <para id="id1164281441303">Do the following simple interest problems.</para>
+      <exercise id="id2529760">
+        <problem id="oo-id1164282181617">
+          <para id="id1164284077380">If an amount of $2,000 is borrowed at a simple interest rate of 10% for 3 years, how much is the interest?</para>
+        </problem>
+        <solution id="oo-id1164279773307">
+          <para id="id1164290345774">$600</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279786557">
+        <problem id="oo-id1164287007426">
+          <para id="id1164279277199">You borrow $4,500 for six months at a simple interest rate of 8%. How much is the interest?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164294954444">
+        <problem id="oo-id1164277759543">
+          <para id="id1164294805743">John borrows $2400 for 3 years at 9% simple interest. How much will he owe at the end of 3 years? </para>
+        </problem>
+        <solution id="oo-id1164294542665">
+          <para id="id1164285727323">$3048</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164291954880">
+        <problem id="oo-id1164285571838">
+          <para id="id1164281998464">Jessica takes a loan of $800 for 4 months at 12% simple interest. How much does she owe at the end of the 4-month period?</para>
+        </problem>
+      </exercise>
+      <exercise id="id2619841">
+        <problem id="oo-id1164282903737">
+          <para id="id1329523">If an amount of $2,160, which includes a 10% simple interest for 2 years, is paid back, how much was borrowed 2 years earlier?</para>
+        </problem>
+        <solution id="oo-id1164279821606">
+          <para id="id1164283528937">$1800</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164282280598">
+        <problem id="oo-id1164287095400">
+          <para id="id1164280686574">Jamie just paid off a loan of $2,544, the principal and simple interest. If he took out the loan six months ago at 12% simple interest, what was the amount borrowed?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164283312780">
+        <problem id="oo-id1164294609017">
+          <para id="id1164283004100">Shanti charged $800 on her charge card and did not make a payment for six months. If there is a monthly charge of 1.5%, how much does she owe?</para>
+        </problem>
+        <solution id="oo-id1164283190708">
+          <para id="id1164279746364">$872</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164278437044">
+        <problem id="oo-id1164287911211">
+          <para id="id1164287248506">A credit card company charges 18% interest on the unpaid balance. If you owed $2000 three months ago and have been delinquent since, how much do you owe?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164280112492">
+        <problem id="oo-id1164287415067">
+          <para id="id1164287943402">An amount of $2000 is borrowed for 3 years. At the end of the three years, $2660 is paid back. What was the simple interest rate?</para>
+        </problem>
+        <solution id="oo-id1164280476943">
+          <para id="id2633734">11%</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279598174">
+        <problem id="oo-id1164288527773">
+          <para id="id1164288892539">Nancy borrowed $1,800 and paid back $1,920, four months later. What was the simple interest rate?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164285510802">
+        <problem id="oo-id1164282486951">
+          <para id="id1164288470744">Jose agrees to pay $2,000 in one year at an interest rate of 12%. The bank subtracts the discount of 12% of $2,000, and gives the rest to Jose. Find the amount of the discount and the proceeds to Jose.</para>
+        </problem>
+        <solution id="oo-id2672797">
+          <para id="id1164288563978">Discount $240, Proceeds $1760</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279793497">
+        <problem id="oo-id1164279828360">
+          <para id="id1164292472740">Tasha signs a note for a discounted loan agreeing to pay $1200 in 8 months at an 18% discount rate. Determine the amount of the discount and the proceeds to her.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164285126678">
+        <problem id="oo-id1164285552501">
+          <para id="id1164286741585">An amount of $8,000 is borrowed at a discount rate of 12%, find the proceeds if the length of the loan is 7 months.</para>
+        </problem>
+        <solution id="oo-id1164287422535">
+          <para id="id1164295190228">$7440</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279550133">
+        <problem id="oo-id2645404">
+          <para id="id2644004">An amount of $4,000 is borrowed at a discount rate of 10%, find the proceeds if the length of the loan is 180 days.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164297415657">
+        <problem id="oo-id1164297529538">
+          <para id="id1164281583282">Derek needs $2400 new equipment for his shop. He can borrow this money at a discount rate of 14% for a year. Find the amount of the loan he should ask for so that his proceeds are $2400.</para>
+        </problem>
+        <solution id="oo-id1164296445108">
+          <para id="id1164290489303">$2790.70</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164296068951">
+        <problem id="oo-id1164299921149">
+          <para id="id1164291985358">Mary owes June $750, and wants to pay her off. She decides to borrow the amount from her bank at a discount rate of 16%. If she borrows the money for 10 months, find the amount of the loan she should ask for so that her proceeds are $750?</para>
+        </problem>
+      </exercise>
+      
+    </section>
+    <section id="id1164283320963">
+      <title>COMPOUND INTEREST</title>
+      <para id="id1164283371751">Do the following compound interest problems involving a lump-sum amount.</para>
+      <exercise id="id1164279456705">
+        <problem id="oo-id1164288883691">
+          <para id="id1164283319141">If $8,000 is invested at 9.2% compounded monthly, what will the final amount be in 4 years?</para>
+        </problem>
+        <solution id="oo-id1164278237185">
+          <para id="id1164288858540">$11542.52</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164298520243">
+        <problem id="oo-id1164294334337">
+          <para id="id3141089">How much should be invested at 10.3% for it to amount to $10,000 in 6 years?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164287312585">
+        <problem id="oo-id1164280149619">
+          <para id="id1164292544239">Lydia's aunt Rose left her $5,000. Lydia spent $1,000 on her wardrobe and deposited the rest in an account that pays 6.9% compounded daily. How much money will she have in 5 years?</para>
+        </problem>
+        <solution id="oo-id1164281649744">
+          <para id="id1164280157730">$5647.77</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279513246">
+        <problem id="oo-id1164285056345">
+          <para id="id1164279282750">Thuy needs $1,850 in eight months for her college tuition. How much money should she deposit lump sum in an account paying 8.2% compounded monthly to achieve that goal?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164282897459"><problem id="oo-id1164282487069">
+          <para id="id1164295212358">Bank A pays 5% compounded daily, while Bank B pays 5.12% compounded monthly. Which bank pays more? Explain. </para>
+        </problem>
+      <solution id="eip-id1167844458482"><para id="eip-id1167824104098">Bank B</para></solution></exercise>
+      
+      <exercise id="id1164280392512">
+        <problem id="oo-id3077904">
+          <para id="id1164283327288">EZ Photo Company needs five copying machines in 2 1/2 years for a total cost of $15,000. How much money should be deposited now to pay for these machines, if the interest rate is 8% compounded semiannually?</para>
+        </problem>
+      </exercise>
+      <exercise id="id2242795">
+        <problem id="oo-id1164279793175">
+          <para id="id1164282879776">Jon's grandfather was planning to give him $12,000 in 10 years. Jon has convinced his grandfather to pay him $6,000 now, instead. If Jon invests this $6,000 at 7.5% compounded continuously, how much money will he have in 10 years?</para>
+        </problem>
+        <solution id="oo-id1164279752117">
+          <para id="id1164285840499">$12702.00</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164283988201">
+        <problem id="oo-id1164301091856">
+          <para id="id1164286901225">What will be the price of a $20,000 car in 5 years if the inflation rate is 6%?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164285400334">
+        <problem id="oo-id1164280151227">
+          <para id="id2515972">At an interest rate of 8% compounded continuously, how many years will it take to double your money? Hint: You may do this on your calculator by trial and error.</para>
+        </problem>
+        <solution id="oo-id1164283076329">
+          <para id="id1164290558898">8.66 years</para>
+        </solution>
+      </exercise>
+      <exercise id="id1667126">
+        <problem id="oo-id1164279781555">
+          <para id="id1164293917736">If an investment earns 10% compounded continuously, in how many years will it triple? Hint: You may do this on your calculator by trial and error.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164288022089">
+        <problem id="oo-id1164299556767">
+          <para id="id2484201">The City Library has ordered a new computer system costing $158,000. The system will be delivered in 6 months, and the full amount will be due 30 days after delivery. How much should be deposited today into an account paying 7.5% compounded monthly to have $158,000 in 7 months?</para>
+        </problem>
+        <solution id="oo-id1164286996447">
+          <para id="id1164297067988">$151257.12</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164286846509">
+        <problem id="oo-id1164284347121">
+          <para id="id1164289156340">Mr. and Mrs. Tran are expecting a baby girl in a few days. They want to put away money for her college education now. How much money should they deposit in an account paying 10.2% so they will have $100,000 in 18 years to pay for their daughter's educational expenses?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164285337422">
+        <problem id="oo-id1164286535022">
+          <para id="id1164297250404">Find the effective interest rate for an account paying 7.2% compounded quarterly.</para>
+        </problem>
+        <solution id="oo-id1164289548645">
+          <para id="id1164285022341">7.3967%</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164284434664">
+        <problem id="oo-id1164288613176">
+          <para id="id1164279612310">If a bank pays 5.75% compounded monthly, what is the effective interest rate?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279282954">
+        <problem id="oo-id1164282009430">
+          <para id="id1164279778667">Population of California in the year 1995 was 32 million. If the population grows at a rate of 2%, what will the population be in 2025?</para>
+        </problem>
+        <solution id="oo-id1164297408143">
+          <para id="id1164283279841">57.96 million</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164289153845">
+        <problem id="oo-id1164292895972">
+          <para id="id1164280815981">According to the Law of 70, if an amount grows at an annual rate of 1%, then it doubles every seventy years. Suppose a bank pays 5% interest, how long will it take for you to double your money? How about at 15%?</para>
+        </problem>
+      </exercise>
+      
+    </section>
+    <section id="id1464088">
+      <title>ANNUITIES AND SINKING FUNDS</title>
+      <para id="id1164281355660">Each of the following problems involve an annuity - a sequence of payments.</para>
+      <exercise id="id1164280122033">
+        <problem id="oo-id1164280133789">
+          <para id="id1164285477164">Find the future value of an annuity of $200 per month for 5 years at 6% compounded monthly.</para>
+        </problem>
+        <solution id="oo-id1164285932050">
+          <para id="id1962716">$13,954.01</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164290719195">
+        <problem id="oo-id2125588">
+          <para id="id1164282900210">How much money should be deposited at the end of each month in an account paying 7.5% for it to amount to $10,000 in 5 years?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1330417">
+        <problem id="oo-id1164291175653">
+          <para id="id1164280144473">At the end of each month Rita deposits $300 in an account that pays 5%. What will the final amount be in 4 years?</para>
+        </problem>
+        <solution id="oo-id1164290207801">
+          <para id="id1164279760043">$15,904.47</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164280591771">
+        <problem id="oo-id1164283632804">
+          <para id="id1164288604210">Mr. Chang wants to retire in 10 years and can save $650 every three months. If the interest rate is 7.8%, how much will he have at the end of 5 years?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164293966675"><problem id="oo-id1164278177383">
+          <para id="id1164281289195">A firm needs to replace most of its machinery in five years at a cost of $500,000. The company wishes to create a sinking fund to have this money available in five years. How much should the quarterly deposits be if the fund earns 8%?  </para>
+        </problem>
+      <solution id="eip-id1169428618320"><para id="eip-id1169440968598">$20,578.36</para></solution></exercise>
+      
+      <exercise id="id1164286963040">
+        <problem id="oo-id1164281355617">
+          <para id="id1164284288229">Mrs. Brown needs $5,000 in three years. If the interest rate is 9%, how much should she save at the end of each month to have that amount in three years?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164299479368">
+        <problem id="oo-id1164278129897">
+          <para id="id1164288184043">A company has a $120,000 note due in 4 years. How much should be deposited at the end of each quarter in a sinking fund to payoff the note in four years if the interest rate is 8%? </para>
+        </problem>
+        <solution id="oo-id1164279904525">
+          <para id="id1164298209891">$6,438.02 </para>
+        </solution>
+      </exercise>
+      <exercise id="id1164281302663">
+        <problem id="oo-id1164286593155">
+          <para id="id1164279655206">You are now 20 years of age and decide to save $100 at the end of each month until you are 65. If the interest rate is 9.2%, how much money will you have when you are 65?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164283336222">
+        <problem id="oo-id2951767">
+          <para id="id1164279859690">Is it better to receive $400 at the beginning of each month for six years, or a lump sum of $25,000 today if the interest rate is 7%? Explain.  </para>
+        </problem>
+        <solution id="oo-id1164285673073">
+          <para id="id1164297827849">a lump sum of $25,000</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164283995004">
+        <problem id="oo-id1164284133780">
+          <para id="id4663756">In order to save money for a new computer Jill decided to save $125 at the beginning of each month for the next 8 months. If the interest rate is 7%, how much money will she have at the end of 8 months?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279551975">
+        <problem id="oo-id1164289431577">
+          <para id="id1164280153192">Mrs. Gill puts $2200 at the end of each year in her IRA account that earns 9% per year. How much total money will she have in this account after 20 years?</para>
+        </problem>
+        <solution id="oo-id2284083">
+          <para id="id1164279518320">$112,552.26</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164285397583">
+        <problem id="oo-id1164283005177">
+          <para id="id1164285712690">If the inflation rate stays at 6% per year for the next five years, how much will the price be of a $15,000 car in five years? How much must you save at the end of each month at an interest rate of 7.3% to buy that car in 5 years?</para>
+        </problem>
+      </exercise>
+      
+    </section>
+    <section id="id6442234">
+      <title>PRESENT VALUE OF AN ANNUITY AND INSTALLMENT PAYMENT</title>
+      <para id="id1164284159010">For the following problems, show all work.</para>
+      <exercise id="id1164288488585">
+        <problem id="oo-id1164282231566">
+          <para id="id1164284173470">Shawn has won a lottery paying him $10,000 per month for the next 20 years. He'd rather have the whole amount in one lump sum today. If the current interest rate is 8.2%, how much money can he hope to get?</para>
+        </problem>
+        <solution id="oo-id1164280271783">
+          <para id="id1164283273159">$1,177,953.55</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164278453735">
+        <problem id="oo-id1164294638299">
+          <para id="id1164279604590">Sonya bought a car for $15,000. Find the monthly payment if the loan is to be amortized over 5 years at a rate of 10.1%.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164292929595">
+        <problem id="oo-id1164289096328">
+          <para id="id1164279993278">You determine that you can afford $250 per month for a car. What is the maximum amount you can afford to pay for a car if the interest rate is 9% and you want to repay the loan in 5 years?</para>
+        </problem>
+        <solution id="oo-id1164287051482">
+          <para id="id1164292823420">$12,043.34</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164280816166">
+        <problem id="oo-id1164283612571">
+          <para id="id1164288599645">Compute the monthly payment for a house loan of $200,000 to be financed over 30 years at an interest rate of 10%.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164281644161"><problem id="oo-id2215712">
+          <para id="id1164279770663">If the $200,000 loan in the previous problem is financed over 15 years rather than 30 years at 10%, what will the monthly payment be?</para>
+        </problem>
+      <solution id="eip-id1168419746012"><para id="eip-id1168406307382">$2,149.21</para></solution></exercise>
+      
+      <exercise id="id1164295165451">
+        <problem id="oo-id1164279866630">
+          <para id="id1164292524091">Friendly Auto offers Jennifer a car for $2000 down and $300 per month for 5 years. Jason wants to buy the same car but wants to pay cash. How much must Jason pay if the interest rate is 9.4%?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164298186339">
+        <problem id="oo-id1164287527636">
+          <para id="id1164278235748">The Gomez family bought a house for $175,000. They paid 20% down and amortized the rest at 11.2% over a 30-year period. Find their monthly payment.</para>
+        </problem>
+        <solution id="oo-id1164281701787">
+          <para id="id1164279477351">$1,354.45</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164287001121">
+        <problem id="oo-id1164278436672">
+          <para id="id1164282512256">Mr. and Mrs. Wong purchased their new house for $350,000. They made a down payment of 15%, and amortized the rest over 30 years. If the interest rate is 9%, find their monthly payment.</para>
+        </problem>
+      </exercise>
+      <exercise id="id2995109">
+        <problem id="oo-id1164298052942">
+          <para id="id1164285926480">A firm needs a piece of machinery that has a useful life of 5 years. It has an option of leasing it for $10,000 a year, or buying it for $40,000 cash. If the interest rate is 10%, which choice is better? </para>
+        </problem>
+        <solution id="oo-id1164292781648">
+          <para id="id1164283988871">Leasing is better</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279546505">
+        <problem id="oo-id1164292061388">
+          <para id="id1164279793854">Jackie wants to buy a $19,000 car, but she can afford to pay only $300 per month for 5 years. If the interest rate is 6%, how much does she need to put down?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279127360">
+        <problem id="oo-id1164279132077">
+          <para id="id1164290390318">Vijay's tuition at Stanford for the next year is $32,000. His parents have decided to pay the tuition by making nine monthly payments. If the interest rate is 9%, what is the monthly payment?</para>
+        </problem>
+        <solution id="oo-id1164297716107">
+          <para id="id1164290030797">$3,690.22</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164286413828">
+        <problem id="oo-id1164299973295">
+          <para id="id1164299483221">Glen borrowed $10,000 for his college education at 8% compounded quarterly. Three years later, after graduating and finding a job, he decided to start paying off his loan. If the loan is amortized over five years at 9%, find his monthly payment for the next five years.</para>
+        </problem>
+      </exercise>
+      
+    </section>
+    <section id="id2087035">
+      <title>MISCELLANEOUS APPLICATION PROBLEMS</title>
+      <para id="id1562827">For the following four problems, assume a $200,000 house loan is amortized over 30 years at an interest rate of 10.4%. </para>
+      <exercise id="id1164293666021">
+        <problem id="oo-id2665110">
+          <para id="id1164287279982">Find the monthly payment.</para>
+        </problem>
+        <solution id="oo-id1164279817675">
+          <para id="id1164282516833">$1,814.54</para>
+        </solution>
+      </exercise>
+      <exercise id="id4074461">
+        <problem id="oo-id1164289842463">
+          <para id="id1164289478289">Find the balance owed after 20 years.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164287534790">
+        <problem id="oo-id1164281275849">
+          <para id="id1164280115100">Find the balance of the loan after 100 payments.</para>
+        </problem>
+        <solution id="oo-id1164297594570">
+          <para id="id1164283312959">$187,161.43</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279831361">
+        <problem id="oo-id1164300211825">
+          <para id="id1164299537509">Find the monthly payment if the original loan were amortized over 15 years.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164282831337">
+        <problem id="oo-id1164297930495">
+          <para id="id1164285232498">Mr. Patel wants to pay off his car loan. The monthly payment for his car is $365, and he has 16 payments left. If the loan was financed at 9%, how much does he owe? </para>
+        </problem>
+        <solution id="oo-id1164283327860">
+          <para id="id1164300343576">$5483.87</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164283782172">
+        <problem id="oo-id1164289128837">
+          <para id="id1164282904488">An amount of $2000 is borrowed for a year at a rate of 18%. Make an amortization schedule showing the monthly payment, the monthly interest on the outstanding balance, the portion of the payment going toward reducing the debt, and the balance. </para>
+        </problem>
+      </exercise>
+      <exercise id="id1164282519834">
+        <problem id="oo-id1164295207203">
+          <para id="id1164285517371">Fourteen months after Dan bought his new car he lost his job. His car was repossessed by his lender after he had made only 14 monthly payments of $376 each. If the loan was financed over a 4-year period at an interest rate of 10.3%, how much did the car cost the lender? In other words, how much did Dan still owe on the car?</para>
+        </problem>
+        <solution id="oo-id1164285312932">
+          <para id="id1164288040959">$11,046.79</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164280134532">
+        <problem id="oo-id1164279977861">
+          <para id="id1164286812664">You have a choice of either receiving $5,000 at the end of each year for the next 5 years or receiving $3000 per year for the next 10 years. If the current interest rate is 9%, which is better?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279955546">
+        <problem id="oo-id1487011">
+          <para id="id1164287216419">Mr. Smith is planning to retire in 25 years and would like to have $250,000 then. What monthly payment made at the end of each month to an account that pays 6.5% will achieve his objective? </para>
+        </problem>
+        <solution id="oo-id1164279401853">
+          <para id="id1164278236519">$333.85</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164278255796">
+        <problem id="oo-id2447892">
+          <para id="id1164287416739">Assume Mr. Smith has reached retirement and has $250,000 in an account which is earning 6.5%. He would now like to make equal monthly withdrawals for the next 15 years to completely deplete this account. Find the withdrawal payment. </para>
+        </problem>
+      </exercise>
+      <exercise id="id1164278130764">
+        <problem id="oo-id1164282280669">
+          <para id="id1164280112128">A ten-year $1,000 bond pays $35 every six months. If the current interest rate is 8.2%, find the fair market value of the bond.</para>
+       
+          <para id="id1164287043754"> Hint: You must do the following.</para>
+       <list id="fs-id4994937" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1164290831980">Find the present value of $1000.</para></item>
+       
+          <item><para id="id1164280770826">Find the present value of the $35 payments.</para></item>
+       
+          <item><para id="id1164294848425"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>The fair market value of the bond</m:mtext><m:mo stretchy="false">=</m:mo><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">+</m:mo><m:mi>b</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"The fair market value of the bond"=a+b} {}</m:annotation></m:semantics></m:math></para></item>
+          </list>
+        </problem>
+        <solution id="oo-id1164280818767">
+          <list id="fs-id1168358509452" list-type="enumerated" number-style="lower-alpha"><item>$447.70</item> <item>$471.48</item> <item>$919.18</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1164295851361">
+        <problem id="oo-id1164279099197">
+          <para id="id1164285577127">Find the fair market value of the ten-year $1,000 bond that pays $35 every six months, if the current interest rate has dropped to 6%.</para>
+       
+          <para id="id1164283316282"> Hint: Again, you must do the following.</para>
+        <list id="fs-id1168380202399" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1164287523653">Find the present value of $1000.</para></item>
+       
+          <item><para id="id1164282976307">Find the present value of the $35 payments.</para></item>
+        
+          <item><para id="id1164286851819"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>The fair market value of the bond</m:mtext><m:mo stretchy="false">=</m:mo><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">+</m:mo><m:mi>b</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"The fair market value of the bond"=a+b} {}</m:annotation></m:semantics></m:math></para></item>
+</list>
+        </problem>
+      </exercise>
+    </section>
+    
+    <section id="id2566458">
+      <title>CLASSIFICATION OF FINANCE PROBLEMS </title>
+      <para id="id1164279602222">Let the letters 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>D</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> be represented as follows:</para>
+      <para id="id1164282369317"><m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>A</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>FV</m:mtext>
+                        </m:mrow><m:mspace width="4px"/>
+                      </m:mstyle>
+                    </m:mrow>
+                    <m:mtext> of a lump-sum</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{A= ital "FV"" of a lump-sum"} {}</m:annotation>
+          </m:semantics>
+        </m:math><newline/>
+
+<m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>B</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>PV</m:mtext>
+                        </m:mrow><m:mspace width="4px"/>
+                      </m:mstyle>
+                    </m:mrow>
+                    <m:mtext> of a lump-sum</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{B= ital "PV"" of a lump-sum"} {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      
+<newline/>
+
+
+        <m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>C</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>FV</m:mtext>
+                        </m:mrow><m:mspace width="4px"/>
+                      </m:mstyle>
+                    </m:mrow>
+                    <m:mtext> of an annuity</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{C= ital "FV"" of an annuity"} {}</m:annotation>
+          </m:semantics>
+        </m:math><newline/>
+      
+  <m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>D</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>Sinking fund payment</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{D="Sinking fund payment"} {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      <newline/>
+
+
+
+  <m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>E</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>Installment payment</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{E="Installment payment"} {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      <newline/>
+  <m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>F</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>PV</m:mtext>
+                        </m:mrow><m:mspace width="4px"/>
+                      </m:mstyle>
+                    </m:mrow>
+                    <m:mtext> of an annuity</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{F= ital "PV"" of an annuity"} {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </para>
+      
+      <para id="id1164285770777">For the following problems, Classify, by writing the appropriate letter in the box, and write an equation for solution.</para>
+      <exercise id="id1164279748723">
+        <problem id="oo-id1164288073079">
+          <para id="id1164289092638">What monthly deposits made to an account paying 9% will grow to $10,000 in 4 years?</para>
+        </problem>
+        <solution id="oo-id1164282348560">
+          <para id="id1164283333542">  D</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164285103297">
+        <problem id="oo-id1164281039553">
+          <para id="id1164279742398">An amount of $4000 is invested at 6% compounded daily. What will the final amount be in 5 years?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164283926903">
+        <problem id="oo-id1164279594580">
+          <para id="id1164279873348">David has won a lottery paying him $10,000 per month for the next 20 years. He'd rather have the whole amount in one lump sum now. If the current interest rate is 7%, how much money can he hope to get?</para>
+        </problem>
+        <solution id="oo-id1164289169162">
+          <para id="id1164294549186">  F</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164295297692">
+        <problem id="oo-id1164288083000">
+          <para id="id1164282914744">Each month Linda deposits $250 in an account that pays 9%. How much money will she have in 4 years?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164295026165">
+        <problem id="oo-id2380648">
+          <para id="id1164280114743">Find the monthly payment for a $15,000 car if the loan is amortized over 4 years at a rate of 10%.</para>
+        </problem>
+        <solution id="oo-id1164296665845">
+          <para id="id1164294717716">  E</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164287081934">
+        <problem id="oo-id1164289105196">
+          <para id="id1164290537630">What lump-sum deposited in an account paying 7% compounded daily will grow to $10,000 in 5 years?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164281201650">
+        <problem id="oo-id1164282555483">
+          <para id="id1164280653029">What amount of quarterly payments will amount to $250,000 in 5 years at a rate of 8%?</para>
+        </problem>
+        <solution id="oo-id1164297939712">
+          <para id="id1164281017026">  D</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164282937516">
+        <problem id="oo-id1164279517491">
+          <para id="id1164297551429">The Chang family bought their house 25 years ago. They had their loan financed for 30 years at an interest rate of 11% resulting in a payment of $1350 a month. Find the balance of the loan. </para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164285552456">
+        <problem id="oo-id1164285094308">
+          <para id="id1164278582801">A 10-year $1000 bond pays $35 every six months. If the current interest rate is 8%, in order to find the fair market value of the bond, we need to find the following. </para>
+      <list id="fs-id1168382007591" list-type="enumerated" number-style="lower-alpha"><item>The present value of $1000.</item></list>
+        </problem>
+        <solution id="oo-id1164300204232">
+          <para id="id1164281141208">B</para>
+        </solution>
+      </exercise>
+      <exercise id="eip-181"><problem id="eip-680">
+  <para id="eip-235">A 10-year $1000 bond pays $35 every six months. If the current interest rate is 8%, in order to find the fair market value of the bond, we need to find the following. </para>
+
+<para id="eip-id1164238806025">b. The present value of the $35 per six month payments.</para>
+</problem>
+
+</exercise>
+      <exercise id="id1164298407404">
+        <problem id="oo-id1164281619079">
+          <para id="id1164282572059">What lump-sum deposit made today is equal to 33 monthly deposits of $500 if the interest rate is 8%?</para>
+        </problem>
+        <solution id="oo-id1164279837007">
+          <para id="id1164284118714">  F</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164288486626">
+        <problem id="oo-id2630193">
+          <para id="id1164286796858">What should be the size of the monthly deposits made to an account paying 10% so that their accumulated value will be $10,000 in six years?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164299790752">
+        <problem id="oo-id1164295415200">
+          <para id="id1164286727630">A department store charges a finance charge of 1.5% per month on the outstanding balance. If Ned charged $400 three months ago and has not paid his bill, how much does he owe?</para>
+        </problem>
+        <solution id="oo-id1164280859135">
+          <para id="id1164297566476">  A</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164286541974">
+        <problem id="oo-id5753469">
+          <para id="id1164280143008">What will the value of $300 monthly deposits be in 10 years if the account pays 12% compounded monthly? </para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164288168477">
+        <problem id="oo-id1164283330075">
+          <para id="id1164281145184">What lump-sum deposited at 6% compounded daily will grow to $2000 in three years?</para>
+        </problem>
+        <solution id="oo-id1164290121202">
+          <para id="id2710415">  B</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164283510657">
+        <problem id="oo-id6688544">
+          <para id="id1164278235460">A company buys an apartment complex for $5,000,000 and amortizes the loan over 10 years. What is the yearly payment if the interest rate is 14%?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164278236551">
+        <problem id="oo-id1164287153251">
+          <para id="id1164290634303">In 1970, a house in Reno cost $23,000. If the inflation rate is 8%, what is the price of that house in 1997?</para>
+        </problem>
+        <solution id="oo-id1164283901786">
+          <para id="id1164282464422">  A</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279822464">
+        <problem id="oo-id1164281190965">
+          <para id="id1164279865629">You determine that you can afford to pay $400 per month for a car. What is the maximum price you can pay for a car if the interest rate is 11% and you want to repay the loan in 4 years?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164293040394">
+        <problem id="oo-id1164298434807">
+          <para id="id1164283222031">A business needs $350,000 in 5 years. How much lump-sum should be put aside in an account that pays 9% so that five years from now the company will have $350,000?</para>
+        </problem>
+        <solution id="oo-id1164286984062">
+          <para id="id1164287381836">  B</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164280159706">
+        <problem id="oo-id1164282913529">
+          <para id="id1164281304322">A person wishes to have $500,000 in a pension fund 20 years from now. How much should he deposit each month in an account paying 9% compounded monthly?</para>
+        </problem>
+      </exercise>
+      
+    </section>
+    <section id="id1164290888855">
+      <title>CHAPTER REVIEW</title>
+      <exercise id="id1164283482012">
+        <problem id="oo-id2425534">
+          <para id="id1164281420439">Manuel borrows $800 for 6 months at 18% simple interest. How much does he owe at the end of 6 months?</para>
+        </problem>
+        <solution id="oo-id1164279934218">
+          <para id="id1164286741680">$874.75</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164280116959">
+        <problem id="oo-id1164284030111">
+          <para id="id1164283837831">The population of California is 32 million and expects to grow at a rate of 2.3% per year for the next 10 years. What will the population of California be in 10 years?</para>
+        </problem>
+        <solution id="oo-id1164279595115">
+          <para id="id1164285615975">40.17 million</para>
+        </solution>
+      </exercise>
+      <exercise id="id5109742">
+        <problem id="oo-id1164278232945">
+          <para id="id1164290451522">The Gill family is buying a $250,000 house with a 10% down payment. If the loan is financed over a 30 year period at an interest rate of 9.8%, what is the monthly payment? </para>
+        </problem>
+        <solution id="oo-id1164282931589">
+          <para id="id1164280852458">$1,941.36</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164299390884">
+        <problem id="oo-id1164286786109">
+          <para id="id1164277922862">Find the monthly payment for the house in the above problem if the loan was amortized over 15 years.</para>
+        </problem>
+        <solution id="oo-id1164292816835">
+          <para id="id1164283036956">$2,390.41</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164280992591">
+        <problem id="oo-id1164295250121">
+          <para id="id1164285676435">You look at your budget and decide that you can afford $250 per month for a car. What is the maximum amount you can afford to pay for the car if the interest rate is 8.6% and you want to finance the loan over 5 years?</para>
+        </problem>
+        <solution id="oo-id1164279793568">
+          <para id="id1164279024731">$12,156.72</para>
+        </solution>
+      </exercise>
+      <exercise id="id2016748">
+        <problem id="oo-id1164279033608">
+          <para id="id1486455">Mr. Nakahama bought his house in 1980. He had his loan financed for 30 years at an interest rate of 11.2% resulting in a monthly payment of $1500. In 1997, 17 years later, he paid off the balance of the loan. How much did he pay?</para>
+        </problem>
+        <solution id="oo-id1164299339305">
+          <para id="id1164280938407">$122,987.10</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279579888">
+        <problem id="oo-id1164287938469">
+          <para id="id1164297493790">Lisa buys a car for $16,500, and receives $2400 for her old car as a trade-in value. Find the monthly payment for the balance if the loan is amortized over 5 years at 8.5%. </para>
+        </problem>
+        <solution id="oo-id1164279820605">
+          <para id="id1164299180636">$289.28</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164288965010">
+        <problem id="oo-id1164279813209">
+          <para id="id1164279765189">A car is sold for $3000 cash down and $400 per month for the next 4 years. Find the cash value of the car today if the money is worth 8.3% compounded monthly.</para>
+        </problem>
+        <solution id="oo-id1164300853248">
+          <para id="id1164278438246">$19,290.63</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164285080327">
+        <problem id="oo-id1164278235780">
+          <para id="id1164281467489">An amount of $2300 is borrowed for 7 months at a simple interest rate of 16%. Find the discount and the proceeds.  </para>
+        </problem>
+        <solution id="oo-id1164283223954">
+          <para id="id1164287387976">$214.67; $2,085.33</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164288602273">
+        <problem id="oo-id1164293730399">
+          <para id="id1164279556878">Marcus has won a lottery paying him $5000 per month for the next 25 years. He'd rather have the whole amount in one lump sum today. If the current interest rate is 7.3%, how much money can he hope to get?</para>
+        </problem>
+        <solution id="oo-id2708942">
+          <para id="id1164279869774">$688,675.54</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164285197651">
+        <problem id="oo-id1164296623559">
+          <para id="id1164283481905">In 1970, an average house in Cupertino cost $41,000. If the average inflation rate for the past years has been about 9.3%, what is the price of that house in 1997?</para>
+        </problem>
+        <solution id="oo-id2265602">
+          <para id="id1164279761651">$452,405.87</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164281115842">
+        <problem id="oo-id1164295573887">
+          <para id="id1164283371816">Find the 'fair market' value of a ten-year $1000 bond which pays $30 every six months if the current interest rate is 7%. What if the current interest rate is 5%?</para>
+        </problem>
+        <solution id="oo-id1164283277590">
+          <para id="id1164283051295">$928.94; $1,077.95</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164297609300">
+        <problem id="oo-id1164286813235">
+          <para id="id1164283036724">A Visa credit card company has a finance charge of 1.5% per month ( or 18% per year) on the outstanding balance. John owed $3200 and has been delinquent for 5 months. How much total does he owe, now?</para>
+        </problem>
+        <solution id="oo-id1164280154729">
+          <para id="id1164284851924">$3,447.31</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279862842">
+        <problem id="oo-id1164297195771">
+          <para id="id1164292729889">You want to purchase a home for $200,000 with a 30-year mortgage at 9.24% interest. Find a) the monthly payment and b) the balance owed after 20 years.</para>
+        </problem>
+        <solution id="oo-id1164280888893">
+          <para id="id1164287248921">$1643.9; $128451.61</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164297183585">
+        <problem id="oo-id1164279642372">
+          <para id="id2005268">When Jose bought his car, he amortized his loan over 6 years at a rate of 9.2%, and his monthly payment came out to be $350 per month. He has been making these payments for the past 40 months and now wants to pay off the remaining balance. How much does he owe? </para>
+        </problem>
+        <solution id="oo-id1164280425258">
+          <para id="id1164285278636">$9,898.48</para>
+        </solution>
+      </exercise>
+      <exercise id="id2352479">
+        <problem id="oo-id1164291385594">
+          <para id="id1164286143939">A lottery pays $10,000 per month for the next 20 years. If the interest rate is 7.8%, find both its present and future values.</para>
+        </problem>
+        <solution id="oo-id1164300207710">
+          <para id="id1164279857618">$1,213,539.16; $5,745,936.31</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164286140726">
+        <problem id="oo-id1164282227613">
+          <para id="id1164293951524">A corporation estimates it will need $300,000 in 8 years to replace its existing machinery. How much should it deposit each quarter in a sinking fund earning 8.4% compounded quarterly to meet this obligation?</para>
+        </problem>
+        <solution id="oo-id1164285159663">
+          <para id="id1164299878344">$6,669.70</para>
+        </solution>
+      </exercise>
+      <exercise id="id6877485">
+        <problem id="oo-id1164279469810">
+          <para id="id1164280157587">Our national debt in 1992 was about $4 trillion. If the annual interest rate was 7% then, what was the daily interest on the national debt?</para>
+        </problem>
+        <solution id="oo-id1164280271310">
+          <para id="id1164278437587">$767,123,287.67 </para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279882774">
+        <problem id="oo-id1164282941524">
+          <para id="id1164289349396">A business must raise $400,000 in 10 years. What should be the size of the owners' monthly payments to a sinking fund paying 6.5% compounded monthly?</para>
+        </problem>
+        <solution id="oo-id1164278237002">
+          <para id="id1164286537344">$2,375.25</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164288884082">
+        <problem id="oo-id1164283007048">
+          <para id="id1164279850257">The population of a city of 80,000 is growing at a rate of 3.2% per year. What will the population be at the end of 10 years?</para>
+        </problem>
+        <solution id="oo-id1164282336825">
+          <para id="id1164285222670">$109,619.28 </para>
+        </solution>
+      </exercise>
+      <exercise id="id8744703">
+        <problem id="oo-id1164277762441">
+          <para id="id1164283285986">A sum of $5000 is deposited in a bank today. What will the final amount be in 20 months if the bank pays 9% and the interest is compounded monthly? </para>
+        </problem>
+        <solution id="oo-id1164288039062">
+          <para id="id1164287408424">$5,805.92</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164288609812">
+        <problem id="oo-id1164294985634">
+          <para id="id1164285489236">A computer is sold for $500 cash and $50 per month for the next 3 years. Find the cash value of the computer today if the money is worth 6.2% compounded monthly.</para>
+        </problem>
+        <solution id="oo-id1164280424336">
+          <para id="id1164289106018">$2,138.67</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164294339851">
+        <problem id="oo-id1164279960592">
+          <para id="id1164280581783">The United States paid about 4 cents an acre for the Louisiana Purchase in 1803. Suppose the value of this property grew at a rate of 5.5% annually. What would an acre be worth in the year 2000?</para>
+        </problem>
+        <solution id="oo-id1164283980023">
+          <para id="id1164282458127">$1523.33</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279342620">
+        <problem id="oo-id1164298711150">
+          <para id="id2273188">What amount should be invested per month at 9.1% compounded monthly so that it will become $5000 in 17 months?</para>
+        </problem>
+        <solution id="oo-id1164280997370">
+          <para id="id1164280481195">$276.68 </para>
+        </solution>
+      </exercise>
+      <exercise id="id6238741">
+        <problem id="oo-id1164279824643">
+          <para id="id1164282027254">A machine costs $8000 and has a life of 5 years. It can be leased for $160 per month for 5 years with a cash down payment of $750. If the current interest rate is 8.3%, is it cheaper to lease or to buy? </para>
+        </problem>
+        <solution id="oo-id1164285941520">
+          <para id="id1164281916909">Cheaper to buy</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164282467280">
+        <problem id="oo-id1164282219343">
+          <para id="id1164298208191">If inflation holds at 5.2% per year for 5 years, what will be the cost in 5 years of a car that costs $16,000 today? How much will you need to deposit each quarter in a sinking fund earning 8.7% per year to purchase the new car in 5 years?</para>
+        </problem>
+        <solution id="oo-id6948001">
+          <para id="id1164283191815">$833.80</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164288834483">
+        <problem id="oo-id1164278437430">
+          <para id="id1164281382731">City Bank pays an interest rate of 6%, while Western Bank pays 5.8% compounded continuously. Which one is a better deal? </para>
+        </problem>
+        <solution id="oo-id1164280819880">
+          <para id="id1164287033766">City Bank</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164282461563">
+        <problem id="oo-id1164280152442">
+          <para id="id1164280896931">Ali has inherited $20,000 and is planning to invest this amount at 7.9% interest. At the same time he wishes to make equal monthly withdrawals to use up the entire sum in 5 years. How much can he withdraw each month?</para>
+        </problem>
+        <solution id="oo-id1164285023246">
+          <para id="id1164285631317">$404.57</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164285138908">
+        <problem id="oo-id1164299678213">
+          <para id="id1164280573182">Jason has a choice of receiving $300 per month for the next 5 years or $500 per month for the next 3 years. Which one is worth more if the current interest rate is 7.7%? </para>
+        </problem>
+        <solution id="oo-id1164290151668">
+          <para id="id1164288566335">$500/month for 3 yrs</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164286052051">
+        <problem id="oo-id1164285617304">
+          <para id="id1164281669556">If a bank pays 6.8% compounded continuously, how long will it take to double your money? </para>
+        </problem>
+        <solution id="oo-id5797310">
+          <para id="id1164279764767">10.19 yrs</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164281461665">
+        <problem id="oo-id1164288087174">
+          <para id="id1164285457482">Janus Mutual Funds claims a growth rate of 17% per year. If $500 per month is invested, what will the final amount be in 15 years?</para>
+        </problem>
+        <solution id="oo-id1164281457264">
+          <para id="id1164285274165">$408,705.02</para>
+        </solution>
+      </exercise>
+      <exercise id="id8790518">
+        <problem id="oo-id1164280115958">
+          <para id="id1164282593969">Mr. Vasquez has been given two choices for his compensation. He can have $20,000 cash plus $500 per month for 10 years, or he can receive $12,000 cash plus $1000 per month for 5 years. If the interest rate is 8%, which is the better offer?</para>
+        </problem>
+        <solution id="oo-id1164281359913">
+          <para id="id1164292206969">$12000 cash + $1000/month</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164290312589">
+        <problem id="oo-id1164296511657">
+          <para id="id1164299533807">How much should Mr. Shackley deposit in a trust account so that his daughter can withdraw $400 per month for 4 years if the interest rate is 8%?</para>
+        </problem>
+        <solution id="oo-id1164282217247">
+          <para id="id1164282216780">$16,384.77</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164278572712">
+        <problem id="oo-id1164286195194">
+          <para id="id1164295839054">Mr. Albers borrowed $425,000 from the bank for his new house at an interest rate of 9%. He will make equal monthly payments for the next 30 years. How much money will he end up paying the bank over the life of the loan, and how much is the interest? </para>
+        </problem>
+        <solution id="oo-id1164283335257">
+          <para id="id1164279971590">$806,072.60</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164283116236">
+        <problem id="oo-id8744507">
+          <para id="id1164279135015">Mr. Tong puts away $500 per month for 10 years in an account that earns 9.3%. After 10 years, he decides to withdraw $1,000 per month. If the interest rate stays the same, how long will it take Mr. Tong to deplete the account? </para>
+        </problem>
+        <solution id="oo-id1164278232599">
+          <para id="id1164294648412">15.53 yrs</para>
+        </solution>
+      </exercise>
+      <exercise id="id2427617">
+        <problem id="oo-id1164291960429">
+          <para id="id1164286135258">An amount of $5000 is borrowed for 15 months at an interest rate of 9%. Determine the monthly payment and construct an amortization schedule showing the monthly payment, the monthly interest on the outstanding balance, the amount of payment contributing towards debt, and the outstanding debt. </para>
+        </problem>
+      </exercise>
+      
+    </section>
+  </content>
+</document>

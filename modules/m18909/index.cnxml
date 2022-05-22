@@ -1,0 +1,770 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Markov Chains</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18909</md:content-id>
+  <md:title>Markov Chains</md:title>
+  <md:abstract>This chapter covers principles of Markov Chains. After completing this chapter students should be able to: write transition matrices for Markov Chain problems; find the long term trend for a Regular Markov Chain; Solve and interpret Absorbing Markov Chains.</md:abstract>
+  <md:uuid>27a8191e-a246-4f74-8b66-62a7c6214935</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1167062634154">
+      <title>Chapter Overview</title>
+      <para id="id1167069961303">In this chapter, you will learn to:</para>
+      <list id="id1167066086786" list-type="enumerated" number-style="arabic">
+        <item>Write transition matrices for Markov Chain problems.</item>
+        <item>Find the long term trend for a Regular Markov Chain.</item>
+        <item>Solve and interpret Absorbing Markov Chains.</item>
+      </list>
+    </section>
+    <section id="id1167069279021"><title>Markov Chains</title><para id="id1167065993591">We will now study stochastic processes, experiments in which the outcomes of events depend on the previous outcomes. Such a process or experiment is called a <emphasis effect="bold">Markov Chain</emphasis> or <emphasis effect="bold">Markov process</emphasis>. The process was first studied by a Russian mathematician named Andrei A. Markov in the early 1900s.</para>
+      <para id="id1167058145209">A small town is served by two telephone companies, Mama Bell and Papa Bell. Due to their aggressive sales tactics, each month 40% of Mama Bell customers switch to Papa Bell, that is, the other 60% stay with Mama Bell. On the other hand, 30% of the Papa Bell customers switch to Mama Bell. The above information can be expressed in a matrix which lists the probabilities of going from one state into another state. This matrix is called a <emphasis effect="bold">transition matrix</emphasis>.</para>
+      <figure id="id1167058056897"><media id="id1167058056897_media" alt="This matrix depict the flow of customers from mama bell to papa bell and vice versa.">
+          <image mime-type="image/png" src="../../media/graphics1-05bc.png" id="id1167058056897__onlineimage" height="165" width="539" print-width="2.5in"/>
+        </media>
+      </figure>
+      <para id="id1167061497930">The reader should observe that a transition matrix is always a square matrix because all possible states must have both rows and columns. All entries in a transition matrix are non-negative as they represent probabilities. Furthermore, since all possible outcomes are considered in the Markov process, the sum of the row entries is always 1.</para>
+      <example id="eip-id1168485987192">
+      <exercise id="id1167058056468">
+        <problem id="oo-id5542704">
+          <para id="id1167058006627">Professor Symons either walks to school, or he rides his bicycle. If he walks to school one day, then the next day, he will walk or cycle with equal probability. But if he bicycles one day, then the probability that he will walk the next day is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/4} {}</m:annotation></m:semantics></m:math>. Express this information in a transition matrix.</para>
+        </problem>
+        <solution id="oo-id1167063446444">
+          <para id="id1167066347052">We obtain the following transition matrix by properly placing the row and column entries. Note that if, for example, Professor Symons bicycles one day, then the probability that he will walk the next day is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/4} {}</m:annotation></m:semantics></m:math>, and therefore, the probability that he will bicycle the next day is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/4} {}</m:annotation></m:semantics></m:math>.</para>
+<para id="id1167059705559">
+        <figure id="id1167070729402"><media id="id1167070729402_media" alt="This matrix shows the probability that Professor Symons will bicycle or walk to work.">
+            <image mime-type="image/png" src="../../media/graphics2-4329.png" id="id1167070729402__onlineimage" print-width="2.5in" height="183" width="480"/>
+          </media>
+        </figure>
+      </para>
+        </solution>
+      </exercise>
+</example>
+      
+      <example id="eip-id1168485576824"><exercise id="id5728614"><problem id="oo-id1167075144909">
+          <para id="id1167069537178">In <link target-id="eip-id1168485987192"/>, if it is assumed that the first day is Monday, write a matrix that gives probabilities of a transition from Monday to Wednesday. </para>
+        </problem>
+        <solution id="oo-id1167068052334">
+          <para id="id1167078842684">Let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>W</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W} {}</m:annotation></m:semantics></m:math> denote that Professor Symons walks and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math> denote that he rides his bicycle.</para>
+          <para id="id1167071647955">We use the following tree diagram to compute the probabilities.</para>
+ <para id="id1167063333763">
+        <figure id="id1167064656021"><media id="id1167064656021_media" alt="The Tree diagram depicts the probability that Professor Symons will either walk or bicycle to work on Monday, Tuesday, or Wednesday.">
+            <image mime-type="image/png" src="../../media/graphics3-0ae0.png" id="id1167064656021__onlineimage" height="409" width="409"/>
+          </media>
+        </figure>
+      </para>
+
+<para id="eip-id1170671309452">The probability that Professor Symons walked on Wednesday given that he walked on Monday can be found from the tree diagram, as listed below.</para>
+<para id="id1169667507888">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>Walked Wednesday</m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> Walked Monday</m:mtext></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>WWW</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">+</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>WBW</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("Walked Wednesday" \lline " Walked Monday" right )=P left ( ital "WWW" right )+P left ( ital "WBW" right )=1/4+1/8=3/8} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id1169660860288">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>Bicycled Wednesday</m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> Walked Monday</m:mtext></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>WWB</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">+</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>WBB</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("Bicycled Wednesday" \lline " Walked Monday" right )=P left ( ital "WWB" right )+P left ( ital "WBB" right )=1/4+3/8=5/8} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id1169664473594">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>Walked Wednesday</m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> Bicycled Monday</m:mtext></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BWW</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">+</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BBW</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>5</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("Walked Wednesday" \lline " Bicycled Monday" right )=P left ( ital "BWW" right )+P left ( ital "BBW" right )=1/8+3/"16"=3/5/"16"} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id1169659365228">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>Bicycled Wednesday</m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> Bicycleed Monday</m:mtext></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BWB</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">+</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BBB</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>9</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mtext>11</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("Bicycled Wednesday" \lline " Bicycleed Monday" right )=P left ( ital "BWB" right )+P left ( ital "BBB" right )=1/8+9/"16"="11"/"16"} {}</m:annotation></m:semantics></m:math>.</para>
+
+<para id="eip-id1170662788653">We represent the results in the following matrix.</para>
+ <figure id="id1167059717191"><media id="id1167059717191_media" alt="This matrix depicts the probability that Professor Symons will walk or bicycle to work on Monday or Wednesday.">
+          <image mime-type="image/png" src="../../media/graphics4-7ec8.png" id="id1167059717191__onlineimage" height="149" width="521" print-width="2.5in"/>
+        </media>
+      </figure>
+
+ <para id="id1169460487017">Alternately, this result can be obtained by squaring the original transition matrix. </para>
+    <para id="id1169458113912">We list both the original transition matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> as follows:</para>
+    <equation id="eip-id1167522244089"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>4</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mtext>3</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>4</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T= left [ matrix {
+1/2 {} # 1/2 {} ##
+1/"4" {} # "3"/"4"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <equation id="eip-id1167511565202">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow/><m:mrow/><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd><m:mtd><m:mrow><m:mrow/><m:mrow/><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>9</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow/></m:mtd><m:mtd><m:mrow><m:mrow/><m:mrow/><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mtext>11</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ matrix {
+T rSup { size 8{2} }  {} # ={} {} #  left [ matrix {
+1/2 {} # 1/2 {} ##
+1/4 {} # 3/4{}
+}  right ] left [ matrix {
+1/2 {} # 1/2 {} ##
+1/4 {} # 3/4{}
+}  right ] {} ##
+ {} # ={} {} #  left [ matrix {
+1/4+1/8 {} # 1/4+3/8 {} ##
+1/8+3/"16" {} # 1/8+9/"16"{}
+}  right ] {} ##
+ {} # ={} {} #  left [ matrix {
+3/8 {} # 5/8 {} ##
+5/"16" {} # "11"/"16"{}
+}  right ]{}
+} } {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169460307509">The reader should compare this result with the probabilities obtained from the tree diagram.</para>
+    <para id="id1169453628904">Consider the following case, for example,</para>
+    <equation id="eip-id1171351851683">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>Walked Wednesday</m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> Bicycled Monday</m:mtext></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BWW</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">+</m:mo><m:mi>P</m:mi></m:mrow><m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BBW</m:mtext></m:mrow></m:mstyle></m:mfenced><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("Walked Wednesday" \lline " Bicycled Monday" right )=P left ( ital "BWW" right )+P left ( ital "BBW" right )=1/8+3/"16"=5/"16"} {}</m:annotation></m:semantics><m:mo>.</m:mo></m:math></equation>
+    <para id="id1169459574816">It makes sense because to find the probability that Professor Symons will walk on Wednesday given that he bicycled on Monday, we sum the probabilities of all paths that begin with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math> and end in 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>W</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W} {}</m:annotation></m:semantics></m:math>. There are two such paths, and they are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BWW</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "BWW"} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>BBW</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "BBW"} {}</m:annotation></m:semantics></m:math>.</para>
+
+        </solution>
+      </exercise>
+</example>
+     
+     
+     
+      <example id="eip-id1168485577738">
+      <exercise id="id1167064663993">
+        <problem id="oo-id1167065993710">
+          <para id="id1167072119502">The transition matrix for <link target-id="eip-id1168485987192"/> is given below.</para>
+ <para id="id1167070003276">
+        <figure id="id1167069522948"><media id="id1167069522948_media" alt="This matrix depicts the probability that Professor Symons will walk or bicycle to work on Monday or Tuesday.">
+            <image mime-type="image/png" src="../../media/graphics5-2fc7.png" id="id1167069522948__onlineimage" height="154" width="530" print-width="2.5in"/>
+          </media>
+         </figure>
+      </para>
+    
+          <para id="id1167069166656">Write the transition matrix from a) Monday to Thursday, b) Monday to Friday.</para>
+        </problem>
+        <solution id="oo-id1167069328959">
+          <para id="id1167067077271">In writing a transition matrix from Monday to Thursday, we are moving from one state to another in three steps. That is, we need to compute 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{3} } } {}</m:annotation></m:semantics></m:math>.</para>
+          <equation id="eip-id1168488141547">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mtext>11</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>32</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mtext>21</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>32</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mtext>21</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>64</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mtext>43</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>64</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{3} } = left [ matrix {
+"11"/"32" {} # "21"/"32" {} ##
+"21"/"64" {} # "43"/"64"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1167065157828">b) To find the transition matrix from Monday to Friday, we are moving from one state to another in 4 steps. Therefore, we compute 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{4} } } {}</m:annotation></m:semantics></m:math>.</para>
+          <equation id="eip-id1168485583876">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mtext>43</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>128</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mtext>85</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>128</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mtext>85</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>256</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mtext>171</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>256</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{4} } = left [ matrix {
+"43"/"128" {} # "85"/"128" {} ##
+"85"/"256" {} # "171"/"256"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1167063491831">It is important that the student is able to interpret the above matrix correctly. For example, the entry 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>85</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>128</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"85"/"128"} {}</m:annotation></m:semantics></m:math>, states that if Professor Symons walked to school on Monday, then there is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>85</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>128</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"85"/"128"} {}</m:annotation></m:semantics></m:math> probability that he will bicycle to school on Friday. </para>
+        </solution>
+      </exercise>
+</example>
+      <para id="id1167057670680">There are certain Markov chains that tend to stabilize in the long run, and they are the subject of <link target-id="id1167059703120"/>. It so happens that the transition matrix we have used in all the above examples is just such a Markov chain. The next example deals with the long term trend or steady-state situation for that matrix.</para>
+      <example id="eip-id1168390773552">
+      <exercise id="id1167068544182">
+        <problem id="oo-id1167072830299">
+          <para id="id1167059715109">Suppose Professor Symons continues to walk and bicycle according to the transition matrix given in <link target-id="eip-id1168485987192"/>. In the long run, how often will he walk to school, and how often will he bicycle?</para>
+        </problem>
+        <solution id="oo-id1167075142781">
+          <para id="id1167069074677">As mentioned earlier, as we take higher and higher powers of our matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math>, it should stabilize.</para>
+          <equation id="eip-id8904662">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>333984</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>666015</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>333007</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>666992</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{5} } = left [ matrix {
+ "." "333984" {} #  "." "666015" {} ##
+ "." "333007" {} #  "." "666992"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1168388386325">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>10</m:mtext></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>33333397</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>66666603</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>33333301</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>66666698</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{"10"} } = left [ matrix {
+ "." "33333397" {} #  "." "66666603" {} ##
+ "." "33333301" {} #  "." "66666698"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1168375400177">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>20</m:mtext></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{"20"} } = left [ matrix {
+1/3 {} # 2/3 {} ##
+1/3 {} # 2/3{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1167075636470">Therefore, in the long run, Professor Symons will walk to school 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/3} {}</m:annotation></m:semantics></m:math> of the time and bicycle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2/3} {}</m:annotation></m:semantics></m:math> of the time. </para>
+ </solution>
+      </exercise>
+</example>
+          <para id="id1167073372797">When this happens, we say that the system is in steady-state or state of equilibrium. In this situation, all row vectors are equal. If the original matrix is an 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{n} {}</m:annotation></m:semantics></m:math> by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{n} {}</m:annotation></m:semantics></m:math> matrix, we get n vectors that are all the same. We call this vector a <emphasis effect="bold">fixed probability vector</emphasis> or the <emphasis effect="bold">equilibrium vector </emphasis><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>. In the above problem, the fixed probability vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1/3 {} # 2/3{}
+}  right ]} {}</m:annotation></m:semantics></m:math>. Furthermore, if the equilibrium vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> is multiplied by the original matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math>, the result is the equilibrium vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>. That is,</para>
+          <equation id="eip-id1168387617788">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1167074540122">or,</para>
+          <equation id="eip-id8143116">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1/3 {} # 2/3{}
+}  right ] left [ matrix {
+1/2 {} # 1/2 {} ##
+1/4 {} # 3/4{}
+}  right ]= left [ matrix {
+1/3 {} # 2/3{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+       
+    </section>
+    <section id="id1167059703120"><title>Regular Markov Chains</title><para id="id1167064762714">At the end of <link target-id="id1167069279021"/>, we took the transition matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math> and started taking higher and higher powers of it. The matrix started to stabilize, and finally it reached its <emphasis effect="bold">steady-state</emphasis> or <emphasis effect="bold">state of equilibrium</emphasis>. When that happened, all the row vectors became the same, and we called one such row vector a <emphasis effect="bold">fixed probability vector</emphasis> or an <emphasis effect="bold">equilibrium vector </emphasis><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>. Furthermore, we discovered that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math>. </para>
+      <section id="id1167064958654">
+        <title>Section Overview</title>
+        <para id="id2446337">In this section, we wish to answer the following four questions.</para>
+        <list id="id1167069510517" list-type="enumerated" number-style="arabic">
+          <item>Does every Markov chain reach a state of equilibrium?</item>
+          <item>Does the product of an equilibrium vector and its transition matrix always equal the equilibrium vector? That is, does 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math>? </item>
+          <item>Can the equilibrium vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> be found without raising the matrix to higher powers?</item>
+          <item>Does the long term market share distribution for a Markov chain depend on the initial market share?</item>
+        </list>
+<example id="eip-id3995427">
+        <exercise id="id1167071087608">
+          <problem id="oo-id1167077356981">
+            <para id="id1167064710172">Does every Markov chain reach the state of equilibrium?</para>
+          </problem>
+          <solution id="oo-id1167066135686">
+            <para id="id1167069846778">Answer: A Markov chain reaches a state of equilibrium if it is a <emphasis effect="bold">regular</emphasis> Markov chain. A Markov chain is said to be a <emphasis effect="bold">regular Markov chain</emphasis> if some power of it has only positive entries. </para>
+          </solution>
+        </exercise>
+</example>
+        <example id="fs-id1170212106048">
+        <exercise id="id1167059739545">
+          <problem id="oo-id1167066028527">
+            <para id="id1167069062628">Determine whether the following Markov chains are regular.</para>
+          <list id="fs-id8372696" list-type="enumerated" number-style="lower-alpha">
+            <item><para id="id1167069990222"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>7</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A= left [ matrix {
+1 {} # 0 {} ##
+ "." 3 {} #  "." 7{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item><item><para id="fs-id1170199065736"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>B</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B= left [ matrix {
+0 {} # 1 {} ##
+ "." 4 {} #  "." 6{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item></list>
+          </problem>
+          <solution id="oo-id1167070648103">
+<list id="fs-id1170185873072" list-type="enumerated" number-style="lower-alpha">
+            <item><para id="id1167074713543">The matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math> is not a regular Markov chain because every power of it has an entry 0 in the first row, second column position. In fact, we will show that all 2 by 2 matrices that have a zero in the first row, second column position are not regular. Consider the following matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M} {}</m:annotation></m:semantics></m:math>.</para>
+            <equation id="fs-id1170180263944">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>a</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>b</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>c</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M= left [ matrix {
+a {} # 0 {} ##
+b {} # c{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+            <equation id="fs-id1170219789022">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msup><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>a</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>b</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>c</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>a</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mi>b</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mi>c</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">⋅</m:mo><m:mi>a</m:mi></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>0</m:mn><m:mo stretchy="false">⋅</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">⋅</m:mo><m:mn>0</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>0</m:mn><m:mo stretchy="false">⋅</m:mo><m:mi>c</m:mi></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mrow><m:mi>b</m:mi><m:mo stretchy="false">⋅</m:mo><m:mi>a</m:mi></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mi>c</m:mi><m:mo stretchy="false">⋅</m:mo><m:mi>b</m:mi></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mrow><m:mi>b</m:mi><m:mo stretchy="false">⋅</m:mo><m:mn>0</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mi>c</m:mi><m:mo stretchy="false">⋅</m:mo><m:mi>c</m:mi></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M rSup { size 8{2} } = left [ matrix {
+a {} # 0 {} ##
+b {} # c{}
+}  right ] left [ matrix {
+a {} # 0 {} ##
+b {} # c{}
+}  right ]= left [ matrix {
+a cdot a+0 cdot b {} # a cdot 0+0 cdot c {} ##
+b cdot a+c cdot b {} # b cdot 0+c cdot c{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+            <para id="id1167069556885">Observe that the first row, second column entry, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">⋅</m:mo><m:mn>0</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>0</m:mn><m:mo stretchy="false">⋅</m:mo><m:mi>c</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{a cdot 0+0 cdot c} {}</m:annotation></m:semantics></m:math>, will always be zero, regardless of what power we raise the matrix to.</para></item>
+<item>
+            <para id="id1708523">The transition matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math> is a regular Markov chain because</para>
+            <equation id="fs-id1170185575567">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>24</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>76</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSup { size 8{2} } = left [ matrix {
+ "." "40" {} #  "." "60" {} ##
+ "." "24" {} #  "." "76"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+            <para id="id1167064645448">has only positive entries. </para>
+</item></list>
+</solution></exercise></example>
+<example id="eip-id3624031">
+<exercise id="fs-id1170209146710"><problem id="fs-id1170216175095">
+            <para id="id1167069257277">Does the product of an equilibrium vector and its transition matrix always equal the equilibrium vector? That is, does 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math>? </para></problem><solution id="fs-id1170186028344">
+            <para id="id1167071637825">At this point, the reader may have already guessed that the answer is yes if the transition matrix is a regular Markov chain. We try to illustrate with the following example from <link target-id="id1167058145209"/>. </para>
+            <para id="id1167065469255">A small town is served by two telephone companies, Mama Bell and Papa Bell. Due to their aggressive sales tactics, each month 40% of Mama Bell customers switch to Papa Bell, that is, the other 60% stay with Mama Bell. On the other hand, 30% of the Papa Bell customers switch to Mama Bell. The transition matrix is given below.</para>
+          
+
+        <para id="id1167070025208">
+          <figure id="id1167072739226"><media id="id1167072739226_media" alt="This matrix depict the flow of customers from mama bell to papa bell and vice versa.">
+              <image mime-type="image/png" src="../../media/graphics6-a240.png" id="id1167072739226__onlineimage" height="153" width="592" print-width="3in"/>
+            </media>
+          </figure>
+        </para>
+        <para id="id1169459806820">If the initial market share for Mama Bell is 20% and for Papa Bell 80%, we'd like to know the long term market share for each company. </para>
+    <para id="id1169461377630">Let matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math> denote the transition matrix for this Markov chain, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M} {}</m:annotation></m:semantics></m:math> denote the matrix that represents the initial market share. Then 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M} {}</m:annotation></m:semantics></m:math> are as follows:</para>
+    <para id="id8009329"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T= left [ matrix {
+ "." "60" {} #  "." "40" {} ##
+ "." "30" {} #  "." "70"{}
+}  right ]} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>80</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M= left [ matrix {
+ "." "20" {} #  "." "80"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+    <para id="id1169456538449">Since each month the towns people switch according to the transition matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math>, after one month the distribution for each company is as follows:</para>
+    <equation id="eip-id1171370151066">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>80</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>36</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>64</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "20" {} #  "." "80"{}
+}  right ] left [ matrix {
+ "." "60" {} #  "." "40" {} ##
+ "." "30" {} #  "." "70"{}
+}  right ]= left [ matrix {
+ "." "36" {} #  "." "64"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169464659781">After two months, the market share for each company is</para>
+    <equation id="eip-id1171370144692">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>36</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>64</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>408</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>592</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "36" {} #  "." "64"{}
+}  right ] left [ matrix {
+ "." "60" {} #  "." "40" {} ##
+ "." "30" {} #  "." "70"{}
+}  right ]= left [ matrix {
+ "." "408" {} #  "." "592"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169457768936">After three months the distribution is </para>
+    <equation id="eip-id1171349124028">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>408</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>592</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>4224</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>5776</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "408" {} #  "." "592"{}
+}  right ] left [ matrix {
+ "." "60" {} #  "." "40" {} ##
+ "." "30" {} #  "." "70"{}
+}  right ]= left [ matrix {
+ "." "4224" {} #  "." "5776"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169454869524">After four months the market share is</para>
+    <equation id="eip-id1171361805889">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>4224</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>5776</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>42672</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>57328</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "4224" {} #  "." "5776"{}
+}  right ] left [ matrix {
+ "." "60" {} #  "." "40" {} ##
+ "." "30" {} #  "." "70"{}
+}  right ]= left [ matrix {
+ "." "42672" {} #  "." "57328"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169463939488">  After 30 months the market share is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+3/7 {} # 4/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math> .</para>
+    <para id="id1169455841427">The market share after 30 months has stabilized to 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+3/7 {} # 4/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math> . </para>
+    <para id="id1169456572253">This means that </para>
+    <equation id="eip-id1171351773119">    
+<m:math><m:semantics><m:mrow/><m:annotation encoding="StarMath 5.0">{}</m:annotation></m:semantics><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+3/7 {} # 4/7{}
+}  right ] left [ matrix {
+ "." "60" {} #  "." "40" {} ##
+ "." "30" {} #  "." "70"{}
+}  right ]= left [ matrix {
+3/7 {} # 4/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169459613119">Once the market share reaches an equilibrium state, it stays the same, that is, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id1169458592153">This helps us answer the next question.</para>
+
+</solution>
+        </exercise></example>
+<example id="eip-id3636514">
+        <exercise id="eip-741"><problem id="eip-523">
+  <para id="eip-816">Can the equilibrium vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> be found without raising the transition matrix to large powers?</para>
+</problem>
+
+<solution id="eip-808">
+<para id="id1169457685968">The answer to the second question provides us with a way to find the equilibrium vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id1169457489145">The answer lies in the fact that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id2764938">Since we have the matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math>, we can determine <m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> from the statement 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id1169473751116">  Suppose 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>e</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>e</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E= left [ matrix {
+e {} # 1 - e{}
+}  right ]} {}</m:annotation></m:semantics></m:math>, then 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math> gives us</para>
+    <equation id="eip-id1169437308548">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>e</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>e</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>e</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>e</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+e {} # 1 - e{}
+}  right ] left [ matrix {
+ "." "60" {} #  "." "40" {} ##
+ "." "30" {} #  "." "70"{}
+}  right ]= left [ matrix {
+e {} # 1 - e{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <equation id="eip-id1169445068887">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext></m:mrow></m:mfenced><m:mrow><m:mi>e</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>30</m:mtext><m:mfenced open="(" close=")"><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>e</m:mi></m:mrow></m:mfenced><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext></m:mrow></m:mfenced><m:mrow><m:mi>e</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>70</m:mtext><m:mfenced open="(" close=")"><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>e</m:mi></m:mrow></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>e</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>e</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ left ( "." "60" right )e+ "." "30" left (1 - e right ) {} #  left ( "." "40" right )e+ "." "70" left (1 - e right ){}
+}  right ]= left [ matrix {
+e {} # 1 - e{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <equation id="eip-id1169443018910">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow><m:mi>e</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>30</m:mtext><m:mrow><m:mi>e</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>e</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>e</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "30"e+ "." "30" {} #  -  "." "30"e+ "." "70"{}
+}  right ]= left [ matrix {
+e {} # 1 - e{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <equation id="eip-id1169450328036">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow><m:mi>e</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>.</m:mtext></m:mrow><m:mrow><m:mtext>30</m:mtext><m:mo stretchy="false">=</m:mo><m:mi>e</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "30"e+ "." "30"=e} {}</m:annotation></m:semantics></m:math></equation>
+    <equation id="eip-id1169425995476">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>e</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{e=3/7} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169453342508">  Therefore, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E= left [ matrix {
+3/7 {} # 4/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+</solution>
+</exercise></example>
+<example id="eip-id3637233">
+<exercise id="eip-55"><problem id="eip-271">
+  <para id="eip-913">Does the long term market share for a Markov chain depend on the initial market share?</para>
+</problem>
+
+<solution id="eip-475">
+<para id="id2101826">We will show that the final market share distribution for a Markov chain does not depend upon the initial market share. In fact, one does not even need to know the initial market share distribution to find the long term distribution. Furthermore, the final market share distribution can be found by simply raising the transition matrix to higher powers. </para>
+    <para id="id1169458650023">  Consider the initial market share 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>80</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "20" {} #  "." "80"{}
+}  right ]} {}</m:annotation></m:semantics></m:math>, and the transition matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>T</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T= left [ matrix {
+ "." "60" {} #  "." "40" {} ##
+ "." "30" {} #  "." "70"{}
+}  right ]} {}</m:annotation></m:semantics></m:math> for Mama Bell and Papa Bell in the above example. Recall we found 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{n} } } {}</m:annotation></m:semantics></m:math>, for very large 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{n} {}</m:annotation></m:semantics></m:math>, to be 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+3/7 {} # 4/7 {} ##
+3/7 {} # 4/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math> . </para>
+    <para id="id1169459607600">  Clearly,  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>80</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "20" {} #  "." "80"{}
+}  right ] left [ matrix {
+3/7 {} # 4/7 {} ##
+3/7 {} # 4/7{}
+}  right ]= left [ matrix {
+3/7 {} # 4/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+    <para id="id1169453629072">  No matter what the initial market share, the product is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+3/7 {} # 4/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math> . </para>
+    <para id="id1169470469001">If the initial share is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>10</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>90</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "10" {} #  "." "90"{}
+}  right ]} {}</m:annotation></m:semantics></m:math>, then </para>
+    <equation id="eip-id1171733352833">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>10</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>90</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "10" {} #  "." "90"{}
+}  right ] left [ matrix {
+3/7 {} # 4/7 {} ##
+3/7 {} # 4/7{}
+}  right ]= left [ matrix {
+3/7 {} # 4/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169460196636">For any distribution 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>a</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>a</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A= left [ matrix {
+a {} # 1 - a{}
+}  right ]} {}</m:annotation></m:semantics></m:math>, for example, </para>
+    <equation id="eip-id1171766976873"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>a</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>a</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mi>a</m:mi></m:mfenced><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>a</m:mi></m:mrow></m:mfenced><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mi>a</m:mi></m:mfenced><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>a</m:mi></m:mrow></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+a {} # 1 - a{}
+}  right ] left [ matrix {
+3/7 {} # 4/7 {} ##
+3/7 {} # 4/7{}
+}  right ]= left [ matrix {
+3/7 left (a right )+3/7 left (1 - a right ) {} # 4/7 left (a right )+4/7 left (1 - a right ){}
+}  right ]= left [ matrix {
+3/7 {} # 4/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169458349267">It makes sense, because the entry 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow><m:mrow><m:mo>(</m:mo><m:mi>a</m:mi><m:mo>)</m:mo><m:mo stretchy="false">+</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>a</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/7 left (a+3/7 left (1 - a right ) right )} {}</m:annotation></m:semantics></m:math>, for example, will always equal 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/7} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id1169454763187">Just as the sum of the parts equals the whole, the sum of the parts of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/7} {}</m:annotation></m:semantics></m:math> equals 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/7} {}</m:annotation></m:semantics></m:math>. </para>
+</solution>
+</exercise></example>
+
+<example id="fs-id1170226101887">
+        <exercise id="id1167065121090">
+          <problem id="oo-id1167075349182">
+            <para id="id1167072963276">Three companies, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math>, compete against each other. The transition matrix T for people switching each month among them is given by the following transition matrix.</para>
+<figure id="id1167071617838"><media id="id1167071617838_media" alt="This matrix depict the flow of people between company A, B, and C.">
+              <image mime-type="image/png" src="../../media/graphics7-581e.png" id="id1167071617838__onlineimage" height="172" width="650" print-width="3in"/>
+            </media>
+          </figure>
+<para id="id1167077075516">If the initial market share for the companies 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math> is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>25</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>35</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "25" {} #  "." "35" {} #  "." "40"{}
+}  right ]} {}</m:annotation></m:semantics></m:math> , what is the long term distribution? </para>
+          </problem>
+        
+          <solution id="oo-id1167060965422">
+            <para id="id8154608">Since the long term market share does not depend on the initial market share, we can simply raise the transition market share to a large power and get the distribution.</para>
+            <equation id="fs-id1170228137583">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>20</m:mtext></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mtext>13</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>55</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>11</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mtext>27</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>55</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{"20"} } = left [ matrix {
+"13"/"55" {} # 3/"11" {} # "27"/"55"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          </solution>
+        </exercise>
+</example>
+
+        <para id="id1167073083270">We summarize as follows: </para>
+        <para id="eip-940"><title>Regular Markov Chains</title>A Markov chain is said to be a Regular Markov chain if some power of it has only positive entries. <newline/>
+Let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math> be a transition matrix for a regular Markov chain.<newline/>
+        <list id="eip-id1171366775347" list-type="enumerated" number-style="arabic">
+          <item>As we take higher powers of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{n} } } {}</m:annotation></m:semantics></m:math>, as n becomes large, approaches a state of equilibrium.</item>
+          <item>If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M} {}</m:annotation></m:semantics></m:math> is any distribution vector, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> an equilibrium vector, then 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>MT</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "MT" rSup { size 8{n} } =E} {}</m:annotation></m:semantics></m:math>.</item>
+          <item>Each row of the equilibrium matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSup { size 8{n} } } {}</m:annotation></m:semantics></m:math> is a unique equilibrium vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> such that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math>.</item>
+          <item>The equilibrium distribution vector 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> can be found by letting
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ET</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mi>E</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ET"=E} {}</m:annotation></m:semantics></m:math>.</item>
+        </list>
+</para>
+      </section>
+    </section>
+    <section id="id1167074493840"><title>Absorbing Markov Chains</title><para id="id1167070975187">In this section, we will study a type of Markov chain in which when a certain state is reached, it is impossible to leave that state. Such states are called <emphasis effect="bold">absorbing states</emphasis>, and a Markov Chain that has at least one such state is called an <emphasis effect="bold">Absorbing Markov chain</emphasis>. Suppose you have the following transition matrix.</para>
+      <para id="id1167066922317">
+        <figure id="id1167074056538"><media id="id1167074056538_media" alt="This matrix depicts the probability of moving from one sate to the other.">
+            <image mime-type="image/png" src="../../media/graphics8-219e.png" id="id1167074056538__onlineimage" height="161" width="347" print-width="1.5in"/>
+          </media>
+        </figure>
+      </para>
+      <para id="id1167080018584">The state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>S</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> is an absorbing state, because the probability of moving from state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>S</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> to state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>S</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> is 1. Which is another way of saying that if you are in state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>S</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>, you will remain in state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>S</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>.</para>
+      <para id="id1167072271020">In fact, this is the way to identify an absorbing state. If the probability in row i and column i , 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>p</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ii</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{p rSub { size 8{ ital "ii"} } } {}</m:annotation></m:semantics></m:math>, is 1, then state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>S</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S rSub { size 8{i} } } {}</m:annotation></m:semantics></m:math> is an absorbing state. </para>
+      <para id="id1167064617132">We begin with an application of absorbing Markov chains to the gambler's ruin problem.</para>
+      
+      <example id="eip-id8738830"><title>Gambler's Ruin Problem</title><exercise id="id1687360"><problem id="oo-id1167072938675">
+          <para id="id1167067223670">A gambler has $3,000, and she decides to gamble $1,000 at a time at a Black Jack table in a casino in Las Vegas. She has told herself that she will continue playing until she goes broke or has $5,000. Her probability of winning at Black Jack is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "40"} {}</m:annotation></m:semantics></m:math>. Write the transition matrix, identify the absorbing states, find the solution matrix, and determine the probability that the gambler will be financially ruined at a stage when she has $2,000. </para>
+        </problem>
+        <solution id="oo-id1167072848759">
+          <para id="id1167069862315">The transition matrix is written below. Clearly the state 0 and state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>5K</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5K} {}</m:annotation></m:semantics></m:math> are the absorbing states. This makes sense because as soon as the gambler reaches 0, she is financially ruined and the game is over. Similarly, if the gambler reaches $5,000, she has promised herself to quit and, again, the game is over. The reader should note that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>p</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>00</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{p rSub { size 8{"00"} } =1} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>p</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>55</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{p rSub { size 8{"55"} } =1} {}</m:annotation></m:semantics></m:math>. </para>
+          <para id="id1167077368952">Further observe that since the gambler bets only $1,000 at a time, she can raise or lower her money only by $1,000 at a time. In other words, if she has $2,000 now, after the next bet she can have $3,000 with a probability of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>40</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "40"} {}</m:annotation></m:semantics></m:math> and $1,000 with a probability of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>60</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "60"} {}</m:annotation></m:semantics></m:math>.</para>
+
+<figure id="id1167061489889"><media id="id1167061489889_media" alt="The matrix depicts the probability of winning a thousand dollars gambling per every thousand dollars won.">
+          <image mime-type="image/png" src="../../media/graphics9-7a75.png" id="id1167061489889__onlineimage" height="253" width="365" print-width="2in"/>
+        </media>
+      </figure>
+
+<para id="eip-id1170653708125">To determine the long term trend, we raise the matrix to higher powers until all the non- absorbing states are absorbed. This is the called the <emphasis effect="bold">solution matrix</emphasis>.</para>
+
+<figure id="id1167065802064"><media id="id1167065802064_media" alt="The matrix depicts the probability of winning a thousand dollars gambling per every thousand dollars won.">
+          <image mime-type="image/png" src="../../media/graphics10-8b02.png" id="id1167065802064__onlineimage" height="301" width="642" print-width="4in"/>
+        </media>
+      </figure>
+
+<para id="eip-id1170500615903">The solution matrix is often written in the following form, where the non-absorbing states are written as rows on the side, and the absorbing states as columns on the top.</para>
+
+<figure id="id1167070608162"><media id="id1167070608162_media" alt="The matrix depicts the probability of winning either zero dollars or five thousand dollars.">
+          <image mime-type="image/png" src="../../media/graphics11-50cc.png" id="id1167070608162__onlineimage" height="181" width="283" print-width="2.5in"/>
+        </media>
+      </figure>
+
+<para id="id1167066730769">The table lists the probabilities of getting absorbed in state 0 or state 5K starting from any of the four non-absorbing states. For example, if at any instance the gambler has $3,000, then her probability of financial ruin is 135/211.  </para>
+
+        </solution>
+      </exercise>
+</example>
+      
+     
+      
+      
+      
+      
+      <example id="eip-id1167608638822"><exercise id="id1167066109154"><problem id="oo-id1167077836548">
+          <para id="id1167066858539">Solve the Gambler's Ruin Problem of <link target-id="eip-id8738830"/> without raising the matrix to higher powers, and determine the number of bets the gambler makes before the game is over.</para>
+        </problem>
+        <solution id="oo-id1167062103401">
+          <para id="id1167068016620">In solving absorbing states, it is often convenient to rearrange the matrix so that the rows and columns corresponding to the absorbing states are listed first. This is called the <emphasis effect="bold">Canonical form</emphasis>. The transition matrix of <link target-id="eip-id8738830"/> in the canonical form is listed below.</para>
+
+<para id="id1167064620844">
+        <figure id="id1167060363336"><media id="id1167060363336_media" alt="The matrix depicts the probability of winning a thousand dollars gambling per every thousand dollars won.">
+            <image mime-type="image/png" src="../../media/graphics12-f9e8.png" id="id1167060363336__onlineimage" height="253" width="349" print-width="2in"/>
+          </media>
+        </figure>
+      </para>
+
+<para id="eip-id1171029459107">The canonical form divides the transition matrix into four sub-matrices as listed below.</para>
+
+<figure id="id1167068350210"><media id="id1167068350210_media" alt="The matrix shows the absorbing and non-absorbing states of the previous matrix.">
+          <image mime-type="image/png" src="../../media/graphics13-c908.png" id="id1167068350210__onlineimage" height="108" width="561" print-width="2.5in"/>
+        </media>
+      </figure>
+
+<para id="eip-id1171029396646">The matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mfenced open="(" close=")"><m:mrow><m:msub><m:mn>1</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi>B</m:mi></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F= left (1 rSub { size 8{n} }  - B right ) rSup { size 8{ - 1} } } {}</m:annotation></m:semantics></m:math> is called the fundamental matrix for the absorbing Markov chain, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{n} } } {}</m:annotation></m:semantics></m:math> is an identity matrix of the same size as 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math>. The 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>j</m:mi><m:mo stretchy="false">−</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{j -  ital "th"} {}</m:annotation></m:semantics></m:math> entry of this matrix tells us the average number of times the process is in the non-absorbing state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{j} {}</m:annotation></m:semantics></m:math> before absorption if it started in the non-absorbing state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i} {}</m:annotation></m:semantics></m:math>. The matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> for our problem is listed below.</para>
+
+<para id="id1167067548547">
+        <figure id="id1167065801456"><media id="id1167065801456_media" alt="This Fundamental matrix shows the average game played before absorption.">
+            <image mime-type="image/png" src="../../media/graphics14-d7f5.png" id="id1167065801456__onlineimage" height="181" width="496" print-width="2.5in"/>
+          </media>
+        </figure>
+      </para>
+
+
+<para id="id1169459732410">The Fundamental matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> helps us determine the average number of games played before absorption.</para>
+    <para id="id1909588">According to the matrix, the entry 1.78 in the row 3, column 2 position says that the gambler will play the game 1.78 times before she goes from $3K to $2K. The entry 2.25 in row 3, column 3 says that if the gambler now has $3K, she will have $3K on the average 2.25 times before the game is over. </para>
+    <para id="id1169461734752">We now address the question of how many bets will she have to make before she is absorbed, if the gambler begins with $3K?</para>
+    <para id="id1169474474455">If we add the number of games the gambler plays in each non-absorbing state, we get the average number of games before absorption from that state. Therefore, if the gambler starts with $3K, the average number of Black Jack games she will play before absorption is</para>
+    <equation id="eip-id1169468530983"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mrow><m:mtext>07</m:mtext><m:mo stretchy="false">+</m:mo><m:mn>1</m:mn></m:mrow><m:mtext>.</m:mtext><m:mrow><m:mtext>78</m:mtext><m:mo stretchy="false">+</m:mo><m:mn>2</m:mn></m:mrow><m:mtext>.</m:mtext><m:mrow><m:mtext>25</m:mtext><m:mo stretchy="false">+</m:mo><m:mtext>.</m:mtext></m:mrow><m:mrow><m:mtext>90</m:mtext><m:mo stretchy="false">=</m:mo><m:mn>6</m:mn></m:mrow><m:mtext>.</m:mtext><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." "07"+1 "." "78"+2 "." "25"+ "." "90"=6 "." 0} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169457620884">That is, we expect the gambler will either have $5,000 or nothing on the 7th bet.</para>
+    <para id="id1169461460560">Lastly, we find the solution matrix without raising the transition matrix to higher powers. </para>
+    <para id="id1169470173838">The matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>FA</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "FA"} {}</m:annotation></m:semantics></m:math> gives us the solution matrix.</para>
+    <equation id="eip-id7125993">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>FA</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>54</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>90</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>47</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>19</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>35</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>2</m:mn><m:mtext>.</m:mtext><m:mtext>25</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>18</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>47</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>07</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>78</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>2</m:mn><m:mtext>.</m:mtext><m:mtext>25</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>90</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>64</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>07</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>35</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>54</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>92</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>08</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>81</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>19</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>64</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>36</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>38</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>62</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "FA"= left [ matrix {
+1 "." "54" {} #  "." "90" {} #  "." "47" {} #  "." "19" {} ##
+1 "." "35" {} # 2 "." "25" {} # 1 "." "18" {} #  "." "47" {} ##
+1 "." "07" {} # 1 "." "78" {} # 2 "." "25" {} #  "." "90" {} ##
+ "." "64" {} # 1 "." "07" {} # 1 "." "35" {} # 1 "." "54"{}
+}  right ] left [ matrix {
+ "." 6 {} # 0 {} ##
+0 {} # 0 {} ##
+0 {} # 0 {} ##
+0 {} #  "." 4{}
+}  right ]= left [ matrix {
+ "." "92" {} #  "." "08" {} ##
+ "." "81" {} #  "." "19" {} ##
+ "." "64" {} #  "." "36" {} ##
+ "." "38" {} #  "." "62"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1169466706424">Which is the same as the following matrix we obtained by raising the transition matrix to higher powers.  </para>
+    <figure id="id1169457112277"><media id="id1169457112277_media" alt="">
+        <image mime-type="image/png" src="../../media/Picture 120.png" id="id1169457112277__onlineimage" height="234" width="300" print-width="2in"/>
+      </media>
+    </figure>
+
+        </solution>
+      </exercise>
+  </example>    
+      
+      <para id="id1167068389394">   We summarize as follows:</para>
+   <para id="eip-535"><title>Absorbing Markov Chains</title><list id="eip-id1167793261135" list-type="enumerated" number-style="arabic"><item>A Markov chain is an absorbing Markov chain if it has at least one absorbing state. A state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i} {}</m:annotation></m:semantics></m:math> is an absorbing state if once the system reaches state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i} {}</m:annotation></m:semantics></m:math>, it stays in that state; that is, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>p</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ii</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{p rSub { size 8{ ital "ii"} } =1} {}</m:annotation></m:semantics></m:math>.</item>
+        <item>If a transition matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>T</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T} {}</m:annotation></m:semantics></m:math> for an absorbing Markov chain is raised to higher powers, it reaches an absorbing state called the solution matrix and stays there. The 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>j</m:mi><m:mo stretchy="false">−</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{j -  ital "th"} {}</m:annotation></m:semantics></m:math> entry of this matrix gives the probability of absorption in state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{j} {}</m:annotation></m:semantics></m:math> while starting in state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i} {}</m:annotation></m:semantics></m:math>.</item>
+        <item>Alternately, the solution matrix can be found in the following manner.<list id="eip-id2569373" list-type="enumerated" number-style="lower-alpha"><item>Express the transition matrix in the canonical form as below.<equation id="eip-id1167807010884">
+        <m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>T</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfenced open="[" close="]">
+                      <m:mtable>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>I</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mi>n</m:mi>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                        <m:mtr>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mi>A</m:mi>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                          <m:mtd>
+                            <m:mrow>
+                              <m:mi>B</m:mi>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mtd>
+                        </m:mtr>
+                      </m:mtable>
+                    </m:mfenced>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{T= left [ matrix {
+I rSub { size 8{n} }  {} # 0 {} ##
+A {} # B{}
+}  right ]} {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </equation>
+<newline/>where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{n} } } {}</m:annotation></m:semantics></m:math> is an identity matrix, and 0 is a matrix of all zeros.</item>
+<item>The fundamental matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">−</m:mo><m:mi>B</m:mi></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F= left (I - B right ) rSup { size 8{ - 1} } } {}</m:annotation></m:semantics></m:math>. The fundamental matrix helps us find the number of games played before absorption.</item>
+<item><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>FA</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "FA"} {}</m:annotation></m:semantics></m:math> is the solution matrix, whose 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>j</m:mi><m:mo stretchy="false">−</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{j -  ital "th"} {}</m:annotation></m:semantics></m:math> entry gives the probability of absorption in state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{j} {}</m:annotation></m:semantics></m:math> while starting in state 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i} {}</m:annotation></m:semantics></m:math>.</item>
+
+</list></item>
+<item>The sum of the entries of a row of the fundamental matrix gives us the expected number of steps before absorption for the non-absorbing state associated with that row.</item>
+      </list></para>
+    </section>
+  </content>
+</document>

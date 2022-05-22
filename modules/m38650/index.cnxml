@@ -1,0 +1,269 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Linear Programming: A Geometrical Approach: Homework</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38650</md:content-id>
+  <md:title>Linear Programming: A Geometrical Approach: Homework</md:title>
+  <md:abstract>This chapter covers principles of a geometrical approach to linear programming. After completing this chapter students should be able to: solve linear programming problems that maximize the objective function and solve linear programming problems that minimize the objective function.</md:abstract>
+  <md:uuid>36fd21e2-6549-44f7-b688-b1b08236ae5c</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="HWChapter3.doc" strength="3">Download Chapter 3 Homework</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1168072840287">
+      <title>MAXIMIZATION APPLICATIONS</title>
+      <para id="id1168077431559">For the following maximization problems, choose your variables, write the objective function and the constraints, graph the constraints, shade the feasibility region, label all critical points, and determine the solution that optimizes the objective function.</para>
+      <exercise id="id1168070261719">
+        <problem id="oo-id4797122">
+          <para id="id1168073080535">A farmer has 100 acres of land on which she plans to grow wheat and corn. Each acre of wheat requires 4 hours of labor and $20 of capital, and each acre of corn requires 16 hours of labor and $40 of capital. The farmer has at most 800 hours of labor and $2400 of capital available. If the profit from an acre of wheat is $80 and from an acre of corn is $100, how many acres of each crop should she plant to maximize her profit? </para>
+        </problem>
+        <solution id="oo-id1168083323756">
+          <para id="id1168071981766">80 acres of wheat and 20 acres of corn should be planted to maximize profit to $8,400</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168072813074">
+        <problem id="oo-id1168082382675">
+          <para id="id7561032">Mr. Tran has $24,000 to invest, some in bonds and the rest in stocks. He has decided that the money invested in bonds must be at least twice as much as that in stocks. But the money invested in bonds must not be greater than $18,000. If the bonds earn 6%, and the stocks earn 8%, how much money should he invest in each to maximize profit? </para>
+        </problem>
+      </exercise>
+    
+      <exercise id="id1168074505779">
+        <problem id="oo-id1168071061477">
+          <para id="id1168071763672">A factory manufactures chairs and tables, each requiring the use of three operations: Cutting, Assembly, and Finishing. The first operation can be used at most 40 hours; the second at most 42 hours; and the third at most 25 hours. A chair requires 1 hour of cutting, 2 hours of assembly, and 1 hour of finishing; a table needs 2 hours of cutting, 1 hour of assembly, and 1 hour of finishing. If the profit is $20 per unit for a chair and $30 for a table, how many units of each should be manufactured to maximize revenue? </para>
+        </problem>
+        <solution id="oo-id1168072419850">
+          <para id="id1168076580015">10 chairs and 15 tables should be manufactured to maximize profit to $650.</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168073277870">
+        <problem id="oo-id1168072276108">
+          <para id="id1168071677771">The Silly Nut Company makes two mixtures of nuts: Mixture A and Mixture B. A pound of Mixture A contains 12 oz of peanuts, 3 oz of almonds and 1 oz of cashews and sells for $4. A pound of Mixture B contains 12 oz of peanuts, 2 oz of almonds and 2 oz of cashews and sells for $5. The company has 1080 lb. of peanuts, 240 lb. of almonds, 160 lb. of cashews. How many pounds of each of mixtures A and B should the company make to maximize profit?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1168075574365">
+      <title>MINIMIZATION APPLICATIONS</title>
+      <para id="id1168073270912">For each of the following minimization problems, choose your variables, write the objective function and the constraints, graph the constraints, shade the feasibility region, label all critical points, and determine the solution that optimizes the objective function.</para>
+      <exercise id="id1168071119826">
+        <problem id="oo-id1168071187048">
+          <para id="id1168074822961">A diet is to contain at least 2400 units of vitamins, 1800 units of minerals, and 1200 calories. Two foods, Food A and Food B are to be purchased. Each unit of Food A provides 50 units of vitamins, 30 units of minerals, and 10 calories. Each unit of Food B provides 20 units of vitamins, 20 units of minerals, and 40 calories. If Food A costs $2 per unit and Food B cost $1 per unit, how many units of each food should be purchased to keep costs at a minimum?</para>
+        </problem>
+        <solution id="oo-id1168071262184">
+          <para id="id1168070409947">30 units of Food A and 45 units of Food B should be purchased to keep costs at a minimum of $105.</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168070348148">
+        <problem id="oo-id1168074295830">
+          <para id="id1168077120165">A computer store sells two types of computers, desktops and laptops. The supplier demands that at least 150 computers be sold a month. In order to keep profits up, the number of desktops sold must be at least twice of laptops. The store pays its sales staff a $75 commission for each desk top, and a $50 commission for each lap top. How many of each type of computers must be sold to minimize commission to its sales people? What is the minimum commission?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1168071127366">
+        <problem id="oo-id1168073112711">
+          <para id="id1168075869470">An oil company has two refineries. Each day, Refinery A produces 200 barrels of high-grade oil, 300 barrels of medium-grade oil, and 200 barrels of low-grade oil and costs $12,000 to operate. Each day, Refinery B produces 100 barrels of high-grade oil, 100 barrels of medium-grade oil, and 200 barrels of low-grade oil and costs $10,000 to operate. The company must produce at least 800 barrels of high-grade oil, 900 barrels of medium-grade oil, and 1,000 barrels of low-grade oil. How many days should each refinery be operated to meet the goals at a minimum cost? </para>
+        </problem>
+        <solution id="oo-id4708528">
+          <para id="id1168078027560">Cost: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>12</m:mtext></m:mrow><m:mi>,</m:mi><m:mtext>000</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>10</m:mtext></m:mrow><m:mi>,</m:mi><m:mtext>000</m:mtext><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C="12","000"x+"10","000"y} {}</m:annotation></m:semantics></m:math></para>
+          <list id="fs-id1164456640502" list-type="enumerated" number-style="upper-roman"><item>
+          <para id="id4884721"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>200</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>100</m:mtext></m:mrow><m:mi>y</m:mi><m:mo>≥</m:mo><m:mtext>800</m:mtext><m:mspace width="4px"/><m:mtext> high-grade oil</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"200"x+"100"y"800"" high-grade oil"} {}</m:annotation></m:semantics></m:math></para></item>
+         <item> <para id="id1168078041878"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>300</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>100</m:mtext></m:mrow><m:mi>y</m:mi><m:mo>≥</m:mo><m:mtext>900</m:mtext><m:mspace width="4px"/><m:mtext> medium-grade oil</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"300"x+"100"y"900"" medium-grade oil"} {}</m:annotation></m:semantics></m:math></para></item>
+          <item><para id="id1168071131252">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>200</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>200</m:mtext></m:mrow><m:mi>y</m:mi><m:mo>≥</m:mo><m:mtext>1000</m:mtext><m:mspace width="4px"/><m:mtext> low-grade oil</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"200"x+"200"y"1000"" low-grade oil"} {}</m:annotation></m:semantics></m:math></para><para id="eip-261">Refinery A should be operated for 3 days, while Refinery B should be operated for 2 days 	to keep a minimum cost of $56,000.</para></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1168073293110">
+        <problem id="oo-id1168072910231">
+          <para id="id1168072853536">A print shop at a community college in Cupertino, California, employs two different contractors to maintain its copying machines. The print shop needs to have 12 IBM, 18 Xerox, and 20 Canon copying machines serviced. Contractor A can repair 2 IBM, 1 Xerox, and 2 Canon machines at a cost of $800 per month, while Contractor B can repair 1 IBM, 3 Xerox, and 2 Canon machines at a cost of $1000 per month. How many months should each of the two contractors be employed to minimize the cost?   </para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1168078253840">
+      <title>CHAPTER REVIEW</title>
+      <para id="id1168071534315">Solve the following linear programming problems by the graphical method. </para>
+      <exercise id="id1168071711313">
+        <problem id="oo-id1168073766783">
+          <para id="id1168071491127">Mr. Shoemacher has $20,000 to invest in two types of mutual funds, Coleman High-yield Fund, and Coleman Equity Fund. The High-yield fund gives an annual yield of 12%, while the Equity fund earns 8%. Mr. Shoemacher would like to invest at least $3000 in the High-yield fund and at least $4000 in the Equity fund. How much money should he invest in each to maximize his annual yield, and what is the maximum yield? </para>
+        </problem>
+        <solution id="oo-id1168071496173">
+          <para id="id1168071691419">(16000, 4000); $2240</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168073466110">
+        <problem id="oo-id1168073280345">
+          <para id="id1168071125452">Dr. Lum teaches part-time at two different community colleges, Hilltop College and Serra College. Dr. Lum can teach up to 5 classes per semester. For every class taught by him at Hilltop College, he needs to spend 3 hours per week preparing lessons and grading papers, and for each class at Serra College, he must do 4 hours of work per week. He has determined that he cannot spend more than 18 hours per week preparing lessons and grading papers. If he earns $4,000 per class at Hilltop College and $5,000 per class at Serra College, how many classes should he teach at each college to maximize his income, and what will be his income?</para>
+        </problem>
+        <solution id="oo-id2033420">
+          <para id="id1168073254578">(2, 3); $23,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168071459573">
+        <problem id="oo-id1168077722336">
+          <para id="id1168071888089">Mr. Shamir employs two part-time typists, Inna and Jim for his typing needs. Inna charges $10 an hour and can type 6 pages an hour, while Jim charges $12 an hour and can type 8 pages per hour. Each typist must be employed at least 8 hours per week to keep them on the payroll. If Mr. Shamir has at least 208 pages to be typed, how many hours per week should he employ each student to minimize his typing costs, and what will be the total cost?</para>
+        </problem>
+        <solution id="oo-id1168077830912">
+          <para id="id1168070271021">(8, 20); $320</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168071441147">
+        <problem id="oo-id2357331">
+          <para id="id1168077732477">Mr. Boutros wants to invest up to $20,000 in two stocks, Cal Computers and Texas Tools. The Cal Computers stock is expected to yield a 16% annual return, while the Texas Tools stock promises a 12% yield. Mr. Boutros would like to earn at least $2,880 this year. According to Value Line Magazine's safety index (1 highest to 5 lowest), Cal Computers has a safety number of 3 and Texas Tools has a safety number of 2. How much money should he invest in each to minimize the safety number? Note: A lower safety number means less risk.</para>
+        </problem>
+        <solution id="oo-id1168070363402">
+          <para id="id1168078155910">(12000, 8000)</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168072841505">
+        <problem id="oo-id1168070410469">
+          <para id="id1168073224957">A department store sells two types of televisions: Regular and Big Screen. The store can sell up to 90 sets a month. A Regular television requires 6 cubic feet of storage space, and a Big Screen television requires 18 cubic feet of space, and a maximum of 1080 cubic feet of storage space is available. The Regular and Big Screen televisions take up, respectively, 2 and 3 sales hours of labor, and a maximum of 198 hours of labor is available. If the profit made from each of these types is $60 and $80, respectively, how many of each type of television should be sold to maximize profit, and what is the maximum profit?  </para>
+        </problem>
+        <solution id="oo-id2205613">
+          <para id="id7148435">(72, 180); $5760</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168073264065">
+        <problem id="oo-id1168071024796">
+          <para id="id7300648">A company manufactures two types of printers, the Inkjet and the Laser. The Inkjet generates a profit of $100 per printer and the Laser a profit of $150. On the assembly line the Inkjet requires 7 hours, while the Laser takes 11 hours. Both printers require one hour for testing. The Inkjet requires one hour and the Laser needs 3 hours for finishing. On a particular production run the company has available 1,540 work hours on the assembly line, 200 work hours in the testing department, and 360 work hours for finishing. How many sets of each type should the company produce to maximize profit, and what is that maximum profit? </para>
+        </problem>
+        <solution id="oo-id1168078915974">
+          <para id="id1168071966807">(165, 35); $21,750  </para>
+        </solution>
+      </exercise>
+      <exercise id="id1168075882164">
+        <problem id="oo-id1168072222724">
+          <para id="id1168071551967">John wishes to choose a combination of two types of cereals for breakfast - Cereal A and Cereal B. A small box(one serving) of Cereal A costs $0.50 and contains 10 units of vitamins, 5 units of minerals, and 15 calories. A small box(one serving) of Cereal B costs $0.40 and contains 5 units of vitamins, 10 units of minerals, and 15 calories. John wants to buy enough boxes to have at least 500 units of vitamins, 600 units of minerals, and 1200 calories. How many boxes of each food should he buy to minimize his cost, and what is the minimum cost?</para>
+        </problem>
+        <solution id="oo-id1168080101326">
+          <para id="id1168076501921">(20, 60); $34</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168071509839">
+        <problem id="oo-id1168073114799">
+          <para id="id1168071057450">Jessica needs at least 60 units of vitamin A, 40 units of vitamin B, and 140 units of vitamin C each week. She can choose between Costless brand or Savemore brand tablets. A Costless tablet costs 5 cents and contains 3 units of vitamin A, 1 unit of vitamin B, and 2 units of vitamin C, and a Savemore tablet costs 7 cents and contains 1 unit of A, 1 of B, and 5 of C. How many tablets of each kind should she buy to minimize cost, and what is the minimum cost?</para>
+        </problem>
+        <solution id="oo-id1168072224058">
+          <para id="id1168072093318">(20, 20); $2.40 </para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1168071474653">
+        <problem id="oo-id1168071961065">
+          <para id="id1168072867294">A small company manufactures two types of radios- regular and short-wave. The manufacturing of each radio requires three operations: Assembly, Finishing and Testing. The regular radios require 1 hour of Assembly, 3 hours of Finishing, and 1 hour of Testing. The short-wave radios require 3 hours of Assembly, 1 hour of Finishing, and 1 hour of Testing. The total work-hours available per week in the Assembly division is 60, in the Finishing division is 60, and in the Testing is 24. If a profit of $50 is realized for every regular radio, and $75 for every short-wave radio, how many of each should be manufactured to maximize profit, and what is the maximum profit? </para>
+        </problem>
+        <solution id="oo-id1168075785994">
+          <para id="id1168076503758">(6, 18); $1650</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168071588800">
+        <problem id="oo-id1168071583058">
+          <para id="id1168072014187">A factory manufactures two products, A and B. Each product requires the use of three machines, Machine I, Machine II, and Machine III. The time requirements and total hours available on each machine are listed below.</para>
+       
+      <table id="id1168072029716" summary="A 4x4 table showing the total number of hours needed to produce products A and B as well as the hours needed by each of the three machines.">
+<tgroup cols="4"><colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <tbody>
+            <row>
+              <entry/>
+              <entry>Machine I</entry>
+              <entry>Machine II</entry>
+              <entry>Machine III</entry>
+            </row>
+            <row>
+              <entry>Product A</entry>
+              <entry>1</entry>
+              <entry>2</entry>
+              <entry>4</entry>
+            </row>
+            <row>
+              <entry>Product B</entry>
+              <entry>2</entry>
+              <entry>2</entry>
+              <entry>2</entry>
+            </row>
+            <row>
+              <entry>Total hours</entry>
+              <entry>70</entry>
+              <entry>90</entry>
+              <entry>160</entry>
+            </row>
+          </tbody>
+        
+</tgroup>
+</table>
+      
+          <para id="id1168071289932"> If product A generates a profit of $60 per unit and product B a profit of $50 per unit, how many units of each product should be manufactured to maximize profit, and what is the maximum profit?</para>
+        </problem>
+        <solution id="oo-id1168073615120">
+          <para id="id1168071511231">(35, 100); $2600</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1168072113908">
+        <problem id="oo-id1168075850084">
+          <para id="id1168074561820">A company produces three types of shoes, formal, casual, and athletic, at its two factories, Factory I and Factory II. Daily production of each factory for each type of shoe is listed below. </para>
+       
+      <table id="id1168075989422" summary="A 4x3 table showing the daily production of three types of shoes at two different factories.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <tbody>
+            <row>
+              <entry/>
+              <entry>Factory I</entry>
+              <entry>Factory II</entry>
+            </row>
+            <row>
+              <entry>Formal</entry>
+              <entry>100</entry>
+              <entry>100</entry>
+            </row>
+            <row>
+              <entry>Casual</entry>
+              <entry>100</entry>
+              <entry>200</entry>
+            </row>
+            <row>
+              <entry>Athletic</entry>
+              <entry>300</entry>
+              <entry>100</entry>
+            </row>
+          </tbody>
+        
+</tgroup>
+</table>
+     
+          <para id="id1168073217245"> The company must produce at least 6000 pairs of formal shoes, 8000 pairs of casual shoes, and 9000 pairs of athletic shoes. If the cost of operating Factory I is $1500 per day and the cost of operating Factory II is $2000, how many days should each factory operate to complete the order at a minimum cost, and what is the minimum cost?</para>
+        </problem>
+        <solution id="oo-id7555802">
+          <para id="id7390682">(40, 20); $100,000</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1168072802840">
+        <problem id="oo-id1168071971848">
+          <para id="id1168072167213">A professor gives two types of quizzes, objective and recall. He is planning to give at least 15 quizzes this quarter. The student preparation time for an objective quiz is 15 minutes and for a recall quiz 30 minutes. The professor would like a student to spend at least 5 hours (300 minutes) preparing for these quizzes above and beyond the normal study time. The average score on an objective quiz is 7, and on a recall type 5, and the professor would like the students to score at least 85 points on all quizzes. It takes the professor one minute to grade an objective quiz, and 1.5 minutes to grade a recall type quiz. How many of each type should he give in order to minimize his grading time?</para>
+        </problem>
+        <solution id="oo-id7413107">
+          <para id="id1168075469055">(10, 5): 17.5 minutes</para>
+        </solution>
+      </exercise>
+      <exercise id="id1168078452171">
+        <problem id="oo-id1168073711877">
+          <para id="id1168077696794">A company makes two mixtures of nuts: Mixture A and Mixture B. Mixture A contains 30% peanuts, 30% almonds and 40% cashews and sells for $5 per pound. Mixture B contains 30% peanuts, 60% almonds and 10% cashews and sells for $3 a pound. The company has 540 pounds of peanuts, 900 pounds of almonds, 480 pounds of cashews. How many pounds of each of mixtures A and B should the company make to maximize profit, and what is the maximum profit?</para>
+        </problem>
+        <solution id="oo-id1168075010976">
+          <para id="id1168077471475">(1000, 800); $7400</para>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+</document>

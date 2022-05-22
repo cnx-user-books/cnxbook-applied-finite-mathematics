@@ -1,0 +1,1670 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Probability: Homework</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38666</md:content-id>
+  <md:title>Probability: Homework</md:title>
+  <md:abstract>This chapter covers principles of probability. After completing this chapter students should be able to: write sample spaces; determine whether two events are mutually exclusive; use the addition rule; calculate probabilities using tree diagrams and combinations; solve problems involving conditional probability; determine whether two events are independent.</md:abstract>
+  <md:uuid>617c5f8f-6721-4c35-a51d-ab2bb1db044d</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="HWChapter7.doc" strength="3">Download Chapter 7 Homework</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1166128008728">
+      <title>SAMPLE SPACES AND PROBABILITY </title>
+      <para id="id1166116107037">In problems 1 - 6, write a sample space for the given experiment.</para>
+      <exercise id="id1166137935813">
+        <problem id="oo-id1166123040725">
+          <para id="id1166136236838">A die is rolled.</para>
+        </problem>
+        <solution id="oo-id1166122438041">
+          <equation id="fs-id1169875083045">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mn>1,2,3,4,5,6</m:mn></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace 1,2,3,4,5,6 right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166119854758">
+        <problem id="oo-id1166122657979">
+          <para id="id1166126994425">A penny and a nickel are tossed.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166115998690">
+        <problem id="oo-id1166134079728">
+          <para id="id1166116362016">A die is rolled, and a coin is tossed.  </para>
+        </problem>
+        <solution id="oo-id1166129234946">
+          <equation id="fs-id1169874344164">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mrow><m:mn>1H</m:mn><m:mi>,</m:mi><m:mn>2H</m:mn><m:mi>,</m:mi><m:mn>3H</m:mn><m:mi>,</m:mi><m:mn>4H</m:mn><m:mi>,</m:mi><m:mn>5H</m:mn><m:mi>,</m:mi><m:mn>6H</m:mn><m:mi>,</m:mi><m:mn>1T</m:mn><m:mi>,</m:mi><m:mn>2T</m:mn><m:mi>,</m:mi><m:mn>3T</m:mn><m:mi>,</m:mi><m:mn>4T</m:mn><m:mi>,</m:mi><m:mn>5T</m:mn><m:mi>,</m:mi><m:mn>6T</m:mn></m:mrow></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace 1H,2H,3H,4H,5H,6H,1T,2T,3T,4T,5T,6T right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id3798387">
+        <problem id="oo-id1166120613112">
+          <para id="id1166114052200">Three coins are tossed.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166136100611">
+        <problem id="oo-id1166138218219">
+          <para id="id1166137572480">Two dice are rolled. </para>
+        </problem>
+      <solution id="fs-id1169874495394">
+      <table id="id1166114069996" summary="">
+        <tgroup cols="7">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <colspec colnum="5" colname="c5"/>
+          <colspec colnum="6" colname="c6"/>
+          <colspec colnum="7" colname="c7"/>
+          <tbody>
+            <row>
+              <entry/>
+              <entry>1</entry>
+              <entry>2</entry>
+              <entry>3</entry>
+              <entry>4</entry>
+              <entry>5</entry>
+              <entry>6</entry>
+            </row>
+            <row>
+              <entry>1</entry>
+              <entry>(1, 1)</entry>
+              <entry>(1, 2)</entry>
+              <entry>(1, 3)</entry>
+              <entry>(1, 4)</entry>
+              <entry>(1, 5)</entry>
+              <entry>(1, 6)</entry>
+            </row>
+            <row>
+              <entry>2</entry>
+              <entry>(2, 1)</entry>
+              <entry>(2, 2)</entry>
+              <entry>(2, 3)</entry>
+              <entry>(2, 4)</entry>
+              <entry>(2, 5)</entry>
+              <entry>(2, 6)</entry>
+            </row>
+            <row>
+              <entry>3</entry>
+              <entry>(3, 1)</entry>
+              <entry>(3, 2)</entry>
+              <entry>(3, 3)</entry>
+              <entry>(3, 4)</entry>
+              <entry>(3, 5)</entry>
+              <entry>(3, 6)</entry>
+            </row>
+            <row>
+              <entry>4</entry>
+              <entry>(4, 1)</entry>
+              <entry>(4, 2)</entry>
+              <entry>(4, 3)</entry>
+              <entry>(4, 4)</entry>
+              <entry>(4, 5)</entry>
+              <entry>(4, 6)</entry>
+            </row>
+            <row>
+              <entry>5</entry>
+              <entry>(5, 1)</entry>
+              <entry>(5, 2)</entry>
+              <entry>(5, 3)</entry>
+              <entry>(5, 4)</entry>
+              <entry>(5, 5)</entry>
+              <entry>(5, 6)</entry>
+            </row>
+            <row>
+              <entry>6</entry>
+              <entry>(6, 1)</entry>
+              <entry>(6, 2)</entry>
+              <entry>(6, 3)</entry>
+              <entry>(6, 4)</entry>
+              <entry>(6, 5)</entry>
+              <entry>(6, 6)</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      </solution>
+      </exercise>
+      <exercise id="id1166124833146">
+        <problem id="oo-id1166136322041">
+          <para id="id1166136546908">A jar contains four marbles numbered 1, 2, 3, and 4. Two marbles are drawn.</para>
+        </problem>
+      </exercise>
+      <para id="id1166112610196">In problems 7 - 12, a card is selected from a deck. Find the following probabilities.</para>
+      <exercise id="id1166116438929">
+        <problem id="oo-id1166116943138">
+          <equation id="fs-id1169874453945">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>an ace</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("an ace" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166138358803">
+          <equation id="fs-id1169874939767">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>52</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4/"52"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1166130217288">
+        <problem id="oo-id1166135281140">
+          <equation id="fs-id1169874523998">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>a red card</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("a red card" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166120725479">
+        <problem id="oo-id1166130183912">
+          <equation id="fs-id1169874261530">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>a club</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("a club" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166127732915">
+          <equation id="fs-id1169874423851">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>13</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>52</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"13"/"52"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166119958666">
+        <problem id="oo-id1166122566352">
+          <equation id="fs-id5786176">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>a face card</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("a face card" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166135467921">
+        <problem id="oo-id1166116053951">
+          <equation id="fs-id1169874358009">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>a jack or spade</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("a jack or spade" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166127195424">
+          <equation id="fs-id1169874691676">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>16</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>52</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"16"/"52"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166133845920">
+        <problem id="oo-id1166122919023">
+          <equation id="fs-id1169876676965">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>a jack and a spade</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("a jack and a spade" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1166119060162">A jar contains 6 red, 7 white, and 7 blue marbles. If a marble is chosen at random, find the following probabilities.</para>
+      <exercise id="id1166118889222">
+        <problem id="oo-id1166126660654">
+          <equation id="fs-id1169878017109">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("red" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id7380769">
+          <equation id="fs-id1169875337752">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>6</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>20</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6/"20"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166120801112">
+        <problem id="oo-id1166137658098">
+          <equation id="fs-id1169874986504">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>white</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("white" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166124155881">
+        <problem id="oo-id1166128582913">
+          <equation id="fs-id1169874679365">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>red or blue</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("red or blue" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166129711724">
+          <equation id="fs-id1169878056609">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>13</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>20</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"13"/"20"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166116566584">
+        <problem id="oo-id1166124497788">
+          <equation id="fs-id1169878026268">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>red and blue</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("red and blue" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1166115066014">Consider a family of three children. Find the following probabilities.</para>
+      <exercise id="id1166126665910">
+        <problem id="oo-id1166114409705">
+          <equation id="fs-id5826427">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>two boys and a girl</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("two boys and a girl" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166119047617">
+          <equation id="fs-id1169874925533">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/8} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166136305978">
+        <problem id="oo-id1166126839767">
+          <equation id="fs-id1169874753917">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>at least one boy</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("at least one boy" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166137493410">
+        <problem id="oo-id1166128937360">
+          <equation id="fs-id1169875116835">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>children of both sexes</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("children of both sexes" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+     <solution id="fs-id1169877745486">
+      <equation id="fs-id1169874529942">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>6</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6/8} {}</m:annotation></m:semantics></m:math></equation>
+</solution>
+</exercise>
+      <exercise id="id1166115193390">
+        <problem id="oo-id1166135375579">
+          <equation id="fs-id1169874383467">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>at most one girl</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("at most one girl" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1166114574847">Two dice are rolled. Find the following probabilities.</para>
+      <exercise id="id1166114409299">
+        <problem id="oo-id1166137518297">
+          <equation id="fs-id1169875223628">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the sum of the dice is 5</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the sum of the dice is 5" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166138214424">
+          <equation id="fs-id1169876053425">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>36</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4/"36"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166136788050">
+        <problem id="oo-id2308185">
+          <equation id="fs-id1169874299468">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the sum of the dice is 8</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the sum of the dice is 8" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166120119367">
+        <problem id="oo-id1166120789024">
+          <equation id="fs-id1169874814119">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the sum is 3 or 6</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the sum is 3 or 6" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166122496872">
+          <equation id="fs-id1169874964403">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>7</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>36</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{7/"36"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166115841619">
+        <problem id="oo-id1166137315464">
+          <equation id="fs-id1169874753395">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the sum is more than 10</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the sum is more than 10" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1166127821810">A jar contains four marbles numbered 1, 2, 3, and 4. If two marbles are drawn, find the following probabilities.</para>
+      <exercise id="id1166137503888">
+        <problem id="oo-id1166131860756">
+          <equation id="fs-id1169877066212">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the sum of the number is 5</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the sum of the number is 5" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166116829424">
+          <equation id="fs-id1169876705648">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4/"12"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166131975529">
+        <problem id="oo-id1166116372090">
+          <equation id="fs-id1169875053407">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the sum of the numbers is odd</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the sum of the numbers is odd" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166127917344">
+        <problem id="oo-id1166120057611">
+          <equation id="fs-id1169875873548">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the sum of the numbers is 9</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the sum of the numbers is 9" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="fs-id1169876134983"><para id="id6590466">0</para></solution>
+      </exercise>
+      
+      <exercise id="id1166129817594">
+        <problem id="oo-id1166116158996">
+          <equation id="fs-id1169875258288">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>one of the numbers is 3</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("one of the numbers is 3" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1166130835252">
+      <title>MUTUALLY EXCLUSIVE EVENTS AND THE ADDITION RULE</title>
+      <para id="id1166124416327">Determine whether the following pair of events are mutually exclusive.</para>
+      <exercise id="id1166116424020">
+        <problem id="oo-id1166133576554">
+          <equation id="fs-id1169877745946">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>A person earns more than $25,000</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A= left lbrace "A person earns more than $25,000" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+       
+          <equation id="fs-id1169874725099">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>B</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>A person earns less than $20,000</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B= left lbrace "A person earns less than $20,000" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166136604133">
+          <para id="id1166122560614">Yes</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166125931500">
+        <problem id="oo-id1166114967685">
+          <para id="id1166118355598">A card is drawn from a deck.</para>
+       
+          <equation id="fs-id1169874435054"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>It is a King</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C= left lbrace "It is a King" right rbrace } {}</m:annotation></m:semantics><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>It is a heart</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D= left lbrace "It is a heart" right rbrace } {}</m:annotation></m:semantics><m:mo>.</m:mo></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166130545967">
+        <problem id="oo-id1166129642775">
+          <para id="id1166121683309">A die is rolled. </para>
+                  <equation id="fs-id1169875914030">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>An even number shows</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E= left lbrace "An even number shows" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        
+          <equation id="fs-id1169874314004"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>A number greater than 3 shows</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F= left lbrace "A number greater than 3 shows" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166133723109">
+          <para id="id1166120059265">No</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166123857002">
+        <problem id="oo-id1166130211126">
+          <para id="id1166132528192">Two dice are rolled. </para>
+        
+          <equation id="fs-id1169874410018"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>G</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>The sum of dice is 8</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G= left lbrace "The sum of dice is 8" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        
+          <equation id="fs-id7187273"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>H</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>One die shows a 6</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H= left lbrace "One die shows a 6" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166135457166">
+        <problem id="oo-id3591740">
+          <para id="id1166109758145">Three coins are tossed.</para>
+        
+          <equation id="fs-id1169874651751"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>Two heads come up</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I= left lbrace "Two heads come up" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+       
+          <equation id="fs-id1169876124252"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>J</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>At least one tail comes up</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J= left lbrace "At least one tail comes up" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166131229806">
+          <para id="id1166115332902">No</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166120764238">
+        <problem id="oo-id1166116264879">
+          <para id="id1166116192984">A family has three children.</para>
+       
+          <equation id="fs-id1169875237597"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>K</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>First born is a boy</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{K= left lbrace "First born is a boy" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        
+          <equation id="fs-id1169876432820"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>L</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>The family has children of both sexes</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L= left lbrace "The family has children of both sexes" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1166122403500">Use the addition rule to find the following probabilities.</para>
+      <exercise id="id1166117273794">
+        <problem id="oo-id1166134857448">
+          <para id="id1166135477542">A card is drawn from a deck, and the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>D</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D} {}</m:annotation></m:semantics></m:math> are as follows:</para>
+       
+          <equation id="fs-id1169874479208"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>It is a king</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C= left lbrace "It is a king" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+                  <equation id="fs-id1169876024791"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>It is a heart</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D= left lbrace "It is a heart" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        
+          <para id="id1166122646603">Find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>C</m:mi><m:mtext>   or   </m:mtext><m:mi>D</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (C" or "D right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166134228119">
+          <equation id="fs-id1169874291648">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>16</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>52</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"16"/"52"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166112349270">
+        <problem id="oo-id1166124561406">
+          <para id="id1166132317442">A die is rolled, and the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are as follows:</para>
+       
+          <equation id="fs-id1169877322186">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>An even number shows</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E= left lbrace "An even number shows" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        
+          <equation id="fs-id1169876299089"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>A number greater than 3 shows</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F= left lbrace "A number greater than 3 shows" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+                  <para id="id1166137844670">Find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   or   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" or "F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166128479867">
+        <problem id="oo-id1166120152408">
+          <para id="id1166122386064">Two dice are rolled, and the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>H</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H} {}</m:annotation></m:semantics></m:math> are as follows:</para>
+                <equation id="fs-id1169875013825"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>G</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>The sum of dice is 8</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G= left lbrace "The sum of dice is 8" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+                  <equation id="fs-id1169874690006">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>H</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>Exactly one die shows a 6</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H= left lbrace "Exactly one die shows a 6" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+                  <para id="id1166120265731">Find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>G</m:mi><m:mtext>   or   </m:mtext><m:mi>H</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (G" or "H right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166117237557">
+          <equation id="fs-id1169876133433">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>13</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>36</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"13"/"36"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166122511996">
+        <problem id="oo-id1166112832404">
+          <para id="id1166138673704">Three coins are tossed, and the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>I</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>J</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J} {}</m:annotation></m:semantics></m:math> are as follows:</para>
+       
+          <equation id="fs-id1169875016330"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>Two heads come up</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I= left lbrace "Two heads come up" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        
+          <equation id="fs-id1169875101037"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>J</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mtext>At least one tail comes up</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J= left lbrace "At least one tail comes up" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+      
+          <para id="fs-id1169875067506">Find  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>I</m:mi><m:mtext>   or   </m:mtext><m:mi>J</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (I" or "J right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166114458889">
+        <problem id="oo-id1166130618713">
+          <para id="id8018518">At De Anza college, 20% of the students take Finite Mathematics, 30% take Statistics and 10% take both. What percentage of the students take Finite Mathematics or Statistics?</para>
+        </problem>
+        <solution id="oo-id1166121167342">
+          <para id="id1166114065299">40%</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166121518020">
+        <problem id="oo-id1166117554921">
+          <para id="id1166136652987">This quarter, there is a 50% chance that Jason will pass Accounting, a 60% chance that he will pass English, and 80% chance that he will pass at least one of these two courses. What is the probability that he will pass both Accounting and English?</para>
+        </problem>
+      </exercise>
+      <para id="id1166131778250">The following table shows the distribution of Democratic and Republican U.S. Senators by gender.</para>
+      <table id="id1166117921504" summary="">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <tbody>
+            <row>
+              <entry/>
+              <entry>MALES(M)</entry>
+              <entry>FEMALES(F)</entry>
+              <entry>TOTAL</entry>
+            </row>
+            <row>
+              <entry>DEMOCRATS(D)</entry>
+              <entry>39</entry>
+              <entry>4</entry>
+              <entry>43</entry>
+            </row>
+            <row>
+              <entry>REPUBLICANS(R)</entry>
+              <entry>52</entry>
+              <entry>5</entry>
+              <entry>57</entry>
+            </row>
+            <row>
+              <entry>TOTALS</entry>
+              <entry>91</entry>
+              <entry>9</entry>
+              <entry>100</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1166126006139">Use this table to determine the following probabilities.</para>
+      <exercise id="id1166121484920">
+        <problem id="oo-id1166116770757">
+          <equation id="fs-id1169875414174"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>M</m:mi><m:mtext>   and   </m:mtext><m:mi>D</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (M" and "D right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166121379667">
+          <equation id="fs-id1169875241740">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>39</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>100</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"39"/"100"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166132350983">
+        <problem id="oo-id1166116054125">
+          <equation id="fs-id1169874619991"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mtext>   and   </m:mtext><m:mi>R</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F" and "R right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id5927181">
+        <problem id="oo-id1166127452659">
+          <equation id="fs-id2660343"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>M</m:mi><m:mtext>   or   </m:mtext><m:mi>D</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (M" or "D right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166121735046">
+          <equation id="fs-id1169876517000">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>95</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>100</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"95"/"100"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166114083845">
+        <problem id="oo-id1166135792924">
+          <equation id="fs-id1169875791491"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mtext>   or   </m:mtext><m:msup><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F" or "R rSup { size 8{C} }  right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166133943025">
+        <problem id="oo-id1166121643268">
+          <equation id="fs-id1169876046867"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:msup><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msup><m:mtext>   or   </m:mtext><m:mi>R</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (M rSup { size 8{C} } " or "R right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166132168430">
+          <equation id="fs-id1169874857523">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>61</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>100</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"61"/"100"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166132022023">
+        <problem id="oo-id1166124065963">
+          <equation id="fs-id1169874717298"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>M</m:mi><m:mtext>   or   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (M" or "F right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id6869287">Again, use the addition rule to determine the following probabilities.</para>
+      <exercise id="id1166121681786">
+        <problem id="oo-id1166116153000">
+          <para id="id1166115078652">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 5} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 4} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are mutually exclusive, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166127860313">
+          <para id="id1166120366615">0</para>
+        </solution>
+      </exercise>
+      <exercise id="id7600057">
+        <problem id="oo-id1166136251824">
+          <para id="id1166114708920">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 4} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 2} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are mutually exclusive, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   or   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" or "F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1166115910796">
+        <problem id="oo-id1166109098655">
+          <para id="id1166134821673">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 3} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   or   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" or "F right )= "." 6} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )= "." 2} {}</m:annotation></m:semantics></m:math>, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+        <solution id="oo-id1166127001979">
+          <para id="id1166131487322">0.5</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166118589183">
+        <problem id="oo-id1166131411400">
+          <para id="id6016602">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 4} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 5} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   or   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" or "F right )= "." 7} {}</m:annotation></m:semantics></m:math>, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )} {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+      </exercise>
+</section>
+      <section id="fs-id1167518108492"> <title>CALCULATING PROBABILITIES USING TREE DIAGRAMS AND COMBINATIONS</title>
+      <para id="id1166133862788">Two apples are chosen from a basket containing five red and three yellow apples. Draw a tree diagram below, and find the following probabilities.</para>
+      <exercise id="id1166123695087">
+        <problem id="oo-id1166136256943">
+          <equation id="fs-id1169876681565">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>both red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("both red" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166131803340">
+          <equation id="fs-id1169874253435">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>20</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>56</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"20"/"56"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166115879349">
+        <problem id="oo-id1166112248850">
+          <equation id="fs-id1169875491602">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>one red, one yellow</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("one red, one yellow" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id7414569">
+        <problem id="oo-id1166132153280">
+          <equation id="fs-id2666895">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>both yellow</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("both yellow" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166123721945">
+          <equation id="fs-id1169874446191">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>6</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>56</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6/"56"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166124715310">
+        <problem id="oo-id1166114419199">
+          <equation id="fs-id1169876559541">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>First red and second yellow</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("First red and second yellow" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1166129727780">A basket contains six red and four blue marbles. Three marbles are drawn at random. Find the following probabilities using the method shown in <link target-id="eip-id1166403685333" document="m18907"/>. Do not use combinations.</para>
+      <exercise id="id1166116409984">
+        <problem id="oo-id1166115936579">
+          <equation id="fs-id1169874330963">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>All three red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("All three red" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166119130117">
+          <equation id="fs-id1169874351547">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/6} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166133652908">
+        <problem id="oo-id1166138216641">
+          <equation id="fs-id1169874391249">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>two red, one blue</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("two red, one blue" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166116200698">
+        <problem id="oo-id1166118561306">
+          <equation id="fs-id1169875334492">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>one red, two blue</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("one red, two blue" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166122411498">
+          <equation id="fs-id1169878016649">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>10</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/"10"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+     
+      <exercise id="id1166132645562">
+        <problem id="oo-id1166121122671">
+          <equation id="fs-id2632131">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>first red, second blue, third red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("first red, second blue, third red" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1166135728022">Three marbles are drawn from a jar containing five red, four white, and three blue marbles. Find the following probabilities using combinations.</para>
+      <exercise id="id1166116161258"><problem id="oo-id1166117804851">
+          <equation id="fs-id1169876390728">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>all three red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("all three red" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+<solution id="eip-id1169679203286"><equation id="eip-id1169677637381"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>10</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>220</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"10"/"220"} {}</m:annotation></m:semantics></m:math></equation></solution>
+      </exercise>
+      
+      <exercise id="id1166131980210">
+        <problem id="oo-id1166116102030">
+          <equation id="fs-id1169875559732">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>two white and 1 blue</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("two white and 1 blue" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166134624099">
+        <problem id="oo-id1166128516205">
+          <equation id="fs-id2659714">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>none white</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("none white" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166135575169">
+          <equation id="fs-id1169874718811">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>56</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>220</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"56"/"220"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166126670542">
+        <problem id="oo-id1166123660828">
+          <equation id="fs-id1169874805560">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>at least one red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("at least one red" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1166127548249">A committee of four is selected from a total of 4 freshmen, 5 sophomores, and 6 juniors. Find the probabilities for the following events.</para>
+      <exercise id="id1166123672854">
+        <problem id="oo-id1166124430887">
+          <para id="id1166131882383">At least three freshmen.</para>
+        </problem>
+        <solution id="oo-id1166121643645">
+          <equation id="fs-id1169874480108">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>45</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>1365</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"45"/"1365"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166120313196">
+        <problem id="oo-id1166116785952">
+          <para id="id1166135897609">No sophomores.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166119599600">
+        <problem id="oo-id1166124002251">
+          <para id="id1166115914733">All four of the same class. </para>
+        </problem>
+        <solution id="oo-id2556752">
+          <equation id="fs-id1169874673416">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>21</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>1365</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"21"/"1365"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166114308536">
+        <problem id="oo-id1941687">
+          <para id="id1166130927564">Not all four from the same class.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166137773706">
+        <problem id="oo-id1166117389542">
+          <para id="id1166115911666">Exactly three of the same class.</para>
+        </problem>
+        <solution id="oo-id1166128967343">
+          <equation id="fs-id1169874528839">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>324</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>1365</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"324"/"1365"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1166115837849">
+        <problem id="oo-id1166114443349">
+          <para id="id1166120147938">More juniors than freshmen and sophomores combined. </para>
+        </problem>
+      </exercise>
+      <para id="id1166123992374">Five cards are drawn from a deck. Find the probabilities for the following events.</para>
+      <exercise id="id1166137684623">
+        <problem id="oo-id1166131290147">
+          <para id="id1166120927226">Two hearts, two spades, and one club.</para>
+        </problem>
+        <solution id="oo-id1166126134476">
+          <equation id="fs-id1169876398657">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mtext>79092</m:mtext><m:mo stretchy="false">/</m:mo><m:mn>2,</m:mn></m:mrow><m:mtext>598</m:mtext><m:mi>,</m:mi><m:mtext>960</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"79092"/2,"598","960"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166134995115">
+        <problem id="oo-id1166124682152">
+          <para id="id1166119644376">A flush of any suit(all cards of a single suit).</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166119837075">
+        <problem id="oo-id1166114068937">
+          <para id="id1166124593931">A full house of nines and tens(3 nines and 2 tens). </para>
+        </problem>
+        <solution id="oo-id1166117840459">
+          <equation id="fs-id1169875044523">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mtext>24</m:mtext><m:mo stretchy="false">/</m:mo><m:mn>2,</m:mn></m:mrow><m:mtext>598</m:mtext><m:mi>,</m:mi><m:mtext>960</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"24"/2,"598","960"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166115012560">
+        <problem id="oo-id1166137288134">
+          <para id="id1166133748545">Any full house.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166135891262">
+        <problem id="oo-id1166116250002">
+          <para id="id1166129162626">A pair of nines and tens.</para>
+        </problem>
+        <solution id="oo-id1166119327741">
+          <equation id="fs-id1169876793752">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1,</m:mn><m:mrow><m:mtext>584</m:mtext><m:mo stretchy="false">/</m:mo><m:mn>2,</m:mn></m:mrow><m:mtext>598</m:mtext><m:mi>,</m:mi><m:mtext>960</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1,"584"/2,"598","960"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166114549475">
+        <problem id="oo-id1166115892308">
+          <para id="id1166130275174">Two pairs </para>
+        </problem>
+      </exercise>
+      <para id="id1166121168849">Do the following birthday problems.</para>
+      <exercise id="id1166129530954">
+        <problem id="oo-id1166135508344">
+          <para id="id1166132578117">If there are five people in a room, what is the probability that no two have the same birthday?</para>
+        </problem>
+        <solution id="oo-id1166123682722">
+          <para id="id1166124735949">0.973</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166137268042">
+        <problem id="oo-id1166117701776">
+          <para id="id1166136782951">If there are five people in a room, what is the probability that at least two people have the same birthday?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1166115953672">
+      <title>CONDITIONAL PROBABILITY</title>
+      <para id="id1166123733655">Do the following problems using the conditional probability formula: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>B</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">∩</m:mo><m:mi>B</m:mi></m:mrow></m:mfenced></m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>B</m:mi></m:mfenced></m:mrow></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A \lline B right )= {  {P left (A intersection B right )}  over  {P left (B right )} } } {}</m:annotation></m:semantics></m:math>.</para>
+      <exercise id="id1166115373887">
+        <problem id="oo-id1166136197620">
+          <para id="id1166123202008">A card is drawn from a deck. Find the conditional probability of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>a queen </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> a face card</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("a queen " \lline " a face card" right )} {}</m:annotation></m:semantics></m:math>.  </para>
+        </problem>
+        <solution id="oo-id1166117881442">
+          <equation id="fs-id1169875932570">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4/"12"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166129335929">
+        <problem id="oo-id1166119239004">
+          <para id="id1166138042624">A card is drawn from a deck. Find the conditional probability of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>a queen </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> a club</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("a queen " \lline " a club" right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166116220538">
+        <problem id="oo-id1166137238277">
+          <para id="id1166137415005">A die is rolled. Find the conditional probability that it shows a three if it is known that an odd number has shown.</para>
+        </problem>
+        <solution id="oo-id1166135740364">
+          <equation id="fs-id1169876625295">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/3} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166136325270">
+        <problem id="oo-id1166114020828">
+          <para id="id1166128454577">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>A</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A right )= "." 3} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>B</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (B right )= "." 4} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>A</m:mi><m:mtext>   and   </m:mtext><m:mi>B</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A" and "B right )= "." "12"} {}</m:annotation></m:semantics></m:math>, find the following.</para>
+      <list id="fs-id1169874942009" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1166138181836"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>B</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A \lline B right )} {}</m:annotation></m:semantics></m:math></para></item>
+       
+          <item><para id="id1166137621833"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>B</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>A</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (B \lline A right )} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+      </exercise>
+      <para id="id1166121088740">The following table shows the distribution of Democratic and Republican U.S. Senators by gender.</para>
+      <table id="id1166116803851" summary="">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <tbody>
+            <row>
+              <entry/>
+              <entry>MALE(M)</entry>
+              <entry>FEMALE(F)</entry>
+              <entry>TOTAL</entry>
+            </row>
+            <row>
+              <entry>DEMOCRATS(D)</entry>
+              <entry>39</entry>
+              <entry>4</entry>
+              <entry>43</entry>
+            </row>
+            <row>
+              <entry>REPUBLICANS(R)</entry>
+              <entry>52</entry>
+              <entry>5</entry>
+              <entry>57</entry>
+            </row>
+            <row>
+              <entry>TOTALS</entry>
+              <entry>91</entry>
+              <entry>9</entry>
+              <entry>100</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1166125438606">Use this table to determine the following probabilities:</para>
+      <exercise id="id1166114700500">
+        <problem id="oo-id1166130473733">
+          <equation id="fs-id1169875485059">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>D</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (M \lline D right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166132400180">
+          <equation id="fs-id1169874690101">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>39</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>43</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"39"/"43"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166132297945">
+        <problem id="oo-id1166130964766">
+          <equation id="fs-id1169874608087">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>M</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (D \lline M right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1166136251766">
+        <problem id="oo-id7226857">
+          <equation id="fs-id1169874685009">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>R</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F \lline R right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166121687345">
+          <para id="id1166135654029"><m:math>
+<m:mn>5</m:mn>
+<m:mo>/</m:mo>
+<m:mn>57</m:mn>
+</m:math></para>
+        </solution>
+      </exercise>
+      <exercise id="id1166109467423">
+        <problem id="oo-id1166117498763">
+          <equation id="fs-id1169875699912">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (R \lline F right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1166137551380">Do the following conditional probability problems.</para>
+      <exercise id="id1166116323611">
+        <problem id="oo-id1166116227672">
+          <para id="id1166121545720">At De Anza College, 20% of the students take Finite Math, 30% take History, and 5% take both Finite Math and History. If a student is chosen at random, find the following conditional probabilities. </para>
+       <list id="fs-id1169874696985" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id3646781">He is taking Finite Math given that he is taking History.</para></item>
+        
+          <item><para id="id1166136605780">He is taking History assuming that he is taking Finite Math.</para></item></list>
+        </problem>
+        <solution id="oo-id1166135341720">
+        <list id="fs-id1169874379792" list-type="enumerated" number-style="lower-alpha"><item>
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/6} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>4</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/"4"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+     
+      <exercise id="id1166114920930">
+        <problem id="oo-id1166135972040">
+          <para id="id1166136590367">At a college, 60% of the students pass Accounting, 70% pass English, and 30% pass both of these courses. If a student is selected at random, find the following conditional probabilities. </para>
+       <list id="fs-id1169874462720" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1166135962654">He passes Accounting given that he passed English.</para></item>
+        
+          <item><para id="id1166115673116">He passes English assuming that he passed Accounting.</para></item></list>
+        </problem>
+      </exercise>
+      <exercise id="id1166116395007">
+        <problem id="oo-id1166123801688">
+          <para id="id1166137267230">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 4} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E \lline F right )= "." 3} {}</m:annotation></m:semantics></m:math>, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166134632545">
+          <para id="id1166116208242">0.12</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166126964404">
+        <problem id="oo-id1166139017002">
+          <para id="id1166130676329">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 3} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 3} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are mutually exclusive, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E \lline F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1800409">
+        <problem id="oo-id1166135702645">
+          <para id="id5370006">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 6} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>24</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )= "." "24"} {}</m:annotation></m:semantics></m:math>, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>E</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F \lline E right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166136634878">
+          <para id="id1166115060951">0.4</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166119715103">
+        <problem id="oo-id1166137235029">
+          <para id="id1166118221345">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>04</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )= "." "04"} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E \lline F right )= "." 1} {}</m:annotation></m:semantics></m:math>, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+      </exercise>
+      
+      <para id="id1166116020409">Consider a family of three children. Find the following probabilities.</para>
+      <exercise id="id1166126977230">
+        <problem id="oo-id1166132252786">
+          <equation id="fs-id1169874993845">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>two boys</m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext>first born is a boy</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("two boys" \lline "first born is a boy" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166112597546">
+          <equation id="fs-id1169874280267">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2/4} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166130890489">
+        <problem id="oo-id8182672">
+          <equation id="fs-id1169875866176">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>all girls </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> at least one girl is born</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("all girls " \lline " at least one girl is born" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id4095987">
+        <problem id="oo-id1166135843972">
+          <equation id="fs-id1169875302686">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>children of both sexes </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> first born is a boy</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("children of both sexes " \lline " first born is a boy" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166122606225">
+          <equation id="fs-id1169878540571">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/4} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166120214926">
+        <problem id="oo-id1166126958621">
+          <equation id="fs-id1169874733758">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>all boys </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> there are children of both sexes</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("all boys " \lline " there are children of both sexes" right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1166119643826">
+      <title>INDEPENDENT EVENTS</title>
+      <para id="id1166118324985">The distribution of the number of fiction and non-fiction books checked out at a city's main library and at a smaller branch on a given day is as follows. </para>
+      <table id="id1166136247822" summary="">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <tbody>
+            <row>
+              <entry/>
+              <entry>MAIN(M)</entry>
+              <entry>BRANCH(B)</entry>
+              <entry>TOTAL</entry>
+            </row>
+            <row>
+              <entry>FICTION(F)</entry>
+              <entry>300</entry>
+              <entry>100</entry>
+              <entry>400</entry>
+            </row>
+            <row>
+              <entry>NON-FICTION(N)</entry>
+              <entry>150</entry>
+              <entry>50</entry>
+              <entry>200</entry>
+            </row>
+            <row>
+              <entry>TOTALS</entry>
+              <entry>450</entry>
+              <entry>150</entry>
+              <entry>600</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id1166136783299">Use this table to determine the following probabilities:</para>
+      <exercise id="id1166135541042">
+        <problem id="oo-id1166130277739">
+          <equation id="fs-id1169874375212">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166133878772">
+          <equation id="fs-id1169876100875">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2/3} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166135829198">
+        <problem id="oo-id1166125448724">
+          <equation id="fs-id1169875082427">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (M \lline F right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1166115820587">
+        <problem id="oo-id1166114964727">
+          <equation id="fs-id1169876975522">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>N</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>B</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (N \lline B right )} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1166127177538">
+          <equation id="fs-id1169874555719">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>50</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>150</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"50"/"150"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1166132661685">
+        <problem id="oo-id1166136593151">
+          <para id="id1166123942975">Is the fact that a person checks out a fiction book independent of the main library?</para>
+        </problem>
+      </exercise>
+      <para id="id1166120124414">For a two-child family, let the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math> be as follows.</para>
+      <para id="id1166121293810"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>: The family has at least one boy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math>: The family has children of both sexes 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math>: The family's first born is a boy</para>
+      <exercise id="id1166123839465">
+        <problem id="oo-id1166137718782">
+          <para id="id1166117591474">Find the following.</para>
+        <list id="fs-id1169874277216" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1166116553541"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )} {}</m:annotation></m:semantics></m:math></para></item>
+        <item><para id="id1166118290727">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math></para></item>
+        <item>
+          <para id="id1166137942778"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">∩</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E intersection F right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+         <item><para id="id1166118687909">Are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> independent?</para></item></list>
+        </problem>
+        <solution id="oo-id1166116198958">
+        <list id="fs-id1169875178858" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/4} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2/4} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2/4} {}</m:annotation></m:semantics></m:math></item><item>no</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166115865494">
+        <problem id="oo-id1166118648461">
+          <para id="id1166133515762">Find the following.</para>
+       <list id="fs-id1169874832764" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id6719347">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+        <item><para id="id1166127480933">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>G</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (G right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+        <item>  <para id="id1166116215608">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">∩</m:mo><m:mi>G</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F intersection G right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+        <item>  <para id="id1166137476207">Are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math> independent?</para></item></list>
+        </problem>
+      </exercise>
+      <para id="id1166122854888">Do the following problems involving independence.</para>
+      <exercise id="id1166137673115">
+        <problem id="oo-id1166111723098">
+          <para id="id1166127951670">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 6} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 2} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are independent, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166116145054">
+          <para id="id1587113">0.12 </para>
+        </solution>
+      </exercise>
+      <exercise id="id1166122527945">
+        <problem id="oo-id1166108711765">
+          <para id="id1166135264698">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 6} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 2} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are independent, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   or   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" or "F right )} {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+      </exercise>
+      <exercise id="id1166136328228">
+        <problem id="oo-id1166127209505">
+          <para id="id1166134018833">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>9</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 9} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>E</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>36</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F \lline E right )= "." "36"} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are independent, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166118600988">
+          <para id="id1166126838991">0.36</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166136628034">
+        <problem id="oo-id1166130109864">
+          <para id="id1166119161340">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 6} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   or   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>08</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" or "F right )= "." "08"} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are independent, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166116272129">
+        <problem id="oo-id1166121419255">
+          <para id="id1166123638419">In a survey of 100 people, 40 were casual drinkers, and 60 did not drink. Of the ones who drank, 6 had minor headaches. Of the non-drinkers, 9 had minor headaches. Are the events "drinkers" and "had headaches" independent?</para>
+        </problem>
+        <solution id="oo-id1166135743857">
+          <para id="id1166128639157">Yes</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166130017871">
+        <problem id="oo-id1166113790702">
+          <para id="id1166119257809">It is known that 80% of the people wear seat belts, and 5% of the people quit smoking last year. If 4% of the people who wear seat belts quit smoking, are the events, wearing a seat belt and quitting smoking, independent?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1166137382263">
+        <problem id="oo-id1166125188865">
+          <para id="id1166137788567">John's probability of passing statistics is 40%, and Linda's probability of passing the same course is 70%. If the two events are independent, find the following probabilities.</para>
+        <list id="fs-id1169874864045" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1166115905531"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>both of them will pass statistics</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("both of them will pass statistics" right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1166138096617"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>at least one of them will pass statistics</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("at least one of them will pass statistics" right )} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+        <solution id="oo-id1166130174102">
+          <list id="fs-id1169875077058" list-type="enumerated" number-style="lower-alpha"><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>28</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>100</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"28"/"100"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>82</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>100</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"82"/"100"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id3700667">
+        <problem id="oo-id1166116024469">
+          <para id="id1166136268395">Jane is flying home for the Christmas holidays. She has to change planes twice on the way home. There is an 80% chance that she will make the first connection, and a 90% chance that she will make the second connection. If the two events are independent, find the following probabilities.</para>
+        <list id="fs-id1169875999048" list-type="enumerated" number-style="lower-alpha">          <item><para id="id1166135476614"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>Jane will make both connections</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("Jane will make both connections" right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1166114956211"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>Jane will make at least one connection</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("Jane will make at least one connection" right )} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+      </exercise>
+      <para id="id1166130922436">For a three-child family, let the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math> be as follows.</para>
+      <para id="id1166137253491"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>: The family has at least one boy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math>: The family has children of both sexes 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math>: The family's first born is a boy</para>
+      <exercise id="id1166132562998">
+        <problem id="oo-id1166123661087">
+          <para id="id1166124061416">Find the following.</para>
+       <list id="fs-id1169876300048" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1166130334225"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id8400765">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math></para></item>
+           <item><para id="id1166116425283"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">∩</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E intersection F right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1166128677468">Are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> independent?</para></item></list>
+        </problem>
+        <solution id="oo-id1166136556543">
+          <list id="fs-id2678594" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>7</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{7/8} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>6</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6/8} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>6</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6/8} {}</m:annotation></m:semantics></m:math></item> <item>no</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166124445456">
+        <problem id="oo-id1166130473780">
+          <para id="id7357164">Find the following.</para>
+        <list id="fs-id1169874814569" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1166117328814"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math></para></item>
+           <item><para id="id1166129021439"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>G</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (G right )} {}</m:annotation></m:semantics></m:math></para></item>
+       
+          <item><para id="id1166129395949"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">∩</m:mo><m:mi>G</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F intersection G right )} {}</m:annotation></m:semantics></m:math></para></item>
+           <item><para id="id1166129958632">Are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math> independent?</para></item></list>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1166117501437"><title>CHAPTER REVIEW</title><exercise id="id1166118975648">
+        <problem id="oo-id1166128538597">
+          <para id="id1166137290512">Two dice are rolled. Find the probability that the sum of the dice is</para>
+        <list id="fs-id1169876409193" list-type="enumerated" number-style="lower-alpha">
+          <item> four</item>      <item>five </item></list>
+        </problem>
+        <solution id="oo-id1166117573968">
+          <list id="fs-id1169875421510" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>36</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/"36"} {}</m:annotation></m:semantics></m:math></item><item>
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>4</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>36</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4/"36"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166129959242">
+        <problem id="oo-id1166112110242">
+          <para id="id1166115999386">A jar contains 3 red, 4 white, and 5 blue marbles. If a marble is chosen at random, find the following probabilities:</para>
+        <list id="fs-id1169876789576" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>red or blue</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("red or blue" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>not blue</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("not blue" right )} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1166129548286">
+          <list id="fs-id1169874951368" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>8</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{8/"12"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>7</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{7/"12"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1745453">
+        <problem id="oo-id1166137354205">
+          <para id="id1166123062741">A card is drawn from a standard deck. Find the following probabilities:</para>
+        <list id="fs-id1169874557661" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>a jack or a king</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("a jack or a king" right )} {}</m:annotation></m:semantics></m:math></item>   <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>a jack or a spade</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("a jack or a spade" right )} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1166123670861">
+          <list id="fs-id1169874324965" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>8</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>52</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{8/"52"} {}</m:annotation></m:semantics></m:math></item> <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>16</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>52</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"16"/"52"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166115968346">
+        <problem id="oo-id1166130100544">
+          <para id="id1166116269693">A basket contains 3 red and 2 yellow apples. Two apples are chosen at random. Find the following probabilities:</para>
+       <list id="fs-id1169874401107" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>one red, one yellow</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("one red, one yellow" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>at least one red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("at least one red" right )} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1166129489184">
+          <list id="fs-id1169874466865" list-type="enumerated" number-style="lower-alpha"><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/5} {}</m:annotation></m:semantics></m:math> </item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>9</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>10</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{9/"10"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166123819646"><problem id="oo-id1166138124872">
+          <para id="id1166115991833">A basket contains 4 red, 3 white, and 3 blue marbles. Three marbles are chosen at random. Find the following probabilities:
+<list id="eip-id1169707081375" list-type="enumerated" number-style="lower-alpha"><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>two red, one white</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("two red, one white" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>first red, second white, third blue</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("first red, second white, third blue" right )} {}</m:annotation></m:semantics></m:math></item>
+        
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>at least one red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("at least one red" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>none red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("none red" right )} {}</m:annotation></m:semantics></m:math></item></list></para>
+        </problem>
+      <solution id="oo-id1166119159680">
+        <list id="fs-id1169874406486" list-type="enumerated" number-style="lower-alpha"><item>
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>20</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/"20"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>20</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/"20"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5/6} {}</m:annotation></m:semantics></m:math> </item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/6} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution></exercise>
+      
+      <exercise id="id1166126569101">
+        <problem id="oo-id1166127700874">
+          <para id="id1166117114934">Given a family of four children. Find the following probabilities:</para>
+       <list id="fs-id1169874681144" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>All boys</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("All boys" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>1 boy and 3 girls</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("1 boy and 3 girls" right )} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1864410">
+          <list id="fs-id1169874235056" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/"16"} {}</m:annotation></m:semantics></m:math></item> <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/4} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166117972468">
+        <problem id="oo-id1166116244840">
+          <para id="id1166115880156">Consider a family of three children. Find the following: </para>
+        <list id="fs-id1169874716895" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>children of both sexes </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> first born is a boy</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("children of both sexes " \lline " first born is a boy" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>all girls </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> children of both sexes</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("all girls " \lline " children of both sexes" right )} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1166136273694">
+          <list id="fs-id1169874976788" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/4} {}</m:annotation></m:semantics></m:math></item> <item> 0</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166118313665">
+        <problem id="oo-id6425812">
+          <para id="id1166126764535">Mrs. Rossetti is flying from San Francisco to New York. On her way to the San Francisco Airport she encounters heavy traffic and determines that there is a 20% chance that she will be late to the airport and will miss her flight. Even if she makes her flight, there is a 10% chance that she will miss her connecting flight at Chicago. What is the probability that she will make it to New York as scheduled?</para>
+        </problem>
+        <solution id="oo-id1166138543172">
+          <para id="id1166131840030">0.72</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166136573571">
+        <problem id="oo-id1166136596941">
+          <para id="id1166125496565">At a college, twenty percent of the students take history, thirty percent take math, and ten percent take both. What percent of the students take at least one of these two courses?</para>
+        </problem>
+        <solution id="oo-id1166117279840">
+          <para id="id1166137405435">40%</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166137461595"><problem id="oo-id1166133915595">
+          <para id="id1166128902261">In a T-maze, a mouse may run to the right (R) or may run to the left (L). A mouse goes up the maze three times, and events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are described as follows: </para> 
+
+<para id="eip-id1171363562945"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>: Runs to the right on the first trial  </para>  
+<para id="eip-id1171363428758"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math>: Runs to the left two consecutive times</para>
+<para id="id1166116142676"> Determine whether the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are independent.</para>
+        </problem>
+        <solution id="oo-id1166124110403">
+          <para id="id1166121273307">independent</para>
+        </solution></exercise>
+      
+          
+       
+      
+      
+      <exercise id="id1166127620472">
+        <problem id="oo-id1166116181500">
+          <para id="id1166135648496">A college has found that 20% of its students take advanced math courses, 40% take advanced English courses and 15% take both advanced math and advanced English courses. If a student is selected at random, what is the probability that</para>
+        <list id="fs-id1169874838166" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1166112838557">he is taking English given that he is taking math? </para></item>
+        
+          <item><para id="id1166138989419">he is taking math or English? </para></item></list>
+        </problem>
+        <solution id="oo-id1166120436389">
+         <list id="fs-id1169874738229" list-type="enumerated" number-style="lower-alpha"><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/4} {}</m:annotation></m:semantics></m:math> </item><item> 0.45</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166116104988">
+        <problem id="oo-id1166120711883">
+          <para id="id1166131489631">If there are 35 students in a class, what is the probability that at least two have the same birthday?</para>
+        </problem>
+        <solution id="oo-id1166114106122">
+          <para id="id1166135318523">0.8144</para>
+        </solution>
+      </exercise>
+      <exercise id="id2018795">
+        <problem id="oo-id1166126063053">
+          <para id="id1166127464481">A student feels that her probability of passing accounting is .62, of passing mathematics is .45, and her passing accounting or mathematics is .85. Find the probability that the student passes both accounting and math.</para>
+        </problem>
+        <solution id="oo-id1166134035374">
+          <para id="id1166116044955">0.22</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166112619921">
+        <problem id="oo-id1166127394986">
+          <para id="id1166138667689">There are nine judges on the U. S. Supreme Court of which five are conservative and four liberal. This year the court will act on six major cases. What is the probability that out of six cases the court will favor the conservatives in at least four?</para>
+        </problem>
+        <solution id="oo-id1166124929811">
+          <para id="id3700828">0.45278</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166108814462">
+        <problem id="oo-id1166137435194">
+          <para id="id1166117100598">Five cards are drawn from a deck. Find the probability of obtaining</para>
+       <list id="fs-id1169874681614" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1166125607583">four cards of a single suit </para></item>
+       
+          <item><para id="id7530075">two cards of one suit, two of another suit, and one from the remaining</para></item>
+        
+          <item><para id="id1166130307609">a pair(e.g. two aces and three other cards)     </para></item>
+        
+          <item><para id="id1166120727983">a straight flush(five in a row of a single suit but not a royal flush)   </para></item></list>
+        </problem>
+        <solution id="oo-id1166115341462">
+          <list id="fs-id1169874299444" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>111540</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>2598960</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"111540"/"2598960"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>949104</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>2598960</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"949104"/"2598960"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>1349088</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>2598960</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"1349088"/"2598960"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>36</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>2598960</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"36"/"2598960"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166135753355">
+        <problem id="oo-id1166112879864">
+          <para id="id1166120813502">The following table shows a distribution of drink preferences by gender. </para>
+      <table id="id1166122855867" summary="">
+        <tgroup cols="5">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <colspec colnum="5" colname="c5"/>
+          <tbody>
+            <row>
+              <entry/>
+              <entry>Coke(C)</entry>
+              <entry>Pepsi(P)</entry>
+              <entry>Seven Up(S)</entry>
+              <entry>TOTALS</entry>
+            </row>
+            <row>
+              <entry>Males(M)</entry>
+              <entry>60</entry>
+              <entry>50</entry>
+              <entry>22</entry>
+              <entry>132</entry>
+            </row>
+            <row>
+              <entry>Females(F)</entry>
+              <entry>50</entry>
+              <entry>40</entry>
+              <entry>18</entry>
+              <entry>108</entry>
+            </row>
+            <row>
+              <entry>TOTALS</entry>
+              <entry>110</entry>
+              <entry>90</entry>
+              <entry>40</entry>
+              <entry>240</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+
+          <para id="id1166127979566">The events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S} {}</m:annotation></m:semantics></m:math> are defined as Male, Female, Coca Cola, Pepsi, and Seven Up, respectively. Find the following:</para>
+        <list id="fs-id1169874431349" list-type="enumerated" number-style="lower-alpha"><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>S</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F \lline S right )} {}</m:annotation></m:semantics></m:math></item>  <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (P \lline F right )} {}</m:annotation></m:semantics></m:math></item>
+       
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>M</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (C \lline M right )} {}</m:annotation></m:semantics></m:math></item> <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">∣</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>P</m:mtext><m:mi>⋃</m:mi> <m:mtext>C</m:mtext></m:mrow></m:mstyle></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (M \lline  ital "PUC" right )} {}</m:annotation></m:semantics></m:math></item>
+        
+          <item> Are the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S} {}</m:annotation></m:semantics></m:math> mutually exclusive?</item> <item>Are the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S} {}</m:annotation></m:semantics></m:math> independent?</item></list>
+        </problem>
+        <solution id="oo-id1166116181152">
+        <list id="fs-id1169874752378" list-type="enumerated" number-style="lower-alpha">
+          <item>
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>9</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>20</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{9/"20"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>10</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>27</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"10"/"27"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>15</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>33</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"15"/"33"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>11</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>20</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"11"/"20"} {}</m:annotation></m:semantics></m:math></item><item> no</item><item> yes</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166117628937">
+        <problem id="oo-id1166135231544">
+          <para id="id1166124960489">At a clothing outlet 20% of the clothes are irregular, 10% have at least a button missing and 4% are both irregular and have a button missing. If Martha found a dress that has a button missing, what is the probability that it is irregular?</para>
+        </problem>
+        <solution id="oo-id1166116244028">
+          <para id="id1166133545296">0.40</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166132181279">
+        <problem id="oo-id1166126743809">
+          <para id="id1166122486927">A trade delegation consists of four Americans, three Japanese and two Germans. Three people are chosen at random. Find the following probabilities:</para>
+        <list id="fs-id1169874411791" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>two Americans and one Japanese</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("two Americans and one Japanese" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>at least one American</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("at least one American" right )} {}</m:annotation></m:semantics></m:math></item>
+        
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>One of each nationality</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("One of each nationality" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>no German</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("no German" right )} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1166120087930">
+        <list id="fs-id1169874572942" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>14</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/"14"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>37</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>42</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"37"/"42"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2/7} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>35</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>84</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"35"/"84"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1166110913714">
+        <problem id="oo-id1166129296952">
+          <para id="id1166121017295">A coin is tossed three times, and the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are as follows.   </para>
+          <para id="id1166116269577"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math>: It shows a head on the first toss   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math>: Never turns up a tail</para>
+
+          <para id="id1166129179546"> Are the events 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> independent?</para>
+        </problem>
+        <solution id="oo-id7051545">
+          <para id="id1166111592240">No</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166138350834">
+        <problem id="oo-id1166117567169">
+          <para id="id1166124221875">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 6} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 4} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are mutually exclusive, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166126006788">
+          <para id="id1166136609260">0</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166122543201">
+        <problem id="oo-id1166125717206">
+          <para id="id4629527">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 5} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 3} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are independent, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mstyle fontstyle="italic"><m:mrow><m:mtext>E</m:mtext>
+<m:mo>⋃</m:mo>
+<m:mtext>F</m:mtext></m:mrow></m:mstyle></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ( ital "EUF" right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166132769220">
+          <para id="id1166132474234">0.65</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166108375231">
+        <problem id="oo-id1166135555786">
+          <para id="id1166138839010">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>9</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 9} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>36</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E \lline F right )= "." "36"} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are independent, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166116269925">
+          <para id="id7216818">0.36</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166124507687">
+        <problem id="oo-id1166115652990">
+          <para id="id1166118419010">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 4} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   or   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>9</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" or "F right )= "." 9} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are independent, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )} {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+        <solution id="oo-id8236935">
+          <equation id="fs-id1169874455347">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5/6} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1166130206313">
+        <problem id="oo-id1166117083598">
+          <para id="id1166115931900">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 4} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>E</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F \lline E right )= "." 5} {}</m:annotation></m:semantics></m:math>, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166129059177">
+          <para id="id1166116552684">0.2</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166119392120">
+        <problem id="oo-id1166130573435">
+          <para id="id1166136348537">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 6} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mtext>   and   </m:mtext><m:mi>F</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E" and "F right )= "." 3} {}</m:annotation></m:semantics></m:math>, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>E</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F \lline E right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166121267971">
+          <para id="id1166132207926">0.5</para>
+        </solution>
+      </exercise>
+      <exercise id="id1166121059210">
+        <problem id="oo-id1166123667490">
+          <para id="id1166120444520">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>E</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E right )= "." 3} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>F</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (F right )= "." 4} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>E</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> are independent, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>E</m:mi><m:mo stretchy="false">∣</m:mo><m:mi>F</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (E \lline F right )} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1166120461045">
+          <para id="id1166131941390">0.3</para>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+</document>

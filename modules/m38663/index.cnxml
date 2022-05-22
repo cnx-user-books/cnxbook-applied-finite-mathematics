@@ -1,0 +1,644 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Markov Chains: Homework</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38663</md:content-id>
+  <md:title>Markov Chains: Homework</md:title>
+  <md:abstract>This chapter covers principles of Markov Chains. After completing this chapter students should be able to: write transition matrices for Markov Chain problems; find the long term trend for a Regular Markov Chain; Solve and interpret Absorbing Markov Chains.</md:abstract>
+  <md:uuid>3238448b-c8f6-49f3-85cc-15671cd88e57</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="HWChapter9.doc" strength="3">Download Chapter 9 Homework</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1171273137901">
+      <title>MARKOV CHAINS</title>
+      <exercise id="id1171278988235">
+        <problem id="oo-id1171272968628">
+          <para id="id1171277245757">Is the matrix given below a transition matrix for a Markov chain? Explain. </para>
+        <list id="fs-id1172305313378" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id5885083">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>9</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 2 {} #  "." 3 {} #  "." 5 {} ##
+ "." 3 {} #  -  "." 2 {} #  "." 9 {} ##
+ "." 3 {} #  "." 3 {} #  "." 5{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item>
+       
+          <item><para id="id7645203">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 3 {} #  "." 3 {} #  "." 4 {} ##
+ "." 3 {} #  "." 4 {} #  "." 4 {} ##
+0 {} # 0 {} # 0{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+        <solution id="oo-id7507942">
+          <list id="fs-id1172305988691" list-type="enumerated" number-style="lower-alpha"><item>No</item><item>No</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id8291466">
+        <problem id="oo-id1171272848199">
+          <para id="id1171277123608">A survey of American car buyers indicates that if a person buys a Ford, there is a 60% chance that their next purchase will be a Ford, while owners of a GM will buy a GM again with a probability of .80. The buying habits of these consumers are represented in the transition matrix below.</para>
+             <para id="id1171273205308">
+        <figure id="id8872707"><media id="id8872707_media" alt="This matrix depicts the buying habits of GM and Ford customers.">
+            <image mime-type="image/png" src="../../media/graphics1-4712.png" id="id8872707__onlineimage" height="163" width="582" print-width="3in"/>
+          </media>
+        </figure>
+      </para>
+      
+      
+          <para id="id6489416">Find the following probabilities:</para>
+       <list id="fs-id7925157" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171279024380">The probability that a present owner of a Ford will buy a GM as his next car.</para></item>
+       
+          <item><para id="id7174595">The probability that a present owner of a GM will buy a GM as his next car.</para></item>
+        
+          <item><para id="id1171277231989">The probability that a present owner of a Ford will buy a GM as his third car.</para></item>
+        
+          <item><para id="id5691653">The probability that a present owner of a GM will buy a GM as his fourth car.</para></item></list>
+        </problem>
+      </exercise>
+      <exercise id="id8730109">
+        <problem id="oo-id1171279047888">
+          <para id="id1171279048656">Professor Hay has breakfast at Hogee's every morning. He either orders an Egg Scramble, or a Tofu Scramble. He never orders Eggs on two consecutive days, but if he does order Tofu one day, then the next day he can order Tofu or Eggs with equal probability.</para>
+       <list id="fs-id1172321610498" list-type="enumerated" number-style="lower-alpha">
+         <item> <para id="id1171277230184">Write a transition matrix for this problem. </para></item>
+        
+         <item> <para id="id1171279048630">If Professor Hay has Tofu on the first day, what is the probability he will have Tofu on the second day?</para></item>
+        
+          <item><para id="id1171279048040">If Professor Hay has Eggs on the first day, what is the probability he will have Tofu on the third day?</para></item>
+        
+          <item><para id="id1171276783985">If Professor Hay has Eggs on the first day, what is the probability he will have Tofu on the fourth day?</para></item></list>
+        </problem>
+        <solution id="oo-id7438413">
+          <list id="fs-id1172318470980" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+0 {} # 1 {} ##
+1/2 {} # 1/2{}
+}  right ]} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/2} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/2} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/4} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id7756076">
+        <problem id="oo-id7232539">
+          <para id="id1171277246728">A professional tennis player always hits cross-court or down the line. In order to give himself a tactical edge, he never hits down the line two consecutive times, but if he hits cross-court on one shot, on the next shot he can hit cross-court with .75 probability and down the line with .25 probability. </para>
+      <list id="fs-id1172305227186" list-type="enumerated" number-style="lower-alpha">
+         <item> <para id="id1171273362278">Write a transition matrix for this problem. </para></item>
+        
+          <item><para id="id8787262">If the player hit the first shot cross-court, what is the probability that he will hit the third shot down the line?</para></item></list>
+        </problem>
+      </exercise>
+      <exercise id="id1171277122869">
+        <problem id="oo-id1171272920871">
+          <para id="id1171276739829">The transition matrix for switching political parties in an election year is given below, where Democrats, Republicans, and Independents are denoted by the letters 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>D</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>R</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>I</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I} {}</m:annotation></m:semantics></m:math>, respectively.</para>
+        
+      <figure id="id1171276750824"><media id="id1171276750824_media" alt="This matrix shows the tendencies of Democrat, Republicans, and Independents to switch sides during an election year.">
+          <image mime-type="image/png" src="../../media/graphics2-f3ec.png" id="id1171276750824__onlineimage" height="176" width="439" print-width="2.75in"/>
+        </media>
+      </figure>
+      <list id="fs-id1172310178109" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171279046252">Find the probability of a Democrat voting Republican.</para></item>
+        
+          <item><para id="id8194925">Find the probability of a Democrat voting Republican in the second election.</para></item>
+        
+          <item><para id="id1171272966935">Find the probability of a Republican voting Independent in the second election.</para></item>
+        
+          <item><para id="id1171277125856">Find the probability of a Democrat voting Independent in the third election.</para></item></list>
+        </problem>
+        <solution id="oo-id1171276777459">
+          <list id="fs-id1172314803791" list-type="enumerated" number-style="lower-alpha">
+          <item>0.3</item><item>0.38</item><item>0.15</item><item>0.175</item></list>
+        </solution>
+      </exercise>
+      
+    </section>
+    <section id="id1171276773392">
+      <title>REGULAR MARKOV CHAINS</title>
+      <exercise id="id6795391">
+        <problem id="oo-id1171276772719">
+          <para id="id1171276740456">Determine whether the following matrices are regular Markov chains. </para>
+        <list id="fs-id1172305984640" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171276751090">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1 {} # 0 {} ##
+ "." 5 {} #  "." 5{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1171279048584"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 6 {} #  "." 4 {} ##
+0 {} # 1{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id8440374">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 6 {} # 0 {} #  "." 4 {} ##
+ "." 2 {} #  "." 4 {} #  "." 4 {} ##
+0 {} # 0 {} # 0{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1171276740090"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 2 {} #  "." 4 {} #  "." 4 {} ##
+ "." 6 {} #  "." 4 {} # 0 {} ##
+ "." 3 {} #  "." 2 {} #  "." 5{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+        <solution id="oo-id1171276751675">
+          <para id="id6068907">a. No c. No</para>
+          
+        </solution>
+      </exercise>
+      
+      <exercise id="id1171271932397">
+        <problem id="oo-id1171272925535">
+          <para id="id1171278988749">Company I and Company II compete against each other, and the transition matrix for people switching from Company I to Company II is given below. </para>
+       
+          <figure id="id8300958"><media id="id8300958_media" alt="This matrix shows the tendency of customers to switch between Company I and Company II.">
+          <image mime-type="image/png" src="../../media/graphics3-0a9e.png" id="id8300958__onlineimage" height="150" width="553" print-width="3.5in"/>
+        </media>
+      </figure>
+         
+          <para id="id1171279067442">Find the following.</para>
+       <list id="fs-id1172306572280" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171273229836">If the initial market share is 40% for Company I and 60% for Company II, what will the market share be after 3 steps? </para></item>
+       
+          <item><para id="id8770224">If this trend continues, what is the long range expectation for the market? </para></item></list>
+        </problem>
+      </exercise>
+      <exercise id="id1171273362147">
+        <problem id="oo-id6940146">
+          <para id="id7646024">Suppose the transition matrix for the tennis player in <link target-id="id7756076"/> is as follows, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math> denotes the cross-court shots and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>D</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D} {}</m:annotation></m:semantics></m:math> denotes down-the-line shots.</para>
+        
+      <figure id="id1171277123790"><media id="id1171277123790_media" alt="This matrix depicts the tendency of a tennis player to make cross-court shots and down-the-line shots.">
+          <image mime-type="image/png" src="../../media/graphics4-17e8.png" id="id1171277123790__onlineimage" height="161" width="428" print-width="2.5in"/>
+        </media>
+      </figure>
+      
+          <para id="id1171276750974">Find the following.</para>
+        <list id="fs-id1172306000263" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171277231770">If the player hit the first shot cross-court, what is the probability he will hit the fourth shot cross-court?</para></item>
+        
+          <item><para id="id1171273361648">Determine the long term shot distribution.</para></item></list>
+        </problem>
+        <solution id="oo-id1171276751003">
+          <list id="fs-id4233170" list-type="enumerated" number-style="lower-alpha"><item>0.876</item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mtext>.</m:mtext><m:mtext>875</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mtext>.</m:mtext><m:mtext>125</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+0 "." "875" {} # 0 "." "125"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1171276738620">
+        <problem id="oo-id7998287">
+          <para id="id1171277231406">Professor Hay never orders eggs two days in a row, but if he orders tofu one day, then there is an equal probability that he will order tofu or eggs the next day. </para>
+      
+          <para id="id1171276738476">Find the following:</para>
+       <list id="fs-id1172306084879" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171272030394">If Professor Hay had eggs on Monday, what is the probability that he will have tofu on Friday?</para></item>
+        
+         <item><para id="id7933715">Find the long term distribution for breakfast choices for Professor Hay.</para></item></list>
+        </problem>
+      </exercise>
+      <exercise id="id7637020">
+        <problem id="oo-id1171278994896">
+          <para id="id1171273040216">Many Russians have experienced a sharp decline in their living standards due to President Yeltsin's reforms. As a result, in the parliamentary elections held in December 1995, Communists and Nationalists made significant gains, and a new pattern in switching political parties emerged. The transition matrix for such a change is given below, where Communists, Nationalists, and Reformists are denoted by the letters 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>N</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>R</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R} {}</m:annotation></m:semantics></m:math>, respectively.</para>
+        
+      <para id="id1171276777714">
+        <figure id="id1171272862937"><media id="id1171272862937_media" alt="This matrix depicts the tendencies for the different political parties to take power.">
+            <image mime-type="image/png" src="../../media/graphics5-ffee.png" id="id1171272862937__onlineimage" height="186" width="394" print-width="2.5in"/>
+          </media>
+        </figure>
+      </para>
+      
+          <para id="id7125923">Find the following.</para>
+       <list id="fs-id1172305998307" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171273039949">If in this election Communists received 25% of the votes, Nationalists 30%, and Reformists the rest 45%, what will the distribution be in the next election?</para></item>
+        
+          <item><para id="id8972142">What will the distribution be in the third election? </para></item>
+        
+          <item><para id="id1171277230635">What will the distribution be in the fourth election?</para></item>
+        
+          <item><para id="id3821874">Determine the long term distribution.</para></item></list>
+        </problem>
+        <solution id="oo-id8082655">
+          <para id="id1171277232428">a. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>305</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>31</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mtext>.</m:mtext><m:mtext>385</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "305" {} #  "." "31" {} # 0 "." "385"{}
+}  right ]} {}</m:annotation></m:semantics></m:math> c. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>32905</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>3291</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mtext>.</m:mtext><m:mtext>3418</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "32905" {} #  "." "3291" {} # 0 "." "3418"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+        </solution>
+      </exercise>
+      
+    </section>
+    <section id="id3400867">
+      <title>ABSORBING MARKOV CHAINS</title>
+      <exercise id="id1171272991767">
+        <problem id="oo-id1171279040983">
+          <para id="id1171277245656">Given the following absorbing Markov chain.</para>
+        
+      <figure id="id1171277242399"><media id="id1171277242399_media" alt="This matrix depicts the probability of moving from one sate to the other.">
+          <image mime-type="image/png" src="../../media/graphics6-7748.png" id="id1171277242399__onlineimage" height="208" width="530" print-width="3.5in"/>
+        </media>
+      </figure>
+      
+          <para id="id1171276738333">Find the following:</para>
+        <list id="fs-id1172305479877" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id5556634"> Identify the absorbing states. </para></item>
+       
+          <item><para id="id1171279066278">Write the solution matrix.</para></item>
+       
+         <item> <para id="id1171279034177"> Starting from state 4, what is the probability of eventual absorption in state 1?</para></item>
+        
+         <item> <para id="id1171277246396">Starting from state 2, what is the probability of eventual absorption in state 3?</para></item></list>
+        </problem>
+        <solution id="oo-id1171276751403">
+        <list id="fs-id1172306716304" list-type="enumerated" number-style="lower-alpha"><item><para id="id1171273269900">1 and 3</para></item>
+          <item><para id="id1171271854180"><figure id="id6734954"><media id="id6734954_media" alt="This matrix shows the probability of absorption.">
+          <image mime-type="image/png" src="../../media/graphics7-6eda.png" id="id6734954__onlineimage" height="129" width="275" print-width="2in"/>
+        </media>
+      </figure></para></item>
+<item><m:math>
+<m:mn>2</m:mn>
+<m:mo>/</m:mo>
+<m:mn>3</m:mn>
+</m:math></item>
+<item>
+<m:math>
+<m:mn>1</m:mn>
+<m:mo>/</m:mo>
+<m:mn>2</m:mn>
+</m:math></item></list>
+        </solution>
+      </exercise>
+      
+      <exercise id="id6353931">
+        <problem id="oo-id1171277245976">
+          <para id="id1171276750912">Two tennis players, Andre and Vijay each with two dollars in their pocket, decide to bet each other $1, for every game they play. They continue playing until one of them is broke.  </para>
+        
+          <para id="id1171272002952">Do the following:</para>
+        <list id="fs-id1172318272990" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171279041566">Write the transition matrix for Andre.</para></item>
+        
+          <item><para id="id4931268">Identify the absorbing states. </para></item>
+       
+          <item><para id="id1171273362352">Write the solution matrix.</para></item>
+        
+          <item><para id="id6496036">At a given stage if Andre has $1, what is the chance that he will eventually lose it all?</para></item></list>
+        </problem>
+      </exercise>
+      <exercise id="id1171276777270"><problem id="oo-id7231054">
+          <para id="id1171276833288">Repeat <link target-id="id6353931"/>, if the chance of winning for Andre is .4 and for Vijay .6.</para>
+        <list id="fs-id1172316727411" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171276827524">Write the transition matrix for Andre.</para></item>
+       
+          <item><para id="id7860356">Write the solution matrix.</para></item>
+        
+          <item><para id="id7079373">If Andre has $3, what is the probability that he will eventually be ruined?</para></item>
+        
+          <item><para id="id8419397">If Vijay has $1, what is the probability that he will eventually triumph?</para></item></list>
+        </problem>
+        <solution id="oo-id1171273363039">
+<list id="eip-id1167536354384" list-type="enumerated" number-style="lower-alpha"><item>
+          <figure id="id7403460"><media id="id7403460_media" alt="This matrix shows the probability of winning a dollar for every dollar won.">
+            <image mime-type="image/png" src="../../media/graphics8-6de8.png" id="id7403460__onlineimage" height="254" width="303" print-width="2.5in"/>
+          </media>
+        </figure>
+</item>
+<item>Andre's solution matrix
+        <figure id="id1171277125818"><media id="id1171277125818_media" alt="This matrix depict the probability of winning a either zero dollars or four dollars.">
+          <image mime-type="image/png" src="../../media/graphics9-1f7c.png" id="id1171277125818__onlineimage" height="147" width="242" print-width="2in"/>
+        </media>
+      </figure></item>
+<item><m:math>
+<m:mn>27</m:mn>
+<m:mo>/</m:mo>
+<m:mn>65</m:mn>
+</m:math></item>
+<item><m:math>
+<m:mn>27</m:mn>
+<m:mo>/</m:mo>
+<m:mn>65</m:mn>
+</m:math></item>
+</list>        </solution>
+      </exercise>
+      
+      
+      <exercise id="id1171279066410">
+        <problem id="oo-id1171276772555">
+          <para id="id1171277126019">Repeat <link target-id="id6353931"/>, if initially Andre has $3 and Vijay has $2.</para>
+        <list id="fs-id2103814" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171272847467">Write the transition matrix.</para></item>
+        
+          <item><para id="id3201740">Identify the absorbing states. </para></item>
+        
+          <item><para id="id7963135">Write the solution matrix.</para></item>
+        
+          <item><para id="id5693812">If Andre has $4, what is the probability that he will eventually be ruined?</para></item></list>
+        </problem>
+      </exercise>
+      <exercise id="id1171277124561"><problem id="oo-id5413389">
+          <para id="id6091758">The non-tenured professors at a community college are regularly evaluated. After an evaluation they are classified as good, bad, or improvable. The "improvable" are given a set of recommendations and are re-evaluated the following semester. At the next evaluation, 60% of the improvable turn out to be good, 20% bad, and 20% improvable. These percentages never change and the process continues.</para>
+        <list id="fs-id1172306695239" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171273362577">Write the transition matrix.</para></item>
+        
+          <item><para id="id1171273134794">Identify the absorbing states. </para></item>
+        
+          <item><para id="id1171272027293">Write the solution matrix.</para></item>
+        
+          <item><para id="id1171276783861">What is the probability that a professor who is improvable will eventually become good?</para></item></list>
+        </problem>
+        <solution id="oo-id1171273362088">
+<list id="eip-id1169430519506" list-type="enumerated" number-style="lower-alpha"><item>
+          <figure id="id1171272846310"><media id="id1171272846310_media" alt="The matrix shows the probability of moving from Improvable to Good, Bad, or remaining Improvable.">
+          <image mime-type="image/png" src="../../media/graphics10-fad0.png" id="id1171272846310__onlineimage" height="147" width="299" print-width="3in"/>
+        </media>
+      </figure></item>
+<item>I and II</item>
+<item><m:math>
+<m:mfenced open="[" close="]">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mn>0.75</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mn>0.25</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:mfenced>
+</m:math>
+</item>
+<item>0.75</item>
+ </list>       </solution>
+      </exercise>
+            
+      <exercise id="id1171277230598">
+        <problem id="oo-id5921456">
+          <para id="id1171279094676">A rat is placed in the maze shown below, and it moves from room to room randomly. From any room, the rat will choose a door to the next room with equal probabilities. Once it reaches room 1, it finds food and never leaves that room. And when it reaches room 5, it is trapped and cannot leave that room. What is the probability the rat will end up in room 5 if it was initially placed in room 3?</para>
+          <para id="id1171276777250">
+        <figure id="id1171278977883"><media id="id1171278977883_media" alt="This figure shows the layout of the rooms that the rat can navigate through.">
+            <image mime-type="image/png" src="../../media/graphics11-cf66.png" id="id1171278977883__onlineimage" height="130" width="241" print-width="2in"/>
+          </media>
+        </figure>
+      </para>
+        </problem></exercise>
+        <exercise id="fs-id2957604"><problem id="fs-id1172304847467">
+          <para id="id6843745">In <link target-id="id1171277230598"/>, what is the probability the rat will end up in room 1 if it was initially placed in room 2?</para>
+        </problem>
+        <solution id="oo-id8195060">
+          <equation id="fs-id1172314443753">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>10</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>19</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"10"/"19"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+    </section>
+    <section id="id1171278974870">
+      <title>CHAPTER REVIEW</title>
+      <exercise id="id1171279104753">
+        <problem id="oo-id1171276739881">
+          <para id="id1171276777825">Is the matrix given below a transition matrix for a Markov chain? Explain. </para>
+        <list id="fs-id1172311232574" list-type="enumerated" number-style="lower-alpha">
+                  <item><para id="id1171272902805">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>8</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 1 {} #  "." 4 {} #  "." 5 {} ##
+ "." 5 {} #  -  "." 3 {} #  "." 8 {} ##
+ "." 3 {} #  "." 4 {} #  "." 3{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1171271978052"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 2 {} #  "." 6 {} #  "." 2 {} ##
+0 {} # 0 {} # 0 {} ##
+ "." 3 {} #  "." 4 {} #  "." 5{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+        <solution id="oo-id1171276834428">
+          <list id="fs-id1172325328916" list-type="enumerated" number-style="lower-alpha">
+          <item>No</item> <item>No</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1171279041233">
+        <problem id="oo-id1171277123815">
+          <para id="id1171276777047">A survey of computer buyers indicates that if a person buys an Apple computer, there is an 80% chance that their next purchase will be an Apple, while owners of an IBM will buy an IBM again with a probability of .70. The buying habits of these consumers are represented in the transition matrix below.</para>
+        
+      <figure id="id1171272030650"><media id="id1171272030650_media" alt="This matrix shows the probable buying habits of consumers from Apple to IBM.">
+          <image mime-type="image/png" src="../../media/graphics12-ddc2.png" id="id1171272030650__onlineimage" height="107" width="522" print-width="3.5in"/>
+        </media>
+      </figure>
+      
+     
+      
+          <para id="id1171277124655">Find the following probabilities:</para>
+        <list id="fs-id1172312618973" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id8555692">The probability that a present owner of an Apple will buy an IBM as his next computer.</para></item>
+        
+          <item><para id="id1171279047436">The probability that a present owner of an Apple will buy an IBM as his third computer.</para></item>
+       
+          <item><para id="id8549370">The probability that a present owner of an IBM will buy an IBM as his fourth computer.</para></item></list>
+        </problem>
+        <solution id="oo-id6264197">
+          <list id="fs-id1172305643307" list-type="enumerated" number-style="lower-alpha">
+          <item>0.2</item> <item>0.3</item> <item>0.475</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1171272252354">
+        <problem id="oo-id8413401">
+          <para id="id7447995">Professor Trayer either teaches Finite Math or Statistics each quarter. She never teaches Finite Math two consecutive quarters, but if she teaches Statistics one quarter, then the next quarter she will teach Statistics with a 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/3} {}</m:annotation></m:semantics></m:math> probability.</para>
+       <list id="fs-id1172306790672" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171278988103">Write a transition matrix for this problem. </para></item>
+                  
+                  <item><para id="id1744814">If Professor Trayer teaches Finite Math in the Fall quarter, what is the probability that she will teach Statistics in the Winter quarter.</para></item>
+       
+          <item><para id="id1171279041472">If Professor Trayer teaches Finite Math in the Fall quarter, what is the probability that she will teach Statistics in the Spring quarter.</para></item></list>
+        </problem>
+        <solution id="oo-id1171273126067">
+          <list id="fs-id1172319680032" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+0 {} # 1 {} ##
+2/3 {} # 1/3{}
+}  right ]} {}</m:annotation></m:semantics></m:math></item><item>1</item> <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2/3} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1171279041916">
+        <problem id="oo-id1171276844816">
+          <para id="id6788991">The transition matrix for switching academic majors each quarter by students at a university is given below, where Science, Business, and Liberal Arts majors are denoted by the letters 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math>, respectively.</para>
+        
+      <para id="id6378669">
+        <figure id="id1171277122764"><media id="id1171277122764_media" alt="This matrix shows the probability for students to switch between these three majors.">
+            <image mime-type="image/png" src="../../media/graphics13-4b07.png" id="id1171277122764__onlineimage" height="119" width="347" print-width="3in"/>
+          </media>
+        </figure>
+      </para>
+      
+     <list id="fs-id1172317242146" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1171273362475">Find the probability of a science major switching to a business major during their first quarter. </para></item>
+        
+          <item><para id="id1171276784253">Find the probability of a business major switching to a Liberal Arts major during their second quarter. </para></item>
+        
+          <item><para id="id1171277124599">Find the probability of a science major switching to a Liberal Arts major during their third quarter. </para></item></list>
+        </problem>
+        <solution id="oo-id1171277127475">
+          <list id="fs-id1172325611154" list-type="enumerated" number-style="lower-alpha">
+          <item>0.3</item> <item>0.31</item> <item>0.28</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id8817213">
+        <problem id="oo-id1171276831924">
+          <para id="id7800066">Determine whether the following matrices are regular Markov chains. </para>
+        <list id="fs-id1172309349654" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>7</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1 {} # 0 {} ##
+ "." 3 {} #  "." 7{}
+}  right ]} {}</m:annotation></m:semantics></m:math></item><item>  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 2 {} #  "." 4 {} #  "." 4 {} ##
+ "." 6 {} #  "." 4 {} # 0 {} ##
+ "." 3 {} #  "." 2 {} #  "." 5{}
+}  right ]} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1171279140075">
+          <list id="fs-id1172306003647" list-type="enumerated" number-style="lower-alpha">
+          <item>No</item> <item>Yes</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1171277205844">
+        <problem id="oo-id1171278997544">
+          <para id="id7099229">John Elway, the football quarterback for the Denver Broncos, calls his own plays. At every play he has to decide to either pass the ball or hand it off. The transition matrix for his plays is given in the following table, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math> represents a pass and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>H</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H} {}</m:annotation></m:semantics></m:math> a handoff.</para>
+       
+      <figure id="id6085492"><media id="id6085492_media" alt="This matrix shows the probability that of the next play being a pass or a hand off. ">
+          <image mime-type="image/png" src="../../media/graphics14-3e8e.png" id="id6085492__onlineimage" height="108" width="314" print-width="2in"/>
+        </media>
+      </figure>
+      
+          <para id="id1171278989225">Find the following.</para>
+        <list id="fs-id1172306710655" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id8418909">If John Elway threw a pass on the first play, what is the probability that he will handoff on the third play?</para></item>
+        
+          <item><para id="id1730410">Determine the long term play distribution.</para></item></list>
+        </problem>
+        <solution id="oo-id1171272027128">
+          <list id="fs-id1172305973007" list-type="enumerated" number-style="lower-alpha">
+          <item> 0.32</item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P=2/3} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>H</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H=1/3} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1171266369890">
+        <problem id="oo-id7404438">
+          <para id="id1171273335948">Company I, Company II, and Company III compete against each other, and the transition matrix for people switching from company to company each year is given below. </para>
+        
+      
+      <figure id="id1171272198229"><media id="id1171272198229_media" alt="This matrix shows the probability that customers will switch between the three companies.">
+          <image mime-type="image/png" src="../../media/graphics15-c442.png" id="id1171272198229__onlineimage" height="125" width="367" print-width="2.5in"/>
+        </media>
+      </figure>
+     
+          <para id="id8553888">Find the following.</para>
+        <list id="fs-id1172307040219" list-type="enumerated" number-style="lower-alpha">
+         <item> <para id="id1171272963490">If the initial market share is 20% for Company I, 30% for Company II and 50% for Company III, what will the market share be after the next year? </para></item>
+                <item>  <para id="id1171272030200">If this trend continues, what is the long range expectation for the market? </para></item></list>
+        </problem>
+        <solution id="oo-id7639414">
+        <list id="fs-id1172304580157" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>36</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>34</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." "36" {} #  "." "34" {} #  "." "30"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>9</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>28</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+3/7 {} # 9/"28" {} # 1/4{}
+}  right ]} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1171266369826">
+        <problem id="oo-id7206110">
+          <para id="id1171266344378">Given the following absorbing Markov chain.</para>
+        
+      <para id="id1171266370170">
+        <figure id="id1171266370129"><media id="id1171266370129_media" alt="This matrix depicts the probability of moving from one sate to the other.">
+            <image mime-type="image/png" src="../../media/graphics16.png" id="id1171266370129__onlineimage" height="122" width="455" print-width="3.5in"/>
+          </media>
+        </figure>
+      </para>
+      <list id="fs-id1172311243067" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id6605213">Identify the absorbing states. </para></item>
+        
+          <item><para id="id1744563">Write the solution matrix.</para></item>
+        
+          <item><para id="id1171273250497">Starting from state 4, what is the probability of eventual absorption in state 1?</para></item>
+        
+          <item><para id="id7218423">Starting from state 3, what is the probability of eventual absorption in state 2?</para></item></list>
+        </problem>
+        <solution id="oo-id1171279019127">
+          <list id="fs-id1172313959142" list-type="enumerated" number-style="lower-alpha"><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi fontstyle="italic">S1</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S1} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi fontstyle="italic">S2</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S2} {}</m:annotation></m:semantics></m:math></item>
+          <item><figure id="id1171273196210"><media id="id1171273196210_media" alt="This matrix shows the probability of switching from S3 or S4 to S1 or S2">
+          <image mime-type="image/png" src="../../media/graphics17.png" id="id1171273196210__onlineimage" height="118" width="246" print-width="2in"/>
+        </media>
+      </figure></item>
+<item><m:math>
+<m:mn>26</m:mn>
+<m:mo>/</m:mo>
+<m:mn>35</m:mn>
+</m:math></item>
+<item><m:math>
+<m:mn>19</m:mn>
+<m:mo>/</m:mo>
+<m:mn>35</m:mn>
+</m:math></item></list>
+        </solution>
+      </exercise>
+      
+      <exercise id="id8894165">
+        <problem id="oo-id1171278988968">
+          <para id="id5686541">A rat is placed in the maze shown below, and it moves from room to room randomly. From any room, the rat will choose a door to the next room with equal probabilities. Once it reaches room 1, it finds food and never leaves that room. And when it reaches room 6, it is trapped and cannot leave that room. What is the probability that the rat will end up in room 1 if it was initially placed in room 3?</para>
+        
+      <para id="id1171276847429">
+        <figure id="id3741700"><media id="id3741700_media" alt="This figure shows the layout of the rooms that the rat can navigate through.">
+            <image mime-type="image/png" src="../../media/graphics18.png" id="id3741700__onlineimage" height="130" width="241" print-width="2in"/>
+          </media>
+        </figure>
+      </para>
+      
+          
+        </problem>
+        <solution id="oo-id8245709">
+          <equation id="fs-id1946020"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2/7} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise><exercise id="eip-776"><problem id="eip-504">
+  <para id="eip-365">In <link target-id="id8894165"/>, what is the probability that the rat will end up in room 6 if it was initially in room 2?  </para>
+</problem>
+
+<solution id="eip-637">
+  <para id="eip-646"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/7} {}</m:annotation></m:semantics></m:math></para>
+</solution>
+</exercise>
+    </section>
+  </content>
+</document>

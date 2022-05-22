@@ -1,0 +1,729 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Practice Exam</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18911</md:content-id>
+  <md:title>Practice Exam</md:title>
+  <md:abstract>This module contains the practice final exam for Applied Finite Mathematics.</md:abstract>
+  <md:uuid>2c9b0487-8637-46cf-9b1b-6dde84462a0d</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="PracticeFinalExam.doc" strength="3">Download Practice Final Exam</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <exercise id="id1166352823207">
+      <problem id="oo-id1166357962795">
+        <para id="id1166347832128">What will the future value of $5000 be in 5 years at 8% compounded quarterly?</para>
+      </problem>
+      <solution id="oo-id1166360964329">
+        <para id="id2092356">7,429.74</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166363638625">
+      <problem id="oo-id1613843">
+        <para id="id1166366225425">A bank pays 8% compounded quarterly, what is the effective interest rate?</para>
+      </problem>
+      <solution id="oo-id1166349605231">
+        <para id="id1166357718839">8.24%</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166348498325">
+      <problem id="oo-id1166363225809">
+        <para id="id1166358507001">Each year a sum of $2200 is placed in an IRA account paying 12%. After 10 years what will the final amount be?</para>
+      </problem>
+      <solution id="oo-id1166360620934">
+        <para id="id1166357750570">38,607.22</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166364179424">
+      <problem id="oo-id1166374170353">
+        <para id="id1166347831914">If $5000 is invested at 8% compounded daily for 3 years, find the final amount.</para>
+      </problem>
+      <solution id="oo-id1166345335015">
+        <para id="id1166346372251">6,356.08</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166347770971">
+      <problem id="oo-id1166365975041">
+        <para id="id1166367955866">Find the present value of $200 per month at 12% for 4 years. </para>
+      </problem>
+      <solution id="oo-id1166346314777">
+        <para id="id1166346620890">7,594.79</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166348633162">
+      <problem id="oo-id1166354164196">
+        <para id="id1166348637341">A $12,000 car loan is amortized at 6% over 6 years. Find the monthly payment.</para>
+      </problem>
+      <solution id="oo-id1166362795883">
+        <para id="id1166368849587">198.87</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166351273826">
+      <problem id="oo-id1166351979674">
+        <para id="id1166350514926">In problem 6, what will the balance of the loan be after 4 years?</para>
+      </problem>
+      <solution id="oo-id1166354151219">
+        <para id="id1166366445102">4,487.08</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166358721865">
+      <problem id="oo-id1166346607240">
+        <para id="id1166345836653">If in problem 6, the loan is amortized over 3 years, what will the monthly payment be?</para>
+      </problem>
+      <solution id="oo-id1166346546636">
+        <para id="id1166346314813">365.06</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166363038801">
+      <problem id="oo-id3903689">
+        <para id="id1166366122220">A $24,000 car has a useful life of 6 years. It can be leased for $400 per month. If the current interest rate is 6%, is it better to lease or to buy?</para>
+      </problem>
+      <solution id="oo-id2473465">
+        <para id="id1166346605810">buy</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166346318100">
+      <problem id="oo-id1166379197365">
+        <para id="id1166347399635">What monthly payment will amount to $10,000 in 5 years at 11%?</para>
+      </problem>
+      <solution id="oo-id1166347771793">
+        <para id="id1166353288933">125.75</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166347728627"><problem id="oo-id1166364659835">
+        <para id="id1166358733560">A bond has a face value of $1000 and is due in 5 years. It pays $45 interest every 6 months. If the current interest rate is 12%, what is the fair market value of the bond?</para>
+      </problem>
+      <solution id="oo-id1166348641897">
+        <equation id="eip-id1169455539822">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>559</m:mtext><m:mtext>.</m:mtext><m:mrow><m:mtext>39</m:mtext><m:mo stretchy="false">+</m:mo><m:mtext>331</m:mtext></m:mrow><m:mtext>.</m:mtext><m:mrow><m:mtext>20</m:mtext><m:mo stretchy="false">=</m:mo><m:mtext>889</m:mtext></m:mrow><m:mtext>.</m:mtext><m:mtext>59</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"559" "." "39"+"331" "." "20"="889" "." "59"} {}</m:annotation></m:semantics></m:math></equation>
+      </solution>
+    </exercise>
+    <exercise id="id1166381349214"><problem id="oo-id1166359319670">
+        <para id="id1166352161962">A company produces solar panels. The total cost of 20 panels is $2100, and the cost of 60 panels is $3900. Express the cost y in terms of the number of panels 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math>.</para>
+      </problem>
+      <solution id="oo-id2347135">
+        <equation id="eip-id1169661979068">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>45</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>1200</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="45"x+"1200"} {}</m:annotation></m:semantics></m:math></equation>
+      </solution>
+    </exercise>
+    <para id="id1166345818679">For problems 13, 14 and 15, the final tableaux is given below</para>
+    <para id="id1166346373573"><figure id="replace1"><media id="tableau" alt="the final simplex tableau to be used for the following three problems.">
+   <image mime-type="image/png" src="../../media/pfr1.png" print-width="3in"/>
+ </media>
+</figure></para>
+    <exercise id="id1166357848601">
+      <problem id="oo-id1166366920756">
+        <para id="id1166350717712">If the initial problem is a maximization problem, what is the maximum value?</para>
+      </problem>
+      <solution id="oo-id7705653">
+        <para id="id3959561">2500</para>
+      </solution>
+    </exercise>
+    <exercise id="id3696530">
+      <problem id="oo-id1166368893380">
+        <para id="id1166362609959">If the initial problem is a maximization one, at what point does the maximum value occur? </para>
+      </problem>
+      <solution id="oo-id1166362858742">
+        <para id="id1166350865608"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>200</m:mtext><m:mi>,</m:mi><m:mtext>400</m:mtext><m:mi>,</m:mi><m:mtext>100</m:mtext></m:mrow></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left ("200","400","100" right )} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166363974972">
+      <problem id="oo-id1166350813098">
+        <para id="id1166348509069">If the initial problem is a minimization one, at what point does the minimum value occur?</para>
+      </problem>
+      <solution id="oo-id1166348652075">
+        <para id="id3655242"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>75</m:mtext><m:mi>,</m:mi><m:mn>5,</m:mn><m:mtext>90</m:mtext></m:mrow></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left ("75",5,"90" right )} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166350797582">
+      <problem id="oo-id1166362579648">
+        <para id="id1166362777150">At a price of $3, 100 units are demanded of a product. At a price of $5, 50 units are demanded. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> is the price and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>D</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D} {}</m:annotation></m:semantics></m:math> the number of units demanded, write the demand equation.</para>
+      </problem>
+      <solution id="oo-id1166358636223">
+        <para id="id1166347730128"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>25</m:mtext></m:mrow></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>175</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D= - "25"x+"175"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <para id="id1166349549359"> For problems 17 and 18, use the following system of equations.</para>
+    <para id="id1166346283975"><m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mtable>
+                  <m:mtr>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mn>2x</m:mn>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mrow/>
+                        </m:mrow>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mn>4y</m:mn>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                    <m:mtd><m:mo>=</m:mo>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mtext>10</m:mtext>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mn>3x</m:mn>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mrow/>
+                        </m:mrow>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mn>6y</m:mn>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                    <m:mtd><m:mo>=</m:mo>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mtext>15</m:mtext>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                  <m:mtr>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mn>5x</m:mn>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mrow/>
+                        </m:mrow>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mtext>10</m:mtext>
+                        <m:mi>y</m:mi>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                    <m:mtd>
+                      <m:mo>=</m:mo>                    </m:mtd>
+                    <m:mtd>
+                      <m:mrow>
+                        <m:mtext>27</m:mtext>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtd>
+                  </m:mtr>
+                </m:mtable>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ matrix {
+2x {} # +{} {} # 4y {} # ={} {} # "10" {} ##
+3x {} # +{} {} # 6y {} # ={} {} # "15" {} ##
+5x {} # +{} {} # "10"y {} # ={} {} # "27"{}
+} } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <exercise id="id1166347832057">
+      <problem id="oo-id1166378191357">
+        <para id="id1166365367060">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x=1} {}</m:annotation></m:semantics></m:math>, what is the value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math>?</para>
+      </problem>
+      <solution id="oo-id1166351233005">
+        <para id="id1166350524790">No solution</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166359409428">
+      <problem id="oo-id1166350887918">
+        <para id="id1166368533996">How many solutions does this system have?</para>
+      </problem>
+      <solution id="oo-id1166364942149">
+        <para id="id1166369658144">None </para>
+      </solution>
+    </exercise>
+    <para id="id1166347091789">Problems 19 - 22 refer to the maximization problem below to be done using the simplex method.</para>
+    <para id="id1166362553456">A company makes two types of widgets, Regular and Deluxe. Each type of widget requires the use of three machines for its production. The Regular widget requires three hours on machine I, one hour on machine II, and one hour on machine III, and sells for $10. The Deluxe widget requires one hour on machine I, two hours on machine II, and one hour on machine III, and sells for $20. The maximum number hours available on Machines I, II, and III are 120, 100, and 40, respectively.</para>
+    <exercise id="id1166345384376">
+      <problem id="oo-id1166371464941">
+        <para id="id1166348373749">What are the coefficients of the objective function?</para>
+      </problem>
+      <solution id="oo-id1166347411999">
+        <para id="id1166352307922">10, 20</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166352218364">
+      <problem id="oo-id1166351878456">
+        <para id="id1166375463388">What is the constraint imposed by Machine III?</para>
+      </problem>
+      <solution id="oo-id1166351026117">
+        <para id="id1166345934273"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>40</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{1} } +x rSub { size 8{2} }  &lt;= "40"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166350508635">
+      <problem id="oo-id1166358829361">
+        <para id="id1166365316726">In solving this problem using the simplex method, how many slack variables are needed?</para>
+      </problem>
+      <solution id="oo-id1166375502264">
+        <para id="id1166366286115">3</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166352153994">
+      <problem id="oo-id1166357585283">
+        <para id="id1166360485815">After the first full pivot operation, what is the current revenue? </para>
+      </problem>
+      <solution id="oo-id1166352905294">
+        <para id="id1166345439697">800</para>
+      </solution>
+    </exercise>
+    <exercise id="id5668360">
+      <problem id="oo-id1166345606879">
+        <para id="id1166365277089">A firm produces floppies at a variable cost of $1.20 per disk and a fixed cost of $1800. If the disk sells for $3 each, find the break-even point.</para>
+      </problem>
+      <solution id="oo-id1166361446101">
+        <para id="id1166359232738"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>1000</m:mtext><m:mi>,</m:mi><m:mtext>3000</m:mtext></m:mrow></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left ("1000","3000" right )} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <para id="id1166352867580"> Problems 24 - 25 refer to the following minimization problem: </para>
+    <para id="id1166351229539">A diet must contain at least 60 units of protein, and 30 units of fat. Food A provides 2 grams of protein and 4 grams of fat, and costs 30 cents. Food B provides 6 grams of protein and 2 grams of fat, and costs 20 cents. </para>
+    <exercise id="id4982730">
+      <problem id="oo-id1166347183258">
+        <para id="id1166346604667">Graph the constraints, and shade the feasibility region.</para>
+      </problem>
+      <solution id="oo-id1166347021472">
+        <para id="id1166366282011">Graph</para>
+      </solution>
+    </exercise>
+    
+    <exercise id="id1166377298019">
+      <problem id="oo-id1166363503888">
+        <para id="id1166348507468">Write the cost function.</para>
+      </problem>
+      <solution id="oo-id1166345841298">
+        <para id="id1166347745147"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>30</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>20</m:mtext><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C= "." "30"x+ "." "20"y} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <para id="id1166346391583"> For problems 26 and 27, the supply and demand equations are given as follows:</para>
+    <para id="id1166360487027"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>S</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3x</m:mn></m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>100</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S=2/3x - "100"} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>4</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mn>3x</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mtext>500</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D= - 4/3x+"500"} {}</m:annotation></m:semantics></m:math>, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> is the price.</para>
+    <exercise id="id1166363243240">
+      <problem id="oo-id1166358694825">
+        <para id="id1166365313244">Find the equilibrium price.</para>
+      </problem>
+      <solution id="oo-id1166354161359">
+        <para id="id1166371486390">300</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166352244549">
+      <problem id="oo-id1166347801845">
+        <para id="id1166350778634">How many items will be demanded at that price?</para>
+      </problem>
+      <solution id="oo-id1166345714105">
+        <para id="id1166352646638">100</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166345386408">
+      <problem id="oo-id2220168">
+        <para id="id1166345664040">If there are 5 people in a room, what is the probability that no two have the same birthday?</para>
+      </problem>
+      <solution id="oo-id1166352801595">
+        <para id="id1166352844419"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>97286</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "97286"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166359419773">
+      <problem id="oo-id1166346272898">
+        <para id="id1166347809956"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math> are mutually exclusive, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>A</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A right )= "." 4} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>B</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (B right )= "." 5} {}</m:annotation></m:semantics></m:math> find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>A</m:mi><m:mtext> and </m:mtext><m:mi>B</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A" and "B right )} {}</m:annotation></m:semantics></m:math>.</para>
+      </problem>
+      <solution id="oo-id1166364552262">
+        <para id="id1166357864574">0</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166348643014">
+      <problem id="oo-id1166352874713">
+        <para id="id1166348511800"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math> are independent.
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>A</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A right )= "." 4} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>A</m:mi><m:mtext> and </m:mtext><m:mi>B</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>24</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A" and "B right )= "." "24"} {}</m:annotation></m:semantics></m:math>, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mi>B</m:mi></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (B right )} {}</m:annotation></m:semantics></m:math>.</para>
+      </problem>
+      <solution id="oo-id1166366055291">
+        <para id="id1166350601393"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." 6} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166363953976">
+      <problem id="oo-id5447201">
+        <para id="id1166348643243">What is the probability of getting 3 heads if a coin is tossed 5 times?</para>
+      </problem>
+      <solution id="oo-id1166352914227">
+        <para id="id1166350752220"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>3125</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "3125"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166365583188">
+      <problem id="oo-id1166363043862">
+        <para id="id1166360617399">If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>A</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A right )= "." 5} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>B</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (B right )= "." 4} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mi>A</m:mi><m:mtext> and </m:mtext><m:mi>B</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A" and "B right )= "." 2} {}</m:annotation></m:semantics></m:math>, find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mi>A</m:mi><m:mtext> or </m:mtext><m:mi>B</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (A" or "B right )} {}</m:annotation></m:semantics></m:math>.</para>
+      </problem>
+      <solution id="oo-id1166347367868">
+        <para id="id1166348635032"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." 7} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166348641021">
+      <problem id="oo-id1166361975880">
+        <para id="id1166346321959">How many different ways can two boys and three girls be chosen from a total of 6 boys and 8 girls?</para>
+      </problem>
+      <solution id="oo-id1166348371814">
+        <para id="id1166347009358">840 </para>
+      </solution>
+    </exercise>
+    <para id="id1166345848373"> Problems 34 - 36 refer to the following information.</para>
+    <para id="id1166348633495">Companies 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math> produce 15%, 40%, and 45% respectively of the major appliances in an area. One percent of company 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math> appliances, 2% of company 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math> appliances, and 3% of company 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math> appliances require service within the first year.</para>
+    <exercise id="id1166345195444">
+      <problem id="oo-id1166350695182">
+        <para id="id1166347416823">What is the probability that an appliance chosen at random is defective?</para>
+      </problem>
+      <solution id="oo-id3892752">
+        <para id="id1166354177292"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>023</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "023"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166346386830">
+      <problem id="oo-id1166346690677">
+        <para id="id1166366006440">If an appliance is chosen at random and found to be defective, what is the probability that it came from company 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math>?</para>
+      </problem>
+      <solution id="oo-id1166362544574">
+        <para id="id1166346660804"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>3478</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "3478"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166379185688">
+      <problem id="oo-id1166345193393">
+        <para id="id1166358876691">Suppose it was manufactured by company 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B} {}</m:annotation></m:semantics></m:math>, what is the probability it is a defective appliance?</para>
+      </problem>
+      <solution id="oo-id1166362646591">
+        <para id="id1166362609888"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>02</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "02"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166363248026">
+      <problem id="oo-id1166347101662">
+        <para id="id1166363216710">On 30% of his quizzes a student receives a score of 8, and on 70% his score is 9, what is his average?</para>
+      </problem>
+      <solution id="oo-id1166351038571">
+        <para id="id1166351238978"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>8</m:mn><m:mtext>.</m:mtext><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{8 "." 7} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <para id="id1166365981556"> Problems 38 - 40 refer to the following.</para>
+    <para id="id1166350520962">An urn contains 3 red, 4 white and 5 blue marbles, and two marbles are drawn at random.</para>
+    <exercise id="id1166365504432">
+      <problem id="oo-id1166346656158">
+        <para id="id1166358732127">What is the chance of getting a blue marble on the second draw given that a red has been drawn on the first?</para>
+      </problem>
+      <solution id="oo-id1166353303459">
+        <para id="id1166345675724"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>11</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5/"11"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166347396741">
+      <problem id="oo-id1166361416929">
+        <para id="id1166350509099">What is the probability of obtaining one white and one other marble?</para>
+      </problem>
+      <solution id="oo-id1166350823535">
+        <para id="id1166375887276"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>4848</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "4848"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166347784978">
+      <problem id="oo-id1166360159304">
+        <para id="id1166352733394">What is the probability of obtaining at least one white marble?</para>
+      </problem>
+      <solution id="oo-id1166346182462">
+        <para id="id1166345843442"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>5758</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "5758"} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <para id="id1166349407485"> For problems 41 - 43, consider the following transition matrix giving the probabilities for the next purchase of Tide and Brand 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>X</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X} {}</m:annotation></m:semantics></m:math>.</para>
+    <table id="id1166345206788" summary="This table shows the probability of the next purchase being either Tide or Brand X."><tgroup cols="4">
+        <colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <colspec colnum="3" colname="c3"/>
+        <colspec colnum="4" colname="c4"/>
+        <tbody>
+          <row>
+            <entry namest="c1" nameend="c2"/>
+            <entry namest="c3" nameend="c4">Next purchase</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+            <entry>Tide</entry>
+            <entry>Brand 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>X</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X} {}</m:annotation></m:semantics></m:math></entry>
+          </row>
+          <row>
+            <entry>Present</entry>
+            <entry>Tide</entry>
+          <entry>.8</entry>
+            <entry>.2</entry>
+</row>
+          <row>
+            <entry>Purchase</entry>
+            <entry>Brand 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>X</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X} {}</m:annotation></m:semantics></m:math></entry>
+            <entry>.4</entry>
+            <entry>.6</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <exercise id="id1166345618457">
+      <problem id="oo-id1166359397091">
+        <para id="id1166358468011">What percentage of the Tide people will buy Brand 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>X</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X} {}</m:annotation></m:semantics></m:math> next month?</para>
+      </problem>
+      <solution id="oo-id1166379170220">
+        <para id="id1166346657481"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." 2} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166378063865">
+      <problem id="oo-id1166345826004">
+        <para id="id1166346299519">If the original share of the market is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>.</m:mtext><m:mtext>25</m:mtext><m:mtext>.</m:mtext><m:mtext>75</m:mtext></m:mrow></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left ( "." "25", "." "75" right )} {}</m:annotation></m:semantics></m:math>, what will the share be two months from now?</para>
+      </problem>
+      <solution id="oo-id1166351102670">
+        <para id="id1166346284582"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 6 {} #  "." 4{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166348355096">
+      <problem id="oo-id1166347822641">
+        <para id="id1166348633501">What will the long term share of the market be?</para>
+      </problem>
+      <solution id="oo-id1166346604595">
+        <para id="id1166346300519"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+2/3 {} # 1/3{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <para id="id1166350908328"> For problems 44 - 46, consider the following transition matrix for an absorbing Markov Chain. </para>
+    <para id="id1166347793269">
+      <figure id="id2676649"><media id="id2676649_media" alt="This matrix shows the probability of switching from one state to another.">
+          <image mime-type="image/png" src="../../media/graphics1-7066.png" id="id2676649__onlineimage" height="233" width="386" print-width="3in"/>
+        </media>
+      </figure>
+    </para>
+    <exercise id="id1166364793576">
+      <problem id="oo-id1166348633828">
+        <para id="id1166348506952">Identify the absorbing states.</para>
+      </problem>
+      <solution id="oo-id1166352332062">
+        <para id="id1166362513325">1 and 4</para>
+      </solution>
+    </exercise>
+    <exercise id="id1166348510709"><problem id="oo-id1166348640878">
+        <para id="id1166360194747">Write the solution matrix.</para>
+      </problem>
+    <solution id="eip-id1167816183895"><figure id="eip-id1167827182912"><media id="eip-id1167816181631" alt="This matrix shows the probability of switching from states 2 or 3 to states 1 and 4.">
+        <image mime-type="image/png" src="../../media/graphics2-d81c.png" id="id1166357745448__onlineimage" height="128" width="249" print-width="2in"/>
+      </media>
+    </figure>
+</solution></exercise>
+    
+    
+    <exercise id="id1166352448598"><problem id="oo-id4243160">
+        <para id="id1166348509526">Find the probability of ending in state 4, given one started in state 2.</para>
+      </problem>
+      <solution id="oo-id1904410">
+        <para id="id1166345711818"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." 4} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166345113287"><problem id="oo-id1166346378683">
+        <para id="id1166362991186">Given the 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">×</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3 times 3} {}</m:annotation></m:semantics></m:math> game 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr>
+<m:mtr>
+<m:mtd><m:mn>0</m:mn>
+</m:mtd>
+
+<m:mtd><m:mn>0</m:mn>
+</m:mtd>
+
+<m:mtd><m:mn>4</m:mn>
+</m:mtd>
+</m:mtr>
+
+</m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+2 {} # 3 {} # 3 {} ##
+1 {} # 0 {} #  - 1{}
+}  right ]} {}</m:annotation></m:semantics></m:math> , find the optimal strategy for the column player.</para>
+      </problem>
+      <solution id="oo-id1166350508561">
+        <para id="id1166372217234"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>0</m:mn></m:mtd></m:mtr>
+<m:mtr>
+<m:mtd><m:mn>0</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1 {} ##
+0
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <para id="id1166345781997">  For problems 48 - 50, consider the following 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">×</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2 times 2} {}</m:annotation></m:semantics></m:math> payoff matrix.</para>
+    <para id="id1166348766038">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mfenced open="[" close="]">
+                  <m:mtable>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                          <m:mrow/>
+                        </m:mrow>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mrow/>
+                        </m:mrow>
+                      </m:mtd>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mtd>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mo stretchy="false">/</m:mo>
+                            <m:mn>4</m:mn>
+                          </m:mrow>
+                          <m:mrow/>
+                        </m:mrow>
+                      </m:mtd>
+                      <m:mtd>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mn>1</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">/</m:mo>
+                            <m:mn>4</m:mn>
+                          </m:mrow>
+                          <m:mrow/>
+                        </m:mrow>
+                      </m:mtd>
+                    </m:mtr>
+                  </m:mtable>
+                </m:mfenced>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ - 1 {} # 0 {} ##
+1/4 {} #  - 1/4{}
+}  right ]} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <exercise id="id1166351053251">
+      <problem id="oo-id1166367272421">
+        <para id="id1166345446836">Find the row player's optimal strategy. </para>
+      </problem>
+      <solution id="oo-id1166358726941">
+        <para id="id1166348756613"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1/3 {} # 2/3{}
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166345212051"><problem id="oo-id1166366282011">
+        <para id="id1166345235432">Find the column player's optimal strategy. </para>
+      </problem>
+      <solution id="oo-id1166377298019">
+        <para id="id1166352262528"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>6</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>6</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1/6 {} ##
+5/6
+}  right ]} {}</m:annotation></m:semantics></m:math></para>
+      </solution>
+    </exercise>
+    <exercise id="id1166361657218">
+      <problem id="oo-id1166348510212">
+        <para id="id1166348749540">Find the value of the game if the row and column players' strategies are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>7</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 7 {} #  "." 3{}
+}  right ]} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 5 {} ##
+ "." 5
+}  right ]} {}</m:annotation></m:semantics></m:math> , respectively.</para>
+      </problem>
+      <solution id="oo-id1166375517516">
+        <para id="id1166362533925"><m:math>
+<m:mo>–</m:mo>
+<m:mn>.35</m:mn>
+</m:math></para>
+      </solution>
+    </exercise>
+  </content>
+</document>

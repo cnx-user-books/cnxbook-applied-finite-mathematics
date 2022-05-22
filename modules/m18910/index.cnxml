@@ -1,0 +1,711 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Game Theory</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18910</md:content-id>
+  <md:title>Game Theory</md:title>
+  <md:abstract>This chapter covers principles of game theory. After completing this chapter students should be able to: solve strictly determined games and solve games involving mixed strategies.</md:abstract>
+  <md:uuid>772c7b44-60c2-4801-9f48-fcb4a7600ceb</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1920590">
+      <title>Chapter Overview</title>
+      <para id="id1171746703856">In this chapter, you will learn to:</para>
+      <list id="id1171738134746" list-type="enumerated" number-style="arabic">
+        <item>Solve strictly determined games.</item>
+        <item>Solve games involving mixed strategies.</item>
+      </list>
+    </section>
+    <section id="id1171734288316"><title>Strictly Determined Games</title><para id="id1171738191647">Game theory is one of the newest branches of mathematics. It first came to light when a brilliant mathematician named Dr. John von Neumann co-authored with Dr. Morgenstern a book titled <emphasis effect="italics">Theory of Games and Economic Behavior</emphasis>. Since then it has played an important role in decision making in business, economics, social sciences and other fields. </para>
+      <para id="id1171736452592">In this chapter, we will study games that involve only two players. In these games, since a win for one person is a loss for the other, we refer to them as <emphasis effect="bold">two-person zero-sum games</emphasis>. Although the games we will study here are fairly simple, they will provide us with an understanding of how games work and how they are applied in practical situations. We begin with an example. </para>
+      <example id="eip-id1170544779706">
+      <exercise id="id1171734725643">
+        <problem id="oo-id1171738391040">
+          <para id="id1171733994869">Robert and Carol decide to play a game using a dime and a quarter. Each chooses one of the two coins, puts it in their hand and closes their fist. At a given signal, they simultaneously open their fists. If the sum of the coins is less than thirty five cents, Robert gets both coins, otherwise, Carol gets both coins. Write the matrix for the game, determine the optimal strategies for each player, and find the expected payoff for Robert.</para>
+        </problem>
+        <solution id="oo-id1171742661430">
+          <para id="id1171735333665">Suppose Robert is the row player, that is, he plays the rows, and Carol is a column player. If Robert shows a dime and Carol shows a dime, the sum will be less than thirty five cents and Robert will win ten cents. But, if Robert shows a dime and Carol shows a quarter, the sum will not be less than thirty five cents and Carol will win ten cents or Robert will lose ten cents. The following matrix depicts all four cases and their corresponding payoffs for Robert. Remember a negative value is a loss for Robert and a win for Carol.</para>
+<para id="id1171733880322">
+        <figure id="id1171745456505"><media id="id1171745456505_media" alt="This matrix shows all of the payoffs in the game for Robert. Negative scores are positive for Carol.">
+            <image mime-type="image/png" src="../../media/graphics1-bbed.png" id="id1171745456505__onlineimage" height="154" width="444" print-width="2.5in"/>
+          </media>
+        </figure>
+      </para>
+<para id="eip-id1170555149210">The best strategy for Robert is to always show a dime because this way the worst he can do is lose ten cents. And, the best strategy for Carol is to always show a quarter because that way the worst she can do is to lose ten cents. If both Robert and Carol play their optimal strategies, Robert will lose ten cents each time. Therefore, the value of the game is negative ten cents.</para>
+        </solution>
+      </exercise>
+</example>
+      
+      <para id="id1171752832160">In <link target-id="eip-id1170544779706"/>, since there is only one fixed optimal strategy for each player, regardless of their opponent's strategy, we say the game possesses a <emphasis effect="bold">pure strategy</emphasis> and is <emphasis effect="bold">strictly determined</emphasis>. </para>
+      <para id="id1171736446029">Next, we formulate a method to find the optimal strategy for each player and the value of the game. The method involves considering the worst scenario for each player.</para>
+      <para id="id1171738831399">To consider the worst situation, the row player considers the minimum value in each row, and the column player considers the maximum value in each column. Note that the maximum value really represents a minimum value for the column player because the game matrix depicts the payoffs for the row player. We list the method below.</para>
+<para id="eip-620"><title>Finding the Optimal Strategy and the Value for Strictly Determined Games</title><list id="eip-id1171362623021" list-type="enumerated" number-style="arabic"><item>Put an asterisk(*) next to the minimum entry in each row.</item>
+        <item>Put a box around the maximum entry in each column.</item>
+        <item>The entry that has both an asterisk and a box represents the value of the game and is called a <emphasis effect="bold">saddle point</emphasis>.</item>
+        <item>The row that is associated with the saddle point represents the best strategy for the row player, and the column that is associated with the saddle point represents the best strategy for the column player.</item>
+        <item>A game matrix can have more than one saddle point, but all saddle points have the same value.</item>
+        <item>If no saddle point exists, the game is not strictly determined. Non-strictly determined games are the subject of <link target-id="id1171734727535"/>.</item>
+      </list></para>
+      
+      <example id="eip-id1166038173445">
+      <exercise id="id1171734470718">
+        <problem id="oo-id1171739398796">
+          <para id="id1171738165141">Find the saddle points and optimal strategies for the following game. </para>
+<para id="id1171734706642">
+        <figure id="id1171737910714"><media id="id1171737910714_media" alt="This matrix shows the game.">
+            <image mime-type="image/png" src="../../media/graphics2-d655.png" id="id1171737910714__onlineimage" height="129" width="430" print-width="2in"/>
+          </media>
+        </figure>
+      </para>
+        </problem>
+<solution id="eip-id1166038366798">
+<para id="eip-id1166039392947">We find the saddle point by placing an asterisk next to the minimum entry in each row, and by putting a box around the maximum entry in each column as shown below.</para>
+<para id="id1171738203742">
+        <figure id="id1171738188007"><media id="id1171738188007_media" alt="This matrix shows the saddle points along with the minimum and maximum.">
+            <image mime-type="image/png" src="../../media/graphics3-1232.png" id="id1171738188007__onlineimage" height="114" width="383" print-width="2in"/>
+          </media>
+        </figure>
+      </para>
+<para id="eip-id1166039745360">Since the second row, first column entry, which happens to be 10, has both an asterisk and a box, it is a saddle point. This implies that the value of the game is 10, and the optimal strategy for the row player is to always play row 2, and the optimal strategy for the column player is to always play column 1. If both players play their optimal strategies, the row player will win 10 units each time.</para>
+<para id="eip-id1166038172740">The row player's strategy is written as <m:math>
+<m:mfenced open="[" close="]">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mn>0</m:mn>
+</m:mtd>
+<m:mtd>
+<m:mn>1</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:mfenced>
+</m:math>  indicating that he will play row 1 with a probability of 0 and row 2 with a probability of 1. Similarly the column player's strategy is
+written as <m:math>
+<m:mfenced open="[" close="]">
+<m:mtable>
+<m:mtr>
+<m:mtd>
+<m:mn>1</m:mn>
+</m:mtd>
+</m:mtr>
+<m:mtr>
+<m:mtd>
+<m:mn>0</m:mn>
+</m:mtd>
+</m:mtr>
+</m:mtable>
+</m:mfenced>
+</m:math> implying that he will play column 1 with a probability of 1, and column 2 with a probability of 0.</para>
+</solution>
+      </exercise>
+      </example>
+      
+    </section>
+    <section id="id1171734727535"><title>Non-Strictly Determined Games</title><para id="id1171735384086">In this section, we study games that have no saddle points. Which means that these games do not possess a pure strategy. We call these games <emphasis effect="bold">non-strictly determined games</emphasis>. If the game is played only once, it will make no difference what move is made. However, if the game is played repeatedly, <emphasis effect="bold">a mixed strategy</emphasis> consisting of alternating random moves can be worked out. </para>
+      <para id="id1171733871036">We consider the following example. </para>
+      <example id="eip-id1171025857858">
+      <exercise id="id1171738372432">
+        <problem id="oo-id1898071">
+          <para id="id1171744681351">Suppose Robert and Carol decide to play a game using a dime and a quarter. At a given signal, they simultaneously show one of the two coins. If the coins match, Robert gets both coins, but if they don't match, Carol gets both coins. Determine whether the game is strictly determined.</para>
+        </problem>
+        <solution id="oo-id1171738200162">
+          <para id="id1171744941311">We write the payoff matrix for Robert as follows:</para>
+<para id="id1171738004499">
+        <figure id="id1171744686050"><media id="id1171744686050_media" alt="This matrix shows the payoff for Robert.">
+            <image mime-type="image/png" src="../../media/graphics4-4927.png" id="id1171744686050__onlineimage" height="142" width="483" print-width="2in"/>
+          </media>
+        </figure>
+      </para>
+<para id="eip-id1171025857918">To determine whether the game is strictly determined, we look for a saddle point. Again, we place an asterisk next to the minimum value in each row, and a box around the maximum value in each column. We get</para>
+<figure id="id1171738135116"><media id="id1171738135116_media" alt="This matrix shows the payoff for Robert along with saddle points, minimums, and maximums.">
+          <image mime-type="image/png" src="../../media/graphics5-ccc8.png" id="id1171738135116__onlineimage" height="150" width="494" print-width="2in"/>
+        </media>
+      </figure>
+<para id="eip-id1171025857949">Since there is no entry that has both an asterisk and a box, the game does not have a saddle point, and thus it is non-strictly determined.</para>
+<para id="eip-id1171025857953">We wish to devise a strategy for Robert.	If Robert consistently shows a dime, for example, Carol will see the pattern and will start showing a quarter, and Robert will lose. Conversely, if Carol repeatedly shows a quarter, Robert will start showing a quarter, thus resulting in Carol's loss. So a good strategy is to throw your opponent off by showing a dime some of the times and showing a quarter other times. Before we develop an optimal strategy for each player, we will consider an arbitrary strategy for each and determine the corresponding payoffs.</para>
+        </solution>
+      </exercise>
+</example>
+      
+      
+      <example id="eip-id1171025857965">
+      <exercise id="id1171738162034">
+        <problem id="oo-id1171738818428">
+          <para id="id1171756339002">Suppose in <link target-id="eip-id1171025857858"/>, Robert decides to show a dime with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "20"} {}</m:annotation></m:semantics></m:math> probability and a quarter with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>80</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "80"} {}</m:annotation></m:semantics></m:math> probability, and Carol decides to show a dime with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "70"} {}</m:annotation></m:semantics></m:math> probability and a quarter with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "30"} {}</m:annotation></m:semantics></m:math> probability. What is the expected payoff for Robert?</para>
+        </problem>
+        <solution id="oo-id1171750417597">
+          <para id="id1171738191246">Let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>R</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R} {}</m:annotation></m:semantics></m:math> denote Robert's strategy and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math> denote Carol's strategy. </para>
+          <para id="id1171739476395">Since Robert is a row player and Carol is a column player, their strategies are written as follows:</para>
+          <para id="id1171738135591"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>80</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R= left [ matrix {
+ "." "20" {} #  "." "80"{}
+}  right ]} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C= left [ matrix {
+ "." "70" {} ##
+ "." "30"
+}  right ]} {}</m:annotation></m:semantics></m:math>. </para>
+          <para id="id1171738191143">To find the expected payoff, we use the following reasoning.</para>
+          <para id="id1171735634811">Since Robert chooses to play row 1 with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "20"} {}</m:annotation></m:semantics></m:math> probability and Carol chooses to play column 1 with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." "70"} {}</m:annotation></m:semantics></m:math> probability, the move row 1, column 1 will be chosen with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext></m:mrow></m:mfenced><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>14</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left ( "." "20" right ) left ( "." "70" right )= "." "14"} {}</m:annotation></m:semantics></m:math> probability. The fact that this move has a payoff of 10 cents for Robert, Robert's expected payoff for this move is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>.</m:mtext><m:mtext>14</m:mtext></m:mrow></m:mfenced><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mtext>.</m:mtext><m:mtext>10</m:mtext></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>014</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left ( "." "14" right ) left ( "." "10" right )= "." "014"} {}</m:annotation></m:semantics></m:math> cents. Similarly, we compute Robert's expected payoffs for the other cases. The table below lists expected payoffs for all four cases.</para>
+
+<table id="id1171747163782" summary="A 6x4 table showing the possible moves to make, the probability of payoff, and the expected payoff.">
+<tgroup cols="4"><colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <tbody>
+            <row>
+              <entry>Move</entry>
+              <entry>Probability</entry>
+              <entry>Payoff</entry>
+              <entry>Expected Payoff</entry>
+            </row>
+            <row>
+              <entry>Row 1, Column 1</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mfenced open="(" close=")">
+                              <m:mrow>
+                                <m:mtext>.</m:mtext>
+                                <m:mtext>20</m:mtext>
+                              </m:mrow>
+                            </m:mfenced>
+                            <m:mrow>
+                              <m:mfenced open="(" close=")">
+                                <m:mrow>
+                                  <m:mtext>.</m:mtext>
+                                  <m:mtext>70</m:mtext>
+                                </m:mrow>
+                              </m:mfenced>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mtext>.</m:mtext>
+                            </m:mrow>
+                            <m:mtext>14</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{ left ( "." "20" right ) left ( "." "70" right )= "." "14"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+              <entry>10 cents</entry>
+              <entry>1.4 cents</entry>
+            </row>
+            <row>
+              <entry>Row 1, Column 2</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mfenced open="(" close=")">
+                              <m:mrow>
+                                <m:mtext>.</m:mtext>
+                                <m:mtext>20</m:mtext>
+                              </m:mrow>
+                            </m:mfenced>
+                            <m:mrow>
+                              <m:mfenced open="(" close=")">
+                                <m:mrow>
+                                  <m:mtext>.</m:mtext>
+                                  <m:mtext>30</m:mtext>
+                                </m:mrow>
+                              </m:mfenced>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mtext>.</m:mtext>
+                            </m:mrow>
+                            <m:mtext>06</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{ left ( "." "20" right ) left ( "." "30" right )= "." "06"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+              <entry>-10 cents</entry>
+              <entry>-.6 cents</entry>
+            </row>
+            <row>
+              <entry>Row 2, Column 1</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mfenced open="(" close=")">
+                              <m:mrow>
+                                <m:mtext>.</m:mtext>
+                                <m:mtext>80</m:mtext>
+                              </m:mrow>
+                            </m:mfenced>
+                            <m:mrow>
+                              <m:mfenced open="(" close=")">
+                                <m:mrow>
+                                  <m:mtext>.</m:mtext>
+                                  <m:mtext>70</m:mtext>
+                                </m:mrow>
+                              </m:mfenced>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mtext>.</m:mtext>
+                            </m:mrow>
+                            <m:mtext>56</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{ left ( "." "80" right ) left ( "." "70" right )= "." "56"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+              <entry>-25 cents</entry>
+              <entry>-14 cents</entry>
+            </row>
+            <row>
+              <entry>Row 2, Column 2</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mfenced open="(" close=")">
+                              <m:mrow>
+                                <m:mtext>.</m:mtext>
+                                <m:mtext>80</m:mtext>
+                              </m:mrow>
+                            </m:mfenced>
+                            <m:mrow>
+                              <m:mfenced open="(" close=")">
+                                <m:mrow>
+                                  <m:mtext>.</m:mtext>
+                                  <m:mtext>30</m:mtext>
+                                </m:mrow>
+                              </m:mfenced>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mtext>.</m:mtext>
+                            </m:mrow>
+                            <m:mtext>24</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{ left ( "." "80" right ) left ( "." "30" right )= "." "24"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+              <entry>25 cents</entry>
+              <entry>6.0 cents</entry>
+            </row>
+            <row>
+              <entry>Totals</entry>
+              <entry>1</entry>
+              <entry/>
+              <entry>-7.2 cents</entry>
+            </row>
+          </tbody>
+        
+
+</tgroup>
+</table>
+
+          <para id="id1171734267365">The above table shows that if Robert plays the game with the strategy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>80</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R= left [ matrix {
+ "." "20" {} #  "." "80"{}
+}  right ]} {}</m:annotation></m:semantics></m:math> and Carol plays with the strategy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C= left [ matrix {
+ "." "70" {} ##
+ "." "30"
+}  right ]} {}</m:annotation></m:semantics></m:math>, Robert can expect to lose 7.2 cents for every game.</para>
+
+
+          <para id="id1171735373487">Alternatively, if we call the game matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math>, then the expected payoff for the row player can be determined by multiplying matrices 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>R</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math>. Thus, the expected payoff 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math> for Robert is as follows:</para>
+
+          <equation id="eip-id1171027574209"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mtable columnalign="left"><m:mtr><m:mtd><m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">=</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>RCG</m:mtext></m:mrow></m:mstyle></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>20</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>80</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>10</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>25</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>25</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>70</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mtext>30</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mtext>  </m:mtext><m:mo>=</m:mo><m:mrow><m:mrow><m:mrow/><m:mo stretchy="false">−</m:mo><m:mn>7</m:mn></m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn><m:mtext>   cents</m:mtext></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ matrix {
+P= ital "RCG" {} ##
+P= left [ matrix {
+ "." "20" {} #  "." "80"{}
+}  right ] left [ matrix {
+"10" {} #  - "10" {} ##
+ - "25" {} # "25"{}
+}  right ] left [ matrix {
+ "." "70" {} ##
+ "." "30"
+}  right ] {} ##
+= - 7 "." 2" cents"
+} } {}</m:annotation></m:semantics></m:math></equation>
+          
+          <para id="id1171738191682">Which is the same as the one obtained from the table.</para>
+        </solution>
+      </exercise>
+</example>
+      
+      <example id="eip-id1168356981301"><exercise id="id1171733951117">
+        <problem id="oo-id1171738195358">
+          <para id="id1171739195043">For the following game matrix 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math>, determine the optimal strategy for both the row player and the column player, and find the value of the game.</para>
+        
+          <equation id="eip-id1168390079115">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>G</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G= left [ matrix {
+1 {} #  - 2 {} ##
+ - 3 {} # 4{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1171746483334">
+          <para id="id1171736469138">Let us suppose that the row player uses the strategy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>r</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R= left [ matrix {
+r {} # 1 - r{}
+}  right ]} {}</m:annotation></m:semantics></m:math>. Now if the column player plays column 1, the expected payoff 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math> for the row player is </para>
+          <para id="id1171741198938"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>r</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mi>r</m:mi></m:mfenced><m:mo stretchy="false">+</m:mo><m:mfenced open="(" close=")"><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mfenced></m:mrow><m:mrow><m:mfenced open="(" close=")"><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow></m:mfenced><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>4r</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (r right )=1 left (r right )+ left ( - 3 right ) left (1 - r right )=4r - 3} {}</m:annotation></m:semantics></m:math>. </para>
+          <para id="id1171738159561">Which can also be computed as follows:</para>
+          <para id="id1171739193324"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>r</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>r</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (r right )= left [ matrix {
+r {} # 1 - r{}
+}  right ] left [ matrix {
+1 {} ##
+ - 3
+}  right ]} {}</m:annotation></m:semantics></m:math> or 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>4r</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4r - 3} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="id1171734753703">If the row player plays the strategy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>r</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+r {} # 1 - r{}
+}  right ]} {}</m:annotation></m:semantics></m:math> and the column player plays column 2, the expected payoff 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math> for the row player is </para>
+          <para id="id1171747606639"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>r</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>r</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mn>4</m:mn></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>6r</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (r right )= left [ matrix {
+r {} # 1 - r{}
+}  right ] left [ matrix {
+ - 2 {} ##
+4
+}  right ]= - 6r+4} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="id1171739962467">We have two equations </para>
+          <para id="id1171738152675"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>r</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>4r</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (r right )=4r - 3} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mrow><m:mfenced open="(" close=")"><m:mi>r</m:mi></m:mfenced><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>6r</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left (r right )= - 6r+4} {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1171736704595">The row player is trying to improve upon his worst scenario, and that only happens when the two lines intersect. Any point other than the point of intersection will not result in optimal strategy as one of the expectations will fall short.</para>
+          <para id="id1171734347345">Solving for 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{r} {}</m:annotation></m:semantics></m:math> algebraically, we get</para>
+          <equation id="eip-id1168380131932">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>4r</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>6r</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4r - 3= - 6r+4} {}</m:annotation></m:semantics></m:math></equation>
+<para id="eip-id1165462389164"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>7</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>10</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{r=7/"10"} {}</m:annotation></m:semantics></m:math>.</para>
+
+  <para id="id1167839273509">Therefore, the optimal strategy for the row player is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>7</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 7 {} #  "." 3{}
+}  right ]} {}</m:annotation></m:semantics></m:math> .</para>
+    <para id="id1167819148841">Alternatively, we can find the optimal strategy for the row player by, first, multiplying the row matrix with the game matrix as shown below.</para>
+    <equation id="eip-id1169880744060">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>r</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>4r</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>6r</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+r {} # 1 - r{}
+}  right ] left [ matrix {
+1 {} #  - 2 {} ##
+ - 3 {} # 4{}
+}  right ]= left [ matrix {
+4r - 3 {} #  - 6r+4{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1167821109013">And then by equating the two entries in the product matrix. Again, we get 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{r= "." 7} {}</m:annotation></m:semantics></m:math>, which gives us the optimal strategy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>7</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 7 {} #  "." 3{}
+}  right ]} {}</m:annotation></m:semantics></m:math> .</para>
+    <para id="id1167819567629">We use the same technique to find the optimal strategy for the column player.</para>
+    <para id="id1167843259831">  Suppose the column player's optimal strategy is represented by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>c</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>c</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+c {} ##
+1 - c
+}  right ]} {}</m:annotation></m:semantics></m:math>. We, first, multiply the game matrix by the column matrix as shown below.</para>
+    <equation id="eip-id1169465808079">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>c</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>c</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>3c</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>7c</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1 {} #  - 2 {} ##
+ - 3 {} # 4{}
+}  right ] left [ matrix {
+c {} ##
+1 - c
+}  right ]= left [ matrix {
+3c - 2 {} ##
+ - 7c+4
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1167821458427">And then equate the entries in the product matrix. We get</para>
+    <equation id="eip-id2807856">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3c</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>7c</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3c - 2= - 7c+4} {}</m:annotation></m:semantics></m:math></equation>
+    <equation id="eip-id1169468571726">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>c</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{c= "." 6} {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1167844726941">  Therefore, the column player's optimal strategy is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ "." 6 {} ##
+ "." 4
+}  right ]} {}</m:annotation></m:semantics></m:math> .</para>
+    <para id="id1167828204364">To find the expected value, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>V</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V} {}</m:annotation></m:semantics></m:math>, of the game, we find the product of the matrices 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>R</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>G</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math>.</para>
+    <equation id="eip-id1840588"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>7</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>3</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtext>.</m:mtext><m:mn>4</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mrow/><m:mo stretchy="false">−</m:mo><m:mtext>.</m:mtext></m:mrow><m:mn>2</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ matrix {
+V= left [ matrix {
+ "." 7 {} #  "." 3{}
+}  right ] left [ matrix {
+1 {} #  - 2 {} ##
+ - 3 {} # 4{}
+}  right ] left [ matrix {
+ "." 6 {} ##
+ "." 4
+}  right ] {} ##
+= -  "." 2
+} } {}</m:annotation></m:semantics></m:math></equation>
+    <para id="id1167831800260">That is, if both players play their optimal strategies, the row player can expect to lose 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ "." 2} {}</m:annotation></m:semantics></m:math> units for every game.</para>
+
+        </solution>
+      </exercise>
+</example>
+      
+      <example id="eip-id1167187853928">
+      <exercise id="id1171737660480">
+        <problem id="oo-id1171738191253">
+          <para id="id3084464">For the game in <link target-id="eip-id1171025857858"/>, determine the optimal strategy for both Robert and Carol, and find the value of the game.</para>
+        </problem>
+        <solution id="oo-id1171736442560">
+          <para id="id1171736186881">Since we have already determined that the game is non-strictly determined, we proceed to determine the optimal strategy for the game. We rewrite the game matrix.</para>
+          <equation id="eip-id1167179698376">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>G</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>10</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>25</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>25</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G= left [ matrix {
+"10" {} #  - "10" {} ##
+ - "25" {} # "25"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171736199177">  Let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>r</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R= left [ matrix {
+r {} # 1 - r{}
+}  right ]} {}</m:annotation></m:semantics></m:math> be Robert's strategy, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>c</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>c</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C= left [ matrix {
+c {} ##
+1 - c
+}  right ]} {}</m:annotation></m:semantics></m:math> be Carol's strategy. </para>
+          <para id="id1171735836434">To find the optimal strategy for Robert, we, first, find the product 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>RG</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "RG"} {}</m:annotation></m:semantics></m:math> as below.</para>
+          <equation id="eip-id1167202803926">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>r</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>10</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>25</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>25</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>35</m:mtext><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">−</m:mo><m:mtext>25</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>35</m:mtext></m:mrow><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>25</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+r {} # 1 - r{}
+}  right ] left [ matrix {
+"10" {} #  - "10" {} ##
+ - "25" {} # "25"{}
+}  right ]= left [ matrix {
+"35"r - "25" {} #  - "35"r+"25"{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171736949351">By setting the entries equal, we get </para>
+          <para id="id1171737511262"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>35</m:mtext><m:mrow><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">−</m:mo><m:mtext>25</m:mtext></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>35</m:mtext></m:mrow></m:mrow><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>25</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"35"r - "25"= - "35"r+"25"} {}</m:annotation></m:semantics></m:math> <newline/>or 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{r=5/7} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="id1171739233330">Therefore, the optimal strategy for Robert is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+5/7 {} # 2/7{}
+}  right ]} {}</m:annotation></m:semantics></m:math> .</para>
+          <para id="id1171734715709">To find the optimal strategy for Carol, we, first, find the following product. </para>
+          <equation id="eip-id1167197032120">     
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>10</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>25</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>25</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>c</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>c</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>20</m:mtext><m:mrow><m:mi>c</m:mi><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>50</m:mtext></m:mrow><m:mrow><m:mi>c</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>25</m:mtext></m:mrow></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+"10" {} #  - "10" {} ##
+ - "25" {} # "25"{}
+}  right ] left [ matrix {
+c {} ##
+1 - c
+}  right ]= left [ matrix {
+"20"c - "10" {} ##
+ - "50"c+"25"
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171734941689">We now set the entries equal to each other, and we get,</para>
+          <equation id="eip-id1167165639088"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>20</m:mtext><m:mrow><m:mrow><m:mi>c</m:mi><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>50</m:mtext></m:mrow></m:mrow><m:mrow><m:mi>c</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>25</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"20"c - "10"= - "50"c+"25"} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171737587692">or   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>c</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{c=1/2} {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1171735582955">  Therefore, the optimal strategy for Carol is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1/2 {} ##
+1/2
+}  right ]} {}</m:annotation></m:semantics></m:math> .</para>
+          <para id="id1171734621648">To find the expected value, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>V</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V} {}</m:annotation></m:semantics></m:math>, of the game, we find the product 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>RGC</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "RGC"} {}</m:annotation></m:semantics></m:math>.</para>
+          <equation id="eip-id1167184995652"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mtable columnalign="left"><m:mtr>
+<m:mtd><m:mrow><m:mi>V</m:mi><m:mrow/></m:mrow></m:mtd>
+<m:mtd><m:mo>=</m:mo></m:mtd>
+<m:mtd><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mtext>10</m:mtext><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>25</m:mtext></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mtext>25</m:mtext><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr>
+<m:mtd/>
+<m:mtd>
+<m:mo>=</m:mo>
+</m:mtd>
+<m:mtd><m:mrow><m:mfenced open="[" close="]"><m:mn>0</m:mn></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ matrix {
+V {} # ={} {} #  left [ matrix {
+5/7 {} # 2/7{}
+}  right ] left [ matrix {
+"10" {} #  - "10" {} ##
+ - "25" {} # "25"{}
+}  right ] left [ matrix {
+1/2 {} ##
+1/2
+}  right ] {} ##
+ {} # ={} {} #  left [0 right ]{}
+} } {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171733935997">If both players play their optimal strategy, the value of the game is zero. In such case, the game is called <emphasis effect="bold">fair</emphasis>. </para>
+        </solution>
+      </exercise>
+</example>
+      
+    </section>
+    <section id="id1171746579141"><title>Reduction by Dominance</title><para id="id1171734634234">Sometimes an 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">×</m:mo><m:mi>n</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m times n} {}</m:annotation></m:semantics></m:math> game matrix can be reduced to a 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">×</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2 times 2} {}</m:annotation></m:semantics></m:math> matrix by deleting certain rows and columns. A row can be deleted if there exists another row that will produce a payoff of an equal or better value. Similarly, a column can be deleted if there is another column that will produce a payoff of an equal or better value for the column player. The row or column that produces a better payoff for its corresponding player is said to <emphasis effect="bold">dominate</emphasis> the row or column with the lesser payoff. </para>
+      <example id="eip-id1169864199283">
+      <exercise id="id8418907">
+        <problem id="oo-id1171740409553">
+          <para id="id1171737509696">For the following game, determine the optimal strategy for both the row player and the column player, and find the value of the game.</para>
+       
+          <equation id="eip-id1169863756412">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>G</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{G= left [ matrix {
+ - 2 {} # 6 {} # 4 {} ##
+ - 1 {} #  - 2 {} #  - 3 {} ##
+1 {} # 2 {} #  - 2{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1171735631428">
+          <para id="id1171739957679">We first look for a saddle point and determine that none exist. Next, we try to reduce the matrix to a 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">×</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2 times 2} {}</m:annotation></m:semantics></m:math> matrix by eliminating the dominated row.</para>
+          <para id="id1171736008020">Since every entry in row 3 is larger than the corresponding entry in row 2, row 3 dominates row 2. Therefore, a rational row player will never play row 2, and we eliminate row 2. We get </para>
+          <equation id="eip-id1169864295256">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>6</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>2</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ - 2 {} # 6 {} # 4 {} ##
+1 {} # 2 {} #  - 2{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id8165259">Now we try to eliminate a column. Remember that the game matrix represents the payoffs for the row player and not the column player; therefore, the larger the number in the column, the smaller the payoff for the column player.</para>
+          <para id="id1171735806680">The column player will never play column 2, because it is dominated by both column 1 and column 3. Therefore, we eliminate column 2 and get the modified matrix, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M} {}</m:annotation></m:semantics></m:math>, below.</para>
+          <equation id="eip-id2199489">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M= left [ matrix {
+ - 2 {} # 4 {} ##
+1 {} #  - 2{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171737742420">To find the optimal strategy for both the row player and the column player, we use the method learned in the <link target-id="id1171734288316"/>.</para>
+          <para id="id1171737858854">  Let the row player's strategy be 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>r</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R= left [ matrix {
+r {} # 1 - r{}
+}  right ]} {}</m:annotation></m:semantics></m:math>, and the column player's be strategy be 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>c</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>c</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C= left [ matrix {
+c {} ##
+1 - c
+}  right ]} {}</m:annotation></m:semantics></m:math> . </para>
+          <para id="id1171737602134">To find the optimal strategy for the row player, we, first, find the product 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>RM</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "RM"} {}</m:annotation></m:semantics></m:math> as below.</para>
+          <equation id="eip-id1169865971664">   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>r</m:mi><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>r</m:mi></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3r</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>1</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>6r</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+r {} # 1 - r{}
+}  right ] left [ matrix {
+ - 2 {} # 4 {} ##
+1 {} #  - 2{}
+}  right ]= left [ matrix {
+ - 3r+1 {} # 6r - 2{}
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171734920328">By setting the entries equal, we get</para>
+          <equation id="eip-id1169865413868">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3r</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>1</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>6r</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - 3r+1=6r - 2} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171735773202">or   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>r</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{r=1/3} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="id8240815">  Therefore, the optimal strategy for the row player is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1/3 {} # 2/3{}
+}  right ]} {}</m:annotation></m:semantics></m:math> , but relative to the original game matrix it is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+1/3 {} # 0 {} # 2/3{}
+}  right ]} {}</m:annotation></m:semantics></m:math> .</para>
+          <para id="id1171736082050">To find the optimal strategy for the column player we, first, find the following product. </para>
+          <equation id="eip-id1169865244243">    
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mi>c</m:mi><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>c</m:mi></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>6c</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>3c</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+ - 2 {} # 4 {} ##
+1 {} #  - 2{}
+}  right ] left [ matrix {
+c {} ##
+1 - c
+}  right ]= left [ matrix {
+ - 6c+4 {} ##
+3c - 2
+}  right ]} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171735309374">We set the entries in the product matrix equal to each other, and we get,</para>
+          <equation id="eip-id1169864124320">  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>6c</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3c</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - 6c+4=3c - 2} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171734034687">or   
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>c</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{c=2/3} {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1171737550400">  Therefore, the optimal strategy for the column player is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+2/3 {} ##
+1/3
+}  right ]} {}</m:annotation></m:semantics></m:math> , but relative to the original game matrix, the strategy for the column player is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+2/3 {} ##
+0 {} ##
+1/3
+}  right ]} {}</m:annotation></m:semantics></m:math> .</para>
+          <para id="id1171736434379">To find the expected value, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>V</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V} {}</m:annotation></m:semantics></m:math>, of the game, we have two choices: either to find the product of matrices 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>R</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math>, or multiply the optimal strategies relative to the original matrix to the original matrix. We choose the first, and get </para>
+          <equation id="eip-id1169871012542"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mtable columnalign="left"><m:mtr>
+<m:mtd><m:mrow><m:mi>V</m:mi><m:mrow/></m:mrow></m:mtd>
+<m:mtd><m:mo>=</m:mo></m:mtd>
+<m:mtd><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>4</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr>
+
+<m:mtr>
+<m:mtd><m:mrow/>
+</m:mtd>
+
+<m:mtd><m:mo>=</m:mo></m:mtd>
+<m:mtd><m:mrow><m:mfenced open="[" close="]"><m:mn>0</m:mn></m:mfenced><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ matrix {
+V {} # ={} {} #  left [ matrix {
+1/3 {} # 2/3{}
+}  right ] left [ matrix {
+ - 2 {} # 4 {} ##
+1 {} #  - 2{}
+}  right ] left [ matrix {
+2/3 {} ##
+1/3
+}  right ] {} ##
+ {} # ={} {} #  left [0 right ]{}
+} } {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171736151822">Therefore, if both players play their optimal strategy, the value of the game is zero. </para>
+        </solution>
+      </exercise>
+</example>
+      <para id="id1171735939786">We summarize as follows:</para>
+<para id="eip-169"><title>Reduction by Dominance</title><list id="eip-id1171769066081" list-type="enumerated" number-style="arabic"><item>Sometimes an 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">×</m:mo><m:mi>n</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m times n} {}</m:annotation></m:semantics></m:math> game matrix can be reduced to a 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">×</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2 times 2} {}</m:annotation></m:semantics></m:math> matrix by deleting <emphasis effect="bold">dominated</emphasis> rows and columns. </item>
+        <item>A row is called a <emphasis effect="bold">dominated row</emphasis> if there exists another row that will produce a payoff of an equal or better value. That happens when there exists a row whose every entry is larger than the corresponding entry of the dominated row. </item>
+        <item>A column is called a <emphasis effect="bold">dominated column</emphasis> if there exists another column that will produce a payoff of an equal or better value. This happens when there exists a column whose every entry is smaller than the corresponding entry of the dominated row. </item>
+      </list></para>
+     
+    </section>
+  </content>
+</document>

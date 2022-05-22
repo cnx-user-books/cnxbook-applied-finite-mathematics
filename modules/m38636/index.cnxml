@@ -1,0 +1,1195 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Linear Equations: Homework</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38636</md:content-id>
+  <md:title>Linear Equations: Homework</md:title>
+  <md:abstract>This chapter covers principles of linear equations. After completing this chapter students should be able to: graph a linear equation; find the slope of a line; determine an equation of a line; solve linear systems; and complete application problems using linear equations.</md:abstract>
+  <md:uuid>520c5fbd-8e50-4298-b39b-7bc2e315b4d1</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="example">
+      <link url="HWChapter1.doc" strength="3">Download Chapter 1 Homework</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1170916604742">
+      <title>GRAPHING A LINEAR EQUATION</title>
+      <para id="id1170905150262">Work the following problems.</para>     
+      <exercise id="id1170908235922">
+        <problem id="oo-id1170915789602">
+          <para id="id1170917530718">Is the point (2, 3) on the line 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>5x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5x - 2y=4} {}</m:annotation></m:semantics></m:math>? </para>
+        </problem>
+        <solution id="oo-id1170910294399">
+          <para id="id1170910642713"> Yes</para>
+        </solution>
+      </exercise>
+      <exercise id="id1170933255787">
+        <problem id="oo-id1170919349789">
+          <para id="id1170915980501">Is the point (1, – 2) on the line 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>6x</m:mn><m:mo stretchy="false">−</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6x - y=4} {}</m:annotation></m:semantics></m:math>? </para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170927765317">
+        <problem id="oo-id1170926340276">
+          <para id="id5490347">For the line 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mi>12</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3x - y=12} {}</m:annotation></m:semantics></m:math>, complete the following ordered pairs. </para>     
+          <para id="id1170911820807"> (2,  ) ( , 6) </para>
+          <para id="id1170932962541"> (0,  ) ( , 0)</para>
+        </problem>
+        <solution id="oo-id1170908123560">
+          <para id="id1170923782715">(2, –6) (6, 6) </para>
+          <para id="id1170915693372">(0,–12) (4, 0)</para>
+        </solution>
+      </exercise>
+      <exercise id="id1170915567958">
+        <problem id="oo-id1170909863840">
+          <para id="id1170909394289">For the line 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>4x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>3y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>24</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4x+3y="24"} {}</m:annotation></m:semantics></m:math>, complete the following ordered pairs. </para>
+          <para id="id1170911818636"> (3,  ) ( , 4) </para>
+          <para id="id1170911325077"> (0,  ) ( , 0)</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170904385319">
+        <problem id="oo-id1170910484764">
+          <para id="id1170917501307">Graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=2x+3} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+        <solution id="fs-id1165691223313">
+         <figure id="id1170906494603"><media id="id1170906494603_media" alt="The line y=2x+3 passing through the points (-1,1) and (0,3) on a Cartesian graph.">
+          <image mime-type="image/png" src="../../media/graphics1-0f33.png" id="id1170906494603__onlineimage" height="180" width="222"/>
+        </media>
+      </figure>
+      </solution>
+      </exercise>
+     
+      <exercise id="id1170921920658">
+        <problem id="oo-id1170911889322">
+          <para id="id1170918707086">Graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3x</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>5</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - 3x+5} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170911330129">
+        <problem id="oo-id1170911807047">
+          <para id="id1170911360970">Graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>4x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=4x - 3} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+        <solution id="fs-id1165714207734">
+        <figure id="id5314161"><media id="id5314161_media" alt="The line y=4x-3 passing through the points (0,-3) and (2,5) on a Cartesian graph.">
+          <image mime-type="image/png" src="../../media/graphics2-c3e1.png" id="id5314161__onlineimage" height="181" width="200"/>
+        </media>
+      </figure>
+      </solution>
+      </exercise>
+      
+      <exercise id="id1170922398600">
+        <problem id="oo-id6272190">
+          <para id="id1170910103488">Graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">−</m:mo><m:mn>2y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x - 2y=8} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+      </exercise>
+      <exercise id="id1170920695393">
+        <problem id="oo-id1170917790952">
+          <para id="id1170911878514">Graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x+y=4} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+        <solution id="fs-id1165695527833">
+        <figure id="id1170926801598"><media id="id1170926801598_media" alt="The line 2x+y=4 passing through the point (0,4) and (2,0) on a Cartesian graph.">
+          <image mime-type="image/png" src="../../media/graphics3-be07.png" id="id1170926801598__onlineimage" height="186" width="180"/>
+        </media>
+      </figure></solution>
+      </exercise>
+      
+     
+      <exercise id="id1170909244135">
+        <problem id="oo-id4831949">
+          <para id="id5961812">Graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x - 3y=6} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170923571342">
+        <problem id="oo-id1170928875921">
+          <para id="id1170910466284">Graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x+4=0} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+        <solution id="fs-id1165718504533">
+         <figure id="id1170910144200"><media id="id1170910144200_media" alt="A line passing through the point (-2,0) on a Cartesian graph.">
+          <image mime-type="image/png" src="../../media/graphics4-4ffe.png" id="id1170910144200__onlineimage" height="189" width="227"/>
+        </media>
+      </figure></solution>
+      </exercise>
+     
+      <exercise id="id1170910399527">
+        <problem id="oo-id1170914098223">
+          <para id="id1170909518973">Graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2y</m:mn><m:mo stretchy="false">−</m:mo><m:mn>6</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2y - 6=0} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+      </exercise>
+     
+      <exercise id="id1170925398685">
+        <problem id="oo-id1170926178278">
+          <para id="id1170911663568">Graph the following three equations on the same set of coordinate axes.</para>
+      
+          <equation id="fs-id5606023"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mn>1   </m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=x+1}  
+ 
+ {}</m:annotation></m:semantics><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>1  </m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=2x+1}  
+ 
+ {}</m:annotation></m:semantics><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>x</m:mi></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - x+1} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="fs-id1165712652819">
+        <figure id="id1170915345679"><media id="id1170915345679_media" alt="The lines y=-x+1, y=2x+7, and y=x+1 intersecting at the point (0,1) on a Cartesian graph.">
+          <image mime-type="image/png" src="../../media/graphics5-dcf9.png" id="id1170915345679__onlineimage" height="163" width="257"/>
+        </media>
+      </figure></solution>
+      </exercise>
+      
+      <exercise id="id5632599">
+        <problem id="oo-id1170921883388">
+          <para id="id5653180">Graph the following three equations on the same set of coordinate axes.</para>
+        
+          <equation id="fs-id1165697750474"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>1  </m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=2x+1} {}</m:annotation></m:semantics><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>2x  </m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=2x} {}</m:annotation></m:semantics><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=2x - 1} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170931630057">
+        <problem id="oo-id1170926472071">
+          <para id="id1170914102288">Graph the line using the parametric equations</para>
+      
+          <equation id="fs-id1165695582454">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">+</m:mo><m:mn>2t</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x=1+2t} {}</m:annotation></m:semantics><m:mo>,</m:mo><m:mspace width="4px"/> 
+<m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">+</m:mo><m:mi>t</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=3+t} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="fs-id1165705038358">
+        <figure id="id1170927712876"><media id="id1170927712876_media" alt="A line passing through the points (-5,0), (1,3), and (3,4) on a Cartesian graph.">
+          <image mime-type="image/png" src="../../media/graphics6-50b2.png" id="id1170927712876__onlineimage" height="161" width="255"/>
+        </media>
+      </figure></solution>
+      </exercise>
+      
+      
+      <exercise id="id1170921271544">
+        <problem id="oo-id1170919646495">
+          <para id="id1170926168068">Graph the line using the parametric equations</para>
+                 <equation id="fs-id1165690759044"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3t</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x=2 - 3t} {}</m:annotation></m:semantics><m:mo>,  </m:mo>
+<m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">+</m:mo><m:mn>2t</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=1+2t} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+    </section>
+    
+    
+    
+    
+    <section id="id1170921179691">
+      <title>SLOPE OF A LINE</title>
+      <para id="id1170914895218">Find the slope of the line passing through the following pair of points.</para>
+      <exercise id="id1170933101185">
+        <problem id="oo-id1170919207140">
+          <para id="id9007917">(2, 3) and (5, 9)</para>
+        </problem>
+        <solution id="oo-id1170910276108">
+          <equation id="fs-id1165694270656"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=2} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id2165049">
+        <problem id="oo-id1170919312214">
+          <para id="id1170919308174">(4, 1) and (2, 5) </para>
+        </problem>
+      </exercise>
+      <exercise id="id1170925103593">
+        <problem id="oo-id1170911929590">
+          <para id="id1170918685720">(– 1, 1) and (1, 3) </para>
+        </problem>
+        <solution id="oo-id1170917604216">
+          <equation id="fs-id1165690426792"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=1} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170911309057">
+        <problem id="oo-id1170911216353">
+          <para id="id1170920727103">(4, 3) and (– 1, 3) </para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170915845160">
+        <problem id="oo-id1170910751094">
+          <para id="id1170916319511">(6, – 5) and (4, – 1) </para>
+        </problem>
+        <solution id="oo-id1170933040275">
+          <equation id="fs-id1165708116742">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m= - 2} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170916788170">
+        <problem id="oo-id1170909702992">
+          <para id="id1170923997384">(5, 3) and (– 1, – 4)</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170912223081">
+        <problem id="oo-id1170912301182">
+          <para id="id1170909472438">(3, 4) and (3, 7) </para>
+        </problem>
+        <solution id="oo-id1170929678990">
+          <equation id="fs-id1165707147426">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>undefined</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m="undefined"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170926066814">
+        <problem id="oo-id1170909874512">
+          <para id="id1170915045288">(– 2, 4) and (– 3, – 2)</para>
+        </problem>
+      </exercise>
+      <exercise id="id1170924690761">
+        <problem id="oo-id1170909405967">
+          <para id="id1170910445352">(– 3, – 5) and (– 1, – 7) </para>
+        </problem>
+        <solution id="oo-id1170915394863">
+          <equation id="fs-id1165695626230">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m= - 1} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170926345346">
+        <problem id="oo-id4682006">
+          <para id="id1170910070915">(0, 4) and (3, 0)</para>
+        </problem>
+      </exercise>
+      <para id="id1170911213402">Determine the slope of the line from the given equation of the line.</para>
+      <exercise id="id5199863">
+        <problem id="oo-id1170925806117">
+          <equation id="fs-id1165697723195">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2x</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - 2x+1} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1170924680107">
+          <equation id="fs-id1165704455771">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m= - 2} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id8988898">
+        <problem id="oo-id1170909731614">
+          <para id="id1912357"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=3x - 2} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+      </exercise>
+      <exercise id="id1170927759134">
+        <problem id="oo-id1170912277219">
+          <equation id="fs-id1165699666766">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x - y=6} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1170923552949">
+          <equation id="fs-id1165711339998">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=2} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170915608596">
+        <problem id="oo-id1170912021816">
+          <equation id="fs-id1165690061067">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mn>3y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x+3y=6} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1170920739076">
+        <problem id="oo-id1170918859411">
+          <equation id="fs-id1165695229951">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>4y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3x - 4y="12"} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1170906891197">
+          <equation id="fs-id1165690161253">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=3/4} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170915113469">
+        <problem id="oo-id1170933152446">
+          <para id="id1170911291027">What is the slope of the x-axis? How about the y-axis?</para>
+        </problem>
+      </exercise>
+     
+      <para id="id1170932183727">Graph the line that passes through the given point and has the given slope.</para>
+      <exercise id="id1170917605455">
+        <problem id="oo-id1170928066849">
+          <para id="id1170909402893">(1, 2) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m= - 3/4} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+        <solution id="fs-id1165689439097">
+        <figure id="id1170911732936"><media id="id1170911732936_media" alt="A line passing through the points (1,2) and (5,-1) on a Cartesian graph.">
+          <image mime-type="image/png" src="../../media/graphics7-7d6d.png" id="id1170911732936__onlineimage" height="148" width="198"/>
+        </media>
+      </figure>
+      </solution>
+      </exercise>
+      
+     
+      <exercise id="id1170915369301">
+        <problem id="oo-id1170906887087">
+          <para id="id1170930897593">(2, –1) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=2/3} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170924890847">
+        <problem id="oo-id1170909495480">
+          <para id="id2378787">(0, 2) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m= - 2} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+        <solution id="fs-id1165717633176">
+        <figure id="id1170909003373"><media id="id1170909003373_media" alt="A line passing through the points (0,2) and (1,0) on a Cartesian graph.">
+          <image mime-type="image/png" src="../../media/graphics8-a81f.png" id="id1170909003373__onlineimage" height="147" width="215"/>
+        </media>
+      </figure></solution>
+      </exercise>
+      
+      <exercise id="id8657637">
+        <problem id="oo-id1170910635209">
+          <para id="id4914886">(2, 3) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=0} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+      </exercise>
+    </section>
+    
+    
+    <section id="id1170909975072">
+      <title>DETERMINING THE EQUATION OF A LINE</title>
+      <para id="id2580641">Write an equation of the line satisfying the following conditions. Write the equation in the form 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mx</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mi>b</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= ital "mx"+b} {}</m:annotation></m:semantics></m:math>.</para>
+
+      <exercise id="id1170926439300">
+        <problem id="oo-id1170910481226">
+          <para id="id1170917500762">It passes through the point (3, 10) and has 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>slope</m:mtext><m:mo stretchy="false">=</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"slope"=2} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1170905140799">
+          <equation id="fs-id1165700966225">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=2x+4} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170911338364">
+        <problem id="oo-id1170903711177">
+          <para id="id1170911584161">It passes through the point (4,5) and has 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=0} {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+      </exercise>
+      
+      
+      <exercise id="id1170929749884">
+        <problem id="oo-id2240356">
+          <para id="id1170926265489">It passes through (3, 5) and (2, – 1).</para>
+        </problem>
+        <solution id="oo-id1170914725333">
+          <equation id="fs-id1165696565544">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>6x</m:mn><m:mo stretchy="false">−</m:mo><m:mtext>13</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=6x - "13"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170922460840">
+        <problem id="oo-id1170932820706">
+          <para id="id1170906858787">It has slope 3, and its y-intercept equals 2.  </para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170909795602">
+        <problem id="oo-id1170915865394">
+          <para id="id1170909705386">It passes through (5, – 2) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>5</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=2/5} {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+     <solution id="fs-id1165691346416">
+          <equation id="fs-id1165690107882">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>5x</m:mn></m:mrow><m:mo stretchy="false">−</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=2/5x - 4} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170917740724">
+        <problem id="oo-id1170919589679">
+          <para id="id1170910523914">It passes through (– 5, – 3) and (10, 0).</para>
+        </problem>
+      </exercise>
+      <exercise id="id1170919448557">
+        <problem id="oo-id1170916350700">
+          <para id="id1170927424276">It passes through (4, – 4) and (5, 3).</para>
+        </problem>
+        <solution id="oo-id1170910411789">
+          <equation id="fs-id1165713187423">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>7x</m:mn><m:mo stretchy="false">−</m:mo><m:mtext>32</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=7x - "32"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      
+      <exercise id="id1170911830693">
+        <problem id="oo-id1170911180590">
+          <para id="id1170904424757">It passes through (7, – 2) and its y-intercept is 5.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1170915432783">
+        <problem id="oo-id1170910711906">
+          <para id="id1170926837012">It passes through (2, – 5) and its x-intercept is 4.</para>
+        </problem>
+        <solution id="oo-id1170917579155">
+          <equation id="fs-id1165699510568">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>2x</m:mn></m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=5/2x - "10"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170917616707">
+        <problem id="oo-id1170907921332">
+          <para id="id1170910889553">Its a horizontal line through the point (2, – 1).</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170928658190">
+        <problem id="oo-id1170926223089">
+          <para id="id1170910889379">It passes through (5, – 4) and (1, – 4).</para>
+        </problem>
+        <solution id="oo-id1170910733969">
+          <equation id="fs-id1165690610660">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - 4} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+     
+      <exercise id="id1170910812978">
+        <problem id="oo-id1170909816486">
+          <para id="id1170911941175">It is a vertical line through the point (3, – 2). </para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170931632481">
+        <problem id="oo-id5706422">
+          <para id="id1170911793219">It passes through (3, – 4) and (3, 4). </para>
+        </problem>
+        <solution id="oo-id1170932804291">
+          <equation id="fs-id1165715089940">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x=3} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170928799159">
+        <problem id="oo-id1170910224329">
+          <para id="id1170910042938">It has 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mrow><m:mtext>-intercept</m:mtext><m:mo stretchy="false">=</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x"-intercept"=3} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mrow><m:mtext>-intercept</m:mtext><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y"-intercept"=4} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <para id="id1170910344265">Write an equation of the line satisfying the following conditions. Write the equation in the form 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>Ax</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>By</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">=</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "Ax"+ ital "By"=C} {}</m:annotation></m:semantics></m:math>.</para>
+
+
+      <exercise id="id1170919071988">
+        <problem id="oo-id1170914068156">
+          <para id="id1170924000354">It passes through (3, – 1) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=2} {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+        <solution id="oo-id1170924868052">
+          <equation id="fs-id1165715736188">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x - y=7} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170918825339">
+        <problem id="oo-id1170933029127">
+          <para id="id1170914044156">It passes through (– 2, 1) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m= - 3/2} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170911182071">
+        <problem id="oo-id1170910910473">
+          <para id="id1170925618130">It passes through (– 4, – 2) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m=3/4} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1170915666492">
+          <equation id="fs-id1165701442560">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>4y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3x - 4y= - 4} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1232897">
+        <problem id="oo-id1170906756347">
+          <para id="id3125518">Its x-intercept equals 3, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>5</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m= - 5/3} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      
+      
+      <exercise id="id1170904203110">
+        <problem id="oo-id1170907603738">
+          <para id="id1170910512430">It passes through (2, – 3) and (5, 1).</para>
+        </problem>
+        <solution id="oo-id1170909876658">
+          <equation id="fs-id1165689041890">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>4x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>17</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{4x - 3y="17"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170910361635">
+        <problem id="oo-id1170909877876">
+          <para id="id1170928103468">It passes through (1, – 3) and (– 5, 5).</para>
+        </problem>
+      </exercise>
+    </section>
+    
+    <section id="id1170918829149">
+      <title>APPLICATIONS</title>
+     
+      <para id="id1170906298326">In the following application problems, assume a linear relationship holds.</para>
+      
+      <exercise id="id1170906238559">
+        <problem id="oo-id1170908895764">
+          <para id="id5581472">The variable cost to manufacture a product is $25, and the fixed costs are $1200. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the number of items manufactured and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the cost, write the cost function. </para>
+        </problem>
+        <solution id="oo-id1170917680059">
+          <equation id="fs-id1165709166587">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>25</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>1200</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="25"x+"1200"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      
+      <exercise id="id5966619">
+        <problem id="oo-id4680539">
+          <para id="id1170924910786">It costs $90 to rent a car driven 100 miles and $140 for one driven 200 miles. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> is the number of miles driven and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the total cost of the rental, write the cost function.  </para>
+        </problem>
+      </exercise>
+      
+      
+      <exercise id="id1170926276858">
+        <problem id="oo-id1170910716604">
+          <para id="id1170909430327">The variable cost to manufacture an item is $20, and it costs a total of $750 to produce 20 items. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the number of items manufactured and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the cost, write the cost function. </para>
+        </problem>
+        <solution id="oo-id1170914050555">
+          <equation id="fs-id1165690143832">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>20</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>350</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="20"x+"350"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170910646207">
+        <problem id="oo-id1170919048829">
+          <para id="id1170911706477">To manufacture 30 items, it costs $2700, and to manufacture 50 items, it costs $3200. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the number of items manufactured and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the cost, write the cost function. </para>
+        </problem>
+      </exercise>
+      
+      
+      
+      <exercise id="id1170923990270">
+        <problem id="oo-id1170907857389">
+          <para id="id1170931213789">To manufacture 100 items, it costs $32,000, and to manufacture 200 items, it costs $40,000. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the number of items manufactured and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the cost, write the cost function.</para>
+        </problem>
+        <solution id="oo-id1170912284338">
+          <equation id="fs-id1165719768162">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>80</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>24000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="80"x+"24000"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170933111140">
+        <problem id="oo-id1170925117348">
+          <para id="id5637958">It costs $1900 to manufacture 60 items, and the fixed costs are $700. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the number of items manufactured and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the cost, write the cost function.</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170914909552">
+        <problem id="oo-id1170914521446">
+          <para id="id1486907">A person who weighs 150 pounds has 60 pounds of muscles, and a person that weighs 180 pounds has 72 pounds of muscles. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the body weight and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the muscle weight, write an equation describing their relationship. Use this relationship to determine the muscle weight of a person that weighs 170 pounds. </para>
+        </problem>
+        <solution id="oo-id1170910268452">
+          <para id="id1170916569687"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>5x</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=2/5x} {}</m:annotation></m:semantics><m:mo>;</m:mo><m:mspace width="4px"/><m:mn>68</m:mn></m:math></para>
+        </solution>
+      </exercise>
+      
+      
+      
+      <exercise id="id5982126">
+        <problem id="oo-id1170910313541">
+          <para id="id2271500">A spring on a door stretches 6 inches if a force of 30 pounds is applied, and it stretches 10 inches if a force of 50 pounds is applied. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the number of inches stretched, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the force applied, write an equation describing the relationship. Use this relationship to determine the amount of force required to stretch the spring 12 inches.</para>
+        </problem>
+      </exercise>
+      
+      
+      <exercise id="id1170906993572">
+        <problem id="oo-id1170918095472">
+          <para id="id1170911714191">A male college student who is 64 inches tall weighs 110 pounds, and another student who is 74 inches tall weighs 180 pounds. Assuming the relationship between male students' heights 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="(" close=")"><m:mi>x</m:mi></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (x right )} {}</m:annotation></m:semantics></m:math>, and weights 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="(" close=")"><m:mi>y</m:mi></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (y right )} {}</m:annotation></m:semantics></m:math> is linear, write a function to express weights in terms of heights, and use this function to predict the weight of a student who is 68 inches tall.</para>
+        </problem>
+        <solution id="oo-id1170916410746">
+          <para id="id1170911635569"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>7x</m:mn></m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>338</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y = 7x - "338"} {}</m:annotation></m:semantics></m:math> ; 138</para>
+        </solution>
+      </exercise>
+      
+      
+      <exercise id="id3600168">
+        <problem id="oo-id1170906985960">
+          <para id="id1170921813961">EZ Clean company has determined that if it spends $30,000 on advertisement, it can hope to sell 12,000 of its Minivacs a year, but if it spends $50,000, it can sell 16,000. Write an equation that gives a relationship between the number of dollars spent on advertisement
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="(" close=")"><m:mi>x</m:mi></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (x right )} {}</m:annotation></m:semantics></m:math> and the number of minivacs sold
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="(" close=")"><m:mi>y</m:mi></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (y right )} {}</m:annotation></m:semantics></m:math>.  </para>
+        </problem>
+      </exercise>
+      
+      
+      <exercise id="id1170910375499">
+        <problem id="oo-id1170906750403">
+          <para id="id1170926461767">The freezing temperatures for Celsius and Fahrenheit scales are 0 degree and 32 degrees, respectively. The boiling temperatures for Celsius and Fahrenheit are 100 degrees and 212 degrees, respectively. Let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C} {}</m:annotation></m:semantics></m:math> denote the temperature in Celsius and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>F</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F} {}</m:annotation></m:semantics></m:math> in Fahrenheit. Write the conversion function from Celsius to Fahrenheit, and use this function to convert 25 degrees Celsius into an equivalent Fahrenheit measure.</para>
+        </problem>
+        <solution id="oo-id1170929472891">
+          <para id="id3237740"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>F</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>9</m:mn><m:mo stretchy="false">/</m:mo><m:mn>5C</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mtext>32</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F=9/5C+"32"} {}</m:annotation></m:semantics></m:math>; 77ºF</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170910080427">
+        <problem id="oo-id1170911203078">
+          <para id="id1170911755581">By reversing the coordinates in the previous problem, find a conversion function that converts Fahrenheit into Celsius, and use this conversion function to convert 72 degrees Fahrenheit into an equivalent Celsius measure. </para>
+        </problem>
+      </exercise>
+      
+      
+      <exercise id="id1170931283543">
+        <problem id="oo-id1170918844964">
+          <para id="id1170909279187">The population of California in the year 1960 was 17 million, and in 1995 it was 32 million. Write the population function, and use this function to find the population of California in the year 2010. (Hint: Use the year 1960 as the base year, that is, assume 1960 as the year zero. This will make 1995, and 2010 as the years 35, and 50, respectively.)</para>
+        </problem>
+        <solution id="oo-id1170927066139">
+          <para id="id1170927701668"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>7x</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mtext>17</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=3/7x+"17"} {}</m:annotation></m:semantics><m:mo>;</m:mo><m:mspace width="4px"/><m:mn>38.43</m:mn></m:math></para>
+        </solution>
+      </exercise>
+      
+      
+      <exercise id="id1170926884203">
+        <problem id="oo-id1170926027947">
+          <para id="id5088261">In the U. S. the number of people infected with the HIV virus in 1985 was 1,000, and in 1995 that number became 350,000. If the increase in the number is linear, write an equation that will give the number of people infected in any year. If this trend continues, what will the number be in 2010? (Hint: See previous problem.)</para>
+        </problem>
+      </exercise>
+      
+      
+      <exercise id="id1170926613576">
+        <problem id="oo-id8961677">
+          <para id="id1170910532759">In 1975, an average house in San Jose cost $45,000 and the same house in 1995 costs $195,000. Write an equation that will give the price of a house in any year, and use this equation to predict the price of a similar house in the year 2010.</para>
+        </problem>
+        
+        <solution id="oo-id1170925362246">
+          <para id="id1170909923250"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>7500</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>45000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="7500"x+"45000"} {}</m:annotation></m:semantics></m:math>; $307,500</para>
+        </solution>
+      </exercise>
+      
+      
+      <exercise id="id5701974">
+        <problem id="oo-id1170909407011">
+          <para id="id1170907559916">An average math text book cost $25 in 1980, and $60 in 1995. Write an equation that will give the price of a math book in any given year, and use this equation to predict the price of the book in 2010.</para>
+        </problem>
+      </exercise>
+    </section>
+    
+    
+    <section id="id1170910877350">
+      <title>MORE APPLICATIONS</title>
+      <para id="id1170924879393">Solve the following problems.</para>
+      
+      <exercise id="id1170925218936">
+        <problem id="oo-id1170916374401">
+          <para id="id1170909712926">Solve for 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math>.  
+ <newline/> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=3x+4}
+{}</m:annotation></m:semantics></m:math>
+ <newline/> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>5x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=5x - 2} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+        <solution id="fs-id1165696460958">
+        <para id="id1170911242876"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x=3} {}</m:annotation></m:semantics></m:math>,
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>13</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="13"} {}</m:annotation></m:semantics></m:math></para>
+</solution>
+      </exercise>
+      
+      
+      <exercise id="id5686803">
+        <problem id="oo-id1170908556424">
+          <para id="id1170921869361">Solve for 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math>.  
+ <newline/> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x - 3y=4} {}</m:annotation></m:semantics></m:math>
+ <newline/> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>4y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3x - 4y=5} {}</m:annotation></m:semantics></m:math></para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id5414324">
+        <problem id="oo-id1170910842608">
+          <para id="id1170916387767">The supply curve for a product is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>2000</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>13000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="2000"x+"13000"} {}</m:annotation></m:semantics></m:math>, and the demand curve is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>1000</m:mtext></m:mrow></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>28000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - "1000"x+"28000"} {}</m:annotation></m:semantics></m:math>, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the price and y the number of items. At what price will the supply equal demand, and how many items will be produced at that price?</para>
+        </problem>
+        <solution id="oo-id1170906010690">
+          <para id="id1170910796854"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x=5} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>23000</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="23000"} {}</m:annotation></m:semantics></m:math></para>
+        </solution>
+      </exercise>
+      
+      
+      <exercise id="id1170926587091">
+        <problem id="oo-id1170926533116">
+          <para id="id1170910383634">The supply curve for a product is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>300</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>9000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="300"x+"9000"} {}</m:annotation></m:semantics></m:math>, and the demand curve is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>100</m:mtext></m:mrow></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>14000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - "100"x+"14000"} {}</m:annotation></m:semantics></m:math>, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the price and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the number of items. At what price will the supply equal demand, and how many items will be produced at that price?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170906391136">
+        <problem id="oo-id1170910838573">
+          <para id="id1170926386035">A demand curve for a commodity is the number of items the consumer will buy at different prices. It has been determined that at a price of $2 a store can sell 2400 of a particular type of toy dolls, and for a price of $8 the store can sell 600 such dolls. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the price of dolls and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the number of items sold, write an equation for the demand curve.</para>
+        </problem>
+        <solution id="oo-id1170920703573">
+          <equation id="fs-id1165687513154">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>300</m:mtext></m:mrow></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>3000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - "300"x+"3000"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      
+      <exercise id="id1170925303505">
+        <problem id="oo-id1170919465510">
+          <para id="id1170923537420">A supply curve for a commodity is the number of items of the product that can be made available at different prices. A manufacturer of toy dolls can supply 2000 dolls if the dolls are sold for $8 each, but he can supply only 800 dolls if the dolls are sold for $2 each. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the price of dolls and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the number of items, write an equation for the supply curve.</para>
+        </problem>
+      </exercise>
+      
+      
+      <exercise id="id1170909518857">
+        <problem id="oo-id1170926628844">
+          <para id="id1170911931504">The equilibrium price is the price where the supply equals the demand. From the demand and supply curves obtained in the previous two problems, find the equilibrium price, and determine the number of items that can be sold at that price. </para>
+        </problem>
+        <solution id="oo-id1170907941338">
+          <equation id="fs-id1165692808860"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mn>5</m:mn></m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x=5 "." 2}  {}</m:annotation></m:semantics><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi> y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>1440</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="1440"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170907985945">
+        <problem id="oo-id1170919409074">
+          <para id="id1170919347067">A car rental company offers two plans. Plan I charges $10 a day and 10 cents a mile, while Plan II charges 14 cents a mile, but no flat fee. If you were to drive 300 miles in a day, which plan is better? For what mileage are both rates equal?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1170926864620">
+        <problem id="oo-id1170912949134">
+          <para id="id1170909401907">A break-even point is the intersection of the cost function and the revenue function, that is, where the total cost equals revenue. Mrs. Jones Cookies Store's revenue and cost in dollars for 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> number of cookies is given by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>80</m:mtext><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R= "." "80"x} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>05</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>3000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C= "." "05"x+"3000"} {}</m:annotation></m:semantics></m:math>. Find the number of cookies that must be sold so that the revenue and cost are the same.</para>
+        </problem>
+        <solution id="oo-id1170910623060">
+          <equation id="fs-id1165707414087">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>4000</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x="4000"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id2543561">
+        <problem id="oo-id1170903284036">
+          <para id="id1170910533629">A company's revenue and cost in dollars are given by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>225</m:mtext></m:mrow><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R="225"x} {}</m:annotation></m:semantics></m:math> and
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>75</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>6000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C="75"x+"6000"} {}</m:annotation></m:semantics></m:math>, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> is the number of items. Find the number of items that must be produced to break-even.  </para>
+        </problem>
+      </exercise>
+      
+      
+      <exercise id="id1170915169680">
+        <problem id="oo-id1170911258182">
+          <para id="id5546747">A firm producing computer diskettes has a fixed costs of $10,725, and variable cost of 20 cents a diskette. Find the break-even point if the diskettes sell for $1.50 each.</para>
+        </problem>
+        <solution id="oo-id1170910617910">
+          <para id="id1170917674995">(8250, 12375)</para>
+        </solution>
+      </exercise>
+      <exercise id="id1170911102200">
+        <problem id="oo-id1170917514025">
+          <para id="id1170912138678">Whackemhard Sports is planning to introduce a new line of tennis rackets. The fixed costs for the new line are $25,000 and the variable cost of producing each racket is $60. If the racket sells for $80, find the number of rackets that must be sold in order to break even. </para>
+        </problem>
+      </exercise>
+    </section>
+    
+    <section id="id1170909485678">
+      <title>CHAPTER REVIEW</title>
+      <exercise id="id1170914093075">
+        <problem id="oo-id1170925004640">
+          <para id="id1170911583495">Find an equation of the x-axis.</para>
+        </problem>
+        <solution id="oo-id1170926967735">
+          <equation id="fs-id1165693028439">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=0} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id5203016">
+        <problem id="oo-id1170911349983">
+          <para id="id1170915185033">Find the slope of the line whose equation is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>3y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x+3y=6} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1170925277014">
+          <equation id="fs-id1165692424459">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - 2/3} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170909018528">
+        <problem id="oo-id1170915877112">
+          <para id="id1170916366114">Find the slope of the line whose equation is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3x</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>5</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - 3x+5} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1170907699845">
+          <para id="id1170910910067">–3</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id2128090">
+        <problem id="oo-id1170915333618">
+          <para id="id1170929813228">Find both the x and y intercepts of the line 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3x - 2y="12"} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1170909279044">
+          <para id="id1170932223067">4, –6</para>
+        </solution>
+      </exercise>
+      <exercise id="id1170915537033">
+        <problem id="oo-id1170925368424">
+          <para id="id1170933286948">Find an equation of the line whose slope is 3 and y-intercept 5.</para>
+        </problem>
+        <solution id="oo-id4920000">
+          <equation id="fs-id1165710524880">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>5</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=3x+5} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170910414911">
+        <problem id="oo-id1170912219837">
+          <para id="id1170928049808">Find an equation of the line whose x-intercept is 2 and y-intercept 3.</para>
+        </problem>
+        <solution id="oo-id1170930751523">
+          <equation id="fs-id1165689313283">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>2y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3x+2y=6} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id5563149">
+        <problem id="oo-id1170916411152">
+          <para id="id1170909414319">Find an equation of the line that has slope 3 and passes through the point (2, 15).</para>
+        </problem>
+        <solution id="oo-id2626085">
+          <equation id="fs-id1165719785660">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>9</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=3x+9} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170911624228">
+        <problem id="oo-id1170904583871">
+          <para id="id1170917652102">Find an equation of the line that has slope <m:math>
+<m:mo>-</m:mo>
+<m:mfrac>
+<m:mn>3</m:mn>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:math> and passes through the point (4, 3).</para>
+        </problem>
+        <solution id="oo-id1170921933032">
+          <equation id="fs-id1165690684235">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>2y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>18</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3x+2y="18"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170911829939">
+        <problem id="oo-id1170911888199">
+          <para id="id1486642">Find an equation of the line that passes through the points (0, 32) and (100, 212).</para>
+        </problem>
+        <solution id="oo-id1170919169371">
+          <equation id="fs-id1165696473263">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mn>9</m:mn><m:mo stretchy="false">/</m:mo><m:mn>5x</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mtext>32</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=9/5x+"32"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170908252295">
+        <problem id="oo-id1170908051983">
+          <para id="id1170904159622">Find an equation of the line that passes through the point (2, 5) and is parallel to the line <m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=3x+4} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1170917615610">
+          <equation id="fs-id1165704383914">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=3x - 1} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170911780436">
+        <problem id="oo-id1170924936336">
+          <para id="id8792438">Find the point of intersection of the lines 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>9</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x - 3y=9} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>3x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>4y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3x+4y=5} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id5689971">
+          <para id="id1170917636985">(3, –1)</para>
+        </solution>
+      </exercise>
+      <exercise id="id1170931658321">
+        <problem id="oo-id1170904413650">
+          <para id="id1170932948840">Is the point (3, – 2) on the line 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>5x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2y</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>11</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5x - 2y="11"} {}</m:annotation></m:semantics></m:math>?</para>
+        </problem>
+        <solution id="oo-id1170919043783">
+          <para id="id1170915652115">No</para>
+        </solution>
+      </exercise>
+      <exercise id="id1170917513170">
+        <problem id="oo-id1170928813286">
+          <para id="id1170909603024">Find two points on the line given by the parametric equations, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">+</m:mo><m:mn>3t</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x=2+3t} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mn>2t</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=1 - 2t} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1170926856509">
+          <para id="id1170912325996">(2,1), (5,–1); Answers will vary</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170911922945">
+        <problem id="oo-id1170933175663">
+          <para id="id1652760">Find two points on the line 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>6</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x - 6=0} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1170910422393">
+          <para id="id1170923599924">(3,0), (3, 1); Answers will vary </para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170916434804">
+        <problem id="oo-id1170911824025">
+          <para id="id5610630">Graph the line 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3y</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>6</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x - 3y+6=0} {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1170912226620">
+          <para id="id1170928661375">The line through (–3,0) and (0,2)</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170911209458">
+        <problem id="oo-id1170910484590">
+          <para id="id1170911877760">Graph the line 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2x</m:mn></m:mrow><m:mo stretchy="false">+</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - 2x+3} {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+        <solution id="oo-id1170922355939">
+          <para id="id1170911222849">The line through (0,3) and (1,1)</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170914515526">
+        <problem id="oo-id1170920937286">
+          <para id="id1170914542650">A female college student who is 60 inches tall weighs 100 pounds, and another female student who is 66 inches tall weighs 124 pounds. Assuming the relationship between the female students' weights and heights is linear, write an equation giving the relationship between heights and weights of female students, and use this relationship to predict the weight of a female student who is 70 inches tall.</para>
+        </problem>
+        <solution id="oo-id1170909946102">
+          <equation id="fs-id1165690882383">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>4x</m:mn><m:mo stretchy="false">−</m:mo><m:mtext>140</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=4x - "140"} {}</m:annotation></m:semantics><m:mo>;</m:mo><m:mspace width="4px"/><m:mn>140</m:mn></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170912324281">
+        <problem id="oo-id1170910295791">
+          <para id="id1170932176316">In deep-sea diving, the pressure exerted by water plays a great role in designing underwater equipment. If at a depth of 10 feet there is a pressure of 21 lb/in2, and at a depth of 50 ft there is a pressure of 75 lb/in<sup>2</sup>, write an equation giving a relationship between depth and pressure. Use this relationship to predict pressure at a depth of 100 ft.</para>
+        </problem>
+        <solution id="oo-id1170929968259">
+          <equation id="fs-id1165696497149">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow><m:mtext>.</m:mtext><m:mtext>35</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>15</m:mtext></m:mrow><m:mtext>.</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=1 "." "35"x+"15" "." 2} {}</m:annotation></m:semantics><m:mo>;</m:mo><m:mspace width="4px"/><m:mn>142.5</m:mn></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id4818189">
+        <problem id="oo-id1170906381988">
+          <para id="id1170919371159">If the variable cost to manufacture an item is $30, and the fixed costs are $2750, write the cost function.</para>
+        </problem>
+        <solution id="oo-id1170921588136">
+          <equation id="fs-id1165689459755">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>30</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>2750</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="30"x+"2750"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170909864594">
+        <problem id="oo-id1170911877064">
+          <para id="id1170909530536">The variable cost to manufacture an item is $10, and it costs $2,500 to produce 100 items. Write the cost function, and use this function to estimate the cost of manufacturing 300 items.</para>
+        </problem>
+        <solution id="oo-id1170924890756">
+          <equation id="fs-id1165695288996">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>10</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>1500</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="10"x+"1500"} {}</m:annotation></m:semantics><m:mo>;</m:mo><m:mspace width="4px"/><m:mn>4500</m:mn></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170925246390">
+        <problem id="oo-id1170926546585">
+          <para id="id1170925315092">It costs $2,700 to manufacture 100 items of a product, and $4,200 to manufacture 200 items. If x represents the number of items, and y the costs, find the cost equation, and use this function to predict the cost of 1,000 items.</para>
+        </problem>
+        <solution id="oo-id1170906003488">
+          <equation id="fs-id1165691859463">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>15</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>1200</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="15"x+"1200"} {}</m:annotation></m:semantics><m:mo>;</m:mo><m:mspace width="4px"/><m:mn>16200</m:mn></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id3169133">
+        <problem id="oo-id1170927797012">
+          <para id="id4948168">In 1980, the average house in Palo Alto cost $280,000 and the same house in 1997 costs $450,000. Assuming a linear relationship, write an equation that will give the price of the house in any year, and use this equation to predict the price of a similar house in the year 2010. </para>
+        </problem>
+        <solution id="oo-id1170909474236">
+          <equation id="fs-id1165698136486">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>10000</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>280000</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="10000"x+"280000"} {}</m:annotation></m:semantics><m:mo>;</m:mo><m:mspace width="4px"/><m:mn>580000</m:mn></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170921231118">
+        <problem id="oo-id1170918071084">
+          <para id="id1170910130880">The population of Argentina in 1987 was 31.5 million and in 1997 it was 42.5 million. Assuming a linear relationship, write an equation that will give the population of Argentina in any year, and use this equation to predict the population of Argentina in the year 2010. </para>
+        </problem>
+        <solution id="oo-id1170922065361">
+          <equation id="fs-id1165691541873">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow><m:mtext>.</m:mtext><m:mrow><m:mn>1x</m:mn><m:mo stretchy="false">+</m:mo><m:mtext>31</m:mtext></m:mrow><m:mtext>.</m:mtext><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y=1 "." 1x+"31" "." 5} {}</m:annotation></m:semantics><m:mo>;</m:mo><m:mspace width="4px"/><m:mn>56.8</m:mn></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170910493000">
+        <problem id="oo-id1170910643624">
+          <para id="id1170908780297">In 1955, an average new Chevrolet sold for $2,400, and a similar Chevrolet sold for $15,000 in 1995. Assuming a linear relationship, write an equation that will give the price of an average Chevrolet in any year. Use this equation to predict the price of an average Chevrolet in the year 2010. </para>
+        </problem>
+        <solution id="oo-id5653848">
+          <equation id="fs-id1165696342576">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>315</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>2400</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="315"x+"2400"} {}</m:annotation></m:semantics><m:mo>;</m:mo><m:mspace width="4px"/><m:mn>19725</m:mn></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170915213787">
+        <problem id="oo-id1170912252862">
+          <para id="id1170919381196">Two-hundred items are demanded at a price of $5, and 300 items are demanded at a price of $3. If x represents the price, and y the number of items, write the demand function.</para>
+        </problem>
+        <solution id="oo-id1170911813590">
+          <equation id="fs-id1165708505803">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>50</m:mtext></m:mrow></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>450</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - "50"x+"450"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170917742967">
+        <problem id="oo-id1170911690153">
+          <para id="id1170925254818">A supply curve for a product is the number of items of the product that can be made available at different prices. A manufacturer of Tickle Me Elmo dolls can supply 2000 dolls if the dolls are sold for $30 each, but he can supply only 800 dolls if the dolls are sold for $10 each. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the price of dolls and <m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> the number of items, write an equation for the supply curve.</para>
+        </problem>
+        <solution id="oo-id8681790">
+          <equation id="fs-id1165697218503">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>60</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>200</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="60"x+"200"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1170909666294">
+        <problem id="oo-id1170907598757">
+          <para id="id1170911908453">Suppose you are trying to decide on a price for your latest creation - a coffee mug that never tips. Through a survey, you have determined that at a price of $2, you can sell 2100 mugs, but at a price of $12 you can only sell 100 mugs. Furthermore, your supplier can supply you 3500 mugs if you charge your customers $12, but only 500 if you charge $2. What price should you charge so that the supply equals demand, and at that price how many coffee mugs will you be able to sell?</para>
+        </problem>
+        <solution id="oo-id1170915599954">
+          <equation id="fs-id1165697341686">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mtext>Price</m:mtext><m:mo stretchy="false">=</m:mo><m:mi>$</m:mi></m:mrow><m:mn>5</m:mn><m:mtext>.</m:mtext><m:mtext>20</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"Price"=$5 "." "20"} {}</m:annotation></m:semantics><m:mo>;</m:mo>
+<m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext># of mugs</m:mtext><m:mo stretchy="false">=</m:mo><m:mtext>1460</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"# of mugs"="1460"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170925431959">
+        <problem id="oo-id1170932205437">
+          <para id="id1170911697823">A car rental company offers two plans. Plan I charges $12 a day and 12 cents a mile, while Plan II charges $30 a day but no charge for miles. If you were to drive 300 miles in a day, which plan is better? For what mileage are both rates the same?</para>
+        </problem>
+        <solution id="oo-id2964457">
+          <para id="id1170914039940">150 miles</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170919354958">
+        <problem id="oo-id1170923964276">
+          <para id="id1170912277576">The supply curve for a product is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>250</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1,</m:mn></m:mrow><m:mtext>000</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="250"x - 1,"000"} {}</m:annotation></m:semantics></m:math> and the demand curve for the same product is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>350</m:mtext></m:mrow></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mn>8,</m:mn></m:mrow><m:mtext>000</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - "350"x+8,"000"} {}</m:annotation></m:semantics></m:math>, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> is the price and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the number of items produced. Find the following. </para>
+        <list id="fs-id4394863" list-type="enumerated" number-style="lower-alpha">
+          <item id="id1170916455569">At a price of $10, how many items will be in demand? </item>
+        
+          <item id="id1170910464667">At what price will 4,000 items be supplied?</item>
+       
+          <item id="id1170910772956">What is the equilibrium price for this product? </item>
+        
+          <item id="id1170904036308">How many items will be manufactured at the equilibrium price?</item></list>
+        </problem>
+        <solution id="oo-id1170905906178">
+        <list id="fs-id1165703644586" list-type="enumerated" number-style="lower-alpha">
+          <item id="id1170909721716">4500; </item>
+          <item id="id1170914938660">20; </item>
+          <item id="id1170915543642">15; </item>
+          <item id="id1170917635518">2750</item>
+          </list>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1170909350584">
+        <problem id="oo-id1170931698328">
+          <para id="id1170919121446">The supply curve for a product is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>625</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">−</m:mo><m:mtext>600</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="625"x - "600"} {}</m:annotation></m:semantics></m:math> and the demand curve for the same product is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>125</m:mtext></m:mrow></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mn>8,</m:mn></m:mrow><m:mtext>400</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y= - "125"x+8,"400"} {}</m:annotation></m:semantics></m:math>, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> is the price and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> the number of items produced. Find the equilibrium price and determine the number of items that will be produced at that price.</para>
+        </problem>
+        <solution id="oo-id1170915132114">
+          <para id="id1170933171530">$12; 6900</para>
+        </solution>
+      </exercise>
+      <exercise id="id1608603">
+        <problem id="oo-id1170909722574">
+          <para id="id4931731">Both Jenny and Masur are sales people for Athletic Shoes. Jenny gets paid $8 per hour plus 4% commission on the sales. Masur gets paid $10 per hour plus 8% commission on the sales in excess of $1,000. If they work 8-hour days, for what sales amount would they both earn the same daily amounts?</para>
+        </problem>
+        <solution id="oo-id1170910145882">
+          <para id="id1170916369481">1600 </para>
+        </solution>
+      </exercise>
+      <exercise id="id1170924879607">
+        <problem id="oo-id1170913096687">
+          <para id="id1170910600687">A company's revenue and cost in dollars are given by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>25</m:mtext></m:mrow><m:mi>x</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R="25"x} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>10</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mn>9,</m:mn></m:mrow><m:mtext>000</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C="10"x+9,"000"} {}</m:annotation></m:semantics></m:math>, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> represents the number of items. Find the number of items that must be produced to break-even.</para>
+        </problem>
+        <solution id="oo-id1170926778115">
+          <para id="id1170904613486">600</para>
+        </solution>
+      </exercise>
+      <exercise id="id1170904633380">
+        <problem id="oo-id1170915104871">
+          <para id="id1170910879032">A firm producing video tapes has fixed costs of $6,800, and a variable cost of 30 cents per tape. If the video tapes sell for $2 each, find the number of tapes that must be produced to break-even. </para>
+        </problem>
+        <solution id="oo-id1170907825970">
+          <para id="id1170925541293"> 4,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id4389202">
+        <problem id="oo-id1170915573630">
+          <para id="id1170924665871">A firm producing disposable cameras has fixed costs of $8,000, and variable cost of 50 cents a camera. If the cameras sell for $3.50, how many cameras must be produced to break-even?</para>
+        </problem>
+        <solution id="oo-id1170928435032">
+          <para id="id1170910565413">2,667</para>
+        </solution>
+      </exercise>
+      <exercise id="id1170926785360">
+        <problem id="oo-id1170928662523">
+          <para id="id1170910284307">The Stanley Company is coming up with a new cordless travel shaver just before the Christmas holidays . It hopes to sell 10,000 of these shavers in the month of December alone. The manufacturing variable cost is $3 and the fixed costs $100,000. If the shavers sell for $11 each, how many must be produced to break-even?</para>
+        </problem>
+        <solution id="oo-id1170906483157">
+          <para id="id1170926289560">12,500</para>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+</document>

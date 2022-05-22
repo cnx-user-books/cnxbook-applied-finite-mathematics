@@ -1,0 +1,636 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>More Probability: Homework</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38660</md:content-id>
+  <md:title>More Probability: Homework</md:title>
+  <md:abstract>This chapter covers additional principles of probability. After completing this chapter students should be able to: find the probability of a binomial experiment; find the probabilities using Bayes' Formula; find the expected value or payoff in a game of chance; find the probabilities using tree diagrams.</md:abstract>
+  <md:uuid>2a09f751-57fd-45eb-af6e-91414b688a94</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="HWChapter8.doc" strength="3">Download Chapter 8 Homework</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1165762107445">
+      <title>BINOMIAL PROBABILITY</title>
+      <para id="id1165776442740">Do the following problems using the binomial probability formula.</para>
+      <exercise id="id1165758069518">
+        <problem id="oo-id1165773404233">
+          <para id="id8370628">A coin is tossed ten times. Find the probability of getting six heads and four tails. </para>
+        </problem>
+        <solution id="oo-id1165756197221">
+          <para id="id1165749882752">0.2051 </para>
+        </solution>
+      </exercise>
+      <exercise id="id1165765278481">
+        <problem id="oo-id1165765391755">
+          <para id="id1165757588752">A family has three children. Find the probability of having one boy and two girls. </para>
+        </problem>
+      </exercise>
+      <exercise id="id1165752915653">
+        <problem id="oo-id1165759803185">
+          <para id="id1165784157347">What is the probability of getting three aces(ones) if a die is rolled five times?</para>
+        </problem>
+        <solution id="oo-id1165777634715">
+          <para id="id1165755975386">0.0322</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165755988641">
+        <problem id="oo-id1165779146234">
+          <para id="id1165769478207">A baseball player has a .250 batting average. What is the probability that he will have three hits in five times at bat?</para>
+        </problem>
+      </exercise>
+      <exercise id="id8062995">
+        <problem id="oo-id1165756772098">
+          <para id="id1165780977522">A basketball player has an 80% chance of sinking a basket on a free throw. What is the probability that he will sink at least three baskets in five free throws?</para>
+        </problem>
+        <solution id="oo-id1165760286986">
+          <para id="id1165787765916">0.9421</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165775640640">
+        <problem id="oo-id1165773966362">
+          <para id="id1165752043025">With a new flu vaccination, 85% of the people in the high risk group can go through the entire winter without contracting the flu. In a group of six people who were vaccinated with this drug, what is the probability that at least four will not get the flu? </para>
+        </problem>
+      </exercise>
+      <exercise id="id1165769132084">
+        <problem id="oo-id1165763216339">
+          <para id="id1165756437414">A transistor manufacturer has known that 5% of the transistors produced are defective. What is the probability that a batch of twenty five will have two defective?</para>
+        </problem>
+        <solution id="oo-id7725831">
+          <para id="id1165756154752">0.2305</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165757672794">
+        <problem id="oo-id1165768000463">
+          <para id="id1165749902369">It has been determined that only 80% of the people wear seat belts. If a police officer stops a car with four people, what is the probability that at least one person will not be wearing a seat belt?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1165783776428">
+        <problem id="oo-id1165760046517">
+          <para id="id1165755831331">What is the probability that a family of five children will have at least three boys?</para>
+        </problem>
+        <solution id="oo-id1165757811020">
+          <para id="id1165790631214">0.5</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165769166524">
+        <problem id="oo-id1165760236600">
+          <para id="id1165760638781">What is the probability that a toss of four coins will yield at most two heads?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1165776862042">
+        <problem id="oo-id1165757003861">
+          <para id="id1165770430773">A telemarketing executive has determined that for a particular product, 20% of the people contacted will purchase the product. If 10 people are contacted, what is the probability that at most 2 will buy the product?</para>
+        </problem>
+        <solution id="oo-id1165773900771">
+          <para id="id1165761455516">0.6778</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165776425964">
+        <problem id="oo-id1165770709519">
+          <para id="id1165756155708">To the problem: "Five cards are dealt from a deck of cards, find the probability that three of them are kings," the following incorrect answer was offered by a student. </para>
+        
+          <equation id="fs-id4065511"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>5C3</m:mn><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>13</m:mtext></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mtext>12</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>13</m:mtext></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5C3 left (1/"13" right ) rSup { size 8{3} }  left ("12"/"13" right ) rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math></equation>
+        
+          <para id="id1165760136787">What change would you make in the wording of the problem for the given answer to be correct?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1165758087418">
+      <title>BAYES' FORMULA </title>
+      <para id="id1165782122897">Use both tree diagrams and Bayes' formula to solve the following problems.</para>
+      <exercise id="id1165758800650">
+        <problem id="oo-id1165764069219">
+          <para id="id1165759816176">Jar I contains five red and three white marbles, and Jar II contains four red and two white marbles. A jar is picked at random and a marble is drawn. Draw a tree diagram below, and find the following probabilities.</para>
+       <list id="fs-id4676827" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1165752913364">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>marble is red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("marble is red" right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+        <item><para id="id1165771836764">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>It came from Jar II given that the marble drawn is white</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("It came from Jar II given that the marble drawn is white" right )} {}</m:annotation></m:semantics></m:math></para></item>
+       
+          <item><para id="id1165782076274"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>Red </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> Jar I</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("Red " \lline " Jar I" right )} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+        <solution id="oo-id1165789726453">
+          <para id="id1165768651099"><list id="fs-id1170552968030" list-type="enumerated" number-style="lower-alpha"><item>0.6458</item><item>0.4706</item><item>0.625</item></list></para>
+        </solution>
+      </exercise>
+      <exercise id="id1165755839890">
+        <problem id="oo-id1165773922748">
+          <para id="id1165747873902">In Mr. Symons' class, if a person does his homework most days, his chance of passing the course is 90%. On the other hand, if a person does not do his homework most days his chance of passing the course is only 20%. Mr. Symons claims that 80% of his students do their homework on a regular basis. If a student is chosen at random from Mr. Symons' class, find the following probabilities.</para>
+       <list id="fs-id1170555601450" list-type="enumerated" number-style="lower-alpha"> 
+         <item> <para id="id1165757461723"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the student passes the course</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the student passes the course" right )} {}</m:annotation></m:semantics></m:math></para></item>
+       
+          <item><para id="id1165765675182"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>the student did homework </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> the student passes the course</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the student did homework " \lline " the student passes the course" right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1165777456293">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>the student passes the course </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> the student did homework</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the student passes the course " \lline " the student did homework" right )} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+      </exercise>
+      <exercise id="id1165760146532">
+        <problem id="oo-id1165756824700">
+          <para id="id8350462">A city has 60% Democrats, and 40% Republicans. In the last mayoral election, 60% of the Democrats voted for their Democratic candidate while 95% of the Republicans voted for their candidate. Which party's mayor runs city hall? </para>
+        </problem>
+        <solution id="oo-id1165775671905">
+          <para id="id1165773976191">The Republican Party</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165778908065">
+        <problem id="oo-id1165755775685">
+          <para id="id1165769021995">In a certain population of 48% men and 52% women, 56% of the men and 8% of the women are color-blind. </para>
+        <list id="fs-id1170553158338" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1165768754483">What percent of the people are color-blind?</para></item>
+        
+          <item><para id="id1165772227192">If a person is found to be color-blind, what is the probability that the person is a male?</para></item></list>
+        </problem>
+      </exercise>
+      <exercise id="id1165782084904">
+        <problem id="oo-id1165784311490">
+          <para id="id1165767929574">A test for a certain disease gives a positive result 95% of the time if the person actually carries the disease. However, the test also gives a positive result 3% of the time when the individual is not carrying the disease. It is known that 10% of the population carries the disease. If the test is positive for a person, what is the probability that he or she has the disease?</para>
+        </problem>
+        <solution id="oo-id1165764436676">
+          <para id="id1165766308765">0.7787</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165752043347">
+        <problem id="oo-id1165769923296">
+          <para id="id1165749913446">A person has two coins: a fair coin and a two-headed coin. A coin is selected at random, and tossed. If the coin shows a head, what is the probability that the coin is fair? </para>
+        </problem>
+      </exercise>
+      <exercise id="id1165770241190">
+        <problem id="oo-id1165752016620">
+          <para id="id8080719">A computer company buys its chips from three different manufacturers. Manufacturer I provides 60% of the chips and is known to produce 5% defective; Manufacturer II supplies 30% of the chips and makes 4% defective; while the rest are supplied by Manufacturer III with 3% defective chips. If a chip is chosen at random, find the following probabilities.  </para>
+       <list id="fs-id4571309" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1165758662445"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the chip is defective</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the chip is defective" right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1165790620468"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>it came from Manufacturer II </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> the chip is defective</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("it came from Manufacturer II " \lline " the chip is defective" right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1165769961871">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>the chip is defective </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> it came from manufacturer III</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the chip is defective " \lline " it came from manufacturer III" right )} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+        <solution id="oo-id1165755679710">
+          <list id="fs-id1170563146219" list-type="enumerated" number-style="lower-alpha"><item>0.045</item><item>0.2667</item><item>0.03</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1165764944343">
+        <problem id="oo-id1165789304731">
+          <para id="id1165763969177">Lincoln Union High School District is made up of three high schools: Monterey, Fremont, and Kennedy, with an enrollment of 500, 300, and 200, respectively. On a given day, the percentage of students absent at Monterey High School is 6%, at Fremont 4%, and at Kennedy 5%. If a student is chosen at random, find the following probabilities. Hint: Convert the enrollments into percentages.</para>
+        <list id="fs-id4349310" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1165764771847"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>the student is absent</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the student is absent" right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1165763470409"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>the student came from Kennedy </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> the student is absent</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the student came from Kennedy " \lline " the student is absent" right )} {}</m:annotation></m:semantics></m:math></para></item>
+        
+          <item><para id="id1165756639874"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>the student is absent </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> the student came from Fremont</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("the student is absent " \lline " the student came from Fremont" right )} {}</m:annotation></m:semantics></m:math></para></item></list>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1165756644664">
+      <title>EXPECTED VALUE   </title>
+      <para id="id1165756910486">Do the following problems using the expected value concepts learned in this section,</para>
+      <exercise id="id1165764580884">
+        <problem id="oo-id1165782854875">
+          <para id="id1165753083523">You are about to make an investment which gives you a 30% chance of making $60,000 and 70% chance of losing $ 30,000. Should you invest? Explain.</para>
+        </problem>
+        <solution id="oo-id1165789633350">
+          <para id="id1165761678324">No; You can expect to lose $3,000. </para>
+        </solution>
+      </exercise>
+      <exercise id="id1165757295886">
+        <problem id="oo-id1165757972274">
+          <para id="id1165757721929">In a town, 40% of the men and 30% of the women are overweight. If the town has 46% men and 54% women, what percent of the people are overweight?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1165758872692">
+        <problem id="oo-id1165754627835">
+          <para id="id1165778677607">A game involves rolling a Korean die (4 faces). If a one, two, or three shows, the player receives the face value of the die in dollars, but if a four shows, the player is obligated to pay $4. What is the expected value of the game?</para>
+        </problem>
+        <solution id="oo-id1165752254645">
+          <para id="id7805922">50 cents</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165785543002">
+        <problem id="oo-id1165760530827">
+          <para id="id1165749856472">A game involves rolling a single die. One receives the face value of the die in dollars. How much should one be willing to pay to roll the die to make the game fair?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1165754611159">
+        <problem id="oo-id1165765483134">
+          <para id="id1165757664715">In a European country, 20% of the families have three children, 40% have two children, 30% have one child, and 10% have no children. On average, how many children are there to a family?</para>
+        </problem>
+        <solution id="oo-id1165789855163">
+          <para id="id1165787748673">1.7</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165757605110">
+        <problem id="oo-id1165758914782">
+          <para id="id1165788291369">A game involves drawing a single card from a standard deck. One receives 60 cents for an ace, 30 cents for a king, and 5 cents for a red card that is neither an ace nor a king. If the cost of each draw is 10 cents, should one play? Explain.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1165767096577">
+        <problem id="oo-id1165759815382">
+          <para id="id1165759080689">Hillview Church plans to raise money by raffling a television worth $500. A total of 3000 tickets are sold at $1 each. Find the expected value of the winnings for a person who buys a ticket in the raffle.</para>
+        </problem>
+        <solution id="oo-id1165756029681">
+          <para id="id1165763387025">-83 cents</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165779569487">
+        <problem id="oo-id1165783611934">
+          <para id="id1165765234592">During her four years at college, Niki received A's in 30% of her courses, B's in 60% of her courses, and C's in the remaining 10%. If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A=4} {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>B</m:mi><m:mo stretchy="false">=</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B=3} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C=2} {}</m:annotation></m:semantics></m:math>, find her grade point average.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1165752898942">
+        <problem id="oo-id1165767689583">
+          <para id="id1165760288281">Attendance at a Stanford football game depends upon which team Stanford is playing against. If the game is against U. C. Berkeley, the attendance will be 70,000; if it is against another California team, it will be 40,000; and if it is against an out of state team, it will be 30,000. If the probability of playing against U. C. Berkeley is 10%, against a California team 50% , and against an out of state team 40%, how many fans are expected to attend a game?</para>
+        </problem>
+        <solution id="oo-id1165773306342">
+          <para id="id1165756284605">39,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165769446497">
+        <problem id="oo-id1165764403262">
+          <para id="id1165752020668">A Texas oil drilling company has determined that it costs $25,000 to sink a test well. If oil is hit, the revenue for the company will be $500,000. If natural gas is found, the revenue will be $150,000. If the probability of hitting oil is 3% and of hitting gas is 6%, find the expected value of sinking a test well.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1165785822963">
+        <problem id="oo-id1165769935263">
+          <para id="id1165758970609">A $1 lottery ticket offers a grand prize of $10,000; 10 runner-up prizes each paying $1000; 100 third-place prizes each paying $100; and 1,000 fourth-place prizes each paying $10. Find the expected value of entering this contest if 1 million tickets are sold.</para>
+        </problem>
+        <solution id="oo-id1165765312309">
+          <para id="id1165772747448">-96 cents</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165757819194">
+        <problem id="oo-id1165762104301">
+          <para id="id1165762301046">Assume that for the next heavyweight fight the odds of Mike Tyson winning are 15 to 2. A gambler bets $10 that Mike Tyson will lose. If Mike Tyson loses, how much can the gambler hope to receive?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1165756923979">
+      <title>PROBABILITY USING TREE DIAGRAMS</title>
+      <para id="id1165787800263">Use a tree diagram to solve the following problems. </para>
+      <exercise id="id1165777859681">
+        <problem id="oo-id1165769143734">
+          <para id="id1165765545375">Suppose you have five keys and only one key fits to the lock of a door. What is the probability that you can open the door in at most three tries?</para>
+        </problem>
+        <solution id="oo-id1165761875400">
+          <equation id="fs-id4318244">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>5</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/5} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1165749861618">
+        <problem id="oo-id1165756945375">
+          <para id="id1165768575428">A coin is tossed until a head appears. What is the probability that a head will appear in at most three tries? </para>
+        </problem>
+      </exercise>
+      <exercise id="id1165764477310">
+        <problem id="oo-id1165771953373">
+          <para id="id1165757674265">A basketball player has an 80% chance of making a basket on a free throw. If he makes the basket on the first throw, he has a 90% chance of making it on the second. However, if he misses on the first try, there is only a 70% chance he will make it on the second. If he gets two free throws, what is the probability that he will make at least one of them?</para>
+        </problem>
+        <solution id="oo-id1165787617906">
+          <para id="id1165765807090">0.94</para>
+        </solution>
+      </exercise>
+      <exercise id="id8293229">
+        <problem id="oo-id1165764887844">
+          <para id="id1165760599533">You are to play three games. In the first game, you draw a card, and you win if the card is a heart. In the second game, you toss two coins, and you win if one head and one tail are shown. In the third game, two dice are rolled and you win if the sum of the dice is 7 or 11. What is the probability that you win all three games? What is the probability that you win exactly two games?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1165760142227">
+        <problem id="oo-id1165761932733">
+          <para id="id8195653">John's car is in the garage, and he has to take a bus to get to school. He needs to make all three connections on time to get to his class. If the chance of making the first connection on time is 80%, the second 80%, and the third 70%, what is the chance that John will make it to his class on time?</para>
+        </problem>
+        <solution id="oo-id3722378">
+          <para id="id1165756858468">0.448</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165761202350">
+        <problem id="oo-id1165759221350">
+          <para id="id1165758786040">For a real estate exam the probability of a person passing the test on the first try is .70. The probability that a person who fails on the first try will pass on each of the successive attempts is .80. What is the probability that a person passes the test in at most three attempts? </para>
+        </problem>
+      </exercise>
+      <exercise id="id1165752038165">
+        <problem id="oo-id1165758333813">
+          <para id="id1165757259831">On a Christmas tree with lights, if one bulb goes out, the entire string goes out. If there are twelve bulbs on a string, and the probability of any one going out is .04, what is the probability that the string will not go out?</para>
+        </problem>
+        <solution id="oo-id1165764850898">
+          <para id="id1165765733231">0.6127</para>
+        </solution>
+      </exercise>
+      <exercise id="id8075466">
+        <problem id="oo-id1165771765939">
+          <para id="id1165763049776">The Long Life Light Bulbs claims that the probability that a light bulb will go out when first used is 15%, but if it does not go out on the first use the probability that it will last the first year is 95%, and if it lasts the first year, there is a 90% probability that it will last two years. What is the probability that a new bulb will last two years?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1165756346224">
+        <problem id="oo-id1165769402749">
+          <para id="id1165774819029">A die is rolled until an ace (1) shows. What is the probability that an ace will show on the fourth try?</para>
+        </problem>
+        <solution id="oo-id1165764088860">
+          <equation id="fs-id1170552445000">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>125</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>1296</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"125"/"1296"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1165760032860">
+        <problem id="oo-id1165767751219">
+          <para id="id1165756736980">If there are four people in a room, what is the probability that no two have the same birthday? </para>
+        </problem>
+      </exercise>
+      <exercise id="id1165773963181">
+        <problem id="oo-id1165768090700">
+          <para id="id1165763395814">Dan forgets to set his alarm 60% of the time. If he hears the alarm, he turns it off and goes back to sleep 20% of the time, and even if he does wake up on time, he is late getting ready 30% of the time. What is the probability that Dan will be late to school?</para>
+        </problem>
+        <solution id="oo-id1165758303012">
+          <para id="id1165766890178">0.776</para>
+        </solution>
+      </exercise>
+      <exercise id="id6012192">
+        <problem id="oo-id1165756929847">
+          <para id="id1165777472057">It has been estimated that 20% of the athletes take some type of drugs. A drug test is 90% accurate, that is, the probability of a false-negative is 10%. Furthermore, for this test the probability of a false-positive is 20%. If an athlete tests positive, what is the probability that he is a drug user? </para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1165752642857">
+      <title>CHAPTER REVIEW</title>
+      <exercise id="id1165760267414">
+        <problem id="oo-id1165781991208">
+          <para id="id1165761130891">A coin is tossed five times. Find the following </para>
+        <list id="fs-id1170561600808" list-type="enumerated" number-style="lower-alpha">
+          <item>
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>2 heads and 3 tails</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("2 heads and 3 tails" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>at least 4 tails</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("at least 4 tails" right )} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1165745305681">
+          <list id="fs-id1170553134241" list-type="enumerated" number-style="lower-alpha"><item>0.3125</item><item>0.1875</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1165757148418">
+        <problem id="oo-id1165758178857">
+          <para id="id1165773627692">A dandruff shampoo helps 80% of the people who use it. If 10 people apply this shampoo to their hair, what is the probability that 6 will be dandruff free?</para>
+        </problem>
+        <solution id="oo-id1165775341307">
+          <para id="id1165769160854">0.088</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165764115525">
+        <problem id="oo-id1165769444481">
+          <para id="id1165773011937">A baseball player has a .250 batting average. What is the probability that he will have 2 hits in 4 times at bat?</para>
+        </problem>
+        <solution id="oo-id1165771797420">
+          <para id="id1165766568067">0.21094</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165756844278">
+        <problem id="oo-id1165762979630">
+          <para id="id1165789273124">Suppose that 60% of the voters in California intend to vote Democratic in the next election. If we choose five people at random, what is the probability that at least four will vote Democratic?</para>
+        </problem>
+        <solution id="oo-id1165757465782">
+          <para id="id1165756762954">0.33696</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165756899194">
+        <problem id="oo-id1165764935726">
+          <para id="id1165772096727">A basketball player has a .70 chance of sinking a basket on a free throw. What is the probability that he will sink at least 4 baskets in six shots?</para>
+        </problem>
+        <solution id="oo-id1165758879292">
+          <para id="id1165769443451">0.74432</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165760236560">
+        <problem id="oo-id1165769080081">
+          <para id="id4399550">During an archery competition, Stan has a 0.8 chance of hitting a target. If he shoots three times, what is the probability that he will hit the target all three times?</para>
+        </problem>
+        <solution id="oo-id1165751791145">
+          <para id="id1165754612220">0.512</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165770158002">
+        <problem id="oo-id1165758842247">
+          <para id="id1165758167501">A company finds that one out of four new applicants overstate their work experience. If ten people apply for a job at this company, what is the probability that at most two will overstate their work experience?</para>
+        </problem>
+        <solution id="oo-id1165774811489">
+          <para id="id1165757164166">0.52559</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165767754781">
+        <problem id="oo-id1165768308138">
+          <para id="id1165772121656">A missile has a 70% chance of hitting a target. How many missiles should be fired to make sure that the target is destroyed with a probability of .99 or more?</para>
+        </problem>
+        <solution id="oo-id1165757971233">
+          <para id="id1165758920459">4</para>
+        </solution>
+      </exercise>
+      <exercise id="id4831082">
+        <problem id="oo-id1165756845074">
+          <para id="id1165751765418">Jar I contains 4 red and 5 white marbles, and Jar II contains 2 red and 4 white marbles. A jar is picked at random and a marble is drawn. Draw a tree diagram and find,</para>
+       <list id="fs-id1170561083044" list-type="enumerated" number-style="lower-alpha">
+                 <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>Marble is red</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("Marble is red" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>It is white given that it came from Jar II</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("It is white given that it came from Jar II" right )} {}</m:annotation></m:semantics></m:math></item>
+       
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>It came from Jar II knowing that the marble drawn is white</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("It came from Jar II knowing that the marble drawn is white" right )} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1165775314229">
+          <list id="fs-id1170553127277" list-type="enumerated" number-style="lower-alpha"><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>7</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>18</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{7/"18"} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2/3} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>6</m:mn><m:mo stretchy="false">/</m:mo><m:mtext>11</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6/"11"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1165771427440">
+        <problem id="oo-id1165755986620">
+          <para id="id1165756581905">Suppose a test is given to determine if a person is infected with HIV. If a person is infected with HIV, the test will detect it in 90% of the cases; and if the person is not infected with HIV, the test will show a positive result 3% of the time. If we assume that 2% of the population is actually infected with HIV, what is the probability that a person obtaining a positive result is actually infected with HIV? </para>
+        </problem>
+        <solution id="oo-id1165755771635">
+          <para id="id7667516">0.37975</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165755832922">
+        <problem id="oo-id1165770119725">
+          <para id="id1165760335586">A movie and music rental store's inventory consists of 70% movie videos and 30% music videos. Twenty percent of the movie videos and 10% of the music videos are old and need replacement. If a video chosen at random is found to be old, what is the probability that it is a movie video? </para>
+        </problem>
+        <solution id="oo-id1165782168170">
+          <equation id="fs-id1170553226184">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>14</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>17</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"14"/"17"} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1165756888993">
+        <problem id="oo-id1165759057873">
+          <para id="id1165769140594">Two machines make all the products in a factory, with the first machine making 30% of the products and the second 70%. The first machine makes defective products 3% of the time and the second machine 5% of the time. </para>
+        <list id="fs-id1170554270444" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1165771998712">Overall what percent of the products made are defective?</para></item>
+        
+          <item><para id="id9178326">If a defective product is found, what is the probability that it was made on the second machine?</para></item>
+       
+          <item><para id="id1165771687989">If it was made on the second machine, what is the probability that it is defective?</para></item></list>
+        </problem>
+        <solution id="oo-id1165787687891">
+          <list id="fs-id1170552603220" list-type="enumerated" number-style="lower-alpha">
+          <item>4.4% </item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>35</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>44</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"35"/"44"} {}</m:annotation></m:semantics></m:math></item> <item>0.05</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1165771069847">
+        <problem id="oo-id1165761661186">
+          <para id="id8242436">An instructor in a finite math course estimates that a student who does his homework has a 90% of chance of passing the course, while a student who does not do the homework has only a 20% chance of passing the course. It has been determined that 60% of the students in a large class do their homework. </para>
+        <list id="fs-id1170553097443" list-type="enumerated" number-style="lower-alpha">
+          <item> What percent of all the students will pass? </item>
+        
+          <item> If a student passes, what is the probability that he did the homework?</item></list>
+        </problem>
+        <solution id="oo-id1165762249476">
+          <list id="fs-id1170566561146" list-type="enumerated" number-style="lower-alpha">
+          <item> 0.62</item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>54</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>62</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"54"/"62"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1165762794397">
+        <problem id="oo-id1165757519683">
+          <para id="id1165783373523">Cars are being produced by three factories. Factory I produces 10% of the cars and it is known to produce 2% defective cars, Factory II produces 20% of the cars and it produces 3% defective cars, and Factory III produces 70% of the cars and 4% of those are defective. A car is chosen at random. Find the following probabilities:</para>
+       <list id="fs-id1170563182965" list-type="enumerated" number-style="lower-alpha">
+          <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mtext>The car is defective</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("The car is defective" right )} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>It came from Factory III </m:mtext><m:mo stretchy="false">∣</m:mo><m:mtext> the car is defective</m:mtext></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P left ("It came from Factory III " \lline " the car is defective" right )} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1165771281344">
+          <list id="fs-id1170558441666" list-type="enumerated" number-style="lower-alpha">
+          <item> 0.036</item> <item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>28</m:mtext><m:mo stretchy="false">/</m:mo><m:mtext>36</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"28"/"36"} {}</m:annotation></m:semantics></m:math></item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1165758111172">
+        <problem id="oo-id1165770435965">
+          <para id="id1165760245033">A multiple-choice test has five choices to a question and only one of them is correct. If a student does his homework, he has a 90% of chance of getting the correct answer. Suppose there is a 70% chance that the student will do his homework, what will his test score be on this test?</para>
+        </problem>
+        <solution id="oo-id1165769053254">
+          <para id="id1165762156388">69%</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165757244163">
+        <problem id="oo-id1165771824268">
+          <para id="id1165776482944">A game involves rolling a pair of dice. One receives the sum of the face value of both dice in dollars. How much should one be willing to pay to roll the dice to make the game fair?</para>
+        </problem>
+        <solution id="oo-id1165768604156">
+          <para id="id1165777265126">$7</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165766951850">
+        <problem id="oo-id8179369">
+          <para id="id1165769020073">A roulette wheel consists of numbers 1 through 36, 0, and 00. If the wheel comes up an odd number you win a dollar, otherwise you lose a dollar. If you play the game ten times, what is your expectation?</para>
+        </problem>
+        <solution id="oo-id1165769665809">
+          <para id="id6562978">–$5.26</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165750322991">
+        <problem id="oo-id1165764585674">
+          <para id="id1165752288853">A student takes a 100-question multiple-choice exam in which there are four choices to each question. If the student is just guessing the answers, what score can he expect?</para>
+        </problem>
+        <solution id="oo-id1165756294587">
+          <para id="id1165774002270">25</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165764835090">
+        <problem id="oo-id1165765642490">
+          <para id="id1165753054969">Mr. Shaw invests 50% of his money in stocks, 30% in mutual funds, and the remaining 20% in bonds. If the annual yield from stocks is 10%, from mutual funds 12%, and from bonds 7%, what percent return can Mr. Shaw expect on his money?</para>
+        </problem>
+        <solution id="oo-id1165760524320">
+          <para id="id1165761668917">10%</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165763393179">
+        <problem id="oo-id1165769923046">
+          <para id="id1165765822438">An insurance company is planning to insure a group of surgeons against medical malpractice. Its research shows that two surgeons in every fifteen are involved in a medical malpractice suit each year where the average award to the victim is $450,000. How much minimum annual premium should the insurance company charge each doctor?</para>
+        </problem>
+        <solution id="oo-id1165764076133">
+          <para id="id1165760668203">$60,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165760339174">
+        <problem id="oo-id1165760678638">
+          <para id="id1165774350062">In an evening finite math class of 30 students, it was discovered that 5 students were of age 20, 8 students were about 25 years old, 10 students were close to 30, 4 students were 35, 2 students were 40 and one student 55. What is the average age of a student in this class?</para>
+        </problem>
+        <solution id="oo-id1165761298908">
+          <para id="id1165785614872">29.167</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165760220191">
+        <problem id="oo-id1165772110479">
+          <para id="id1165782630794">Jar I contains 4 marbles of which one is red, and Jar II contains 6 marbles of which 3 are red. Katy selects a jar and then chooses a marble. If the marble is red, she gets paid 3 dollars, otherwise she loses a dollar. If she plays this game ten times, what is her expected payoff?</para>
+        </problem>
+        <solution id="oo-id1165783875432">
+          <para id="id1165758950666">$5</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165761104672">
+        <problem id="oo-id1165773069609">
+          <para id="id1165772203183">Jar I contains 1 red and 3 white, and Jar II contains 2 red and 3 white marbles. A marble is drawn from Jar I and put in Jar II. Now if one marble is drawn from Jar II, what is the probability that it is a red marble?</para>
+        </problem>
+        <solution id="oo-id1165783255267">
+          <equation id="fs-id1170563158881">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>3</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{3/8} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1165789760022">
+        <problem id="oo-id1165758615277">
+          <para id="id1165761682973">Let us suppose there are three traffic lights between your house and the school. The chance of finding the first light green is 60%, the second 50%, and the third 30%. What is the probability that on your way to school, you will find at least two lights green?</para>
+        </problem>
+        <solution id="oo-id1165757592497">
+          <para id="id1165752980248">0.45</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165764208278">
+        <problem id="oo-id1165757122001">
+          <para id="id1165753140697">Sonya has just earned her law degree and is planning to take the bar exam. If her chance of passing the bar exam is 65% on each try, what is the probability that she will pass the exam in at least three tries? </para>
+        </problem>
+        <solution id="oo-id1165757097531">
+          <para id="id8401358">0.957125</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165758011207">
+        <problem id="oo-id1165753679780">
+          <para id="id1165772097250">Every time Ken Griffey is at bat, his probability of getting a hit is .3, his probability of walking is .1, and his probability of being struck out is .4. If he is at bat three times, what is the probability that he will get two hits and one walk? </para>
+        </problem>
+        <solution id="oo-id1165753137927">
+          <para id="id1165774299177">0.027</para>
+        </solution>
+      </exercise>
+      <exercise id="id1165790752559">
+        <problem id="oo-id1165774599785">
+          <para id="id4488717">Jar I contains 4 marbles of which none are red, and Jar II contains 6 marbles of which 4 are red. Juan first chooses a jar and then from it he chooses a marble. After the chosen marble is replaced, Mary repeats the same experiment. What is the probability that at least one of them chooses a red marble?</para>
+        </problem>
+        <solution id="oo-id1165781696969">
+          <equation id="fs-id1170552940221">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>9</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5/9} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1165756639306">
+        <problem id="oo-id1165760135425">
+          <para id="id1165762939126">Andre and Pete are two tennis players with equal ability. Andre makes the following offer to Pete: We will not play more than four games, and anytime I win more games than you, I am declared a winner and we stop. Draw a tree diagram and determine Andre's probability of winning.</para>
+        </problem>
+        <solution id="oo-id1165757240230">
+          <equation id="fs-id1170555345311">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>5</m:mn><m:mo stretchy="false">/</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{5/8} {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+</document>

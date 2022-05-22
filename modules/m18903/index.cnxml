@@ -1,0 +1,1103 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Linear Programming: A Geometric Approach</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m18903</md:content-id>
+  <md:title>Linear Programming: A Geometric Approach</md:title>
+  <md:abstract>This chapter covers principles of a geometrical approach to linear programming. After completing this chapter students should be able to: solve linear programming problems that maximize the objective function and solve linear programming problems that minimize the objective function.</md:abstract>
+  <md:uuid>6a973b4d-c1d0-418f-8218-5f24f6090405</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1171087608086">
+      <title>Chapter Overview</title>
+      <para id="id1171091185830">In this chapter, you will learn to:</para>
+      <list id="id1171085654898" list-type="enumerated" number-style="arabic">
+        <item>Solve linear programming problems that maximize the objective function.</item>
+        <item>Solve linear programming problems that minimize the objective function.</item>
+      </list>
+    </section>
+    <section id="id1171099106544"><title>Maximization Applications</title><para id="id1171090571690">Application problems in business, economics, and social and life sciences often ask us to make decisions on the basis of certain conditions. These conditions or constraints often take the form of inequalities. In this section, we will look at such problems. </para>
+      <para id="id1171082890118">A typical <emphasis effect="bold">linear programming</emphasis> problem consists of finding an extreme value of a linear function subject to certain constraints. We are either trying to maximize or minimize our function. That is why these linear programming problems are classified as<emphasis effect="bold"> maximization</emphasis> or <emphasis effect="bold">minimization problems</emphasis>, or just <emphasis effect="bold">optimization problems</emphasis>. The function we are trying to optimize is called an <emphasis effect="bold">objective function</emphasis>, and the conditions that must be satisfied are called <emphasis effect="bold">constraints</emphasis>. In this chapter, we will do problems that involve only two variables, and therefore, can be solved by graphing. We begin by solving a maximization problem.</para>
+      <example id="eip-id1169863895890">
+      <exercise id="id1171088336126">
+        <problem id="oo-id1171098343537">
+          <para id="id1171109448691">Niki holds two part-time jobs, Job I and Job II. She never wants to work more than a total of 12 hours a week. She has determined that for every hour she works at Job I, she needs 2 hours of preparation time, and for every hour she works at Job II, she needs one hour of preparation time, and she cannot spend more than 16 hours for preparation. If she makes $40 an hour at Job I, and $30 an hour at Job II, how many hours should she work per week at each job to maximize her income? </para>
+        </problem>
+        <solution id="oo-id1171083046626">
+          <para id="id1171086290512">We start by choosing our variables. </para>
+          <para id="id1171083951953">  Let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>The number of hours per week Niki will work at Job I</m:mtext></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x="The number of hours per week Niki will work at Job I" "." } {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1171103188669">  and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>The number of hours per week Niki will work at Job II</m:mtext></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="The number of hours per week Niki will work at Job II" "." } {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1171094439043">Now we write the objective function. Since Niki gets paid $40 an hour at Job I, and $30 an hour at Job II, her total income I is given by the following equation.</para>
+          <equation id="eip-id1169862104225">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>40</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>30</m:mtext></m:mrow><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I="40"x+"30"y} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171085383994">Our next task is to find the constraints. The second sentence in the problem states, "She never wants to work more than a total of 12 hours a week." This translates into the following constraint:</para>
+          <equation id="eip-id1169867013892">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x+y &lt;= "12"} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171108668854">The third sentence states, "For every hour she works at Job I, she needs 2 hours of preparation time, and for every hour she works at Job II, she needs one hour of preparation time, and she cannot spend more than 16 hours for preparation." The translation follows.</para>
+          <equation id="eip-id4204902">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x+y &lt;= "16"} {}</m:annotation></m:semantics></m:math></equation>
+          
+          <para id="id1171086914613">The fact that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> can never be negative is represented by the following two constraints:</para>
+          <para id="id1171085579994"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 0} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y &gt;= 0} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="id1171091424268">Well, good news! We have formulated the problem. We restate it as </para>
+          <para id="id1171109926314">
+            <emphasis effect="bold">Maximize</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>I</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>40</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mtext>30</m:mtext>
+                        </m:mrow>
+                        <m:mi>y</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{I="40"x+"30"y} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id1171099216866">
+            <emphasis effect="bold">Subject to:</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mi>y</m:mi>
+                        </m:mrow>
+                        <m:mo stretchy="false">≤</m:mo>
+                        <m:mtext>12</m:mtext>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{x+y &lt;= "12"} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <equation id="eip-id1169878155669"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>16</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x+y &lt;= "16"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1169875791160">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mi/><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 0;``y &gt;= 0} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1726447">In order to solve the problem, we graph the constraints as follows.</para>
+       
+<figure id="id1171086280770"><media id="id1171086280770_media" alt=" The graph shows that the lines 2x+y=16 and x+y+12 intersect at the point (4,8). The shaded region represents the area of the graph that meets the required conditions. ">
+            <image mime-type="image/png" src="../../media/graphics1-e4f0.png" id="id1171086280770__onlineimage" height="300" width="300"/>
+          </media>
+        </figure>
+<para id="eip-id1170673599493">Observe that we have shaded the region where all conditions are satisfied.  This region is called the <emphasis effect="bold">feasibility region</emphasis> or the feasibility polygon.</para>
+<para id="eip-id1170669362479">The <emphasis effect="bold">Fundamental Theorem of Linear Programming</emphasis> states that the maximum (or minimum) value of the objective function always takes place at the vertices of the feasibility region.</para>
+<para id="eip-id1170663304238">Therefore, we will identify all the vertices of the feasibility region.  We call these points critical points.  They are listed as (0, 0),  (0, 12), (4, 8), (8, 0).  To maximize Niki's income, we will substitute these points in the objective function to see which point gives us the highest income per week.  We list the results below.</para>
+ <table id="id1171095586501" summary="A 5x2 table showing critical points and the resulting values when the critical point are substituted for the x and y values in the equation: I=40x+30y.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>Critical Points</entry>
+              <entry>Income</entry>
+            </row>
+            <row>
+              <entry>(0,0)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>40</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"40" \( 0 \) +"30" \( 0 \) =$0} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(0.12)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>40</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mtext>12</m:mtext>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mtext>360</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"40" \( 0 \) +"30" \( "12" \) =$"360"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(4,8)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>40</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>4</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>8</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mtext>400</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"40" \( 4 \) +"30" \( 8 \) =$"400"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(8,0)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>40</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>8</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mtext>320</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"40" \( 8 \) +"30" \( 0 \) =$"320"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        
+
+
+</tgroup>
+</table>
+<para id="eip-id1170662297385">Clearly, the point (4, 8) gives the most profit: $400.</para>
+<para id="eip-id1170664960526">Therefore, we conclude that Niki should work 4 hours at Job I, and 8 hours at Job II.</para>
+ </solution>
+      </exercise>
+</example>
+      
+        
+     
+     
+      <example id="eip-id1170673685524">
+      <exercise id="id1171087003889">
+        <problem id="oo-id1171111606826">
+          <para id="id1171087616498">A factory manufactures two types of gadgets, regular and premium. Each gadget requires the use of two operations, assembly and finishing, and there are at most 12 hours available for each operation. A regular gadget requires 1 hour of assembly and 2 hours of finishing, while a premium gadget needs 2 hours of assembly and 1 hour of finishing. Due to other restrictions, the company can make at most 7 gadgets a day. If a profit of $20 is realized for each regular gadget and $30 for a premium gadget, how many of each should be manufactured to maximize profit? </para>
+        </problem>
+        <solution id="oo-id1171084357636">
+          <para id="id1171086147731">We choose our variables. </para>
+          <para id="id1171086509476">  Let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>The number of regular gadgets manufactured each day</m:mtext></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x="The number of regular gadgets manufactured each day" "." } {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1171085379644">  and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>The number of premium gadgets manufactured each day</m:mtext></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="The number of premium gadgets manufactured each day" "." } {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1171113564646">The objective function is </para>
+          <equation id="eip-id1170693226051">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>20</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>30</m:mtext></m:mrow><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P="20"x+"30"y} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171092030428">We now write the constraints. The fourth sentence states that the company can make at most 7 gadgets a day. This translates as  </para>
+          <equation id="eip-id1170670453891">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mn>7</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x+y &lt;= 7} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171118531613">Since the regular gadget requires one hour of assembly and the premium gadget requires two hours of assembly, and there are at most 12 hours available for this operation, we get</para>
+          <equation id="eip-id1170684127313">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mn>2y</m:mn></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x+2y &lt;= "12"} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171113685831">Similarly, the regular gadget requires two hours of finishing and the premium gadget one hour. Again, there are at most 12 hours available for finishing. This gives us the following constraint.</para>
+          <equation id="eip-id1170671129171">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x+y &lt;= "12"} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171083453595">The fact that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>y</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y} {}</m:annotation></m:semantics></m:math> can never be negative is represented by the following two constraints:</para>
+          <para id="id1171085393727"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 0} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y &gt;= 0} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="id1171109877313">We have formulated the problem as follows:</para>
+          <para id="id1171084644834">
+            <emphasis effect="bold">Maximize</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>P</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>20</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mtext>30</m:mtext>
+                        </m:mrow>
+                        <m:mi>y</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{P="20"x+"30"y} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id1171113954722">
+            <emphasis effect="bold">Subject to:</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mi>y</m:mi>
+                        </m:mrow>
+                        <m:mo stretchy="false">≤</m:mo>
+                        <m:mn>7</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{x+y &lt;= 7} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <equation id="eip-id1170661214965">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mn>2y</m:mn></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x+2y &lt;= "12"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1170694373303">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x+y &lt;= "12"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1170684668083">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 0;y &gt;= 0} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171086507388">In order to solve the problem, we graph the constraints as follows:</para>
+
+<figure id="id1171086698733"><media id="id1171086698733_media" alt=" The graph shows that the line x+y=7 intersects the line 2x+y=12 at point (5,2) and also intersects the line x+2y=12 at the point (2,5). The shaded region represents the area of the graph that meets the required conditions.">
+            <image mime-type="image/png" src="../../media/graphics2-1f68.png" id="id1171086698733__onlineimage" height="300" width="300"/>
+          </media>
+        </figure>
+
+<para id="eip-id1170674334665">Again, we have shaded the feasibility region, where all constraints are satisfied.</para>
+<para id="eip-id1170671249958">Since the extreme value of the objective function always takes place at the vertices of the feasibility region, we identify all the critical points.  They are listed as (0, 0), (0, 6),  (2, 5),  (5, 2), and (6, 0).  To maximize profit, we will substitute these points in the objective function to see which point gives us the maximum profit each day.  The results are listed below.</para>
+
+  <table id="id1171084059425" summary="A 6x2 table showing critical points and the resulting values when the critical point are substituted for the x and y values in the equation: P=20x+30y.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>Critical point</entry>
+              <entry>Income</entry>
+            </row>
+            <row>
+              <entry>(0,0)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>20</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"20" \( 0 \) +"30" \( 0 \) =$0} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(0,6)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>20</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>6</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mtext>180</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"20" \( 0 \) +"30" \( 6 \) =$"180"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(2,5)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>20</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>2</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>5</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mtext>190</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"20" \( 2 \) +"30" \( 5 \) =$"190"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(5,2)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>20</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>5</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>2</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mtext>160</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"20" \( 5 \) +"30" \( 2 \) =$"160"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(6,0)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>20</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>6</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>30</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mtext>120</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"20" \( 6 \) +"30" \( 0 \) =$"120"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        
+
+</tgroup>
+</table>
+
+<para id="eip-id1170667705655">The point (2, 5) gives the most profit, and that profit is $190.  Therefore, we conclude that we should manufacture 2 regular gadgets and 5 premium gadgets daily for a profit of $190.</para>
+        </solution>
+      </exercise>
+</example>
+     
+        
+     
+    
+      <para id="id1171086619278">Although we are mostly focusing on the standard maximization problems where all constraints are of the form 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ax</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>by</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">≤</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ax"+ ital "by" &lt;= 0} {}</m:annotation></m:semantics></m:math>, we will now consider an example where that is not the case.</para>
+
+      <example id="eip-id1170684641662"><exercise id="id1171103998158">
+        <problem id="oo-id1171116730063">
+          <para id="id1171116773382">Solve the following maximization problem graphically. </para>
+       
+          <para id="id1171090912865">
+            <emphasis effect="bold">Maximize</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>P</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>10</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mtext>15</m:mtext>
+                        </m:mrow>
+                        <m:mi>y</m:mi>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{P="10"x+"15"y} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+      
+          <para id="id1171107501292">
+            <emphasis effect="bold">Subject to:</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>x</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mi>y</m:mi>
+                        </m:mrow>
+                        <m:mo stretchy="false">≥</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{x+y &gt;= 1} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+       
+          <equation id="eip-id1170673776664"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mn>2y</m:mn></m:mrow><m:mo stretchy="false">≤</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x+2y &lt;= 6} {}</m:annotation></m:semantics></m:math></equation>
+      
+          <equation id="eip-id1170669655467"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mn>6</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2x+y &lt;= 6} {}</m:annotation></m:semantics></m:math></equation>
+       
+          <equation id="eip-id1170688218286"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 0;y &gt;= 0} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1171099906240">
+          <para id="id1171087519504">The graph is shown below. </para>
+
+        <figure id="id1171085309972"><media id="id1171085309972_media" alt="The graph shows that the line x+y=1 passes through the points, (0,1) and (1,0). The lines 2x+y=6 and x+2y=6 intersect at (2,2).The shaded region represents the area of the graph that meets the required conditions.">
+            <image mime-type="image/png" src="../../media/graphics3-6d19.png" id="id1171085309972__onlineimage" height="300" width="300"/>
+          </media>
+        </figure>
+<para id="eip-id1170669192627">The five critical points are listed in the above figure.  Clearly, the point (2, 2) maximizes the objective function to a maximum value of 50.  The reader should observe that the first constraint <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>1</m:mn></m:mrow></m:math> requires that feasibility region must be bounded below by the line <m:math><m:mrow><m:mi>x</m:mi><m:mo>+</m:mo><m:mi>y</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow></m:math>.</para>
+        </solution>
+      </exercise>
+</example>
+     
+      
+      <para id="id1171108254925">Finally, we address an important question. Is it possible to determine the point that gives the maximum value without calculating the value at each critical point?</para>
+      <para id="id1171086978137">The answer is yes.</para>
+      <para id="id1171093547243">For example, in the above problem, we substituted the points (0, 0), (0, 6), (2, 5), (5, 2), and (6, 0), in the objective function 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>20</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>30</m:mtext></m:mrow><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P="20"x+"30"y} {}</m:annotation></m:semantics></m:math>, and we got the values $0, $180, $190, $160, $120, respectively. Sometimes that is not the most efficient way of finding the optimum solution. </para>
+      <para id="id1171090607003">To determine the largest 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math>, we graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>20</m:mtext></m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>30</m:mtext></m:mrow><m:mi>y</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P="20"x+"30"y} {}</m:annotation></m:semantics></m:math> for any value 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math> of our choice. Let us say, we choose 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>P</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>60</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P="60"} {}</m:annotation></m:semantics></m:math>. We graph 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>20</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>30</m:mtext></m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>60</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"20"x+"30"y="60"} {}</m:annotation></m:semantics></m:math>. Now we move the line parallel to itself, that is, keeping the same slope at all times. Since we are moving the line parallel to itself, the slope is kept the same, and the only thing that is changing is the 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math>. As we move away from the origin, the value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math> increases. The largest value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P} {}</m:annotation></m:semantics></m:math> is realized when the line touches the last corner point. The figure below shows the movements of the line, and the optimum solution is achieved at the point (2, 5). In maximization problems, as the line is being moved away from the origin, this optimum point is the farthest critical point.</para>
+      <para id="id1171114034521">
+        <figure id="id3153642"><media id="id3153642_media" alt="The graph shows that the line x+y=7 intersects the line 2x+y=12 at the point, (5,2), and the line x+2y=12 at the point, (2,5). ">
+            <image mime-type="image/png" src="../../media/graphics4-7937.png" id="id3153642__onlineimage" height="300" width="300"/>
+          </media>
+        </figure>
+      </para>
+      <para id="id1171103784132">We summarize:</para>
+<example id="eip-id1172733728787"><label/>
+      <title>The Maximization Linear Programming Problems</title>
+      <list id="id1171099315767" list-type="enumerated" number-style="arabic">
+        <item>Write the objective function.</item>
+        <item>Write the constraints. <list id="id1171088501053" list-type="enumerated" number-style="lower-alpha" mark-suffix=")"><item>For the standard maximization linear programming problems, constraints are of the form: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ax</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>by</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">≤</m:mo><m:mi>c</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ax"+ ital "by" &lt;= c} {}</m:annotation></m:semantics></m:math></item><item>Since the variables are non-negative, we include the constraints: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 0;y &gt;= 0} {}</m:annotation></m:semantics></m:math>.</item></list></item>
+        <item>Graph the constraints.</item>
+        <item>Shade the feasibility region.</item>
+        <item>Find the corner points.</item>
+        <item>Determine the corner point that gives the maximum value.<list id="id1171085713626" list-type="enumerated" number-style="lower-alpha" mark-suffix=")"><item>This is done by finding the value of the objective function at each corner point.</item><item>This can also be done by moving the line associated with the objective function.</item></list></item>
+      </list>
+</example>
+    </section>
+    <section id="id1171089191568"><title>Minimization Applications</title><para id="id1171086348425">Minimization linear programming problems are solved in much the same way as the maximization problems. For the standard minimization linear programming problem, the constraints are of the form 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ax</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>by</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">≥</m:mo><m:mi>c</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ax"+ ital "by" &gt;= c} {}</m:annotation></m:semantics></m:math>, as opposed to the form 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ax</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>by</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">≤</m:mo><m:mi>c</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ax"+ ital "by" &lt;= c} {}</m:annotation></m:semantics></m:math> for the standard maximization problem. As a result, the feasible solution extends indefinitely to the upper right of the first quadrant, and is unbounded. But that is not a concern, since in order to minimize the objective function, the line associated with the objective function is moved towards the origin, and the critical point that minimizes the function is closest to the origin.</para>
+      <para id="id1171111762419">However, one should be aware that in the case of an unbounded feasibility region, the possibility of no optimal solution exists. </para>
+      <example id="eip-id4484153">
+      <exercise id="id1171087347119">
+        <problem id="oo-id1171084333344">
+          <para id="id1171089252451">Professor Symons wishes to employ two students, John and Mary, to grade the homework papers for his classes. John can mark 20 papers per hour and charges $5 per hour, and Mary can mark 30 papers per hour and charges $8 per hour. Each student must be employed at least one hour a week to justify their employment. If Mr. Symons has at least 110 homework papers to be marked each week, how many hours per week should he employ each student to minimize his cost? </para>
+        </problem>
+        <solution id="oo-id1171100547877">
+          <para id="id1171085555171">We choose the variables as follows:</para>
+          <para id="id1171086198779">  Let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>The number of hours per week John is employed</m:mtext></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x="The number of hours per week John is employed" "." } {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1171115728579">  and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>The number of hours per week Mary is employed</m:mtext></m:mrow><m:mtext>.</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y="The number of hours per week Mary is employed" "." } {}</m:annotation></m:semantics></m:math></para>
+          <para id="id1171088593205">The objective function is </para>
+          <equation id="eip-id1170658840583">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>5x</m:mn><m:mo stretchy="false">+</m:mo><m:mn>8y</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C=5x+8y} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171087346017">The fact that each student must work at least one hour each week results in the following two constraints:</para>
+          <equation id="eip-id1170658393884">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 1} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1170682304306">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y &gt;= 1} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171084191442">Since John can grade 20 papers per hour and Mary 30 papers per hour, and there are at least 110 papers to be graded per week, we get</para>
+          <equation id="eip-id1170678827618">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>20</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>30</m:mtext></m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mtext>110</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"20"x+"30"y &gt;= "110"} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171084200258">The fact that x and y are non-negative, we get</para>
+          <para id="id1171113182221"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 0} {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y &gt;= 0} {}</m:annotation></m:semantics></m:math>.</para>
+          <para id="id1171086343843">The problem has been formulated as follows. </para>
+          <para id="id1171104238372">
+            <emphasis effect="bold">Minimize </emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>C</m:mi>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mn>5x</m:mn>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mn>8y</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{C=5x+8y} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id1171088381828">
+            <emphasis effect="bold">Subject to:</emphasis>
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">≥</m:mo>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 1} {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <equation id="eip-id4690801">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y &gt;= 1} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1170656505382">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>20</m:mtext><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>30</m:mtext></m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mtext>110</m:mtext></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"20"x+"30"y &gt;= "110"} {}</m:annotation></m:semantics></m:math></equation>
+          <equation id="eip-id1170694115424"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow><m:mi>;</m:mi><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 0;y &gt;= 0} {}</m:annotation></m:semantics></m:math></equation>
+          <para id="id1171088663724">To solve the problem, we graph the constraints as follows:</para>
+<figure id="id1171089245955"><media id="id1171089245955_media" alt="The graph shows that the line 20x+30y=110 intersects the line x=1 at the point, (1,3) and the line y=1 at the point, (4,1).The shaded region represents the area of the graph that meets the required conditions.">
+            <image mime-type="image/png" src="../../media/graphics5-2d8c.png" id="id1171089245955__onlineimage" height="300" width="300"/>
+          </media>
+        </figure>
+<para id="eip-id1170657246787">Again, we have shaded the feasibility region, where all constraints are satisfied.</para>
+
+<para id="eip-id1170674043204">Since the extreme value of the objective function always takes place at the vertices of the feasibility region, we identify the two critical points, (1, 3) and (4, 1).  To minimize cost, we will substitute these points in the objective function to see which point gives us the minimum cost each week.  The results are listed below.</para>
+
+   <table id="id1171106493470" summary="A 3x2 table showing critical points and the resulting values when the critical point are substituted for the x and y values in the equation: C=5x+8y.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>Critical Points</entry>
+              <entry>Income</entry>
+            </row>
+            <row>
+              <entry>(1,3)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>5</m:mn>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>1</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mn>8</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>3</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mtext>29</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{5 \( 1 \) +8 \( 3 \) =$"29"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(4,1)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>5</m:mn>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>4</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mn>8</m:mn>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>1</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mi>$</m:mi>
+                            </m:mrow>
+                            <m:mtext>28</m:mtext>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{5 \( 4 \) +8 \( 1 \) =$"28"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        
+</tgroup>
+</table>
+
+<para id="eip-id1170673626474">The point (4, 1) gives the least cost, and that cost is $28.  Therefore, we conclude that Professor Symons should employ John 4 hours a week, and Mary 1 hour a week at a cost of $28 per week.</para>
+        </solution>
+      </exercise>
+    </example> 
+        
+    
+   
+      <example id="eip-id1170689969649">
+      <exercise id="id1171085633881">
+        <problem id="oo-id5976467">
+          <para id="id1171110021474">Professor Hamer is on a low cholesterol diet. During lunch at the college cafeteria, he always chooses between two meals, Pasta or Tofu. The table below lists the amount of protein, carbohydrates, and vitamins each meal provides along with the amount of cholesterol he is trying to minimize. Mr. Hamer needs at least 200 grams of protein, 960 grams of carbohydrates, and 40 grams of vitamins for lunch each month. Over this time period, how many days should he have the Pasta meal, and how many days the Tofu meal so that he gets the adequate amount of protein, carbohydrates, and vitamins and at the same time minimizes his cholesterol intake?</para>
+       
+      <table id="id1171084863554" summary="A 5x3 table comparing the protein, carbohydrates, vitamin C, and cholesterol in pasta and tofu.">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <tbody>
+            <row>
+              <entry/>
+              <entry>Pasta</entry>
+              <entry>Tofu</entry>
+            </row>
+            <row>
+              <entry>Protein</entry>
+              <entry>8g</entry>
+              <entry>16g</entry>
+            </row>
+            <row>
+              <entry>Carbohydrates</entry>
+              <entry>60g</entry>
+              <entry>40g</entry>
+            </row>
+            <row>
+              <entry>Vitamin C</entry>
+              <entry>2g</entry>
+              <entry>2g</entry>
+            </row>
+            <row>
+              <entry>Cholesterol</entry>
+              <entry>60mg</entry>
+              <entry>50mg</entry>
+            </row>
+          </tbody>
+        
+</tgroup>
+</table>
+</problem>
+<solution id="eip-id1170654092904">
+<para id="eip-id1170654472756">We choose the variables as follows.</para>
+   <para id="eip-id1170691134847">Let x = The number of days Mr. Hamer eats Pasta. </para>
+ <para id="eip-id1170677452656">and y = The number of days Mr. Hamer eats Tofu. </para>      
+<para id="eip-id1170654289585">Since he is trying to minimize his cholesterol intake, our objective function represents the total amount of cholesterol C provided by both meals.</para>
+<equation id="eip-id1170654002130"><m:math><m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>60</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>50</m:mn><m:mi>y</m:mi></m:mrow></m:math></equation>
+<para id="eip-id1170663952173">The constraint associated with the total amount of protein provided by both meals is as follows:</para>
+<equation id="eip-id8954917"><m:math><m:mrow><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>200</m:mn></m:mrow></m:math></equation>  
+<para id="eip-id1170679979726">Similarly, the two constraints associated with the total amount of carbohydrates and vitamins are obtained, and they are</para>
+<equation id="eip-id1170665267245"><m:math><m:mrow><m:mn>60</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>40</m:mn><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>960</m:mn></m:mrow></m:math></equation>
+<equation id="eip-id1170654467130"><m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>40</m:mn></m:mrow></m:math></equation>
+<para id="eip-id1170684162521">The constraints that state that x and y are non-negative are</para>
+<equation id="eip-id1170658861462"><m:math><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>,</m:mo><m:mspace width="4px"/><m:mtext>and</m:mtext><m:mspace width="4px"/><m:mi>y</m:mi><m:mo>≥</m:mo><m:mi>0</m:mi></m:mrow></m:math></equation>
+<para id="eip-id1170664567862">We summarize all information as follows: </para>
+<para id="eip-id1170656882327"><emphasis effect="bold">Minimize</emphasis>  <m:math>	<m:mrow><m:mi>C</m:mi><m:mo>=</m:mo><m:mn>60</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>50</m:mn><m:mi>y</m:mi></m:mrow></m:math></para>
+<para id="eip-id1170661682540"><emphasis effect="bold">Subject to:  </emphasis><m:math><m:mrow><m:mn>8</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>16</m:mn><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>200</m:mn></m:mrow></m:math></para>
+<equation id="eip-id1170654459938"><m:math><m:mrow><m:mn>60</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>40</m:mn><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>960</m:mn></m:mrow></m:math></equation>
+<equation id="eip-id1170660582300"><m:math><m:mrow><m:mn>2</m:mn><m:mi>x</m:mi><m:mo>+</m:mo><m:mn>2</m:mn><m:mi>y</m:mi><m:mo>≥</m:mo><m:mn>40</m:mn></m:mrow></m:math></equation>
+    <equation id="eip-id4603458"><m:math><m:mrow><m:mi>x</m:mi><m:mo>≥</m:mo><m:mn>0</m:mn><m:mo>;</m:mo><m:mi>y</m:mi><m:mo>≥</m:mo><m:mi>0</m:mi></m:mrow></m:math></equation>  
+<para id="eip-id1170677146498">To solve the problem, we graph the constraints as follows.</para>
+
+ <figure id="id5845254"><media id="id5845254_media" alt="The graph shows that the line 2x+2y=40 intersects the line 60x+40y=960 at the point, (8,12,) while intersecting the line x+2y=25 at the point, (15,5). The shaded region represents the area of the graph that meets the required conditions.">
+            <image mime-type="image/png" src="../../media/graphics6-dde4.png" id="id5845254__onlineimage" height="200" width="300"/>
+          </media>
+        </figure>
+
+<para id="eip-id1170661138065">Again, we have shaded the unbounded feasibility region, where all constraints are satisfied.</para>
+<para id="eip-id1170659688428">To minimize the objective function, we find the vertices of the feasibility region.  These vertices are (0, 24), (8, 12), (15, 5) and (25, 0).  To minimize cholesterol, we will substitute these points in the objective function to see which point gives us the smallest value.  The results are listed below.</para>
+      <table id="id1171103816280" summary="A 5x2 table showing critical points and the resulting values when the critical point are substituted for the x and y values in the equation: C=60x+50y.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <tbody>
+            <row>
+              <entry>Critical Points</entry>
+              <entry>Income</entry>
+            </row>
+            <row>
+              <entry>(0,24)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>60</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>50</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mtext>24</m:mtext>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mtext>1200</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"60" \( 0 \) +"50" \( "24" \) ="1200"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(8,12)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>60</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>8</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>50</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mtext>12</m:mtext>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mtext>1080</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"60" \( 8 \) +"50" \( "12" \) ="1080"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(15,5)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>60</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mtext>15</m:mtext>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>50</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>5</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mtext>1150</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"60" \( "15" \) +"50" \( 5 \) ="1150"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+            <row>
+              <entry>(25,0)</entry>
+              <entry>
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext>60</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mtext>25</m:mtext>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mtext>50</m:mtext>
+                            </m:mrow>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:mn>0</m:mn>
+                            <m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mtext>1500</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{"60" \( "25" \) +"50" \( 0 \) ="1500"} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </entry>
+            </row>
+          </tbody>
+        
+</tgroup>
+</table>
+<para id="eip-id1170670696925">The point (8, 12) gives the least cholesterol, which is 1080 mg.  This states that for every 20 meals, Professor Hamer should eat Pasta 8 days, and Tofu 12 days.</para>
+</solution>
+</exercise>
+</example>
+      <para id="id1171092052661">  Although the method of solving minimization problems is similar to that of the maximization problems, we still feel that we should summarize the steps involved.</para>
+<example id="eip-id6232629"><label/>
+      <title>Minimization Linear Programming Problems</title>
+      <list id="id1171085582748" list-type="enumerated" number-style="arabic">
+        <item>Write the objective function.</item>
+        <item>Write the constraints. <list id="id1171085330444" list-type="enumerated" number-style="lower-alpha" mark-suffix=")"><item>For standard minimization linear programming problems, constraints are of the form: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ax</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>by</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">≥</m:mo><m:mi>c</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "ax"+ ital "by" &gt;= c} {}</m:annotation></m:semantics></m:math></item><item>Since the variables are non-negative, include the constraints: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x &gt;= 0} {}</m:annotation></m:semantics></m:math>; 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">≥</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{y &gt;= 0} {}</m:annotation></m:semantics></m:math>.</item></list></item>
+        <item>Graph the constraints.</item>
+        <item>Shade the feasibility region.</item>
+        <item>Find the corner points.</item>
+        <item>Determine the corner point that gives the minimum value.<list id="id1171118676843" list-type="enumerated" number-style="lower-alpha" mark-suffix=")"><item>This can be done by finding the value of the objective function at each corner point.</item><item>This can also be done by moving the line associated with the objective function.</item><item>There is the possibility that the problem has no solution.</item></list></item>
+      </list>
+</example>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,1206 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Sets and Counting: Homework</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m38653</md:content-id>
+  <md:title>Sets and Counting: Homework</md:title>
+  <md:abstract>This chapter covers principles of sets and counting. After completing this chapter students should be able to: use set theory and venn diagrams to solve counting problems; use the multiplication axiom to solve counting problems; use permutations to solve counting problems; use combinations to solve counting problems; and use the binomial theorem to expand x+y^n.</md:abstract>
+  <md:uuid>6788341e-d019-4d3a-ac08-df7df82e71ac</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="HWChapter6.doc" strength="3">Download Chapter 6 Homework</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id1164282942417">
+      <title>SETS AND COUNTING</title>
+      <para id="id1164277676765">Find the indicated sets.</para>
+      <exercise id="id1164280982500">
+        <problem id="oo-id1164287230735">
+          <para id="id1164290225248">List all subsets of the following set.</para>
+       
+          <equation id="fs-id1168789513523">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mtext>Al, Bob</m:mtext></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace "Al, Bob" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1164292603278">
+          <equation id="fs-id1168803059401"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mtext>Al, Bob</m:mtext></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace "Al, Bob" right rbrace } {}</m:annotation></m:semantics><m:mo>,</m:mo><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mtext>Al</m:mtext></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace "Al" right rbrace } {}</m:annotation></m:semantics><m:mo>,</m:mo><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mtext>Bob</m:mtext></m:mfenced><m:mo>,</m:mo><m:mi> Ø </m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace "Bob" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164300157516">
+        <problem id="oo-id1164277478052">
+          <para id="id1164279297013">List all subsets of the following set.</para>
+                 <equation id="fs-id1168797942253">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mtext>Al, Bob, Chris</m:mtext></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace "Al, Bob, Chris" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1164277675371">
+        <problem id="oo-id1164280949646">
+          <para id="id1164277684269">List the elements of the following set.</para>
+        
+          <equation id="fs-id1168792084962"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="{" close="}"><m:mtext>Al, Bob, Chris, Dave</m:mtext></m:mfenced><m:mo stretchy="false">∩</m:mo><m:mfenced open="{" close="}"><m:mtext>Bob, Chris, Dave, Ed</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace "Al, Bob, Chris, Dave" right rbrace  intersection  left lbrace "Bob, Chris, Dave, Ed" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1164277365333">
+          <equation id="fs-id1168814206112">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mtext>Bob, Chris, Dave</m:mtext></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace "Bob, Chris, Dave" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1164277372586">
+        <problem id="oo-id1164278202869">
+          <para id="id1164277490737">List the elements of the following set.</para>
+        
+          <equation id="fs-id1168795227420"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfenced open="{" close="}"><m:mtext>Al, Bob, Chris, Dave</m:mtext></m:mfenced><m:mo stretchy="false">∪</m:mo><m:mfenced open="{" close="}"><m:mtext>Bob, Chris, Dave, Ed</m:mtext></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace "Al, Bob, Chris, Dave" right rbrace  union  left lbrace "Bob, Chris, Dave, Ed" right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1164292873888">In Problems 5 - 8, let
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mtext>Universal set</m:mtext><m:mo stretchy="false">=</m:mo><m:mi>U</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mrow><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mi>,</m:mi><m:mi>c</m:mi><m:mi>,</m:mi><m:mi>d</m:mi><m:mi>,</m:mi><m:mi>e</m:mi><m:mi>,</m:mi><m:mi>f</m:mi><m:mi>,</m:mi><m:mi>g</m:mi><m:mi>,</m:mi><m:mi>h</m:mi><m:mi>,</m:mi><m:mi>i</m:mi><m:mi>,</m:mi><m:mi>j</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"Universal set"=U= left lbrace a,b,c,d,e,f,g,h,i,j right rbrace } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mrow><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>e</m:mi><m:mi>,</m:mi><m:mi>i</m:mi><m:mi>,</m:mi><m:mi>f</m:mi><m:mi>,</m:mi><m:mi>h</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V= left lbrace a,e,i,f,h right rbrace } {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>W</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mrow><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>c</m:mi><m:mi>,</m:mi><m:mi>e</m:mi><m:mi>,</m:mi><m:mi>g</m:mi><m:mi>,</m:mi><m:mi>i</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W= left lbrace a,c,e,g,i right rbrace } {}</m:annotation></m:semantics></m:math>.</para>
+      <para id="id1164279326295">List the members of the following sets.</para>
+      <exercise id="id5740068">
+        <problem id="oo-id1164283319748">
+          <equation id="fs-id1168816516403">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">∪</m:mo><m:mi>W</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V union W} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1164282818432">
+          <equation id="fs-id1168795741072"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mrow><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>e</m:mi><m:mi>,</m:mi><m:mi>i</m:mi><m:mi>,</m:mi><m:mi>f</m:mi><m:mi>,</m:mi><m:mi>h</m:mi><m:mi>,</m:mi><m:mi>c</m:mi><m:mi>,</m:mi><m:mi>g</m:mi></m:mrow></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace a,e,i,f,h,c,g right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1164286849823">
+        <problem id="oo-id1164279163779">
+          <equation id="fs-id1168789311733">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">∩</m:mo><m:mi>W</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V intersection W} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1164277772809">
+        <problem id="oo-id1164277421184">
+          <equation id="fs-id1168804746139">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mover accent="true"><m:mrow><m:mi>V</m:mi><m:mo stretchy="false">∪</m:mo><m:mi>W</m:mi></m:mrow><m:mo>¯</m:mo></m:mover></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {overline  {V union W}} } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1164277669404">
+          <equation id="fs-id1168801852627">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mrow><m:mi>b</m:mi><m:mi>,</m:mi><m:mi>d</m:mi><m:mi>,</m:mi><m:mi>j</m:mi></m:mrow></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace b,d,j right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1164286946306">
+        <problem id="oo-id1164277435441">
+          <equation id="fs-id1168792068506">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˉ</m:mo></m:mover><m:mo stretchy="false">∩</m:mo><m:mover accent="true"><m:mi>W</m:mi><m:mo stretchy="false">ˉ</m:mo></m:mover></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { bar  {V}} intersection  { bar  {W}}} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      
+      <para id="id1164277346157">In 9 - 12, let 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mtext>Universal set</m:mtext><m:mo stretchy="false">=</m:mo><m:mi>U</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mrow><m:mi>1</m:mi><m:mi>,</m:mi><m:mi>2</m:mi><m:mi>,</m:mi><m:mi>3</m:mi><m:mi>,</m:mi><m:mi>4</m:mi><m:mi>,</m:mi><m:mi>5</m:mi><m:mi>,</m:mi><m:mi>6</m:mi><m:mi>,</m:mi><m:mi>7</m:mi><m:mi>,</m:mi><m:mi>8</m:mi><m:mi>,</m:mi><m:mi>9</m:mi><m:mi>,</m:mi><m:mi>10</m:mi></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"Universal set"=U= left lbrace a,b,c,d,e,f,g,h,i,j right rbrace } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mn>1,2,3,4,5</m:mn></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A= left lbrace 1,2,3,4,5 right rbrace } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>B</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mn>1,3,4,6</m:mn></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B= left lbrace 1,3,4,6 right rbrace } {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>C</m:mi><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mn>2,4,6</m:mn></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{C= left lbrace 2,4,6 right rbrace } {}</m:annotation></m:semantics></m:math>.</para>
+      <para id="id1164290542677">List the members of the following sets.</para>
+      <exercise id="id1164285522694">
+        <problem id="oo-id1164298499324">
+          <equation id="fs-id1168794709241">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">∪</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A union B} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="oo-id1164283390296">
+          <equation id="fs-id1168801033922">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mn>1,2,3,4,5,6</m:mn></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace 1,2,3,4,5,6 right rbrace } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1164287102391">
+        <problem id="oo-id1164277167155">
+          <equation id="fs-id1168792980170">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">∩</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A intersection C} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <exercise id="id1164284157705">
+        <problem id="oo-id6583150">
+          <equation id="fs-id1168790616634">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mover accent="true"><m:mrow><m:mi>A</m:mi><m:mo stretchy="false">∪</m:mo><m:mi>B</m:mi></m:mrow><m:mo>¯</m:mo></m:mover><m:mo stretchy="false">∩</m:mo><m:mi>C</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {overline  {A union B}}  intersection C} {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+        <solution id="fs-id1168804794307"><para id="id1164286057178">Ø</para></solution>
+      </exercise>
+      
+      <exercise id="id1678794">
+        <problem id="oo-id1164279592958">
+          <equation id="fs-id1168819621619"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mover accent="true"><m:mi>A</m:mi><m:mo stretchy="false">ˉ</m:mo></m:mover><m:mo stretchy="false">∪</m:mo><m:mover accent="true"><m:mrow><m:mi>B</m:mi><m:mo stretchy="false">∩</m:mo><m:mi>C</m:mi></m:mrow><m:mo>¯</m:mo></m:mover></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { bar  {A}} union  {overline  {B intersection C}} } {}</m:annotation></m:semantics></m:math></equation>
+        </problem>
+      </exercise>
+      <para id="id1164292260722">Find the number of elements in the following sets.</para>
+      <exercise id="id1164276506959"><problem id="oo-id1164297516773">
+          <para id="id1164276507328">In Mrs. Yamamoto's class of 35 students, 12 students are taking history, 18 are taking English, and 4 are taking both. Draw a Venn diagram and determine how many students are taking neither history nor English? </para>
+        </problem>
+      <solution id="eip-id1169468695219"><para id="eip-id1169464433677">9 students</para></solution></exercise>
+      
+      <exercise id="id1164279458548">
+        <problem id="oo-id1164277641460">
+          <para id="id1164277424292">In the County of Santa Clara 700,000 people read the San Jose Mercury News, 400,000 people read the San Francisco Examiner, and 100,000 read both newspapers. How many read either the Mercury News or the Examiner?</para>
+        </problem>
+      </exercise>
+     
+      <exercise id="id1164277993061">
+        <problem id="oo-id1164277525684">
+          <para id="id1164277560988">A survey of athletes revealed that for their minor aches and pains, 30 used aspirin, 50 used ibuprofen, and 15 used both. How many athletes were surveyed?</para>
+        </problem>
+        <solution id="oo-id1164279298907">
+          <para id="id1164277398457">65</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277381912">
+        <problem id="oo-id1164277609657">
+          <para id="id1164281099672">In a survey of computer users, it was found that 50 use HP printers, 30 use IBM printers, 20 use Apple printers, 13 use HP and IBM, 9 use HP and Apple, 7 use IBM and Apple, and 3 use all three. How many use at least one of these Brands?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164280134217"><problem id="oo-id1164285061901">
+          <para id="id1164277771415">This quarter, a survey of 100 students at De Anza college finds that 50 take math, 40 take English, and 30 take history. Of these 15 take English and math, 10 take English and history, 10 take math and history, and 5 take all three subjects. Draw a Venn diagram and determine the following. </para>
+      <list id="fs-id1168803047154" list-type="enumerated" number-style="lower-alpha">
+          <item>The number of students taking math but not the other two subjects.</item>
+                  <item>The number of students taking English or math but not history.</item>
+          <item>The number of students taking none of these subjects.</item>
+          </list>
+        </problem>
+      <solution id="eip-id1167834135166"><list id="eip-id1167843013061" list-type="enumerated" number-style="lower-alpha"><item>30</item>
+<item>60</item>
+<item>10</item></list></solution></exercise>
+      
+      <exercise id="id1164280805012">
+        <problem id="oo-id1164279559180">
+          <para id="id1164278205620">In a survey of investors it was found that 100 invested in stocks, 60 in mutual funds, and 50 in bonds. Of these, 35 invested in stocks and mutual funds, 30 in mutual funds and bonds, 28 in stocks and bonds, and 20 in all three. Determine the following. </para>
+       <list id="fs-id1168798144039" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1164288538070">The number of investors that participated in the  survey.</para></item>
+                 <item><para id="id1164279326652">How many invested in stocks or mutual funds  but not in bonds?</para></item>
+<item><para id="id1164277485162">How many invested in exactly one type of  investment?</para></item>
+</list>
+        </problem>
+      </exercise>
+      
+    </section>
+    <section id="id1164277427079">
+      <title>TREE DIAGRAMS AND THE MULTIPLICATION AXIOM</title>
+      <para id="id1164277369084">Do the following problems using a tree diagram or the multiplcation axiom.</para>
+      <exercise id="id1164280879278">
+        <problem id="oo-id1164295400657">
+          <para id="id1164279175249">A man has 3 shirts, and 2 pairs of pants. Use a tree diagram to determine the number of possible outfits.</para>
+        </problem>
+        <solution id="oo-id1164277588896">
+          <para id="id1164277779205">6</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164284141528">
+        <problem id="oo-id1164299382494">
+          <para id="id1164277950059">In a city election, there are 2 candidates for mayor, and 3 for supervisor. Use a tree diagram to find the number of ways to fill the two offices.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277589968">
+        <problem id="oo-id1164277693881">
+          <para id="id1164283720964">There are 4 roads from Town A to Town B, 2 roads from Town B to Town C. Use a tree diagram to find the number of ways one can travel from Town A to Town C.</para>
+        </problem>
+        <solution id="oo-id1164286963836">
+          <para id="id1164277629882">8</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277362938">
+        <problem id="oo-id1164278202762">
+          <para id="id1164277430081">Brown Home Construction offers a selection of 3 floor plans, 2 roof types, and 2 exterior wall types. Use a tree diagram to determine the number of possible homes available.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277359699">
+        <problem id="oo-id1164280796606">
+          <para id="id1164277696382">For lunch, a small restaurant offers 2 types of soups, three kinds of sandwiches, and two types of soft drinks. Use a tree diagram to determine the number of possible meals consisting of a soup, sandwich, and a soft drink.</para>
+        </problem>
+        <solution id="oo-id1164279324008">
+          <para id="id1164282951085">12</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164277644426">
+        <problem id="oo-id1164277631633">
+          <para id="id1164277954240">A California license plate consists of a number from 1 to 5, then three letters followed by three digits. How many such plates are possible?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277391560">
+        <problem id="oo-id1164279325688">
+          <para id="id2358379">A license plate consists of three letters followed by three digits. How many license plates are possible if no letter may be repeated?</para>
+        </problem>
+        <solution id="oo-id1164279318112">
+          <para id="id1164277569314">15,600,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277614445">
+        <problem id="oo-id1164277682518">
+          <para id="id1164277398814">How many different 4-letter radio station call letters can be made if the first letter must be K or W and none of the letters may be repeated? </para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279183575">
+        <problem id="oo-id1164277479410">
+          <para id="id1164277614624">How many seven-digit telephone numbers are possible if the first two digits cannot be ones or zeros?</para>
+        </problem>
+        <solution id="oo-id1164283335793">
+          
+          <para id="id1164277487413">6,400,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277369906">
+        <problem id="oo-id1164277348229">
+          <para id="id1164277767218">How many 3-letter word sequences can be formed using the letters 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mrow><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mi>,</m:mi><m:mi>c</m:mi><m:mi>,</m:mi><m:mi>d</m:mi></m:mrow></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace a,b,c,d right rbrace } {}</m:annotation></m:semantics></m:math> if no letter is to be repeated?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164277570064"><problem id="oo-id1164298410127">
+          <para id="id1164277669796">A family has two children, use a tree diagram to determine all four possibilities.</para>
+        </problem>
+      <solution id="eip-id1169678081968"><para id="eip-id1169676124635">BB, BG, GB, GG</para></solution></exercise>
+      
+      <exercise id="id1164277356591">
+        <problem id="oo-id1164277603011">
+          <para id="id1164277481482">A coin is tossed three times and the sequence of heads and tails is recorded. Use a tree diagram to determine the different possibilities.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277690057">
+        <problem id="oo-id1164277364261">
+          <para id="id1164277518823">In how many ways can a 4-question true-false test be answered? </para>
+        </problem>
+        <solution id="oo-id1164279314539">
+          <para id="id1164277772059">16</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277765682">
+        <problem id="oo-id6278139">
+          <para id="id1164277571530">In how many ways can three people be made to stand in a straight line?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277389988">
+        <problem id="oo-id1164279321078">
+          <para id="id1164277618733">A combination lock is opened by first turning to the left, then to the right, and then to the left again. If there are 30 digits on the dial, how many possible combinations are there?</para>
+        </problem>
+        <solution id="oo-id1164277380198">
+          <para id="id1164281188610">27,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277530186">
+        <problem id="oo-id1164277442481">
+          <para id="id1164277993919">How many different answers are possible for a multiple-choice test with 10 questions and five possible answers for each question?</para>
+        </problem>
+      </exercise>
+      
+    </section>
+    <section id="id1164297711861">
+      <title>PERMUTATIONS  </title>
+      <para id="id1164277619126">Do the following problems using permutations.</para>
+      <exercise id="id1164279996173">
+        <problem id="oo-id1164288854242">
+          <para id="id1164277360771">How many three-letter words can be made using the letters 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfenced open="{" close="}"><m:mrow><m:mi>a</m:mi><m:mi>,</m:mi><m:mi>b</m:mi><m:mi>,</m:mi><m:mi>c</m:mi><m:mi>,</m:mi><m:mi>d</m:mi><m:mi>,</m:mi><m:mi>e</m:mi></m:mrow></m:mfenced></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left lbrace a,b,c,d,e right rbrace } {}</m:annotation></m:semantics></m:math> if no repetitions are allowed? </para>
+        </problem>
+        <solution id="oo-id1164283585716">
+          <para id="id1164279171568">60</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277510497">
+        <problem id="oo-id1164282953051">
+          <para id="id1164277607584">A grocery store has five checkout counters, and seven clerks. How many different ways can the clerks be assigned to the counters?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164283140829">
+        <problem id="oo-id1164277952275">
+          <para id="id1164278197401">A group of fifteen people who are members of an investment club wish to choose a president, and a secretary. How many different ways can this be done?</para>
+        </problem>
+        <solution id="oo-id1164298209891">
+          <para id="id1164277624165">210</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277154880">
+        <problem id="oo-id1164282880690">
+          <para id="id1164277655932">Compute the following. </para>
+        <list id="fs-id1168794711978" list-type="enumerated" number-style="lower-alpha">
+                  <item><para id="id1164279299335"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>9P2</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{9P2} {}</m:annotation></m:semantics></m:math></para></item>
+          <item><para id="id1164277591755"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>6P4</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6P4} {}</m:annotation></m:semantics></m:math></para></item>
+        
+         <item><para id="id1164279318898">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>8P3</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{8P3} {}</m:annotation></m:semantics></m:math></para></item>
+
+      
+         <item><para id="id1164282952121">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>7P4</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{7P4} {}</m:annotation></m:semantics></m:math></para></item>
+</list>
+        </problem>
+      </exercise>
+      <exercise id="id1164277408927">
+        <problem id="oo-id1164285306906">
+          <para id="id1164277379304">In how many ways can the letters of the word CUPERTINO be arranged if each letter is used only once in each arrangement?</para>
+        </problem>
+        <solution id="oo-id1164283321285">
+          <para id="id1164277421970">362,880</para>
+        </solution>
+      </exercise>
+      <exercise id="id2167625">
+        <problem id="oo-id1164278431313">
+          <para id="id1682662">How many permutations of the letters of the word PROBLEM end in a vowel?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277569814">
+        <problem id="oo-id1164277512856">
+          <para id="id1164277408820">How many permutations of the letters of the word SECURITY end in a consonant?</para>
+        </problem>
+        <solution id="oo-id1164281669581">
+          <para id="id1164297520981">25,200</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277501957">
+        <problem id="oo-id1164277444482">
+          <para id="id1164277692201">How many permutations of the letters PRODUCT have consonants in the second and third positions?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277381877">
+        <problem id="oo-id1164282886628">
+          <para id="id1164279321114">How many three-digit numbers are there?</para>
+        </problem>
+        <solution id="oo-id1164278206478">
+          <para id="id1164278214089">900</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277386879">
+        <problem id="oo-id1164277643747">
+          <para id="id1164277623593">How many three-digit odd numbers are there?</para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164277670332">
+        <problem id="oo-id1164277373837">
+          <para id="id1164279186862">In how many different ways can five people be seated in a row if two of them insist on sitting next to each other?</para>
+        </problem>
+        <solution id="oo-id1164289337186">
+          <para id="id1164277373515">48</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279295798">
+        <problem id="oo-id1164290620436">
+          <para id="id1164278215804">In how many different ways can five people be seated in a row if two of them insist on not sitting next to each other?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277686948">
+        <problem id="oo-id1164286026442">
+          <para id="id1164297937375">In how many ways can 3 English, 3 history, and 2 math books be set on a shelf, if the English books are set on the left, history books in the middle, and math books on the right?</para>
+        </problem>
+        <solution id="oo-id1164279317362">
+          <para id="id1164277588646">72</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277675120">
+        <problem id="oo-id1164277642604">
+          <para id="id1164280179054">In how many ways can 3 English, 3 history, and 2 math books be set on a shelf, if they are grouped by subject? </para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277564419">
+        <problem id="oo-id1164277474478">
+          <para id="id1164277393347">You have 5 math books and 6 history books to put on a shelf with five slots. In how many ways can you put the books on the shelf if the first two slots are to be filled with math books and the next three with history books?</para>
+        </problem>
+        <solution id="oo-id1164280168663">
+          <para id="id1164277478194">2,400</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279173319">
+        <problem id="oo-id1164277428902">
+          <para id="id1950252">You have 5 math books and 6 history books to put on a shelf with five slots. In how many ways can you put the books on the shelf if the first two slots are to be filled with the books of one subject and the next three slots are to be filled with the books of the other subject?</para>
+        </problem>
+      </exercise>
+      
+    </section>
+    <section id="id1164279322471">
+      <title>CIRCULAR PERMUTATIONS AND PERMUTATIONS WITH SIMILAR ELEMENTS</title>
+      <para id="id1164283633586">Do the following problems using the techniques learned in this section.</para>
+      <exercise id="id1164277497061"><problem id="oo-id1164277379769">
+          <para id="id1164277687163">In how many different ways can five children hold hands to play "Ring Around the Rosy"?</para>
+        </problem>
+      <solution id="eip-id1169688541804"><para id="eip-id1169674677304">24</para></solution></exercise>
+      
+      <exercise id="id1164277662435">
+        <problem id="oo-id1164277688235">
+          <para id="id1164277992632">In how many ways can three people be made to sit at a round table?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279184468">
+        <problem id="oo-id1164283207693">
+          <para id="id1164278217376">In how many different ways can six children ride a "Merry Go Around" with six horses?</para>
+        </problem>
+        <solution id="oo-id1164287338840">
+          <para id="id1164277651536">120</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277608049">
+        <problem id="oo-id1164281692197">
+          <para id="id1164277212332">In how many ways can three couples be seated at a round table, so that men and women sit alternately?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164295323061">
+        <problem id="oo-id1329738">
+          <para id="id1164278216376">In how many ways can six trinkets be arranged on a chain?</para>
+        </problem>
+        <solution id="oo-id1973215">
+          <para id="id1164277427508">120</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277487985">
+        <problem id="oo-id1164280482195">
+          <para id="id1164277285108">In how many ways can five keys be put on a key ring? </para>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164279301980">
+        <problem id="oo-id1164282216780">
+          <para id="id1164277409427">Find the number of different permutations of the letters of the word MASSACHUSETTS.</para>
+        </problem>
+        <solution id="oo-id1164297536647">
+          <para id="id1164291401462">64,864,800</para>
+        </solution>
+      </exercise>
+      <exercise id="id1678615">
+        <problem id="oo-id1164287536472">
+          <para id="id1164277390953">Find the number of different permutations of the letters of the word MATHEMATICS.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277580213">
+        <problem id="oo-id1164279970173">
+          <para id="id1164277588396">Seven flags, three red, two white, and two blue, are to be flown on seven poles. How many different arrangements are possible?</para>
+        </problem>
+        <solution id="oo-id1164277576997">
+          <para id="id1164277663722">210</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277765968">
+        <problem id="oo-id1164277582572">
+          <para id="id1164279168995">How many different ways can three pennies, two nickels and five dimes be arranged in a row?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164286943571">
+        <problem id="oo-id1164277477694">
+          <para id="id1164277695167">How many four-digit numbers can be made using two 2's and two 3's? </para>
+        </problem>
+        <solution id="oo-id1164277366369">
+          <para id="id1164287023687">6</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164282389383">
+        <problem id="oo-id1164277654431">
+          <para id="id1164296097103">How many five-digit numbers can be made using two 6's and three 7's? </para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277578390">
+        <problem id="oo-id1164277357306">
+          <para id="id1164277674120">If a coin is tossed 5 times, how many different outcomes of 3 heads, and 2 tails are possible?</para>
+        </problem>
+        <solution id="oo-id1164277953847">
+          <para id="id1164277489021">10</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277682767">
+        <problem id="oo-id1164277468368">
+          <para id="id1164277644032">If a coin is tossed 10 times, how many different outcomes of 7 heads, and 3 tails are possible?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164280002837">
+        <problem id="oo-id1164277372444">
+          <para id="id1164277589611">If a team plays ten games, how many different outcomes of 6 wins, and 4 losses are possible?</para>
+        </problem>
+        <solution id="oo-id1164283092913">
+          <para id="id1164277954276">210</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164287928070">
+        <problem id="oo-id1164277992168">
+          <para id="id1164277747394">If a team plays ten games, how many different ways can the team have a winning season?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id3443868">
+      <title>COMBINATIONS</title>
+      <para id="id1164281351622">Do the following problems using combinations.</para>
+      <exercise id="id1164277482411">
+        <problem id="oo-id1164298231129">
+          <para id="id1164277678587">How many different 3-people committees can be chosen from ten people? </para>
+        </problem>
+        <solution id="oo-id1164277368763">
+          <para id="id1164277616482">120</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164276591383">
+        <problem id="oo-id1164277634885">
+          <para id="id1164277511319">How many different 5-player teams can be chosen from eight players?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164283638539">
+        <problem id="oo-id1164278213124">
+          <para id="id1164277690843">In how many ways can a person choose to vote for three out of five candidates on a ballot for a school board election? </para>
+        </problem>
+        <solution id="oo-id1164277674728">
+          <para id="id1164286730960">10</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279319684">
+        <problem id="oo-id1164278363074">
+          <para id="id1164286882589">Compute the following: </para>
+        <list id="fs-id1168801450988" list-type="enumerated" number-style="lower-alpha">
+         <item><para id="id1164277618662"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>9C2</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{9C2} {}</m:annotation></m:semantics></m:math></para></item>
+       <item>
+          <para id="id1164277580570"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>6C4</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6C4} {}</m:annotation></m:semantics></m:math></para></item>
+       
+          <item><para id="id1164285733083"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>8C3</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{8C3} {}</m:annotation></m:semantics></m:math></para></item>
+        
+         <item><para id="id1164277575389"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>7C4</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{7C4} {}</m:annotation></m:semantics></m:math></para></item>
+</list>
+        </problem>
+      </exercise>
+      
+      <exercise id="id1164277422363">
+        <problem id="oo-id1164287108079">
+          <para id="id1164277388059">How many 5-card hands can be chosen from a deck of cards? </para>
+        </problem>
+        <solution id="oo-id1164277472191">
+          <para id="id1164277991882">2,598,960</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277576425">
+        <problem id="oo-id1164277481268">
+          <para id="id1164277387558">How many 13-card bridge hands can be chosen from a deck of cards?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279176214">
+        <problem id="oo-id1164296519105">
+          <para id="id1164277578319">There are twelve people at a party. If they all shake hands, how many different hand-shakes are there?</para>
+        </problem>
+        <solution id="oo-id1164277571351">
+          <para id="id1164277486913">66</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277424435">
+        <problem id="oo-id1164280617399">
+          <para id="id1164277617804">In how many ways can a student choose to do four questions out of five on a test?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277486842">
+        <problem id="oo-id1164290826155">
+          <para id="id1164277399565">Five points lie on a circle. How many chords can be drawn through them?</para>
+        </problem>
+        <solution id="oo-id1164277648178">
+          <para id="id1164287966361">10</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277490880">
+        <problem id="oo-id1164285545217">
+          <para id="id1164287650861">How many diagonals does a hexagon have?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277415609">
+        <problem id="oo-id1164277380305">
+          <para id="id1164279180644">There are five teams in a league. How many games are played if every team plays each other twice?</para>
+        </problem>
+        <solution id="oo-id1164277648785">
+          <para id="id1164277430331">20</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164280131037">
+        <problem id="oo-id1164286186592">
+          <para id="id1164277520145">A team plays 15 games a season. In how many ways can it have 8 wins and 7 losses?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279330368">
+        <problem id="oo-id1164283613990">
+          <para id="id1680947">In how many different ways can a 4-child family have 2 boys and 2 girls?</para>
+        </problem>
+        <solution id="oo-id1164285827861">
+          <para id="id1164277420755">6</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277633741">
+        <problem id="oo-id2830929">
+          <para id="id1164277491094">A coin is tossed five times. In how many ways can it fall three heads and two tails?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164285484852">
+        <problem id="oo-id1164277525506">
+          <para id="id1164279324901">The shopping area of a town is a square that is six blocks by six blocks. How many different routes can a taxi driver take to go from one corner of the shopping area to the opposite cater-corner?</para>
+        </problem>
+        <solution id="oo-id1164279323079">
+          <para id="id1164277508996">924</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164288085618">
+        <problem id="oo-id1164291862491">
+          <para id="id1164277414859">If the shopping area in <link target-id="id1164285484852"/> has a rectangular form of 5 blocks by 3 blocks, then how many different routes can a taxi driver take to drive from one end of the shopping area to the opposite kitty corner end?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1164279319220">
+      <title>COMBINATIONS INVOLVING SEVERAL SETS</title>
+      <para id="id1164279317254">Following problems involve combinations from several different sets.</para>
+      <exercise id="id1164277692058">
+        <problem id="oo-id1164285217619">
+          <para id="id1677043">How many 5-people committees consisting of three boys and two girls can be chosen from a group of four boys and four girls?</para>
+        </problem>
+        <solution id="oo-id1164277573567">
+          <para id="id1164277696453">24</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277607263">
+        <problem id="oo-id1164282387664">
+          <para id="id1164279443411">A club has 4 men, 5 women, 8 boys and 10 girls as members. In how many ways can a group of 2 men, 3 women, 4 boys and 4 girls be chosen?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277950488">
+        <problem id="oo-id1164280972488">
+          <para id="id1164278218198">How many 4-people committees chosen from four men and six women will have at least three men?</para>
+        </problem>
+        <solution id="oo-id1164277354376">
+          <para id="id1164277397314">25</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164277685626">
+        <problem id="oo-id1164277688771">
+          <para id="id1164277608156">A batch contains 10 transistors of which three are defective. If three are chosen, in how many ways can one get two defective? </para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279317683">
+        <problem id="oo-id1164290381729">
+          <para id="id1164277667402">In how many ways can five counters labeled A, B, C, D and E at a store be staffed by two men and three women chosen from a group of four men and six women?</para>
+        </problem>
+        <solution id="oo-id1164277528364">
+          <para id="id1164277586395">14,400</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277496025">
+        <problem id="oo-id1164277402066">
+          <para id="id1164277639387">How many 4-letter word sequences consisting of two vowels and two consonants can be made from the letters of the word PHOENIX if no letter is repeated?</para>
+        </problem>
+      </exercise>
+      <para id="id1164279865658">Three marbles are chosen from an urn that contains 5 red, 4 white, and 3 blue marbles. How many samples of the following type are possible?</para>
+      <exercise id="id1164277437013">
+        <problem id="oo-id1164277572638">
+          <para id="id1164280653710">All three white.</para>
+        </problem>
+        <solution id="oo-id1164277630347">
+          <para id="id1164277776168">4</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277415788">
+        <problem id="oo-id1164280975732">
+          <para id="id1164277425579">Two blue and one white.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277409284">
+        <problem id="oo-id1164277400530">
+          <para id="id1164277653252">One of each color.</para>
+        </problem>
+        <solution id="oo-id1164297911422">
+          <para id="id1164277951060">60</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277484733">
+        <problem id="oo-id1164277615804">
+          <para id="id1164277526434">All three of the same color.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277424721">
+        <problem id="oo-id1164298949144">
+          <para id="id1164277656718">At least two red.</para>
+        </problem>
+        <solution id="oo-id1164279324652">
+          <para id="id1164288590341">80</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277665222">
+        <problem id="oo-id1164277419897">
+          <para id="id1164277993990">None red.</para>
+        </problem>
+      </exercise>
+      <para id="id1164277673441">Five coins are chosen from a bag that contains 4 dimes, 5 nickels, and 6 pennies. How many samples of five of the following type are possible?</para>
+      <exercise id="id1164277389810">
+        <problem id="oo-id1164279555641">
+          <para id="id2134497">At least four nickels.</para>
+        </problem>
+        <solution id="oo-id1164283171286">
+          <para id="id1164277952024">51</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277568850">
+        <problem id="oo-id1164282264433">
+          <para id="id1164281885023">No pennies.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164285326597">
+        <problem id="oo-id1164284122198">
+          <para id="id1164277519252">Five of a kind.</para>
+        </problem>
+        <solution id="oo-id1164277568957">
+          <para id="id1164277369406">7</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277470154">
+        <problem id="oo-id1164277373909">
+          <para id="id1164277950774">Four of a kind.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277368906">
+        <problem id="oo-id1164279333906">
+          <para id="id1164287081831">Two of one kind and two of another kind.</para>
+        </problem>
+        <solution id="oo-id1164277765432">
+          <para id="id1164292856945">1,410</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277601438">
+        <problem id="oo-id1164280448147">
+          <para id="id1164277562596">Three of one kind and two of another kind.</para>
+        </problem>
+      </exercise>
+      <para id="id1164277686805">Find the number of different ways to draw a 5-card hand from a deck to have the following combinations.</para>
+      <exercise id="id1164277374480">
+        <problem id="oo-id1164277514357">
+          <para id="id1164277610943">Three face cards.</para>
+        </problem>
+        <solution id="oo-id1164287379275">
+          <para id="id1682734">171,600</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277517286">
+        <problem id="oo-id1164296306037">
+          <para id="id1164277469904">A heart flush(all hearts).</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164279683861">
+        <problem id="oo-id1164277603583">
+          <para id="id1164277418289">Two hearts and three diamonds.</para>
+        </problem>
+        <solution id="oo-id1164281411540">
+          <para id="id1164279315968">22,308</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164291775930">
+        <problem id="oo-id1164286093890">
+          <para id="id1164277644640">Two cards of one suit, and three of another suit.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164286753271">
+        <problem id="oo-id1164279300551">
+          <para id="id1164277484984">Two kings and three queens.</para>
+        </problem>
+        <solution id="oo-id1164276558009">
+          <para id="id1164286541552">24</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277511355">
+        <problem id="oo-id1164288240516">
+          <para id="id1164285262322">Two cards of one value and three of another value.</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1164277685590">
+      <title>BINOMIAL THEOREM</title>
+      <para id="id1164277528971">Use the Binomial Theorem to do the following problems.</para>
+      <exercise id="id1164277363617">
+        <problem id="oo-id1164277642711">
+          <para id="id1164277776954">Expand 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">+</m:mo><m:mi>b</m:mi></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (a+b right ) rSup { size 8{5} } } {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1164281307788">
+          <equation id="fs-id1168800113542">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">+</m:mo><m:msup><m:mn>5a</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mrow><m:mi>b</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>10</m:mtext></m:mrow><m:msup><m:mi>a</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup><m:mrow><m:msup><m:mi>b</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">+</m:mo><m:mtext>10</m:mtext></m:mrow><m:msup><m:mi>a</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mrow><m:msup><m:mi>b</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">+</m:mo><m:mn>5</m:mn></m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>ab</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:msup><m:mi>b</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{a rSup { size 8{5} } +5a rSup { size 8{4} } b+"10"a rSup { size 8{3} } b rSup { size 8{2} } +"10"a rSup { size 8{2} } b rSup { size 8{3} } +5 ital "ab" rSup { size 8{4} } +b rSup { size 8{5} } } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1164277357520">
+        <problem id="oo-id1164279336622">
+          <para id="id1164294631029">Expand 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">−</m:mo><m:mi>b</m:mi></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>6</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (a - b right ) rSup { size 8{6} } } {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164287001734">
+        <problem id="oo-id1680233">
+          <para id="id1164277378268">Expand 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">−</m:mo><m:mn>2y</m:mn></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (x - 2y right ) rSup { size 8{5} } } {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1164288638855">
+          <equation id="fs-id1168816274777">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">−</m:mo><m:mtext>10</m:mtext></m:mrow><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup><m:mrow><m:mi>y</m:mi><m:mo stretchy="false">+</m:mo><m:mtext>40</m:mtext></m:mrow><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup><m:mrow><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">−</m:mo><m:mtext>80</m:mtext></m:mrow><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mrow><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">+</m:mo><m:mtext>80</m:mtext></m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>xy</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mo stretchy="false">−</m:mo><m:mtext>32</m:mtext></m:mrow><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSup { size 8{5} }  - "10"x rSup { size 8{4} } y+"40"x rSup { size 8{3} } y rSup { size 8{2} }  - "80"x rSup { size 8{2} } y rSup { size 8{3} } +"80" ital "xy" rSup { size 8{4} }  - "32"y rSup { size 8{5} } } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1164277662256">
+        <problem id="oo-id1164281069658">
+          <para id="id1164277626202">Expand 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3y</m:mn></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (2x - 3y right ) rSup { size 8{4} } } {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164284019780">
+        <problem id="oo-id1164277402888">
+          <para id="id1164288237122">Find the third term of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3y</m:mn></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>6</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (2x - 3y right ) rSup { size 8{6} } } {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1164278437835">
+          <equation id="fs-id1168794688506">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>2160</m:mtext><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"2160"x rSup { size 8{4} } y rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      <exercise id="id1164282953408">
+        <problem id="oo-id2721823">
+          <para id="id1164277472906">Find the sixth term of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mn>5x</m:mn><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>8</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (5x+y right ) rSup { size 8{8} } } {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164278206692">
+        <problem id="oo-id1164277602689">
+          <para id="id1164277622378">Find the coefficient of the 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSup { size 8{3} } y rSup { size 8{4} } } {}</m:annotation></m:semantics></m:math> term in the expansion of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">+</m:mo><m:mi>y</m:mi></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>7</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (2x+y right ) rSup { size 8{7} } } {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1164279299371">
+          <para id="id1164277670261">280</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164278197830">
+        <problem id="oo-id1164277368048">
+          <para id="id1164290452394">Find the coefficient of the 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup><m:msup><m:mi>b</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>6</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{a rSup { size 8{4} } b rSup { size 8{6} } } {}</m:annotation></m:semantics></m:math> term in the expansion of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mn>3a</m:mn><m:mo stretchy="false">−</m:mo><m:mi>b</m:mi></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mtext>10</m:mtext></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (3a - b right ) rSup { size 8{"10"} } } {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+      </exercise>
+      <exercise id="id6673734">
+        <problem id="oo-id1164277575746">
+          <para id="id1164277429652">A coin is tossed 5 times, in how many ways is it possible to get three heads and two tails?</para>
+        </problem>
+        <solution id="oo-id1164278149461">
+          <para id="id1164277507638">10</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277645355">
+        <problem id="oo-id1164287627653">
+          <para id="id1164277623021">A coin is tossed 10 times, in how many ways is it possible to get seven heads and three tails?</para>
+        </problem>
+      </exercise>
+      <exercise id="id1164277503493">
+        <problem id="oo-id1164277049431">
+          <para id="id1164287321512">How many subsets are there of a set that has 6 elements?</para>
+        </problem>
+        <solution id="oo-id1164277586359">
+          <para id="id1164279328332">64</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277994348">
+        <problem id="oo-id1164287640293">
+          <para id="id1164277370085">How many subsets are there of a set that has 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{n} {}</m:annotation></m:semantics></m:math> elements?</para>
+        </problem>
+      </exercise>
+    </section>
+    <section id="id1164279175928">
+      <title>CHAPTER REVIEW</title>
+      <exercise id="id1164277374802">
+        <problem id="oo-id1164279184396">
+          <para id="id1164278197187">Suppose of the 4,000 freshmen at a college everyone is enrolled in a mathematics or an English class during a given quarter. If 2,000 are enrolled in a mathematics class, and 3,000 in an English class, how many are enrolled in both a mathematics class and an English class?</para>
+        </problem>
+        <solution id="oo-id2127593">
+          <para id="id1164279335621">1,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id1928734">
+        <problem id="oo-id1164279167352">
+          <para id="id1164277492273">In a survey of 250 people, it was found that 125 had read Time magazine, 175 had read Newsweek, 100 had read U. S. News, 75 had read Time and Newsweek, 60 had read Newsweek and U. S. News, 55 had read Time and U. S. News, and 25 had read all three. </para>
+        <list id="fs-id1168798254846" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1164284311713">How many had read Time but not the other two? </para></item>
+        <item><para id="id1164277486234">How many had read Time or Newsweek but not the U. S. News And World Report? </para></item>
+        <item><para id="id1164294556875">How many had read none of these three magazines? </para></item></list>
+        </problem>
+        <solution id="oo-id1164282389311">
+          <list id="fs-id1168798236500" list-type="enumerated" number-style="lower-alpha"><item>20</item><item>135</item><item>15</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1164277688163">
+        <problem id="oo-id1164277671118">
+          <para id="id1164277440908">At a manufacturing plant, a product goes through assembly, testing, and packing. If a plant has three assembly stations, two testing stations, and two packing stations, in how many different ways can a product achieve its completion?</para>
+        </problem>
+        <solution id="oo-id1164277669082">
+          <para id="id1164277577032">12</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277631919">
+        <problem id="oo-id1164276589877">
+          <para id="id1164279333942">Six people are to line up for a photograph. How many different lineups are possible if three of them insist on standing next to each other ?</para>
+        </problem>
+        <solution id="oo-id5348984">
+          <para id="id1164277692308">144</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277763824">
+        <problem id="oo-id1164277400351">
+          <para id="id1164277527613">How many four-letter word sequences can be made from the letters of the word CUPERTINO?</para>
+        </problem>
+        <solution id="oo-id1164281288747">
+          <para id="id1164279317647">3,024</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277528900">
+        <problem id="oo-id1164277765074">
+          <para id="id1164277391132">In how many different ways can a 20-question multiple choice test be designed so that its answers contain 2 A's, 4 B's, 9 C's, 3 D's, and 2 E's?</para>
+        </problem>
+        <solution id="oo-id1164277507781">
+          <para id="id1164277491809">11,639,628,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277590039">
+        <problem id="oo-id1954816">
+          <para id="id1164277677157">The U. S. Supreme Court has nine judges. In how many different ways can the judges cast a six-to-three decision in favor of a ruling?</para>
+        </problem>
+        <solution id="oo-id1164277775668">
+          <para id="id1164277484769">84</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164284283150">
+        <problem id="oo-id1164277587610">
+          <para id="id1164277392847">In how many different ways can a coach choose a linebacker, a guard, and a tackle from five players on the bench, if all five can play any of the three positions?</para>
+        </problem>
+        <solution id="oo-id1164287101037">
+          <para id="id1164277401959">60</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277391239">
+        <problem id="oo-id1164277662864">
+          <para id="id1164277608514">How many three digit even numbers can be formed from the digits 1, 2, 3, 4, 5 if no repetitions are allowed?</para>
+        </problem>
+        <solution id="oo-id2718566">
+          <para id="id1164277606906">24</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277529293">
+        <problem id="oo-id1164277649786">
+          <para id="id1164279187577">Compute:</para>
+          <list id="fs-id1168792153455" list-type="enumerated" number-style="lower-alpha"><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>9C4</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{9C4} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mn>8P3</m:mn></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{8P3} {}</m:annotation></m:semantics></m:math></item><item> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mtext>10</m:mtext><m:mi>!</m:mi></m:mrow>
+<m:mrow><m:mn>4</m:mn><m:mi>!</m:mi><m:mfenced open="(" close=")"><m:mrow><m:mtext>10</m:mtext><m:mo stretchy="false">−</m:mo><m:mn>4</m:mn></m:mrow></m:mfenced><m:mi>!</m:mi></m:mrow>
+</m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"10"!4! left ("10" - 4 right )!} {}</m:annotation></m:semantics></m:math></item></list>
+        </problem>
+        <solution id="oo-id1164277766075">
+        <list id="fs-id1168792506443" list-type="enumerated" number-style="lower-alpha">
+          <item>126</item><item>336</item><item>210</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1164277369263">
+        <problem id="oo-id1164279172462">
+          <para id="id1164277513284">In how many ways can 3 English, 3 Math, and 4 Spanish books be set on a shelf if the books are grouped by subject?</para>
+        </problem>
+        <solution id="oo-id1164277511855">
+          <para id="id1164277669189">5,184</para>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164277365154">
+        <problem id="oo-id1164277501635">
+          <para id="id1164277591826">In how many ways can a 10-question multiple choice test with four possible answers for each question be answered?</para>
+        </problem>
+        <solution id="oo-id1164280142394">
+          <para id="id1164279477985">1,048,576</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279327510">
+        <problem id="oo-id1164279333334">
+          <para id="id1164277511390">On a soccer team three fullbacks can play any of the three fullback positions, left, center, and right. The three halfbacks can play any of the three halfback positions, the four forwards can play any of the four positions, and the goalkeeper plays only his position. How many different arrangements of the 11 players are possible? </para>
+        </problem>
+        <solution id="oo-id1164277578819">
+          <para id="id1164277489307">46,200</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279165958">
+        <problem id="oo-id1164285484852">
+          <para id="id1164277370299">From a group of 6 people, 3 are assigned to cleaning, 2 to hauling and one to garbage collecting. How many different ways can this be done?</para>
+        </problem>
+        <solution id="oo-id2487688">
+          <para id="id2008049">60</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279172783">
+        <problem id="oo-id1164278209265">
+          <para id="id1164277626344">How many three-letter word sequences can be made from the letters of the word OXYGEN?</para>
+        </problem>
+        <solution id="oo-id1164279164743">
+          <para id="id1164277775167">120</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277649357">
+        <problem id="oo-id1164277586716">
+          <para id="id1164277688556">In how many ways can 3 books be selected from 4 English and 2 History books if at least one English book must be chosen?</para>
+        </problem>
+        <solution id="oo-id1164278218198">
+          <para id="id1164277518108">20</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277409356">
+        <problem id="oo-id1164277492523">
+          <para id="id1164277418682">Five points lie on the rim of a circle. Choosing the points as vertices, how many different triangles can be drawn?</para>
+        </problem>
+        <solution id="oo-id1164277362665">
+          <para id="id1164277989845">10</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279177536">
+        <problem id="oo-id1164277430045">
+          <para id="id1164277612373">A club consists of six men and nine women. In how many ways can a president, a vice president and a treasurer be chosen if the two of the officers must be women?</para>
+        </problem>
+        <solution id="oo-id1164282913636">
+          <para id="id1164277484412">1296</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277416788">
+        <problem id="oo-id1164277510140">
+          <para id="id1164277365118">Of its 12 sales people, a company wants to assign 4 to its Western territory, 5 to its Northern territory, and 3 to its Southern territory. How many ways can this be done?</para>
+        </problem>
+        <solution id="oo-id1164277774989">
+          <para id="id1164282081334">27,720</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277697490">
+        <problem id="oo-id1164277354697">
+          <para id="id1164277527077">How many permutations of the letters of the word OUTSIDE have consonants in the first and last place?</para>
+        </problem>
+        <solution id="oo-id1164277409284">
+          <para id="id1164277501528">720</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279164457">
+        <problem id="oo-id1164277484733">
+          <para id="id1164277598437">How many distinguishable permutations are there in the word COMMUNICATION?</para>
+        </problem>
+        <solution id="oo-id1164277633205">
+          <para id="id1164279180216">194,594,400</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277398278">
+        <problem id="oo-id1164277668438">
+          <para id="id1164279179787">How many five-card poker hands consisting of the following distribution are there? </para>
+       <list id="fs-id1168798282189" list-type="enumerated" number-style="lower-alpha">
+         <item> <para id="id1164277354125">A flush(all five cards of a single suit)</para></item>
+        
+         <item> <para id="id1164277438443">Three of a kind(e.g. three aces and two other cards)</para></item>
+        
+         <item><para id="id1164295650042">Two pairs(e.g. two aces, two kings and one other card)</para></item>
+        
+          <item><para id="id1164279319613">A straight(all five cards in a sequence)</para></item></list>
+        </problem>
+        <solution id="oo-id1164292856945">
+        <list id="fs-id1168798289085" list-type="enumerated" number-style="lower-alpha">
+          <item>5148</item><item>58,656</item><item>123,552</item><item>10,240 or 9216</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1164277344620">
+        <problem id="oo-id1164277591004">
+          <para id="id1164277591397">Company stocks on an exchange are given symbols consisting of three letters. How many different three-letter symbols are possible?</para>
+        </problem>
+        <solution id="oo-id1164277771808">
+          <para id="id1164279320756">17,576</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277652894">
+        <problem id="oo-id1164277517286">
+          <para id="id1164279323150">How many four-digit odd numbers are there?</para>
+        </problem>
+        <solution id="oo-id1681340">
+          <para id="id1164277415538">4500</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164279186433"><problem id="oo-id1164277484984">
+          <para id="id1164277474978">In how many ways can 7 people be made to stand in a straight line? In a circle? </para>
+        </problem>
+      <solution id="eip-id1165199845928"><para id="eip-id7883828">5040; 720</para></solution></exercise>
+      
+      
+      <exercise id="id1164277950845">
+        <problem id="oo-id8455712">
+          <para id="id1164277414680">A united nations delegation consists of 6 Americans, 5 Russians, and 4 Chinese. Answer the following questions.</para>
+       <list id="fs-id1168792839145" list-type="enumerated" number-style="lower-alpha">
+          <item><para id="id1164277651644">How many committees of five people are there?</para></item>
+        <item>
+          <para id="id1164279176428">How many committees of three people consisting of at least one American are there?</para></item>
+        <item>
+          <para id="id1164285104914">How many committees of four people having no Russians are there?</para></item>
+        <item>
+          <para id="id1164277482375">How many committees of three people have more Americans than Russians?</para></item>
+          
+        <item>
+          <para id="id1164277371979">How many committees of three people do not have all three Americans?</para></item>
+          </list>
+        </problem>
+        <solution id="oo-id1164277502600">
+          <list id="fs-id1168798220168" list-type="enumerated" number-style="lower-alpha"><item>3003</item><item>371</item><item>210</item><item>191</item><item> 435</item></list>
+        </solution>
+      </exercise>
+      <exercise id="id1164277990453">
+        <problem id="oo-id1164279898369">
+          <para id="id1164277381162">If a coin is flipped five times, in how many different ways can it show up three heads?</para>
+        </problem>
+        <solution id="oo-id1164282112413">
+          <para id="id1164277693094">10</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277600152">
+        <problem id="oo-id1164277939089">
+          <para id="id1678580">To reach his destination, a man is to walk three blocks north and four blocks west. How many different routes are possible?</para>
+        </problem>
+        <solution id="oo-id1164285483739">
+          <para id="id1164277670296">35</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164280684898">
+        <problem id="oo-id1164277578783">
+          <para id="id1164277673477">All three players of the women's beach volleyball team, and all three players of the men's beach volleyball team are to line up for a picture with all members of the women's team lined together and all members of men's team lined up together. How many ways can this be done?</para>
+        </problem>
+        <solution id="oo-id1164277408284">
+          <para id="id1164278216161">72</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164277383199">
+        <problem id="oo-id1164277433762">
+          <para id="id1164277365296">From a group of 6 Americans, 5 Japanese and 4 German delegates, two Americans, two Japanese and a German are chosen to line up for a photograph. In how many different ways can this be done? </para>
+        </problem>
+        <solution id="oo-id8897244">
+          <para id="id1164279273214">72,000</para>
+        </solution>
+      </exercise>
+      <exercise id="id1164287213721">
+        <problem id="oo-id1164277374051">
+          <para id="id1164277491880">Find the fourth term of the expansion 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mn>2x</m:mn><m:mo stretchy="false">−</m:mo><m:mn>3y</m:mn></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>8</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (2x - 3y right ) rSup { size 8{8} } } {}</m:annotation></m:semantics></m:math>. </para>
+        </problem>
+        <solution id="oo-id1164282950656">
+          <equation id="fs-id1168801471093">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>48384</m:mtext></m:mrow><m:msup><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup><m:msup><m:mi>y</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - "48384"x rSup { size 8{5} } y rSup { size 8{3} } } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+      
+      <exercise id="id1164277674942">
+        <problem id="oo-id1164278216840">
+          <para id="id1164277402423">Find the coefficient of the 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>a</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup><m:msup><m:mi>b</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{a rSup { size 8{5} } b rSup { size 8{4} } } {}</m:annotation></m:semantics></m:math> term in the expansion of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="(" close=")"><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">−</m:mo><m:mn>2b</m:mn></m:mrow></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>9</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left (a - 2b right ) rSup { size 8{9} } } {}</m:annotation></m:semantics></m:math>.</para>
+        </problem>
+        <solution id="oo-id1164279328082">
+          <equation id="fs-id1168800140362">
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>2016</m:mtext><m:msup><m:mi>a</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>5</m:mn></m:mrow></m:mstyle></m:msup><m:msup><m:mi>b</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"2016"a rSup { size 8{5} } b rSup { size 8{4} } } {}</m:annotation></m:semantics></m:math></equation>
+        </solution>
+      </exercise>
+    </section>
+  </content>
+</document>
