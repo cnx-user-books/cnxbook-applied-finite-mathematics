@@ -820,7 +820,7 @@ P union Q= left lbrace "red, yellow, blue, green" right rbrace  {} ##
 }  matrix {
  ital "DC"
 } } {}</m:annotation></m:semantics><m:mtext>,</m:mtext> 
-<m:semantics><m:mrow/><m:annotation encoding="StarMath 5.0">{}</m:annotation></m:semantics><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtable><m:mtr><m:mtd><m:mi>C</m:mi></m:mtd></m:mtr></m:mtable><m:mtable frame="solid"><m:mtr><m:mtd><m:mstyle fontstyle="italic"><m:mrow><m:mtext>AB</m:mtext></m:mrow></m:mstyle></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mi>D</m:mi></m:mtd></m:mtr></m:mtable></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ matrix {
+<m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtable><m:mtr><m:mtd><m:mi>C</m:mi></m:mtd></m:mtr></m:mtable><m:mtable frame="solid"><m:mtr><m:mtd><m:mstyle fontstyle="italic"><m:mrow><m:mtext>AB</m:mtext></m:mrow></m:mstyle></m:mtd></m:mtr></m:mtable><m:mtable><m:mtr><m:mtd><m:mi>D</m:mi></m:mtd></m:mtr></m:mtable></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ matrix {
 C
 }  matrix {
  ital "AB"

@@ -65,12 +65,7 @@
         <para id="id1167444044511">The total amount 
 <m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A} {}</m:annotation></m:semantics></m:math> also called the accumulated value or the future value is given by</para>
         <para id="eip-id7376814">
-          <m:math>
-            <m:semantics>
-              <m:mrow/>
-              <m:annotation encoding="StarMath 5.0">{}</m:annotation>
-            </m:semantics>
-          </m:math>
+          
           <m:math>
             <m:semantics>
               <m:mrow>
